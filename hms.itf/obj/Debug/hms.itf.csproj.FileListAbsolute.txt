@@ -1,0 +1,14 @@
+D:\icare\hms\debug\hms.itf.dll
+D:\icare\hms\debug\hms.itf.pdb
+D:\icare\hms\code\hms.itf\obj\Debug\hms.itf.csprojAssemblyReference.cache
+D:\icare\hms\code\hms.itf\obj\Debug\hms.itf.csproj.CoreCompileInputs.cache
+D:\icare\hms\code\hms.itf\obj\Debug\hms.itf.csproj.CopyComplete
+D:\icare\hms\code\hms.itf\obj\Debug\hms.itf.dll
+D:\icare\hms\code\hms.itf\obj\Debug\hms.itf.pdb
+D:\hms\debug\hms.itf.dll
+D:\hms\debug\hms.itf.pdb
+D:\hms\code\hms.itf\obj\Debug\hms.itf.csprojAssemblyReference.cache
+D:\hms\code\hms.itf\obj\Debug\hms.itf.csproj.CoreCompileInputs.cache
+D:\hms\code\hms.itf\obj\Debug\hms.itf.csproj.CopyComplete
+D:\hms\code\hms.itf\obj\Debug\hms.itf.dll
+D:\hms\code\hms.itf\obj\Debug\hms.itf.pdb

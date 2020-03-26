@@ -1,0 +1,7 @@
+D:\icare\hms\debug\comm.biz.dll
+D:\icare\hms\debug\comm.biz.pdb
+D:\icare\hms\code\comm.biz\obj\Debug\comm.biz.csprojAssemblyReference.cache
+D:\icare\hms\code\comm.biz\obj\Debug\comm.biz.csproj.CoreCompileInputs.cache
+D:\icare\hms\code\comm.biz\obj\Debug\comm.biz.csproj.CopyComplete
+D:\icare\hms\code\comm.biz\obj\Debug\comm.biz.dll
+D:\icare\hms\code\comm.biz\obj\Debug\comm.biz.pdb

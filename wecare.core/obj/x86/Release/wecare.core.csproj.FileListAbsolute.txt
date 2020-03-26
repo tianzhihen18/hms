@@ -1,0 +1,8 @@
+D:\icare\wecare\code\wecare.core\bin\x86\Release\wecare.core.dll
+D:\icare\wecare\code\wecare.core\bin\x86\Release\wecare.core.pdb
+D:\icare\wecare\code\wecare.core\bin\x86\Release\Microsoft.Practices.Unity.Configuration.dll
+D:\icare\wecare\code\wecare.core\bin\x86\Release\Microsoft.Practices.Unity.dll
+D:\icare\wecare\code\wecare.core\bin\x86\Release\Sybase.Data.AseClient.dll
+D:\icare\wecare\code\wecare.core\obj\x86\Release\wecare.core.dll
+D:\icare\wecare\code\wecare.core\obj\x86\Release\wecare.core.pdb
+D:\icare\wecare\code\wecare.core\obj\x86\Release\wecare.core.csprojResolveAssemblyReference.cache

@@ -1,0 +1,14 @@
+D:\icare\hms\debug\hms.biz.dll
+D:\icare\hms\debug\hms.biz.pdb
+D:\icare\hms\code\hms.biz\obj\Debug\hms.biz.csprojAssemblyReference.cache
+D:\icare\hms\code\hms.biz\obj\Debug\hms.biz.csproj.CoreCompileInputs.cache
+D:\icare\hms\code\hms.biz\obj\Debug\hms.biz.csproj.CopyComplete
+D:\icare\hms\code\hms.biz\obj\Debug\hms.biz.dll
+D:\icare\hms\code\hms.biz\obj\Debug\hms.biz.pdb
+D:\hms\code\hms.biz\obj\Debug\hms.biz.csprojAssemblyReference.cache
+D:\hms\code\hms.biz\obj\Debug\hms.biz.csproj.CoreCompileInputs.cache
+D:\hms\code\hms.biz\obj\Debug\hms.biz.dll
+D:\hms\code\hms.biz\obj\Debug\hms.biz.pdb
+D:\hms\debug\hms.biz.dll
+D:\hms\debug\hms.biz.pdb
+D:\hms\code\hms.biz\obj\Debug\hms.biz.csproj.CopyComplete

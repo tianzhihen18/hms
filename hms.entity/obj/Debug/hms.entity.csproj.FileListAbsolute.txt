@@ -1,0 +1,14 @@
+D:\icare\hms\debug\hms.entity.dll
+D:\icare\hms\debug\hms.entity.pdb
+D:\icare\hms\code\hms.entity\obj\Debug\hms.entity.csprojAssemblyReference.cache
+D:\icare\hms\code\hms.entity\obj\Debug\hms.entity.csproj.CoreCompileInputs.cache
+D:\icare\hms\code\hms.entity\obj\Debug\hms.entity.csproj.CopyComplete
+D:\icare\hms\code\hms.entity\obj\Debug\hms.entity.dll
+D:\icare\hms\code\hms.entity\obj\Debug\hms.entity.pdb
+D:\hms\debug\hms.entity.dll
+D:\hms\debug\hms.entity.pdb
+D:\hms\code\hms.entity\obj\Debug\hms.entity.csproj.CoreCompileInputs.cache
+D:\hms\code\hms.entity\obj\Debug\hms.entity.csproj.CopyComplete
+D:\hms\code\hms.entity\obj\Debug\hms.entity.dll
+D:\hms\code\hms.entity\obj\Debug\hms.entity.pdb
+D:\hms\code\hms.entity\obj\Debug\hms.entity.csprojAssemblyReference.cache

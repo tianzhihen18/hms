@@ -1,0 +1,17 @@
+SCC = This is a Source Code Control file
+
+[icare.csproj]
+SCC_Aux_Path = "D:\codeSource"
+SCC_Project_Name = "$/icare/code/icare", RIBAAAAA
+
+[icare.sln]
+SCC_Aux_Path = "D:\codeSource"
+SCC_Project_Name = "$/icare/code/icare", RIBAAAAA
+
+[weCare.csproj]
+SCC_Aux_Path = "D:\datasource"
+SCC_Project_Name = "$/wecare/code/wecare", HVEAAAAA
+
+[wecare.sln]
+SCC_Aux_Path = "D:\datasource"
+SCC_Project_Name = "$/wecare/code/wecare", HVEAAAAA

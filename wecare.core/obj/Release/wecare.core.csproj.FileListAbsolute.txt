@@ -1,0 +1,8 @@
+D:\icare\wecare\code\wecare.core\bin\Release\wecare.core.dll
+D:\icare\wecare\code\wecare.core\bin\Release\wecare.core.pdb
+D:\icare\wecare\code\wecare.core\bin\Release\Microsoft.Practices.Unity.Configuration.dll
+D:\icare\wecare\code\wecare.core\bin\Release\Microsoft.Practices.Unity.dll
+D:\icare\wecare\code\wecare.core\bin\Release\Oracle.DataAccess.dll
+D:\icare\wecare\code\wecare.core\bin\Release\Sybase.Data.AseClient.dll
+D:\icare\wecare\code\wecare.core\obj\Release\wecare.core.dll
+D:\icare\wecare\code\wecare.core\obj\Release\wecare.core.pdb

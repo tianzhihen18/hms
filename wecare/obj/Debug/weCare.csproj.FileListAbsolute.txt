@@ -1,0 +1,12 @@
+D:\icare\hms\debug\HMS.exe.config
+D:\icare\hms\debug\HMS.exe
+D:\icare\hms\debug\HMS.pdb
+D:\icare\hms\code\wecare\obj\Debug\wecare.Properties.Resources.resources
+D:\icare\hms\code\wecare\obj\Debug\weCare.frmInit.resources
+D:\icare\hms\code\wecare\obj\Debug\weCare.frmUpdate.resources
+D:\icare\hms\code\wecare\obj\Debug\weCare.csproj.GenerateResource.cache
+D:\icare\hms\code\wecare\obj\Debug\weCare.csproj.CoreCompileInputs.cache
+D:\icare\hms\code\wecare\obj\Debug\weCare.csproj.CopyComplete
+D:\icare\hms\code\wecare\obj\Debug\HMS.exe
+D:\icare\hms\code\wecare\obj\Debug\HMS.pdb
+D:\icare\hms\code\wecare\obj\Debug\weCare.csprojAssemblyReference.cache
