@@ -26,6 +26,8 @@ namespace peDataSys
             sysDicPeItem();
         }
 
+        List<EntityClientInfo> lstClientSelect { get; set; }
+
         #region 同步体检项目
         /// <summary>
         /// 同步体检项目
@@ -768,14 +770,141 @@ namespace peDataSys
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
-            this.gridLookUpEdit.Properties.DataSource = GetDicCaiRecipe();
-           
-            if (gridLookUpEdit1View.DataRowCount > 0)
-            {
-                MessageBox.Show("gridLookUpEdit1View.RowCount");
-            }
+
+            //this.gridLookUpEdit.Properties.DataSource = GetDicCaiRecipe();
+
+            //if (gridLookUpEdit1View.DataRowCount > 0)
+            //{
+            //    MessageBox.Show("gridLookUpEdit1View.RowCount");
+            //}
+            List<EntityClientInfo> lstClientInfo = GetClientInfo();
+            gcClient.DataSource = lstClientInfo;
+            gcClient.RefreshDataSource();
+            lstClientSelect = new List<EntityClientInfo>();
+
+
         }
+
+        #region 客户列表
+        /// <summary>
+        /// 客户列表
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityClientInfo> GetClientInfo(List<EntityParm> parms = null)
+        {
+            List<EntityClientInfo> data = null;
+            List<EntityReportRecorde> lstReportRecord = null;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            string Sql = string.Empty;
+            Sql = @"select  a.id,
+                            a.gradeId,
+                            b.gradeName,
+                            a.clientNo,
+                            a.clientName,
+                            a.gender,
+                            a.birthday,
+                            a.mobile,
+                            a.telephone,
+                            a.email,
+                            a.qq,
+                            a.cardNo,
+                            a.company,
+                            a.regionId,
+                            a.address,
+                            a.booldType,
+                            a.profession,
+                            a.marriage,
+                            a.ehtnicGroup,
+                            a.eduationLevel,
+                            a.clientTag,
+                            a.contactName,
+                            a.contactNameMobile,
+                            a.clientRemarks,
+                            a.dataSource,
+                            a.upTag,
+                            a.serverDate,
+                            a.bakfileld1,
+                            a.bakfileld2,
+                            a.createDate,
+                            a.creatorId,
+                            a.createName,
+                            a.modifyDate,
+                            a.modifyId,
+                            a.modifyName
+                      from clientInfo a 
+                        left join userGrade b
+                            on a.gradeId = b.id where a.clientNo in(180928250101,
+180928250101,
+180516150063,
+180403150054,
+180421650002,
+180813650054,
+180515150606,
+180612150105,
+180711150012,
+180628150036,
+180709100032,
+180410150145,
+180306150176,
+180526150015,
+180823600104,
+180312150163,
+180123150087
+
+)";
+
+            DataTable dt = svc.GetDataTable(Sql);
+
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                data = new List<EntityClientInfo>();
+                EntityClientInfo vo = null;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    vo = new EntityClientInfo();
+                    vo.id = dr["id"].ToString();
+                    vo.gradeId = dr["gradeId"].ToString();
+                    vo.gradeName = dr["gradeName"].ToString();
+                    vo.clientNo = dr["clientNo"].ToString();
+                    vo.clientName = dr["clientName"].ToString();
+                    vo.age = Function.CalcAge(Function.Datetime(dr["birthday"]));
+                    vo.gender = Function.Int(dr["gender"]);
+                    vo.birthday = Function.Datetime(dr["birthday"]);
+                    vo.mobile = dr["mobile"].ToString();
+                    vo.telephone = dr["telephone"].ToString();
+                    vo.email = dr["email"].ToString();
+                    vo.qq = dr["qq"].ToString();
+                    vo.company = dr["company"].ToString();
+                    vo.regionId = dr["regionId"].ToString();
+                    vo.address = dr["address"].ToString();
+                    vo.booldType = Function.Int(dr["booldType"]);
+                    vo.profession = Function.Int(dr["profession"]);
+                    vo.marriage = Function.Int(dr["marriage"]);
+                    vo.ehtnicGroup = Function.Int(dr["ehtnicGroup"]);
+                    vo.eduationLevel = Function.Int(dr["eduationLevel"]);
+                    vo.clientTag = dr["clientTag"].ToString();
+                    vo.contactName = dr["contactName"].ToString();
+                    vo.contactNameMobile = dr["contactNameMobile"].ToString();
+                    vo.clientRemarks = dr["clientRemarks"].ToString();
+                    vo.dataSource = dr["dataSource"].ToString();
+                    vo.upTag = dr["upTag"].ToString();
+                    vo.serverDate = Function.Datetime(dr["serverDate"]);
+                    vo.bakfileld1 = dr["bakfileld1"].ToString();
+                    vo.bakfileld2 = dr["bakfileld2"].ToString();
+                    vo.createDate = Function.Datetime(dr["createDate"]);
+                    vo.creatorId = dr["creatorId"].ToString();
+                    vo.createName = dr["createName"].ToString();
+                    vo.modifyDate = Function.Datetime(dr["modifyDate"]);
+                    vo.modifyId = dr["modifyId"].ToString();
+                    vo.modifyName = dr["modifyName"].ToString();
+
+                    data.Add(vo);
+                }
+            }
+            return data;
+        }
+        #endregion
 
         public List<EntityDisplayDicCaiRecipe> GetDicCaiRecipe()
         {
@@ -978,10 +1107,84 @@ namespace peDataSys
             {
                 List<DacParm> lstParm = new List<DacParm>();
                 int affectRows = -1;
-                string Sql = @"select * from client_info";
+                string Sql = @"select * from client_info where id in ('00f36fe0880945989ad4433fae2a9041',
+'08a074e5b1f04858b5d6546f0671add7',
+'0b51637cbff04eb0a134e173552b7607',
+'130220c56d4146ee85d75d695e751de4',
+'1d39ef79907d45c9ada09d8272595cae',
+'23998962c6ea4785a25da2a16fabd6ba',
+'2bad7b3e32f84890969b292900f15c05',
+'30da13fc3f3e476786b615e4e83fb16e',
+'3681275eab3d42c98fdbcc6323708370',
+'3b74c277e75f42a2b2d52b417594e7e1',
+'42ceaff67fd848a3bd2ae4b2dc4e2a72',
+'4668b8430e4d48339a5379f8043edfc3',
+'49d24e89680148b995e23015abf89bd8',
+'5cbead8267d34730a64887006036195d',
+'6603220f6cdd464283ac6e7adaece453',
+'73073186bb034b93b4e48f878b874161',
+'83ed1e74f2ed4d4faf62452b21b1fd7f',
+'85d4e580b5b7454081bf8c4ef13308fe',
+'957a6714c0af4c85b35993c1640d80c4',
+'9a49b34697664c51b60a7f7f600195dc',
+'9b29a3ef40a24438b4ae9ac8a5076410',
+'ac0ae7b0ed8245dc827a9e3fea5ff96e',
+'ad57e4a0d74f4f9bafc7cdbb45471706',
+'af6b9be8e4a244d295181768da2c6732',
+'b15950e07bdd4c3c97ba9e59f7024eeb',
+'b9b3671751ba485a91757a9d84b90dee',
+'c09bb70b90ad481baff2302ab4a74e72',
+'cc382767fb6041819b6f0f64cbfd92e0',
+'ccc9287126db4e858b59bd97a5b3c281',
+'dded91191df349d9a22c4877e9b2152f',
+'deaa3b3c47f74ad89894532a0e3ff55c',
+'df4e2122e017498f9caab6cc0a098c8b',
+'dfb161d7ac4d42da872b57b21a46b60d',
+'e24a4b4f3b844d798837ee2429238ace',
+'ea85655e95874e52a30bb328807b7a6d',
+'f0977ebf7096402ea9a5baa74e7d5294',
+'fb397b5d21d947fabfa56a3e3be8a56a',
+'fdbb7a6a88294ef5b8d52fa102afdb71')";
 
                 DataTable dt = svcOra.GetDataTable(Sql);
-                Sql = @"delete from clientInfo";
+                Sql = @"delete from clientInfo where id in ('00f36fe0880945989ad4433fae2a9041',
+'08a074e5b1f04858b5d6546f0671add7',
+'0b51637cbff04eb0a134e173552b7607',
+'130220c56d4146ee85d75d695e751de4',
+'1d39ef79907d45c9ada09d8272595cae',
+'23998962c6ea4785a25da2a16fabd6ba',
+'2bad7b3e32f84890969b292900f15c05',
+'30da13fc3f3e476786b615e4e83fb16e',
+'3681275eab3d42c98fdbcc6323708370',
+'3b74c277e75f42a2b2d52b417594e7e1',
+'42ceaff67fd848a3bd2ae4b2dc4e2a72',
+'4668b8430e4d48339a5379f8043edfc3',
+'49d24e89680148b995e23015abf89bd8',
+'5cbead8267d34730a64887006036195d',
+'6603220f6cdd464283ac6e7adaece453',
+'73073186bb034b93b4e48f878b874161',
+'83ed1e74f2ed4d4faf62452b21b1fd7f',
+'85d4e580b5b7454081bf8c4ef13308fe',
+'957a6714c0af4c85b35993c1640d80c4',
+'9a49b34697664c51b60a7f7f600195dc',
+'9b29a3ef40a24438b4ae9ac8a5076410',
+'ac0ae7b0ed8245dc827a9e3fea5ff96e',
+'ad57e4a0d74f4f9bafc7cdbb45471706',
+'af6b9be8e4a244d295181768da2c6732',
+'b15950e07bdd4c3c97ba9e59f7024eeb',
+'b9b3671751ba485a91757a9d84b90dee',
+'c09bb70b90ad481baff2302ab4a74e72',
+'cc382767fb6041819b6f0f64cbfd92e0',
+'ccc9287126db4e858b59bd97a5b3c281',
+'dded91191df349d9a22c4877e9b2152f',
+'deaa3b3c47f74ad89894532a0e3ff55c',
+'df4e2122e017498f9caab6cc0a098c8b',
+'dfb161d7ac4d42da872b57b21a46b60d',
+'e24a4b4f3b844d798837ee2429238ace',
+'ea85655e95874e52a30bb328807b7a6d',
+'f0977ebf7096402ea9a5baa74e7d5294',
+'fb397b5d21d947fabfa56a3e3be8a56a',
+'fdbb7a6a88294ef5b8d52fa102afdb71')";
                 svc.ExecSql(Sql);
                 if (dt != null && dt.Rows.Count > 0)
                 {
@@ -1039,6 +1242,41 @@ namespace peDataSys
             finally
             {
                 svc = null;
+            }
+        }
+
+
+        EntityClientInfo GetRowObject()
+        {
+            if (this.gvClient.FocusedRowHandle < 0) return null;
+            return this.gvClient.GetRow(this.gvClient.FocusedRowHandle) as EntityClientInfo;
+        }
+
+        private void gvClient_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            if (e.RowHandle >= 0)
+            {
+                EntityClientInfo clientInfo = GetRowObject();
+                if (gvClient.IsRowSelected(e.RowHandle))
+                {
+                    gvClient.UnselectRow(e.RowHandle);
+                    //this.imageListBoxControl.Items.Remove(clientInfo);
+                    lstClientSelect.Add(clientInfo);
+                    this.gridControl1.DataSource = lstClientSelect;
+                    gridControl1.RefreshDataSource();
+
+                }
+                else
+                {
+                    gvClient.SelectRow(e.RowHandle);
+                    if (clientInfo != null)
+                    {
+                        //this.imageListBoxControl.Items.Add(clientInfo);
+                        lstClientSelect.Remove(clientInfo);
+                        this.gridControl1.DataSource = lstClientSelect;
+                        gridControl1.RefreshDataSource();
+                    }
+                }
             }
         }
     }

@@ -41,10 +41,10 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemMemoEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
-            this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemMemoEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
+            this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pcBackGround)).BeginInit();
             this.pcBackGround.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl.Properties)).BeginInit();
@@ -126,6 +126,7 @@
             this.gridView.OptionsView.ShowViewCaption = true;
             this.gridView.RowHeight = 27;
             this.gridView.ViewCaption = "待执行计划记录";
+            this.gridView.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.gridView_CustomDrawRowIndicator);
             // 
             // gridColumn1
             // 
@@ -155,7 +156,7 @@
             this.itemName.AppearanceHeader.Options.UseTextOptions = true;
             this.itemName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.itemName.Caption = "姓名";
-            this.itemName.FieldName = "patName";
+            this.itemName.FieldName = "clientName";
             this.itemName.Name = "itemName";
             this.itemName.OptionsColumn.AllowEdit = false;
             this.itemName.OptionsColumn.AllowFocus = false;
@@ -174,7 +175,7 @@
             this.sex.AppearanceHeader.Options.UseTextOptions = true;
             this.sex.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.sex.Caption = "性别";
-            this.sex.FieldName = "sexCH";
+            this.sex.FieldName = "sex";
             this.sex.Name = "sex";
             this.sex.OptionsColumn.AllowEdit = false;
             this.sex.OptionsColumn.AllowFocus = false;
@@ -214,7 +215,7 @@
             this.refRange.AppearanceHeader.Options.UseTextOptions = true;
             this.refRange.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.refRange.Caption = "人员类别";
-            this.refRange.FieldName = "patClass";
+            this.refRange.FieldName = "gradeName";
             this.refRange.Name = "refRange";
             this.refRange.OptionsColumn.AllowEdit = false;
             this.refRange.OptionsColumn.AllowFocus = false;
@@ -232,7 +233,7 @@
             this.isCompareName.AppearanceHeader.Options.UseTextOptions = true;
             this.isCompareName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.isCompareName.Caption = "工作单位";
-            this.isCompareName.FieldName = "manageBeginDate";
+            this.isCompareName.FieldName = "company";
             this.isCompareName.Name = "isCompareName";
             this.isCompareName.OptionsColumn.AllowEdit = false;
             this.isCompareName.OptionsColumn.AllowFocus = false;
@@ -252,7 +253,7 @@
             this.isMainName.AppearanceHeader.Options.UseTextOptions = true;
             this.isMainName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.isMainName.Caption = "手机号码";
-            this.isMainName.FieldName = "manageLevel";
+            this.isMainName.FieldName = "mobile";
             this.isMainName.Name = "isMainName";
             this.isMainName.OptionsColumn.AllowEdit = false;
             this.isMainName.OptionsColumn.AllowFocus = false;
@@ -272,7 +273,7 @@
             this.gridColumn2.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn2.Caption = "干预形式";
-            this.gridColumn2.FieldName = "sfTimes";
+            this.gridColumn2.FieldName = "planWay";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.OptionsColumn.AllowFocus = false;
@@ -290,7 +291,7 @@
             this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn3.Caption = "主要内容";
-            this.gridColumn3.FieldName = "evaTimes";
+            this.gridColumn3.FieldName = "planContent";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.OptionsColumn.AllowFocus = false;
@@ -308,7 +309,7 @@
             this.gridColumn4.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn4.Caption = "干预提示";
-            this.gridColumn4.FieldName = "sfNextDate";
+            this.gridColumn4.FieldName = "planRemind";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowEdit = false;
             this.gridColumn4.OptionsColumn.AllowFocus = false;
@@ -328,7 +329,7 @@
             this.gridColumn5.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn5.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn5.Caption = "创建人";
-            this.gridColumn5.FieldName = "planTimes";
+            this.gridColumn5.FieldName = "createName";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowEdit = false;
             this.gridColumn5.OptionsColumn.AllowFocus = false;
@@ -339,17 +340,6 @@
             this.gridColumn5.VisibleIndex = 10;
             this.gridColumn5.Width = 72;
             // 
-            // repositoryItemMemoEdit1
-            // 
-            this.repositoryItemMemoEdit1.Name = "repositoryItemMemoEdit1";
-            // 
-            // repositoryItemCheckEdit1
-            // 
-            this.repositoryItemCheckEdit1.AutoHeight = false;
-            this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
-            this.repositoryItemCheckEdit1.ValueChecked = 1;
-            this.repositoryItemCheckEdit1.ValueUnchecked = 0;
-            // 
             // gridColumn6
             // 
             this.gridColumn6.AppearanceCell.Options.UseTextOptions = true;
@@ -357,6 +347,7 @@
             this.gridColumn6.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn6.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn6.Caption = "计划日期";
+            this.gridColumn6.FieldName = "planDate";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowEdit = false;
             this.gridColumn6.OptionsColumn.AllowFocus = false;
@@ -374,6 +365,7 @@
             this.gridColumn7.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn7.Caption = "执行计划";
+            this.gridColumn7.FieldName = "executeTime";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowEdit = false;
             this.gridColumn7.OptionsColumn.AllowFocus = false;
@@ -383,6 +375,17 @@
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 12;
             this.gridColumn7.Width = 73;
+            // 
+            // repositoryItemMemoEdit1
+            // 
+            this.repositoryItemMemoEdit1.Name = "repositoryItemMemoEdit1";
+            // 
+            // repositoryItemCheckEdit1
+            // 
+            this.repositoryItemCheckEdit1.AutoHeight = false;
+            this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
+            this.repositoryItemCheckEdit1.ValueChecked = 1;
+            this.repositoryItemCheckEdit1.ValueUnchecked = 0;
             // 
             // frm20402
             // 

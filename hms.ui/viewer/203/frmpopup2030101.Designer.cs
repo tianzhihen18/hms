@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPopup2030101));
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.bar4 = new DevExpress.XtraBars.Bar();
-            this.barManager = new DevExpress.XtraBars.BarManager();
+            this.barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.blbiPrint = new DevExpress.XtraBars.BarLargeButtonItem();
             this.blbiClose = new DevExpress.XtraBars.BarLargeButtonItem();
@@ -209,6 +210,7 @@
             this.Controls.Add(this.barDockControlTop);
             this.Name = "frmPopup2030101";
             this.Text = "个人健康管理报告";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmpopup2030101_Load);
             this.Controls.SetChildIndex(this.barDockControlTop, 0);
             this.Controls.SetChildIndex(this.barDockControlBottom, 0);

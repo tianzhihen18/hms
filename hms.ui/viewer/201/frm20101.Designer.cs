@@ -96,6 +96,7 @@
             this.repositoryItemCheckEdit1});
             this.gridControl.Size = new System.Drawing.Size(1052, 483);
             this.gridControl.TabIndex = 15;
+            this.gridControl.UseEmbeddedNavigator = true;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView});
             // 

@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPopup2040101));
-            this.txtContent = new DevExpress.XtraEditors.MemoEdit();
-            this.cboTopic = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.cboGyxs = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.txtTips = new DevExpress.XtraEditors.MemoEdit();
+            this.cboContent = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cboWays = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.dtePlanDate = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pcBackGround)).BeginInit();
             this.pcBackGround.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtContent.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboTopic.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboGyxs.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTips.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboContent.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboWays.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtePlanDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtePlanDate.Properties)).BeginInit();
             this.SuspendLayout();
@@ -51,10 +51,10 @@
             // pcBackGround
             // 
             this.pcBackGround.Controls.Add(this.dtePlanDate);
-            this.pcBackGround.Controls.Add(this.simpleButton1);
-            this.pcBackGround.Controls.Add(this.txtContent);
-            this.pcBackGround.Controls.Add(this.cboTopic);
-            this.pcBackGround.Controls.Add(this.cboGyxs);
+            this.pcBackGround.Controls.Add(this.btnSave);
+            this.pcBackGround.Controls.Add(this.txtTips);
+            this.pcBackGround.Controls.Add(this.cboContent);
+            this.pcBackGround.Controls.Add(this.cboWays);
             this.pcBackGround.Controls.Add(this.labelControl3);
             this.pcBackGround.Controls.Add(this.labelControl2);
             this.pcBackGround.Controls.Add(this.labelControl1);
@@ -69,30 +69,30 @@
             // 
             this.marqueeProgressBarControl.Properties.Appearance.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // txtContent
+            // txtTips
             // 
-            this.txtContent.Location = new System.Drawing.Point(72, 76);
-            this.txtContent.Name = "txtContent";
-            this.txtContent.Size = new System.Drawing.Size(292, 192);
-            this.txtContent.TabIndex = 48;
+            this.txtTips.Location = new System.Drawing.Point(72, 76);
+            this.txtTips.Name = "txtTips";
+            this.txtTips.Size = new System.Drawing.Size(292, 192);
+            this.txtTips.TabIndex = 48;
             // 
-            // cboTopic
+            // cboContent
             // 
-            this.cboTopic.EnterMoveNextControl = true;
-            this.cboTopic.Location = new System.Drawing.Point(72, 42);
-            this.cboTopic.Name = "cboTopic";
-            this.cboTopic.Properties.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboTopic.Properties.Appearance.Options.UseFont = true;
-            this.cboTopic.Properties.AppearanceDisabled.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboTopic.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cboTopic.Properties.AppearanceDropDown.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboTopic.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cboTopic.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboTopic.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cboTopic.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cboContent.EnterMoveNextControl = true;
+            this.cboContent.Location = new System.Drawing.Point(72, 42);
+            this.cboContent.Name = "cboContent";
+            this.cboContent.Properties.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboContent.Properties.Appearance.Options.UseFont = true;
+            this.cboContent.Properties.AppearanceDisabled.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboContent.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cboContent.Properties.AppearanceDropDown.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboContent.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.cboContent.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboContent.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cboContent.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboTopic.Properties.DropDownItemHeight = 23;
-            this.cboTopic.Properties.Items.AddRange(new object[] {
+            this.cboContent.Properties.DropDownItemHeight = 23;
+            this.cboContent.Properties.Items.AddRange(new object[] {
             "未指定",
             "收集资料",
             "定期随访",
@@ -102,27 +102,27 @@
             "跑腿服务",
             "定期随访(高血压)",
             "定期随访(糖尿病)"});
-            this.cboTopic.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cboTopic.Size = new System.Drawing.Size(292, 18);
-            this.cboTopic.TabIndex = 47;
+            this.cboContent.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cboContent.Size = new System.Drawing.Size(292, 18);
+            this.cboContent.TabIndex = 47;
             // 
-            // cboGyxs
+            // cboWays
             // 
-            this.cboGyxs.EnterMoveNextControl = true;
-            this.cboGyxs.Location = new System.Drawing.Point(256, 10);
-            this.cboGyxs.Name = "cboGyxs";
-            this.cboGyxs.Properties.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboGyxs.Properties.Appearance.Options.UseFont = true;
-            this.cboGyxs.Properties.AppearanceDisabled.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboGyxs.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cboGyxs.Properties.AppearanceDropDown.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboGyxs.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cboGyxs.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboGyxs.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cboGyxs.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cboWays.EnterMoveNextControl = true;
+            this.cboWays.Location = new System.Drawing.Point(256, 10);
+            this.cboWays.Name = "cboWays";
+            this.cboWays.Properties.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboWays.Properties.Appearance.Options.UseFont = true;
+            this.cboWays.Properties.AppearanceDisabled.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboWays.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cboWays.Properties.AppearanceDropDown.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboWays.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.cboWays.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboWays.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cboWays.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboGyxs.Properties.DropDownItemHeight = 23;
-            this.cboGyxs.Properties.Items.AddRange(new object[] {
+            this.cboWays.Properties.DropDownItemHeight = 23;
+            this.cboWays.Properties.Items.AddRange(new object[] {
             "未指定",
             "不限",
             "上门",
@@ -134,9 +134,9 @@
             "来电",
             "来访",
             "其他"});
-            this.cboGyxs.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cboGyxs.Size = new System.Drawing.Size(108, 18);
-            this.cboGyxs.TabIndex = 46;
+            this.cboWays.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cboWays.Size = new System.Drawing.Size(108, 18);
+            this.cboWays.TabIndex = 46;
             // 
             // labelControl3
             // 
@@ -178,17 +178,18 @@
             this.labelControl6.TabIndex = 40;
             this.labelControl6.Text = "计划日期：";
             // 
-            // simpleButton1
+            // btnSave
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(150, 276);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(108, 25);
-            this.simpleButton1.TabIndex = 49;
-            this.simpleButton1.Text = "  保存";
+            this.btnSave.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Appearance.Options.UseFont = true;
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnSave.Location = new System.Drawing.Point(150, 276);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(108, 25);
+            this.btnSave.TabIndex = 49;
+            this.btnSave.Text = "  保存";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // dtePlanDate
             // 
@@ -217,13 +218,14 @@
             this.MinimizeBox = false;
             this.Name = "frmPopup2040101";
             this.Text = "创建计划";
+            this.Load += new System.EventHandler(this.frmPopup2040101_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcBackGround)).EndInit();
             this.pcBackGround.ResumeLayout(false);
             this.pcBackGround.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtContent.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboTopic.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboGyxs.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTips.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboContent.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboWays.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtePlanDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtePlanDate.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -232,10 +234,10 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.MemoEdit txtContent;
-        private DevExpress.XtraEditors.ComboBoxEdit cboTopic;
-        private DevExpress.XtraEditors.ComboBoxEdit cboGyxs;
+        private DevExpress.XtraEditors.SimpleButton btnSave;
+        private DevExpress.XtraEditors.MemoEdit txtTips;
+        private DevExpress.XtraEditors.ComboBoxEdit cboContent;
+        private DevExpress.XtraEditors.ComboBoxEdit cboWays;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;

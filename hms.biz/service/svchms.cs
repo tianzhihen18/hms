@@ -63,7 +63,67 @@ namespace Hms.Svc
         #endregion
 
         #region 204 健康干预
+        /// <summary>
+        /// 列表
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityPromotionTemplate> GetPromotionTemplates(List<EntityParm> parms = null)
+        {
+            using (Biz204 biz = new Biz204())
+            {
+                return biz.GetPromotionTemplates(parms);
+            }
+        }
 
+        /// <summary>
+        /// 列表
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityPromotionTemplateConfig> GetPromotionTemplateConfigs(List<EntityParm> parms = null)
+        {
+            using (Biz204 biz = new Biz204())
+            {
+                return biz.GetPromotionTemplateConfigs(parms);
+            }
+        }
+
+        /// <summary>
+        /// 干预内容 
+        /// </summary>
+        /// <returns></returns>
+        public List<EntityPromotionContentConfig> GetPromotionContentConfigs()
+        {
+            using (Biz204 biz = new Biz204())
+            {
+                return biz.GetPromotionContentConfigs();
+            }
+        }
+
+        /// <summary>
+        /// 干预形式
+        /// </summary>
+        /// <returns></returns>
+        public List<EntityPromotionWayConfig> GetPromotionWayConfigs()
+        {
+            using (Biz204 biz = new Biz204())
+            {
+                return biz.GetPromotionWayConfigs();
+            }
+        }
+
+        /// <summary>
+        /// 待执行计划
+        /// </summary>
+        /// <returns></returns>
+        public List<EntityDisplayPromotionPlan> GetPromotionPlans()
+        {
+            using (Biz204 biz = new Biz204())
+            {
+                return biz.GetPromotionPlans();
+            }
+        }
         #endregion
 
         #region 205 慢病管理

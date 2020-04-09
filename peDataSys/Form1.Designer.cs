@@ -44,14 +44,46 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.gcClient = new DevExpress.XtraGrid.GridControl();
+            this.gvClient = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemButtonEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.splitterControl1 = new DevExpress.XtraEditors.SplitterControl();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.cardView1 = new DevExpress.XtraGrid.Views.Card.CardView();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
+            this.xtraTabControl1.SuspendLayout();
+            this.xtraTabPage1.SuspendLayout();
+            this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gcClient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvClient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardView1)).BeginInit();
             this.SuspendLayout();
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(12, 12);
+            this.simpleButton1.Location = new System.Drawing.Point(45, 23);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(166, 23);
             this.simpleButton1.TabIndex = 0;
@@ -60,7 +92,7 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(257, 12);
+            this.simpleButton2.Location = new System.Drawing.Point(233, 23);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(166, 23);
             this.simpleButton2.TabIndex = 1;
@@ -69,7 +101,7 @@
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(463, 12);
+            this.simpleButton3.Location = new System.Drawing.Point(448, 23);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(166, 23);
             this.simpleButton3.TabIndex = 2;
@@ -78,7 +110,7 @@
             // 
             // simpleButton4
             // 
-            this.simpleButton4.Location = new System.Drawing.Point(12, 60);
+            this.simpleButton4.Location = new System.Drawing.Point(45, 71);
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Size = new System.Drawing.Size(166, 23);
             this.simpleButton4.TabIndex = 3;
@@ -87,7 +119,7 @@
             // 
             // simpleButton5
             // 
-            this.simpleButton5.Location = new System.Drawing.Point(257, 60);
+            this.simpleButton5.Location = new System.Drawing.Point(233, 71);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(166, 23);
             this.simpleButton5.TabIndex = 4;
@@ -96,7 +128,7 @@
             // 
             // simpleButton6
             // 
-            this.simpleButton6.Location = new System.Drawing.Point(463, 60);
+            this.simpleButton6.Location = new System.Drawing.Point(448, 71);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.Size = new System.Drawing.Size(166, 23);
             this.simpleButton6.TabIndex = 5;
@@ -105,7 +137,7 @@
             // 
             // simpleButton7
             // 
-            this.simpleButton7.Location = new System.Drawing.Point(12, 121);
+            this.simpleButton7.Location = new System.Drawing.Point(45, 132);
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Size = new System.Drawing.Size(166, 23);
             this.simpleButton7.TabIndex = 6;
@@ -114,14 +146,14 @@
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(143, 215);
+            this.textEdit1.Location = new System.Drawing.Point(233, 185);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Size = new System.Drawing.Size(226, 20);
             this.textEdit1.TabIndex = 7;
             // 
             // simpleButton8
             // 
-            this.simpleButton8.Location = new System.Drawing.Point(257, 121);
+            this.simpleButton8.Location = new System.Drawing.Point(233, 132);
             this.simpleButton8.Name = "simpleButton8";
             this.simpleButton8.Size = new System.Drawing.Size(166, 23);
             this.simpleButton8.TabIndex = 8;
@@ -131,7 +163,7 @@
             // gridLookUpEdit
             // 
             this.gridLookUpEdit.EditValue = "";
-            this.gridLookUpEdit.Location = new System.Drawing.Point(143, 215);
+            this.gridLookUpEdit.Location = new System.Drawing.Point(233, 185);
             this.gridLookUpEdit.Name = "gridLookUpEdit";
             this.gridLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -180,7 +212,7 @@
             // 
             // simpleButton9
             // 
-            this.simpleButton9.Location = new System.Drawing.Point(463, 121);
+            this.simpleButton9.Location = new System.Drawing.Point(448, 132);
             this.simpleButton9.Name = "simpleButton9";
             this.simpleButton9.Size = new System.Drawing.Size(166, 23);
             this.simpleButton9.TabIndex = 10;
@@ -189,36 +221,286 @@
             // 
             // simpleButton10
             // 
-            this.simpleButton10.Location = new System.Drawing.Point(12, 171);
+            this.simpleButton10.Location = new System.Drawing.Point(45, 182);
             this.simpleButton10.Name = "simpleButton10";
             this.simpleButton10.Size = new System.Drawing.Size(166, 23);
             this.simpleButton10.TabIndex = 11;
             this.simpleButton10.Text = "同步我的客户";
             this.simpleButton10.Click += new System.EventHandler(this.simpleButton10_Click);
             // 
+            // xtraTabControl1
+            // 
+            this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraTabControl1.Location = new System.Drawing.Point(0, 0);
+            this.xtraTabControl1.Name = "xtraTabControl1";
+            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
+            this.xtraTabControl1.Size = new System.Drawing.Size(992, 549);
+            this.xtraTabControl1.TabIndex = 12;
+            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage1,
+            this.xtraTabPage2});
+            // 
+            // xtraTabPage1
+            // 
+            this.xtraTabPage1.Controls.Add(this.simpleButton1);
+            this.xtraTabPage1.Controls.Add(this.gridLookUpEdit);
+            this.xtraTabPage1.Controls.Add(this.textEdit1);
+            this.xtraTabPage1.Controls.Add(this.simpleButton9);
+            this.xtraTabPage1.Controls.Add(this.simpleButton10);
+            this.xtraTabPage1.Controls.Add(this.simpleButton6);
+            this.xtraTabPage1.Controls.Add(this.simpleButton8);
+            this.xtraTabPage1.Controls.Add(this.simpleButton3);
+            this.xtraTabPage1.Controls.Add(this.simpleButton4);
+            this.xtraTabPage1.Controls.Add(this.simpleButton7);
+            this.xtraTabPage1.Controls.Add(this.simpleButton2);
+            this.xtraTabPage1.Controls.Add(this.simpleButton5);
+            this.xtraTabPage1.Name = "xtraTabPage1";
+            this.xtraTabPage1.Size = new System.Drawing.Size(986, 520);
+            this.xtraTabPage1.Text = "xtraTabPage1";
+            // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Controls.Add(this.panelControl2);
+            this.xtraTabPage2.Controls.Add(this.splitterControl1);
+            this.xtraTabPage2.Controls.Add(this.panelControl1);
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(986, 520);
+            this.xtraTabPage2.Text = "xtraTabPage2";
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Controls.Add(this.gcClient);
+            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl2.Location = new System.Drawing.Point(268, 0);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(718, 520);
+            this.panelControl2.TabIndex = 2;
+            // 
+            // gcClient
+            // 
+            this.gcClient.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcClient.Location = new System.Drawing.Point(2, 2);
+            this.gcClient.MainView = this.gvClient;
+            this.gcClient.Name = "gcClient";
+            this.gcClient.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemButtonEdit2,
+            this.repositoryItemComboBox2});
+            this.gcClient.Size = new System.Drawing.Size(714, 516);
+            this.gcClient.TabIndex = 8;
+            this.gcClient.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvClient});
+            // 
+            // gvClient
+            // 
+            this.gvClient.Appearance.FocusedRow.BackColor = System.Drawing.Color.Transparent;
+            this.gvClient.Appearance.FocusedRow.ForeColor = System.Drawing.Color.Transparent;
+            this.gvClient.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.gvClient.Appearance.FocusedRow.Options.UseForeColor = true;
+            this.gvClient.Appearance.HeaderPanel.Font = new System.Drawing.Font("宋体", 9F);
+            this.gvClient.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gvClient.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gvClient.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gvClient.Appearance.Row.Font = new System.Drawing.Font("宋体", 9F);
+            this.gvClient.Appearance.Row.Options.UseFont = true;
+            this.gvClient.ColumnPanelRowHeight = 23;
+            this.gvClient.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn4,
+            this.gridColumn5,
+            this.gridColumn6,
+            this.gridColumn7,
+            this.gridColumn13});
+            this.gvClient.GridControl = this.gcClient;
+            this.gvClient.Name = "gvClient";
+            this.gvClient.OptionsDetail.EnableMasterViewMode = false;
+            this.gvClient.OptionsSelection.MultiSelect = true;
+            this.gvClient.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.gvClient.OptionsView.ShowGroupPanel = false;
+            this.gvClient.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gvClient_RowClick);
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn4.Caption = "姓名";
+            this.gridColumn4.FieldName = "clientName";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.OptionsColumn.AllowEdit = false;
+            this.gridColumn4.OptionsColumn.AllowFocus = false;
+            this.gridColumn4.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
+            this.gridColumn4.OptionsFilter.AllowAutoFilter = false;
+            this.gridColumn4.OptionsFilter.AllowFilter = false;
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 1;
+            this.gridColumn4.Width = 106;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn5.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn5.Caption = "性别";
+            this.gridColumn5.FieldName = "sex";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.OptionsColumn.AllowEdit = false;
+            this.gridColumn5.OptionsColumn.AllowFocus = false;
+            this.gridColumn5.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
+            this.gridColumn5.OptionsFilter.AllowAutoFilter = false;
+            this.gridColumn5.OptionsFilter.AllowFilter = false;
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 2;
+            this.gridColumn5.Width = 71;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn6.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn6.Caption = "年龄";
+            this.gridColumn6.FieldName = "age";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.OptionsColumn.AllowEdit = false;
+            this.gridColumn6.OptionsColumn.AllowFocus = false;
+            this.gridColumn6.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
+            this.gridColumn6.OptionsFilter.AllowAutoFilter = false;
+            this.gridColumn6.OptionsFilter.AllowFilter = false;
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 3;
+            this.gridColumn6.Width = 85;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn7.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn7.Caption = "人员类别";
+            this.gridColumn7.FieldName = "gradeName";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.OptionsColumn.AllowEdit = false;
+            this.gridColumn7.OptionsColumn.AllowFocus = false;
+            this.gridColumn7.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
+            this.gridColumn7.OptionsFilter.AllowAutoFilter = false;
+            this.gridColumn7.OptionsFilter.AllowFilter = false;
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 4;
+            this.gridColumn7.Width = 108;
+            // 
+            // gridColumn13
+            // 
+            this.gridColumn13.Caption = "工作单位";
+            this.gridColumn13.FieldName = "company";
+            this.gridColumn13.Name = "gridColumn13";
+            this.gridColumn13.OptionsColumn.AllowEdit = false;
+            this.gridColumn13.OptionsColumn.AllowFocus = false;
+            this.gridColumn13.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
+            this.gridColumn13.OptionsFilter.AllowAutoFilter = false;
+            this.gridColumn13.OptionsFilter.AllowFilter = false;
+            this.gridColumn13.Visible = true;
+            this.gridColumn13.VisibleIndex = 5;
+            this.gridColumn13.Width = 563;
+            // 
+            // repositoryItemButtonEdit2
+            // 
+            this.repositoryItemButtonEdit2.AutoHeight = false;
+            this.repositoryItemButtonEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.repositoryItemButtonEdit2.Name = "repositoryItemButtonEdit2";
+            this.repositoryItemButtonEdit2.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            // 
+            // repositoryItemComboBox2
+            // 
+            this.repositoryItemComboBox2.AutoHeight = false;
+            this.repositoryItemComboBox2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox2.DropDownItemHeight = 23;
+            this.repositoryItemComboBox2.Items.AddRange(new object[] {
+            "﹥",
+            "≥",
+            "＝",
+            "﹤",
+            "≤"});
+            this.repositoryItemComboBox2.Name = "repositoryItemComboBox2";
+            this.repositoryItemComboBox2.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            // 
+            // splitterControl1
+            // 
+            this.splitterControl1.Location = new System.Drawing.Point(262, 0);
+            this.splitterControl1.Name = "splitterControl1";
+            this.splitterControl1.Size = new System.Drawing.Size(6, 520);
+            this.splitterControl1.TabIndex = 1;
+            this.splitterControl1.TabStop = false;
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.gridControl1);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelControl1.Location = new System.Drawing.Point(0, 0);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(262, 520);
+            this.panelControl1.TabIndex = 0;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(2, 2);
+            this.gridControl1.MainView = this.cardView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(258, 516);
+            this.gridControl1.TabIndex = 0;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.cardView1});
+            // 
+            // cardView1
+            // 
+            this.cardView1.CardInterval = 30;
+            this.cardView1.CardWidth = 80;
+            this.cardView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn8});
+            this.cardView1.FocusedCardTopFieldIndex = 0;
+            this.cardView1.GridControl = this.gridControl1;
+            this.cardView1.Name = "cardView1";
+            this.cardView1.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.AnimateAllContent;
+            this.cardView1.OptionsView.ShowCardCaption = false;
+            this.cardView1.OptionsView.ShowFieldCaptions = false;
+            this.cardView1.OptionsView.ShowQuickCustomizeButton = false;
+            this.cardView1.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Auto;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn8.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn8.Caption = "gridColumn8";
+            this.gridColumn8.FieldName = "clientName";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.OptionsColumn.AllowEdit = false;
+            this.gridColumn8.OptionsColumn.AllowFocus = false;
+            this.gridColumn8.OptionsFilter.AllowAutoFilter = false;
+            this.gridColumn8.OptionsFilter.AllowFilter = false;
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 299);
-            this.Controls.Add(this.simpleButton10);
-            this.Controls.Add(this.simpleButton9);
-            this.Controls.Add(this.simpleButton8);
-            this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.simpleButton7);
-            this.Controls.Add(this.simpleButton6);
-            this.Controls.Add(this.simpleButton5);
-            this.Controls.Add(this.simpleButton4);
-            this.Controls.Add(this.simpleButton3);
-            this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.gridLookUpEdit);
+            this.ClientSize = new System.Drawing.Size(992, 549);
+            this.Controls.Add(this.xtraTabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
+            this.xtraTabControl1.ResumeLayout(false);
+            this.xtraTabPage1.ResumeLayout(false);
+            this.xtraTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gcClient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvClient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -241,6 +523,24 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraEditors.SimpleButton simpleButton9;
         private DevExpress.XtraEditors.SimpleButton simpleButton10;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.SplitterControl splitterControl1;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraGrid.GridControl gcClient;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvClient;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox2;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Card.CardView cardView1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
     }
 }
 

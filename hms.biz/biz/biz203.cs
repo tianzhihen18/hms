@@ -45,7 +45,7 @@ namespace Hms.Biz
                             left join userGrade c
                             on b.gradeId = c.id
                             left join reportInfo d
-                            on a.reportId = d.id  ";
+                            on a.reportId = d.id  where b.id is not null";
 
             DataTable dt = svc.GetDataTable(Sql);
            

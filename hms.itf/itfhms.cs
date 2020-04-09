@@ -48,7 +48,43 @@ namespace Hms.Itf
         #endregion
 
         #region 204 健康干预
+        /// <summary>
+        /// 获取模板
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetPromotionTemplates")]
+        List<EntityPromotionTemplate> GetPromotionTemplates(List<EntityParm> parms = null);
+        /// <summary>
+        /// 获取模板配置
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetPromotionTemplateConfigs")]
+        List<EntityPromotionTemplateConfig> GetPromotionTemplateConfigs(List<EntityParm> parms = null);
 
+        /// <summary>
+        /// 干预形式
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetPromotionWayConfigs")]
+        List<EntityPromotionWayConfig> GetPromotionWayConfigs();
+
+        /// <summary>
+        /// 干预内容
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetPromotionContentConfigs")]
+        List<EntityPromotionContentConfig> GetPromotionContentConfigs();
+
+        /// <summary>
+        /// 待执行计划
+        /// </summary>
+        /// <returns></returns>
+        [OperationContract(Name = "GetPromotionPlans")]
+        List<EntityDisplayPromotionPlan> GetPromotionPlans();
         #endregion
 
         #region 205 慢病管理

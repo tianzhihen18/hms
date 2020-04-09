@@ -22,7 +22,7 @@ namespace Hms.Biz
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<EntityClientInfo> GetClientInfos(List<EntityParm> parms)
+        public List<EntityClientInfo> GetClientInfos(List<EntityParm> parms = null)
         {
             List<EntityClientInfo> data = null;
             List<EntityReportRecorde> lstReportRecord = null;

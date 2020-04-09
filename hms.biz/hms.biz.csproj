@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="biz\biz201.cs" />
     <Compile Include="biz\biz203.cs" />
+    <Compile Include="biz\biz204.cs" />
     <Compile Include="biz\biz205.cs" />
     <Compile Include="biz\biz206.cs" />
     <Compile Include="biz\biz208.cs" />

@@ -3792,7 +3792,7 @@
             xyDiagram2.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.Default;
             xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
             xyDiagram2.AxisY.VisualRange.Auto = false;
-            xyDiagram2.AxisY.VisualRange.MaxValueSerializable = "1";
+            xyDiagram2.AxisY.VisualRange.MaxValueSerializable = "9.7";
             xyDiagram2.AxisY.VisualRange.MinValueSerializable = "0";
             xyDiagram2.DefaultPane.EnableAxisXScrolling = DevExpress.Utils.DefaultBoolean.False;
             xyDiagram2.DefaultPane.EnableAxisXZooming = DevExpress.Utils.DefaultBoolean.False;

@@ -58,10 +58,15 @@
     <Compile Include="entitydiplaypeitem.cs" />
     <Compile Include="entitydisplayclientrpt.cs" />
     <Compile Include="entitydisplaydiccairecipe.cs" />
+    <Compile Include="entitydisplaypromotionplan.cs" />
     <Compile Include="entityevaluationresult.cs" />
     <Compile Include="entityhmssf.cs" />
     <Compile Include="entityevaluateparams.cs" />
     <Compile Include="entitymedicaladvicecs.cs" />
+    <Compile Include="entitypromotioncontentconfig.cs" />
+    <Compile Include="entitypromotiontemplate.cs" />
+    <Compile Include="entitypromotiontemplateconfig.cs" />
+    <Compile Include="entitypromotionwayconfig.cs" />
     <Compile Include="entityreportinfo.cs" />
     <Compile Include="entityreportrecorde.cs" />
     <Compile Include="entityreporttemplate.cs" />
