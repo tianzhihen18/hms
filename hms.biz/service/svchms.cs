@@ -124,6 +124,18 @@ namespace Hms.Svc
                 return biz.GetPromotionPlans();
             }
         }
+
+        /// <summary>
+        /// 干预记录
+        /// </summary>
+        /// <returns></returns>
+        public List<EntityDisplayPromotionPlan> GetPromotionPlanRecords()
+        {
+            using (Biz204 biz = new Biz204())
+            {
+                return biz.GetPromotionPlanRecords();
+            }
+        }
         #endregion
 
         #region 205 慢病管理

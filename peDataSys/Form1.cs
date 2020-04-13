@@ -11,6 +11,7 @@ using weCare.Core.Entity;
 using weCare.Core.Utils;
 using Hms.Entity;
 using Hms.Ui;
+using Oracle.DataAccess.Client;
 
 namespace peDataSys
 {
@@ -1278,6 +1279,48 @@ namespace peDataSys
                     }
                 }
             }
+        }
+
+        private void simpleButton11_Click(object sender, EventArgs e)
+        {
+            GetProcDataSet();
+        }
+
+
+        public void GetProcDataSet()
+        {
+
+            try
+            {
+                OracleParameter[] parms = {
+                                        new OracleParameter("v_noofinpat", OracleDbType.Int32),
+                                        new OracleParameter("o_result", OracleDbType.RefCursor),
+                                        new OracleParameter("o_result1", OracleDbType.RefCursor),
+                                        new OracleParameter("o_result2", OracleDbType.RefCursor),
+                                        new OracleParameter("o_result3", OracleDbType.RefCursor),
+
+                                     };
+
+                parms[0].Value = 45927349;
+                parms[1].Direction = ParameterDirection.Output;
+                parms[2].Direction = ParameterDirection.Output;
+                parms[3].Direction = ParameterDirection.Output; ;
+                parms[4].Direction = ParameterDirection.Output; ;
+
+                string connString = "User ID=emr;Password=emr;Data Source=TJGL;";
+                string sql = @"IEM_MAIN_PAGE_SX.usp_getieminfo_sx";
+
+                DataSet ds = OracleHelper.OracleHelper.ExecuteDataset(connString, sql, parms);
+                if (ds != null)
+                {
+                    MessageBox.Show("1111");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
         }
     }
 }

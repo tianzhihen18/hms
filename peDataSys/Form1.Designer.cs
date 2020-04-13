@@ -62,6 +62,8 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.cardView1 = new DevExpress.XtraGrid.Views.Card.CardView();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
@@ -79,6 +81,7 @@
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardView1)).BeginInit();
+            this.xtraTabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // simpleButton1
@@ -238,7 +241,8 @@
             this.xtraTabControl1.TabIndex = 12;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
-            this.xtraTabPage2});
+            this.xtraTabPage2,
+            this.xtraTabPage3});
             // 
             // xtraTabPage1
             // 
@@ -271,9 +275,9 @@
             // 
             this.panelControl2.Controls.Add(this.gcClient);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl2.Location = new System.Drawing.Point(268, 0);
+            this.panelControl2.Location = new System.Drawing.Point(267, 0);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(718, 520);
+            this.panelControl2.Size = new System.Drawing.Size(719, 520);
             this.panelControl2.TabIndex = 2;
             // 
             // gcClient
@@ -285,7 +289,7 @@
             this.gcClient.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit2,
             this.repositoryItemComboBox2});
-            this.gcClient.Size = new System.Drawing.Size(714, 516);
+            this.gcClient.Size = new System.Drawing.Size(715, 516);
             this.gcClient.TabIndex = 8;
             this.gcClient.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvClient});
@@ -422,7 +426,7 @@
             // 
             this.splitterControl1.Location = new System.Drawing.Point(262, 0);
             this.splitterControl1.Name = "splitterControl1";
-            this.splitterControl1.Size = new System.Drawing.Size(6, 520);
+            this.splitterControl1.Size = new System.Drawing.Size(5, 520);
             this.splitterControl1.TabIndex = 1;
             this.splitterControl1.TabStop = false;
             // 
@@ -475,6 +479,22 @@
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 0;
             // 
+            // xtraTabPage3
+            // 
+            this.xtraTabPage3.Controls.Add(this.simpleButton11);
+            this.xtraTabPage3.Name = "xtraTabPage3";
+            this.xtraTabPage3.Size = new System.Drawing.Size(986, 520);
+            this.xtraTabPage3.Text = "xtraTabPage3";
+            // 
+            // simpleButton11
+            // 
+            this.simpleButton11.Location = new System.Drawing.Point(168, 90);
+            this.simpleButton11.Name = "simpleButton11";
+            this.simpleButton11.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton11.TabIndex = 0;
+            this.simpleButton11.Text = "simpleButton11";
+            this.simpleButton11.Click += new System.EventHandler(this.simpleButton11_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -501,6 +521,7 @@
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardView1)).EndInit();
+            this.xtraTabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -541,6 +562,8 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Card.CardView cardView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton11;
     }
 }
 

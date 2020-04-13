@@ -213,7 +213,7 @@ namespace Hms.Biz
                             left join promotionWayConfig d
                             on a.planWay = d.id
                             left join promotionContentConfig e
-                            on a.planContent = e.id  order by b.clientNo,a.planDate";
+                            on a.planContent = e.id where  a.planState = 2 order by b.clientNo,a.planDate";
             DataTable dt = svc.GetDataTable(Sql);
 
             if (dt != null && dt.Rows.Count > 0)
@@ -236,6 +236,77 @@ namespace Hms.Biz
                     vo.planDate = Function.Datetime(dr["planDate"]).ToString("yyyy-MM-dd");
                     if(dr["executeTime"] != DBNull.Value)
                         vo.executeTime = Function.Datetime(dr["executeTime"]).ToString("yyyy-MM-dd");
+                    vo.createName = dr["createName"].ToString();
+                    data.Add(vo);
+                }
+            }
+            return data;
+        }
+        #endregion
+
+        #region  干预记录
+        /// <summary>
+        /// 干预记录
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityDisplayPromotionPlan> GetPromotionPlanRecords()
+        {
+            List<EntityDisplayPromotionPlan> data = null;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            string Sql = string.Empty;
+            Sql = @"select b.clientName,
+                            b.clientNo,
+                            b.gender,
+                            b.birthday,
+                            b.company,
+                            b.mobile,
+                            c.gradeName,
+                            d.planWay,
+                            e.planContent,
+                            a.planRemind,
+                            a.planDate,
+                            a.planVisitRecord,
+                            a.executeTime,
+                            a.executeUserName,
+                            a.createName
+                            from promotionPlan a
+                            left join clientInfo b
+                            on a.clientId = b.id
+                            left join userGrade c
+                            on b.gradeId = c.id
+                            left join promotionWayConfig d
+                            on a.planWay = d.id
+                            left join promotionContentConfig e
+                            on a.planContent = e.id
+                            where a.planState = 1
+                            and a.clientId is not null 
+                            order by b.clientNo,a.planDate";
+            DataTable dt = svc.GetDataTable(Sql);
+
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                data = new List<EntityDisplayPromotionPlan>();
+                EntityDisplayPromotionPlan vo = null;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    vo = new EntityDisplayPromotionPlan();
+                    vo.clientName = dr["clientName"].ToString();
+                    vo.clientNo = dr["clientNo"].ToString();
+                    vo.gender = Function.Int(dr["gender"]);
+                    vo.age = Function.CalcAge(Function.Datetime(dr["birthday"]));
+                    vo.company = dr["company"].ToString();
+                    vo.mobile = dr["mobile"].ToString();
+                    vo.gradeName = dr["gradeName"].ToString();
+                    vo.planWay = dr["planWay"].ToString();
+                    vo.planContent = dr["planContent"].ToString();
+                    vo.planRemind = dr["planRemind"].ToString();
+                    vo.planVisitRecord = dr["planVisitRecord"].ToString();
+                    vo.executeUserName = dr["executeUserName"].ToString();
+                    vo.planDate = Function.Datetime(dr["planDate"]).ToString("yyyy-MM-dd");
+                    if (dr["executeTime"] != DBNull.Value)
+                        vo.executeTime = Function.Datetime(dr["executeTime"]).ToString("yyyy-MM-dd");
+                    vo.executeUserName = dr["executeUserName"].ToString();
                     vo.createName = dr["createName"].ToString();
                     data.Add(vo);
                 }

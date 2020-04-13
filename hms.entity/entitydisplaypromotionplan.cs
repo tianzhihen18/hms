@@ -33,7 +33,11 @@ namespace Hms.Entity
         [DataMember]
         public string planDate { get; set; }
         [DataMember]
+        public string planVisitRecord { get; set; }
+        [DataMember]
         public string executeTime { get; set; }
+        [DataMember]
+        public string executeUserName { get; set; }
         [DataMember]
         public string createName { get; set; }
 

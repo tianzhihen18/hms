@@ -85,6 +85,13 @@ namespace Hms.Itf
         /// <returns></returns>
         [OperationContract(Name = "GetPromotionPlans")]
         List<EntityDisplayPromotionPlan> GetPromotionPlans();
+
+        /// <summary>
+        /// 干预记录
+        /// </summary>
+        /// <returns></returns>
+        [OperationContract(Name = "GetPromotionPlanRecords")]
+        List<EntityDisplayPromotionPlan> GetPromotionPlanRecords();
         #endregion
 
         #region 205 慢病管理
