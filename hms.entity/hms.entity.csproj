@@ -64,10 +64,12 @@
     <Compile Include="entityevaluateparams.cs" />
     <Compile Include="entitymedicaladvicecs.cs" />
     <Compile Include="entitypromotioncontentconfig.cs" />
+    <Compile Include="entitypromotionplan.cs" />
     <Compile Include="entitypromotiontemplate.cs" />
     <Compile Include="entitypromotiontemplateconfig.cs" />
     <Compile Include="entitypromotionwayconfig.cs" />
     <Compile Include="entityreportinfo.cs" />
+    <Compile Include="entityreportmainitem.cs" />
     <Compile Include="entityreportrecorde.cs" />
     <Compile Include="entityreporttemplate.cs" />
     <Compile Include="entityrpttemplateconfig.cs" />

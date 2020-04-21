@@ -74,6 +74,10 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.lblSelect = new DevExpress.XtraEditors.LabelControl();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.splitterControl2 = new DevExpress.XtraEditors.SplitterControl();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.chkConfirm = new DevExpress.XtraEditors.CheckEdit();
             this.gcPlan = new DevExpress.XtraGrid.GridControl();
             this.gvPlan = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -82,8 +86,6 @@
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
-            this.splitterControl2 = new DevExpress.XtraEditors.SplitterControl();
-            this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcBackGround)).BeginInit();
             this.pcBackGround.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl.Properties)).BeginInit();
@@ -115,6 +117,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardView)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
+            this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chkConfirm.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcPlan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvPlan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
@@ -123,12 +128,13 @@
             // 
             // pcBackGround
             // 
-            this.pcBackGround.Controls.Add(this.splitterControl2);
             this.pcBackGround.Controls.Add(this.gcPlan);
+            this.pcBackGround.Controls.Add(this.panelControl3);
+            this.pcBackGround.Controls.Add(this.splitterControl2);
             this.pcBackGround.Controls.Add(this.panel1);
             this.pcBackGround.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcBackGround.Location = new System.Drawing.Point(0, 0);
-            this.pcBackGround.Size = new System.Drawing.Size(192, 648);
+            this.pcBackGround.Size = new System.Drawing.Size(342, 648);
             this.pcBackGround.Visible = true;
             // 
             // defaultLookAndFeel
@@ -143,7 +149,7 @@
             // 
             this.plRight.Controls.Add(this.xtraTabControl);
             this.plRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.plRight.Location = new System.Drawing.Point(196, 0);
+            this.plRight.Location = new System.Drawing.Point(346, 0);
             this.plRight.Name = "plRight";
             this.plRight.Size = new System.Drawing.Size(844, 648);
             this.plRight.TabIndex = 11;
@@ -650,7 +656,7 @@
             // splitterControl1
             // 
             this.splitterControl1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitterControl1.Location = new System.Drawing.Point(192, 0);
+            this.splitterControl1.Location = new System.Drawing.Point(342, 0);
             this.splitterControl1.MaximumSize = new System.Drawing.Size(4, 0);
             this.splitterControl1.Name = "splitterControl1";
             this.splitterControl1.Size = new System.Drawing.Size(4, 648);
@@ -664,7 +670,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(188, 178);
+            this.panel1.Size = new System.Drawing.Size(338, 178);
             this.panel1.TabIndex = 0;
             // 
             // gridControl
@@ -673,7 +679,7 @@
             this.gridControl.Location = new System.Drawing.Point(0, 28);
             this.gridControl.MainView = this.cardView;
             this.gridControl.Name = "gridControl";
-            this.gridControl.Size = new System.Drawing.Size(188, 150);
+            this.gridControl.Size = new System.Drawing.Size(338, 150);
             this.gridControl.TabIndex = 3;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.cardView});
@@ -719,7 +725,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(188, 28);
+            this.panel2.Size = new System.Drawing.Size(338, 28);
             this.panel2.TabIndex = 2;
             // 
             // labelControl1
@@ -751,17 +757,50 @@
             this.imageList.Images.SetKeyName(0, "User_32x32.png");
             this.imageList.Images.SetKeyName(1, "BOEmployee_16x16.png");
             // 
+            // splitterControl2
+            // 
+            this.splitterControl2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.splitterControl2.Location = new System.Drawing.Point(2, 180);
+            this.splitterControl2.MaximumSize = new System.Drawing.Size(0, 4);
+            this.splitterControl2.Name = "splitterControl2";
+            this.splitterControl2.Size = new System.Drawing.Size(338, 4);
+            this.splitterControl2.TabIndex = 7;
+            this.splitterControl2.TabStop = false;
+            // 
+            // timer
+            // 
+            this.timer.Enabled = true;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.Controls.Add(this.chkConfirm);
+            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl3.Location = new System.Drawing.Point(2, 610);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Size = new System.Drawing.Size(338, 36);
+            this.panelControl3.TabIndex = 8;
+            // 
+            // chkConfirm
+            // 
+            this.chkConfirm.Location = new System.Drawing.Point(10, 7);
+            this.chkConfirm.MenuManager = this.barManager;
+            this.chkConfirm.Name = "chkConfirm";
+            this.chkConfirm.Properties.Caption = "是否审核";
+            this.chkConfirm.Size = new System.Drawing.Size(75, 19);
+            this.chkConfirm.TabIndex = 0;
+            // 
             // gcPlan
             // 
             this.gcPlan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcPlan.Location = new System.Drawing.Point(2, 180);
+            this.gcPlan.Location = new System.Drawing.Point(2, 184);
             this.gcPlan.MainView = this.gvPlan;
             this.gcPlan.Name = "gcPlan";
             this.gcPlan.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit1,
             this.repositoryItemComboBox1});
-            this.gcPlan.Size = new System.Drawing.Size(188, 466);
-            this.gcPlan.TabIndex = 6;
+            this.gcPlan.Size = new System.Drawing.Size(338, 426);
+            this.gcPlan.TabIndex = 9;
             this.gcPlan.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvPlan});
             // 
@@ -891,26 +930,11 @@
             this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
             this.repositoryItemComboBox1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             // 
-            // splitterControl2
-            // 
-            this.splitterControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitterControl2.Location = new System.Drawing.Point(2, 180);
-            this.splitterControl2.MaximumSize = new System.Drawing.Size(0, 4);
-            this.splitterControl2.Name = "splitterControl2";
-            this.splitterControl2.Size = new System.Drawing.Size(188, 4);
-            this.splitterControl2.TabIndex = 7;
-            this.splitterControl2.TabStop = false;
-            // 
-            // timer
-            // 
-            this.timer.Enabled = true;
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
             // frm20401
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1040, 648);
+            this.ClientSize = new System.Drawing.Size(1190, 648);
             this.Controls.Add(this.splitterControl1);
             this.Controls.Add(this.plRight);
             this.Name = "frm20401";
@@ -953,6 +977,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.cardView)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
+            this.panelControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chkConfirm.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcPlan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvPlan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
@@ -967,14 +994,6 @@
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.PanelControl plRight;
         private DevExpress.XtraEditors.SplitterControl splitterControl1;
-        private DevExpress.XtraGrid.GridControl gcPlan;
-        private DevExpress.XtraGrid.Views.Grid.GridView gvPlan;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
-        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
         private DevExpress.XtraEditors.LabelControl lblSelect;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.Panel panel2;
@@ -1018,5 +1037,15 @@
         private DevExpress.XtraGrid.Columns.GridColumn itemName;
         private DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit repositoryItemMemoEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
+        private DevExpress.XtraGrid.GridControl gcPlan;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvPlan;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
+        private DevExpress.XtraEditors.PanelControl panelControl3;
+        private DevExpress.XtraEditors.CheckEdit chkConfirm;
     }
 }

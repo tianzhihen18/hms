@@ -63,7 +63,26 @@
             this.cardView1 = new DevExpress.XtraGrid.Views.Card.CardView();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.memoEdit3 = new DevExpress.XtraEditors.MemoEdit();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
+            this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.memoEdit4 = new DevExpress.XtraEditors.MemoEdit();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
+            this.btnSysMainItem = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
@@ -82,6 +101,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardView1)).BeginInit();
             this.xtraTabPage3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit3.Properties)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.xtraTabPage4.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit4.Properties)).BeginInit();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // simpleButton1
@@ -242,10 +273,12 @@
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
             this.xtraTabPage2,
-            this.xtraTabPage3});
+            this.xtraTabPage3,
+            this.xtraTabPage4});
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.btnSysMainItem);
             this.xtraTabPage1.Controls.Add(this.simpleButton1);
             this.xtraTabPage1.Controls.Add(this.gridLookUpEdit);
             this.xtraTabPage1.Controls.Add(this.textEdit1);
@@ -275,9 +308,9 @@
             // 
             this.panelControl2.Controls.Add(this.gcClient);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl2.Location = new System.Drawing.Point(267, 0);
+            this.panelControl2.Location = new System.Drawing.Point(268, 0);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(719, 520);
+            this.panelControl2.Size = new System.Drawing.Size(718, 520);
             this.panelControl2.TabIndex = 2;
             // 
             // gcClient
@@ -289,7 +322,7 @@
             this.gcClient.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit2,
             this.repositoryItemComboBox2});
-            this.gcClient.Size = new System.Drawing.Size(715, 516);
+            this.gcClient.Size = new System.Drawing.Size(714, 516);
             this.gcClient.TabIndex = 8;
             this.gcClient.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvClient});
@@ -426,7 +459,7 @@
             // 
             this.splitterControl1.Location = new System.Drawing.Point(262, 0);
             this.splitterControl1.Name = "splitterControl1";
-            this.splitterControl1.Size = new System.Drawing.Size(5, 520);
+            this.splitterControl1.Size = new System.Drawing.Size(6, 520);
             this.splitterControl1.TabIndex = 1;
             this.splitterControl1.TabStop = false;
             // 
@@ -481,19 +514,213 @@
             // 
             // xtraTabPage3
             // 
+            this.xtraTabPage3.Controls.Add(this.panel5);
+            this.xtraTabPage3.Controls.Add(this.panel3);
+            this.xtraTabPage3.Controls.Add(this.panel2);
             this.xtraTabPage3.Controls.Add(this.simpleButton11);
             this.xtraTabPage3.Name = "xtraTabPage3";
             this.xtraTabPage3.Size = new System.Drawing.Size(986, 520);
             this.xtraTabPage3.Text = "xtraTabPage3";
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.memoEdit3);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 313);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(986, 206);
+            this.panel5.TabIndex = 3;
+            // 
+            // memoEdit3
+            // 
+            this.memoEdit3.Location = new System.Drawing.Point(0, 31);
+            this.memoEdit3.Name = "memoEdit3";
+            this.memoEdit3.Size = new System.Drawing.Size(676, 175);
+            this.memoEdit3.TabIndex = 3;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.labelControl29);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(986, 35);
+            this.panel6.TabIndex = 2;
+            // 
+            // labelControl29
+            // 
+            this.labelControl29.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl29.Appearance.Options.UseFont = true;
+            this.labelControl29.Location = new System.Drawing.Point(6, 6);
+            this.labelControl29.Name = "labelControl29";
+            this.labelControl29.Size = new System.Drawing.Size(56, 19);
+            this.labelControl29.TabIndex = 0;
+            this.labelControl29.Text = "综述>>";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.gridControl2);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 39);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(986, 274);
+            this.panel3.TabIndex = 2;
+            // 
+            // gridControl2
+            // 
+            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl2.Location = new System.Drawing.Point(0, 35);
+            this.gridControl2.MainView = this.gridView1;
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.Size = new System.Drawing.Size(986, 239);
+            this.gridControl2.TabIndex = 3;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn9,
+            this.gridColumn10});
+            this.gridView1.GridControl = this.gridControl2;
+            this.gridView1.IndicatorWidth = 46;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsSelection.MultiSelect = true;
+            this.gridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn9.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn9.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn9.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn9.Caption = "十三项评估对比";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.OptionsColumn.AllowEdit = false;
+            this.gridColumn9.OptionsColumn.AllowFocus = false;
+            this.gridColumn9.OptionsFilter.AllowAutoFilter = false;
+            this.gridColumn9.OptionsFilter.AllowFilter = false;
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 1;
+            this.gridColumn9.Width = 375;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn10.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn10.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn10.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn10.Caption = "评估分值|评估结果";
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.OptionsColumn.AllowEdit = false;
+            this.gridColumn10.OptionsColumn.AllowFocus = false;
+            this.gridColumn10.OptionsFilter.AllowAutoFilter = false;
+            this.gridColumn10.OptionsFilter.AllowFilter = false;
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 2;
+            this.gridColumn10.Width = 201;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.labelControl28);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(986, 35);
+            this.panel4.TabIndex = 2;
+            // 
+            // labelControl28
+            // 
+            this.labelControl28.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl28.Appearance.Options.UseFont = true;
+            this.labelControl28.Location = new System.Drawing.Point(6, 6);
+            this.labelControl28.Name = "labelControl28";
+            this.labelControl28.Size = new System.Drawing.Size(184, 19);
+            this.labelControl28.TabIndex = 0;
+            this.labelControl28.Text = "健康管理报告评估分数>>";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.labelControl27);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(986, 39);
+            this.panel2.TabIndex = 1;
+            // 
+            // labelControl27
+            // 
+            this.labelControl27.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl27.Appearance.Options.UseFont = true;
+            this.labelControl27.Location = new System.Drawing.Point(264, 8);
+            this.labelControl27.Name = "labelControl27";
+            this.labelControl27.Size = new System.Drawing.Size(204, 19);
+            this.labelControl27.TabIndex = 3;
+            this.labelControl27.Text = "个人健康管理中心汇总页面";
+            // 
             // simpleButton11
             // 
-            this.simpleButton11.Location = new System.Drawing.Point(168, 90);
+            this.simpleButton11.Location = new System.Drawing.Point(22, 3);
             this.simpleButton11.Name = "simpleButton11";
             this.simpleButton11.Size = new System.Drawing.Size(75, 23);
             this.simpleButton11.TabIndex = 0;
             this.simpleButton11.Text = "simpleButton11";
             this.simpleButton11.Click += new System.EventHandler(this.simpleButton11_Click);
+            // 
+            // xtraTabPage4
+            // 
+            this.xtraTabPage4.Controls.Add(this.panel7);
+            this.xtraTabPage4.Name = "xtraTabPage4";
+            this.xtraTabPage4.Size = new System.Drawing.Size(986, 520);
+            this.xtraTabPage4.Text = "xtraTabPage4";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.memoEdit4);
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(986, 206);
+            this.panel7.TabIndex = 4;
+            // 
+            // memoEdit4
+            // 
+            this.memoEdit4.Location = new System.Drawing.Point(0, 31);
+            this.memoEdit4.Name = "memoEdit4";
+            this.memoEdit4.Size = new System.Drawing.Size(676, 175);
+            this.memoEdit4.TabIndex = 3;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.labelControl30);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(986, 35);
+            this.panel8.TabIndex = 2;
+            // 
+            // labelControl30
+            // 
+            this.labelControl30.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl30.Appearance.Options.UseFont = true;
+            this.labelControl30.Location = new System.Drawing.Point(6, 6);
+            this.labelControl30.Name = "labelControl30";
+            this.labelControl30.Size = new System.Drawing.Size(56, 19);
+            this.labelControl30.TabIndex = 0;
+            this.labelControl30.Text = "建议>>";
+            // 
+            // btnSysMainItem
+            // 
+            this.btnSysMainItem.Location = new System.Drawing.Point(45, 264);
+            this.btnSysMainItem.Name = "btnSysMainItem";
+            this.btnSysMainItem.Size = new System.Drawing.Size(166, 23);
+            this.btnSysMainItem.TabIndex = 12;
+            this.btnSysMainItem.Text = "同步重要指标";
+            this.btnSysMainItem.Click += new System.EventHandler(this.btnSysMainItem_Click);
             // 
             // Form1
             // 
@@ -522,6 +749,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardView1)).EndInit();
             this.xtraTabPage3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit3.Properties)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.xtraTabPage4.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit4.Properties)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -564,6 +807,25 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
         private DevExpress.XtraEditors.SimpleButton simpleButton11;
+        private System.Windows.Forms.Panel panel2;
+        private DevExpress.XtraEditors.LabelControl labelControl27;
+        private System.Windows.Forms.Panel panel3;
+        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private System.Windows.Forms.Panel panel4;
+        private DevExpress.XtraEditors.LabelControl labelControl28;
+        private System.Windows.Forms.Panel panel5;
+        private DevExpress.XtraEditors.MemoEdit memoEdit3;
+        private System.Windows.Forms.Panel panel6;
+        private DevExpress.XtraEditors.LabelControl labelControl29;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage4;
+        private System.Windows.Forms.Panel panel7;
+        private DevExpress.XtraEditors.MemoEdit memoEdit4;
+        private System.Windows.Forms.Panel panel8;
+        private DevExpress.XtraEditors.LabelControl labelControl30;
+        private DevExpress.XtraEditors.SimpleButton btnSysMainItem;
     }
 }
 

@@ -41,7 +41,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>20180719052656871_easyicon_net_32.ico</ApplicationIcon>
+    <ApplicationIcon>I01.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -141,6 +141,7 @@
   <ItemGroup>
     <Content Include="20180719052656871_easyicon_net_32.ico" />
     <Content Include="child.ico" />
+    <Content Include="I01.ico" />
     <Content Include="temp.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -56,18 +56,34 @@ namespace Hms.Ui
         {
             if (gvPlan.SelectedRowsCount > 0)
             {
-                for (int i = 0; i < gvPlan.RowCount; i++)
+                List<EntityPromotionTemplateConfig> lstTmp = new List<EntityPromotionTemplateConfig>();
+                for (int i = 0; i <= gvPlan.RowCount; i++)
                 {
                     if (gvPlan.IsRowSelected(i))
                     {
                         EntityPromotionTemplateConfig ptPlan = gvPlan.GetRow(i) as EntityPromotionTemplateConfig;
-                        lstPromotionPlans.Remove(ptPlan);
+                        lstTmp.Add(ptPlan);
                     }
+                }
+
+                foreach(var vo in lstTmp)
+                {
+                    lstPromotionPlans.Remove(vo);
                 }
 
                 gcPlan.DataSource = lstPromotionPlans;
                 gcPlan.RefreshDataSource();
             }
+        }
+        #endregion
+
+        #region  保存
+        /// <summary>
+        /// 
+        /// </summary>
+        public override void Complete()
+        {
+            
         }
         #endregion
 
@@ -107,8 +123,12 @@ namespace Hms.Ui
                 gcPromotionTemplate.RefreshDataSource();
 
                 lstPromotionTemplateConfig = proxy.Service.GetPromotionTemplateConfigs();
-                gcPromotionTemplateConfig.DataSource = lstPromotionTemplateConfig;
-                gcPromotionTemplateConfig.RefreshDataSource();
+                if (lstPromotionTemplate != null)
+                {
+                    EntityPromotionTemplate vo = lstPromotionTemplate[0];
+                    gcPromotionTemplateConfig.DataSource = lstPromotionTemplateConfig.FindAll(r => r.templateId == vo.id);
+                    gcPromotionTemplateConfig.RefreshDataSource();
+                }
             }
         }
         #endregion

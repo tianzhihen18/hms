@@ -112,7 +112,9 @@ namespace Hms.Ui
             }
 
             int affect = -1;
-            if (string.IsNullOrEmpty(dicDientIngredient.id))
+            if (dicDientIngredient == null)
+                dicDientIngredient = new EntityDicDientIngredient();
+            else if (string.IsNullOrEmpty(dicDientIngredient.id))
                 dicDientIngredient = new EntityDicDientIngredient();
             dicDientIngredient.names = txtName.Text;
             dicDientIngredient.lstClassify = new List<int>();

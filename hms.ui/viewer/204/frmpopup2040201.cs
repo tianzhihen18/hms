@@ -1,0 +1,237 @@
+﻿using Common.Controls;
+using Hms.Entity;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using weCare.Core.Entity;
+
+namespace Hms.Ui
+{
+    public partial class frmPopup2040201 :frmBase
+    {
+        public frmPopup2040201(EntityDisplayPromotionPlan _displayPromotionPlan = null)
+        {
+            InitializeComponent();
+            promotionPlan = _displayPromotionPlan;
+        }
+
+        #region var/property
+        EntityDisplayPromotionPlan promotionPlan { get; set; }
+        string [] weekdays = new string[] { "星期制日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六" };
+        #endregion
+
+        #region  methods
+
+        #region Init
+        /// <summary>
+        /// 初始化
+        /// </summary>
+        void Init()
+        {
+            if(promotionPlan != null)
+            {
+                lblClientName.Text = promotionPlan.clientName;
+                lblCompany.Text = promotionPlan.company;
+                lblGradName.Text = promotionPlan.gradeName;
+                lblMobile.Text = promotionPlan.mobile;
+                lblSex.Text = promotionPlan.sex;
+                lblAge.Text = promotionPlan.age;
+
+                dtePlan.Text = promotionPlan.planDate;
+                cboPlanContent.Text = promotionPlan.planContent;
+                cboPlanways.Text = promotionPlan.planWay;
+                memPlanRemind.Text = promotionPlan.planRemind;
+                lblDoctor.Text = promotionPlan.createName;
+            }
+        }
+        #endregion
+
+        #region 重要指标
+        public EntityDisplayClientRpt GetRptRowsObject()
+        {
+            EntityDisplayClientRpt vo = null;
+            if (cvMainItemRecord.FocusedRowHandle >= 0)
+            {
+                vo = cvMainItemRecord.GetRow(cvMainItemRecord.FocusedRowHandle) as EntityDisplayClientRpt;
+            }
+
+            return vo;
+        }
+        #endregion
+
+        #endregion
+
+        #region events
+
+        private void btnInfoCollect_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navInfoCollect;
+        }
+        private void btnRiskQuestion_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navRiskQuestion;
+        }
+
+        #region 重要指标
+        private void btnImportantIdicate_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navImportantIdicate;
+
+            using (ProxyHms proxy = new ProxyHms())
+            {
+                List<EntityParm> lstParms = new List<EntityParm>();
+                if(promotionPlan != null)
+                {
+                    EntityParm parm = new EntityParm();
+                    parm.key = "clientNo";
+                    parm.value = promotionPlan.clientNo;
+                    lstParms.Add(parm);
+                    gcMainItemRecord.DataSource = proxy.Service.GetClientReports(lstParms);
+                }
+            }
+        }
+
+        private void cvMainItemRecord_Click(object sender, EventArgs e)
+        {
+            EntityDisplayClientRpt vo = GetRptRowsObject();
+
+            using (ProxyHms proxy = new ProxyHms())
+            {
+                gcMainItemData.DataSource = proxy.Service.GetReportMainItem(vo.reportId);
+            }
+        }
+
+        private void gvMainItemData_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator && e.RowHandle >= 0)
+            {
+                e.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+                e.Info.DisplayText = Convert.ToString(e.RowHandle + 1);
+            }
+        }
+        #endregion
+
+        private void btnPromotionCase_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navPromotionCase;
+        }
+        private void btnHmsReport_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navHmsReport;
+        }
+        private void btnService_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navService;
+        }
+
+        #region 干预计划
+        private void btnPromotionPlan_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navPromotionPlan;
+            using (ProxyHms proxy = new ProxyHms())
+            {
+                List<EntityParm> lstParms = new List<EntityParm>();
+                if (promotionPlan != null)
+                {
+                    EntityParm parm = new EntityParm();
+                    parm.key = "clientNo";
+                    parm.value = promotionPlan.clientNo;
+                    lstParms.Add(parm);
+                    gcPromotionPlan.DataSource = proxy.Service.GetPromotionPlans(lstParms);
+                }
+            }
+        }
+        private void gvPromotionPlan_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator && e.RowHandle >= 0)
+            {
+                e.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+                e.Info.DisplayText = Convert.ToString(e.RowHandle + 1);
+            }
+        }
+        #endregion
+
+        #region 干预记录
+        private void btnPromotionRecord_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navPromotionRecord;
+            using (ProxyHms proxy = new ProxyHms())
+            {
+                List<EntityParm> lstParms = new List<EntityParm>();
+                if (promotionPlan != null)
+                {
+                    EntityParm parm = new EntityParm();
+                    parm.key = "clientNo";
+                    parm.value = promotionPlan.clientNo;
+                    lstParms.Add(parm);
+                    gcPromotionRecord.DataSource = proxy.Service.GetPromotionPlanRecords(lstParms);
+                }
+            }
+        }
+
+        private void gvPromotionRecord_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator && e.RowHandle >= 0)
+            {
+                e.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+                e.Info.DisplayText = Convert.ToString(e.RowHandle + 1);
+            }
+        }
+        #endregion
+
+        private void btnDiet_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navDiet;
+        }
+        private void btnPeReport_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navPeReport;
+        }
+        private void btnHealthMinitor_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navHealthMinitor;
+        }
+        private void BtnQuestionnaire_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navQuestionnaire;
+        }
+        private void btnMedRecord_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navMedRecord;
+        }
+        private void btnGxy_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navGxy;
+        }
+        private void btnTnb_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navTnb;
+        }
+
+        private void btnClinicRecord_Click(object sender, EventArgs e)
+        {
+            this.navigationFrame.SelectedPage = navClinicRecord;
+        }
+        private void frmPopup2040201_Load(object sender, EventArgs e)
+        {
+            Init();
+        }
+        private void timer_Tick(object sender, EventArgs e)
+        { 
+            lblDateTime.Text = DateTime.Now.ToString("yyyy年MM月dd日") + "  " + weekdays[(int)DateTime.Now.DayOfWeek] + "  " +DateTime.Now.ToString("HH:mm:ss");
+        }
+
+
+
+
+
+        #endregion
+
+       
+    }
+}

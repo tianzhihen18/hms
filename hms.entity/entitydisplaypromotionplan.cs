@@ -35,12 +35,15 @@ namespace Hms.Entity
         [DataMember]
         public string planVisitRecord { get; set; }
         [DataMember]
+        public string auditState { get; set; }
+        [DataMember]
         public string executeTime { get; set; }
         [DataMember]
         public string executeUserName { get; set; }
         [DataMember]
         public string createName { get; set; }
-
+        [DataMember]
+        public string createDate { get; set; }
         [DataMember]
         public string sex
         {
@@ -54,6 +57,26 @@ namespace Hms.Entity
                     return "不限";
             }
         }
+        [DataMember]
+        public string strAuditState
+        {
+            get
+            {
+                if (auditState == "1")
+                    return "无需审核";
+                else if (auditState == "2")
+                    return "审核通过";
+                else if (auditState == "3")
+                    return "等待审核";
+                else if (auditState == "4")
+                    return ".已分配审核";
+                else if (auditState == "5")
+                    return "审核不通过";
+                else
+                    return "";
+            }
+        }
+
         [DataMember]
         public string age { get; set; }
     }

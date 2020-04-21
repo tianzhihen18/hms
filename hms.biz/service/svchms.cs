@@ -117,11 +117,11 @@ namespace Hms.Svc
         /// 待执行计划
         /// </summary>
         /// <returns></returns>
-        public List<EntityDisplayPromotionPlan> GetPromotionPlans()
+        public List<EntityDisplayPromotionPlan> GetPromotionPlans(List<EntityParm> dicParm = null)
         {
             using (Biz204 biz = new Biz204())
             {
-                return biz.GetPromotionPlans();
+                return biz.GetPromotionPlans(dicParm);
             }
         }
 
@@ -129,13 +129,27 @@ namespace Hms.Svc
         /// 干预记录
         /// </summary>
         /// <returns></returns>
-        public List<EntityDisplayPromotionPlan> GetPromotionPlanRecords()
+        public List<EntityDisplayPromotionPlan> GetPromotionPlanRecords(List<EntityParm> dicParm = null)
         {
             using (Biz204 biz = new Biz204())
             {
-                return biz.GetPromotionPlanRecords();
+                return biz.GetPromotionPlanRecords(dicParm);
             }
         }
+
+        /// <summary>
+        /// 获取重要指标
+        /// </summary>
+        /// <param name="reportId"></param>
+        /// <returns></returns>
+        public List<EntityReportMainItem> GetReportMainItem(string reportId)
+        {
+            using (Biz204 biz = new Biz204())
+            {
+                return biz.GetReportMainItem(reportId);
+            }
+        }
+
         #endregion
 
         #region 205 慢病管理

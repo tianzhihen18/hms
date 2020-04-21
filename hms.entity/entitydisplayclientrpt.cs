@@ -32,6 +32,11 @@ namespace Hms.Entity
         [DataMember]
         public string reportNo { get; set; }
         /// <summary>
+        /// 体检ID
+        /// </summary>
+        [DataMember]
+        public string reportId { get; set; }
+        /// <summary>
         /// 报告日期
         /// </summary>
         [DataMember]

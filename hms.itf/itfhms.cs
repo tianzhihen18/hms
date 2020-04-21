@@ -84,14 +84,22 @@ namespace Hms.Itf
         /// </summary>
         /// <returns></returns>
         [OperationContract(Name = "GetPromotionPlans")]
-        List<EntityDisplayPromotionPlan> GetPromotionPlans();
+        List<EntityDisplayPromotionPlan> GetPromotionPlans(List<EntityParm> dicParm = null);
 
         /// <summary>
         /// 干预记录
         /// </summary>
         /// <returns></returns>
         [OperationContract(Name = "GetPromotionPlanRecords")]
-        List<EntityDisplayPromotionPlan> GetPromotionPlanRecords();
+        List<EntityDisplayPromotionPlan> GetPromotionPlanRecords(List<EntityParm> dicParm = null);
+
+        /// <summary>
+        /// 获取重要指标
+        /// </summary>
+        /// <param name="reportId"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetReportMainItem")]
+        List<EntityReportMainItem> GetReportMainItem(string reportId);
         #endregion
 
         #region 205 慢病管理

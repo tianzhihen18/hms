@@ -28,6 +28,7 @@ namespace Hms.Biz
             SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
             string Sql = string.Empty;
             Sql = @"select b.id,
+                            a.reportId,
                             b.clientNo, 
                             b.clientName,
                             b.birthday,
@@ -47,6 +48,24 @@ namespace Hms.Biz
                             left join reportInfo d
                             on a.reportId = d.id  where b.id is not null";
 
+            string strSub = string.Empty;
+            if(parms != null)
+            {
+                foreach(var po in parms)
+                {
+                    switch(po.key)
+                    {
+                        case "clientNo":
+                            strSub += " and b.clientNo = '" + po.value + "'" + Environment.NewLine;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+
+            Sql += strSub;
+
             DataTable dt = svc.GetDataTable(Sql);
            
             if (dt != null && dt.Rows.Count > 0)
@@ -60,6 +79,7 @@ namespace Hms.Biz
                     vo.clientNo = dr["clientNo"].ToString();
                     vo.gender = Function.Int(dr["gender"]);
                     vo.reportNo = dr["reportNo"].ToString();
+                    vo.reportId = dr["reportId"].ToString();
                     vo.reportDate = Function.Datetime(dr["reportDate"]).ToString("yyyy-MM-dd");
                     vo.company = dr["company"].ToString();
                     vo.gradeName = dr["gradeName"].ToString();

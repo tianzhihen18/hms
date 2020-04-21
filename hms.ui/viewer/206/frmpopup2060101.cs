@@ -44,7 +44,9 @@ namespace Hms.Ui
         private void btnSave_Click(object sender, EventArgs e)
         {
             int affect = -1;
-            if (string.IsNullOrEmpty(dietPrinciple.principleId))
+            if (dietPrinciple == null)
+                dietPrinciple = new EntityDietPrinciple();
+            else if (string.IsNullOrEmpty(dietPrinciple.principleId))
                 dietPrinciple = new EntityDietPrinciple();
 
             dietPrinciple.principleName = this.txtName.Text;

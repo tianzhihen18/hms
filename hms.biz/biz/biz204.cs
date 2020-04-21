@@ -187,10 +187,11 @@ namespace Hms.Biz
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<EntityDisplayPromotionPlan> GetPromotionPlans()
+        public List<EntityDisplayPromotionPlan> GetPromotionPlans(List<EntityParm> dicParm = null)
         {
             List<EntityDisplayPromotionPlan> data = null;
             SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            string strSub = string.Empty;
             string Sql = string.Empty;
             Sql = @"select b.clientName,
                             b.clientNo,
@@ -203,6 +204,9 @@ namespace Hms.Biz
                             e.planContent,
                             a.planRemind,
                             a.planDate,
+                            a.auditState,
+                            a.createDate,
+                            a.createName,
                             a.executeTime,
                             a.createName
                             from promotionPlan a
@@ -213,8 +217,32 @@ namespace Hms.Biz
                             left join promotionWayConfig d
                             on a.planWay = d.id
                             left join promotionContentConfig e
-                            on a.planContent = e.id where  a.planState = 2 order by b.clientNo,a.planDate";
-            DataTable dt = svc.GetDataTable(Sql);
+                            on a.planContent = e.id where  a.planState = 2 ";
+
+            List<IDataParameter> lstParm = new List<IDataParameter>();
+
+            if (dicParm != null)
+            {
+                foreach (EntityParm po in dicParm)
+                {
+                    switch (po.key)
+                    {
+                        case "clientNo":
+                            IDataParameter parm = svc.CreateParm();
+                            parm.Value = po.value;
+                            lstParm.Add(parm);
+                            strSub += " and b.clientNo = ?";
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+
+            Sql += strSub;
+            Sql += " order by b.clientNo,a.planDate";
+
+            DataTable dt = svc.GetDataTable(Sql,lstParm);
 
             if (dt != null && dt.Rows.Count > 0)
             {
@@ -234,9 +262,11 @@ namespace Hms.Biz
                     vo.planContent = dr["planContent"].ToString();
                     vo.planRemind = dr["planRemind"].ToString();
                     vo.planDate = Function.Datetime(dr["planDate"]).ToString("yyyy-MM-dd");
+                    vo.auditState = dr["auditState"].ToString();
                     if(dr["executeTime"] != DBNull.Value)
                         vo.executeTime = Function.Datetime(dr["executeTime"]).ToString("yyyy-MM-dd");
                     vo.createName = dr["createName"].ToString();
+                    vo.createDate = Function.Datetime(dr["createDate"]).ToString("yyyy-MM-dd");
                     data.Add(vo);
                 }
             }
@@ -250,9 +280,10 @@ namespace Hms.Biz
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<EntityDisplayPromotionPlan> GetPromotionPlanRecords()
+        public List<EntityDisplayPromotionPlan> GetPromotionPlanRecords(List<EntityParm> dicParm = null)
         {
             List<EntityDisplayPromotionPlan> data = null;
+            string strSub = string.Empty;
             SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
             string Sql = string.Empty;
             Sql = @"select b.clientName,
@@ -280,9 +311,31 @@ namespace Hms.Biz
                             left join promotionContentConfig e
                             on a.planContent = e.id
                             where a.planState = 1
-                            and a.clientId is not null 
-                            order by b.clientNo,a.planDate";
-            DataTable dt = svc.GetDataTable(Sql);
+                            and a.clientId is not null ";
+
+            List<IDataParameter> lstParm = new List<IDataParameter>();
+
+            if (dicParm != null)
+            {
+                foreach (EntityParm po in dicParm)
+                {
+                    switch (po.key)
+                    {
+                        case "clientNo":
+                            IDataParameter parm = svc.CreateParm();
+                            parm.Value = po.value;
+                            lstParm.Add(parm);
+                            strSub += " and b.clientNo = ?";
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+
+            Sql += strSub;
+            Sql += " order by b.clientNo,a.planDate";
+            DataTable dt = svc.GetDataTable(Sql,lstParm);
 
             if (dt != null && dt.Rows.Count > 0)
             {
@@ -313,6 +366,146 @@ namespace Hms.Biz
             }
             return data;
         }
+        #endregion
+
+        #region  保存干预计划
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="promotionPlans"></param>
+        /// <returns></returns>
+        public int SavePromotionPan(ref List<EntityPromotionPlan> promotionPlans)
+        {
+            int affect = -1;
+            SqlHelper svc = null;
+
+            try
+            {
+                if (promotionPlans != null)
+                {
+                    svc = new SqlHelper(EnumBiz.onlineDB);
+                    List<DacParm> lstParm = new List<DacParm>();
+                    foreach (var plans in promotionPlans)
+                    {
+                        if (string.IsNullOrEmpty(plans.id))
+                        {
+                            plans.id = DateTime.Now.ToString("yyyyMMddHHss") + svc.GetNextID("promotionPlan", "id").ToString().PadLeft(4, '0');
+                            plans.createDate = DateTime.Now;
+                            plans.createId = "00";
+                            lstParm.Add(svc.GetInsertParm(plans));
+                        }
+                        else
+                        {
+                            plans.modifyDate = DateTime.Now;
+                            lstParm.Add(svc.GetUpdateParm(plans, new List<string>() {
+                        EntityPromotionPlan.Columns.clientId,
+                        EntityPromotionPlan.Columns.planType,
+                        EntityPromotionPlan.Columns.planDate,
+                        EntityPromotionPlan.Columns.planState,
+                        EntityPromotionPlan.Columns.planWay,
+                        EntityPromotionPlan.Columns.planContent,
+                        EntityPromotionPlan.Columns.planRemind,
+                        EntityPromotionPlan.Columns.recordWay,
+                        EntityPromotionPlan.Columns.recordContent,
+                        EntityPromotionPlan.Columns.ignorPlan,
+                        EntityPromotionPlan.Columns.planSource,
+                        EntityPromotionPlan.Columns.planTemplateName,
+                        EntityPromotionPlan.Columns.modifyId,
+                        EntityPromotionPlan.Columns.modifyDate,},
+                            new List<string>() { EntityPromotionPlan.Columns.id }));
+                        }
+                    }
+
+                    if (lstParm.Count > 0)
+                        affect = svc.Commit(lstParm);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                ExceptionLog.OutPutException(ex);
+                affect = -1;
+            }
+            finally
+            {
+                svc = null;
+            }
+
+            return affect;
+        }
+
+        #endregion
+
+        #region 体检报告重要指标
+        /// <summary>
+        /// 获取重要指标
+        /// </summary>
+        /// <param name="reportId"></param>
+        /// <returns></returns>
+        public List<EntityReportMainItem> GetReportMainItem(string reportId)
+        {
+            List<EntityReportMainItem> data = null;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            string Sql = string.Empty;
+            Sql = @"select id,
+                            clientId,
+                            reportId,
+                            sectionName,
+                            itemName,
+                            itemValue,
+                            itemUnits,
+                            itemRefrange,
+                            isNormal,
+                            minValue,
+                            maxValue,
+                            orderId,
+                            bakField1,
+                            bakField2,
+                            createDate,
+                            createId,
+                            createName,
+                            modifyDate,
+                            modifyId,
+                            modifyName from reportMainItem where reportId = ?";
+            if (string.IsNullOrEmpty(reportId))
+                return null;
+            IDataParameter parm = svc.CreateParm();
+            parm.Value = reportId;
+            DataTable dt = svc.GetDataTable(Sql,parm);
+
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                data = new List<EntityReportMainItem>();
+                EntityReportMainItem vo = null;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    vo = new EntityReportMainItem();
+                    vo.id = dr["id"].ToString();
+                    vo.clientId = dr["clientId"].ToString();
+                    vo.reportId = dr["reportId"].ToString();
+                    vo.sectionName = dr["sectionName"].ToString();
+                    vo.itemName = dr["itemName"].ToString();
+                    vo.itemValue = dr["itemValue"].ToString();
+                    vo.itemUnits = dr["itemUnits"].ToString();
+                    vo.itemRefrange = dr["itemRefrange"].ToString();
+                    vo.isNormal = dr["isNormal"].ToString();
+                    vo.minValue = dr["minValue"].ToString();
+                    vo.maxValue = dr["maxValue"].ToString();
+                    vo.orderId = Function.Int(dr["orderId"]) ;
+                    vo.bakField1 = dr["bakField1"].ToString();
+                    vo.bakField2 = dr["bakField2"].ToString();
+                    vo.createDate = Function.Datetime(dr["createDate"]);
+                    vo.createId = dr["createId"].ToString();
+                    vo.createName = dr["createName"].ToString();
+                    vo.modifyDate = Function.Datetime(dr["modifyDate"]) ;
+                    vo.modifyId = dr["modifyId"].ToString();
+                    vo.modifyName = dr["modifyName"].ToString();
+                    data.Add(vo);
+                }
+            }
+            return data;
+        }
+
         #endregion
 
         #region Dispose

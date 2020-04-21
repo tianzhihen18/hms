@@ -144,8 +144,10 @@ namespace peDataSys
                         vo.itemCode = dr["item_code"].ToString();
 
                         //lstParm.Add(svc.GetInsertParm(vo));
-                        Sql = @"insert into dicRptTemplateConfig (templateId,itemCode) values('{0}','{1}')";
-                        Sql = string.Format(Sql, vo.templateId, vo.itemCode);
+                         Sql = @"insert into dicRptTemplateConfig (templateId,itemCode) values(?,?)";
+                        IDataParameter [] parm = svc.CreateParm(2);
+                        parm[0].Value = "1";
+                        parm[1].Value = "22";
                         svc.ExecSql(Sql);
                     }
 
@@ -1321,6 +1323,93 @@ namespace peDataSys
                 MessageBox.Show(ex.ToString());
             }
 
+        }
+
+        private void btnSysMainItem_Click(object sender, EventArgs e)
+        {
+            SqlHelper svcOra = new SqlHelper(EnumBiz.interfaceDB);
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            try
+            {
+                List<DacParm> lstParm = new List<DacParm>();
+                int affectRows = -1;
+                string Sql = @"select * from REPORT_MAIN_ITEM";
+
+                DataTable dt = svcOra.GetDataTable(Sql);
+                Sql = @"delete from reportMainItem";
+                svc.ExecSql(Sql);
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        EntityReportMainItem vo = new EntityReportMainItem();
+
+                        vo.id = dr["ID"].ToString();
+                        vo.clientId = dr["CLIENT_ID"].ToString();
+                        vo.reportId = dr["REPORT_ID"].ToString();
+                        vo.sectionName = dr["SECTION_NAME"].ToString();
+                        vo.itemName = dr["ITEM_NAME"].ToString();
+                        vo.itemValue = dr["ITEM_VALUE"].ToString();
+                        vo.itemUnits = dr["ITEM_UNITS"].ToString();
+                        vo.itemRefrange = dr["ITEM_REFRANGE"].ToString();
+                        vo.isNormal = dr["IS_NORMAL"].ToString();
+                        vo.minValue = dr["MIN_VALUE"].ToString();
+                        vo.maxValue = dr["MAX_VALUE"].ToString();
+                        vo.orderId = Function.Dec( dr["ORDER_ID"]);
+                        vo.bakField1 = dr["BAK_FIELD1"].ToString();
+                        vo.bakField2 = dr["BAK_FIELD2"].ToString();
+                        vo.createDate = Function.Datetime(dr["CREATE_ON"]);
+                        vo.createId = dr["CREATE_USER_ID"].ToString();
+                        vo.createName = dr["CREATE_BY"].ToString();
+                        vo.modifyDate = Function.Datetime(dr["MODIFED_ON"]);
+                        vo.modifyId = dr["MODIFED_USER_ID"].ToString();
+                        vo.modifyName = dr["MODIFED_BY"].ToString();
+
+                        string sql = @"insert into reportMainItem (id,clientId,reportId,sectionName,itemName,itemValue,
+                                                                    itemUnits,itemRefrange,isNormal,minValue,
+                                                                    maxValue,orderId,bakField1,bakField2,createDate,createId,
+                                                                    createName,modifyDate,modifyId,modifyName) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                        IDataParameter[] parm = svc.CreateParm(20);
+                        parm[0].Value = vo.id;
+                        parm[1].Value = vo.clientId;
+                        parm[2].Value = vo.reportId;
+                        parm[3].Value = vo.sectionName;
+                        parm[4].Value = vo.itemName;
+                        parm[5].Value = vo.itemValue;
+                        parm[6].Value = vo.itemUnits;
+                        parm[7].Value = vo.itemRefrange;
+                        parm[8].Value = vo.isNormal;
+                        parm[9].Value = vo.minValue;
+                        parm[10].Value = vo.maxValue;
+                        parm[11].Value = vo.orderId;
+                        parm[12].Value = vo.bakField1;
+                        parm[13].Value = vo.bakField2;
+                        parm[14].Value = vo.createDate;
+                        parm[15].Value = vo.createId;
+                        parm[16].Value = vo.createName;
+                        parm[17].Value = vo.modifyDate;
+                        parm[18].Value = vo.modifyId;
+                        parm[19].Value = vo.modifyName;
+
+                        affectRows = svc.ExecSql(sql,parm);
+                    }
+
+                    if (affectRows > 0)
+                    {
+                        MessageBox.Show("success!");
+                    }
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+                ExceptionLog.OutPutException(ex);
+            }
+            finally
+            {
+                svc = null;
+            }
         }
     }
 }

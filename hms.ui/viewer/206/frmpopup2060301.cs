@@ -58,7 +58,9 @@ namespace Hms.Ui
         private void btnSave_Click(object sender, EventArgs e)
         {
             int affect = -1;
-            if (string.IsNullOrEmpty(dietTemplate.templateId))
+            if (dietTemplate == null)
+                dietTemplate = new EntityDietTemplate();
+            else if (string.IsNullOrEmpty(dietTemplate.templateId))
                 dietTemplate = new EntityDietTemplate();
 
             dietTemplate.templateName = this.txtName.Text;

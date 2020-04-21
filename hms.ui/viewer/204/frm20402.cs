@@ -25,6 +25,15 @@ namespace Hms.Ui
             frmPopup2040101 frm = new frmPopup2040101();
             frm.ShowDialog();
         }
+
+
+        public override void LoadData()
+        {
+            EntityDisplayPromotionPlan plan = GetRowObject();
+            frmPopup2040201 frm = new frmPopup2040201(plan);
+            frm.ShowDialog();
+
+        }
         #endregion
 
 
@@ -37,6 +46,18 @@ namespace Hms.Ui
                 gridControl.DataSource = lstPromotionPlan;
                 gridControl.RefreshDataSource();
             }
+        }
+        #endregion
+
+        #region GetRowObject
+        /// <summary>
+        /// GetRowObject
+        /// </summary>
+        /// <returns></returns>
+        EntityDisplayPromotionPlan GetRowObject()
+        {
+            if (this.gridView.FocusedRowHandle < 0) return null;
+            return this.gridView.GetRow(this.gridView.FocusedRowHandle) as EntityDisplayPromotionPlan;
         }
         #endregion
 

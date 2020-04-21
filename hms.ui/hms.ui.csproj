@@ -131,6 +131,8 @@
     </Reference>
     <Reference Include="DevExpress.XtraRichEdit.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraRichEdit.v16.2.Extensions, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\debug\DevExpress.XtraTreeList.v16.2.dll</HintPath>
@@ -160,6 +162,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="proxy\proxyhms.cs" />
     <Compile Include="uccontrol\customqn.cs">
@@ -413,6 +420,12 @@
     </Compile>
     <Compile Include="viewer\204\frmpopup2040101.Designer.cs">
       <DependentUpon>frmpopup2040101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewer\204\frmpopup2040201.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewer\204\frmpopup2040201.Designer.cs">
+      <DependentUpon>frmpopup2040201.cs</DependentUpon>
     </Compile>
     <Compile Include="viewer\204\frmpopup2040301.cs">
       <SubType>Form</SubType>
@@ -865,6 +878,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="uccontrol\customqn.resx">
       <DependentUpon>customqn.cs</DependentUpon>
     </EmbeddedResource>
@@ -990,6 +1007,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="viewer\204\frmpopup2040101.resx">
       <DependentUpon>frmpopup2040101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewer\204\frmpopup2040201.resx">
+      <DependentUpon>frmpopup2040201.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewer\204\frmpopup2040301.resx">
       <DependentUpon>frmpopup2040301.cs</DependentUpon>
