@@ -193,7 +193,7 @@ namespace Hms.Biz
             SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
             string strSub = string.Empty;
             string Sql = string.Empty;
-            Sql = @"select b.clientName,
+            Sql = @"select a.clientId, b.clientName,
                             b.clientNo,
                             b.gender,
                             b.birthday,
@@ -251,6 +251,7 @@ namespace Hms.Biz
                 foreach (DataRow dr in dt.Rows)
                 {
                     vo = new EntityDisplayPromotionPlan();
+                    vo.clientId = dr["clientId"].ToString();
                     vo.clientName = dr["clientName"].ToString();
                     vo.clientNo = dr["clientNo"].ToString();
                     vo.gender = Function.Int(dr["gender"]);
@@ -286,7 +287,8 @@ namespace Hms.Biz
             string strSub = string.Empty;
             SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
             string Sql = string.Empty;
-            Sql = @"select b.clientName,
+            Sql = @"select  a.clientId,
+                            b.clientName,
                             b.clientNo,
                             b.gender,
                             b.birthday,
@@ -344,6 +346,7 @@ namespace Hms.Biz
                 foreach (DataRow dr in dt.Rows)
                 {
                     vo = new EntityDisplayPromotionPlan();
+                    vo.clientId = dr["clientId"].ToString();
                     vo.clientName = dr["clientName"].ToString();
                     vo.clientNo = dr["clientNo"].ToString();
                     vo.gender = Function.Int(dr["gender"]);
@@ -436,6 +439,86 @@ namespace Hms.Biz
 
         #endregion
 
+        #region 健康管理报告评估分数
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityDisplayClientModelAcess> GetDisplayClientModelAcess(List<EntityParm> parms)
+        {
+            List<EntityDisplayClientModelAcess> data = null;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            string strSub = string.Empty;
+            string Sql = string.Empty;
+            Sql = @"select a.recordId,
+                                    a.reportId,
+                                    a.modelId,
+                                    a.modelResult,
+                                    a.modelScore,
+                                    b.modelName 
+                                    from clientModelResult a  
+                                    left join modelAccess b
+                                    on a.modelId = b.modelId
+                                    where a.recordId is not null  ";
+
+            List<IDataParameter> lstParm = new List<IDataParameter>();
+
+            if (parms != null)
+            {
+                foreach (EntityParm po in parms)
+                {
+                    switch (po.key)
+                    {
+                        case "clientId":
+                            IDataParameter parm = svc.CreateParm();
+                            parm.Value = po.value;
+                            lstParm.Add(parm);
+                            strSub += " and a.clientId = ?";
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+
+            Sql += strSub;
+            Sql += " order by b.orderId";
+            DataTable dt = svc.GetDataTable(Sql, lstParm);
+
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                data = new List<EntityDisplayClientModelAcess>();
+                EntityDisplayClientModelAcess vo = null;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    vo = new EntityDisplayClientModelAcess();
+                    vo.modelName = dr["modelName"].ToString();
+                    vo.modelScore = dr["modelScore"].ToString();
+                    if (Function.Dec(dr["modelScore"]) == 0)
+                        vo.modelScore = "-";
+                    vo.modelResult = dr["modelResult"].ToString();
+                    vo.modelScoreAndResult = vo.modelScore + "|" + vo.modelResultStr;
+
+                    if (data.Any(r=>r.modelName == vo.modelName))
+                    {
+                        EntityDisplayClientModelAcess voClone = data.Find(r => r.modelName == vo.modelName);
+                        string[] arrStr = voClone.modelScoreAndResult.Split('|');
+                        string strScore = arrStr[0];
+                        strScore += "," + vo.modelScore;
+                        string strTmp = arrStr[1];
+                        strTmp += "," + vo.modelResultStr;
+                        voClone.modelScoreAndResult = strScore + "|" + strTmp;
+
+                    }
+                    else 
+                        data.Add(vo);
+                }
+            }
+            return data;
+        }
+        #endregion
+
         #region 体检报告重要指标
         /// <summary>
         /// 获取重要指标
@@ -506,6 +589,54 @@ namespace Hms.Biz
             return data;
         }
 
+        #endregion
+
+        #region 体检项目列表
+        /// <summary>
+        /// 体检项目列表
+        /// </summary>
+        /// <returns></returns>
+        public List<EntityReportItem> GetReportItems(string reportId)
+        {
+            List<EntityReportItem> data = null;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            string Sql = string.Empty;
+            Sql = @"select a.reportId,
+                           a.sectionName,
+                           a.itemName,
+                           a.itemValue,
+                           a.maxValue,
+                           a.minValue,
+                           a.itemUnit,
+                           a.refRange
+                      from reportItem a where a.reportId = ? order by a.sectionName";
+
+            if (string.IsNullOrEmpty(reportId))
+                return null;
+
+            IDataParameter parm = svc.CreateParm();
+            parm.Value = reportId;
+            DataTable dt = svc.GetDataTable(Sql, parm);
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                data = new List<EntityReportItem>();
+                EntityReportItem vo = null;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    vo = new EntityReportItem();
+                    vo.reportId = dr["reportId"].ToString();
+                    vo.sectionName = dr["sectionName"].ToString();
+                    vo.itemName = dr["itemName"].ToString();
+                    vo.itemValue = dr["itemValue"].ToString();
+                    vo.maxValue = Function.Dec(dr["maxValue"]);
+                    vo.minValue = Function.Dec(dr["minValue"]);
+                    vo.itemUnit = dr["itemUnit"].ToString();
+                    vo.refRange = dr["refRange"].ToString();
+                    data.Add(vo);
+                }
+            }
+            return data;
+        }
         #endregion
 
         #region Dispose

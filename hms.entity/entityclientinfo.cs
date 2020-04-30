@@ -124,6 +124,17 @@ namespace Hms.Entity
         [DataMember]
         public string gradeName { get; set; }
 
+        public string strBirthday
+        {
+            get
+            {
+                if (birthday == null)
+                    return "";
+                else
+                    return Function.Datetime(birthday).ToString("yyyy-MM-dd");
+            }
+        }
+
         [DataMember]
         public string sex
         {

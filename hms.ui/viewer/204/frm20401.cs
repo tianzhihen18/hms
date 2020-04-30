@@ -114,7 +114,7 @@ namespace Hms.Ui
             lstClientInfo = null;
             using (ProxyHms proxy = new ProxyHms())
             {
-                lstClientInfo = proxy.Service.GetClientInfos();
+                lstClientInfo = proxy.Service.GetClientInfoAndRpt();
                 gcClient.DataSource = lstClientInfo;
                 gcClient.RefreshDataSource();
 

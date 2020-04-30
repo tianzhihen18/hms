@@ -1,5 +1,6 @@
 ﻿using Common.Controls;
 using Common.Entity;
+using Hms.Entity;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -130,15 +131,19 @@ namespace Hms.Ui
             }
             // 明细缓
             List<EntityDicQnDetail> lstDet = new List<EntityDicQnDetail>();
+            List<EntityDicQnCtlLocation> lstLocation = new List<EntityDicQnCtlLocation>();
+            List<EntityDicQnSetting> lstSettings = new List<EntityDicQnSetting>();
             foreach (KeyValuePair<int, IQuest> kvp in dicQuestCtrl)
             {
                 lstDet.AddRange(kvp.Value.GetQnCtrls());
+                lstLocation.Add(kvp.Value.GetQnCtrlsLocation());
+                lstSettings.AddRange(kvp.Value.GetQnSettings());
             }
 
             decimal qnId = 0;
             using (ProxyHms proxy = new ProxyHms())
             {
-                if (proxy.Service.SaveQNnormal(vo, lstDet, out qnId) > 0)
+                if (proxy.Service.SaveQNnormal(vo, lstDet, out qnId,lstLocation, lstSettings) > 0)
                 {
                     if (this.QnVo == null)
                     {
@@ -289,8 +294,9 @@ namespace Hms.Ui
     public interface IQuest
     {
         List<EntityDicQnDetail> GetQnCtrls();
-
         void SetQnCtrls(List<EntityDicQnDetail> lstCtrls);
+        EntityDicQnCtlLocation GetQnCtrlsLocation();
+        List<EntityDicQnSetting> GetQnSettings();
     }
 
     #endregion

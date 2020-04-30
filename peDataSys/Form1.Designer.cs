@@ -46,6 +46,10 @@
             this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.btnSysReportItem = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSysMainItem = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.gcClient = new DevExpress.XtraGrid.GridControl();
@@ -82,7 +86,8 @@
             this.memoEdit4 = new DevExpress.XtraEditors.MemoEdit();
             this.panel8 = new System.Windows.Forms.Panel();
             this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
-            this.btnSysMainItem = new DevExpress.XtraEditors.SimpleButton();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
@@ -113,6 +118,8 @@
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit4.Properties)).BeginInit();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // simpleButton1
@@ -197,10 +204,12 @@
             // gridLookUpEdit
             // 
             this.gridLookUpEdit.EditValue = "";
-            this.gridLookUpEdit.Location = new System.Drawing.Point(233, 185);
+            this.gridLookUpEdit.Location = new System.Drawing.Point(610, 265);
             this.gridLookUpEdit.Name = "gridLookUpEdit";
             this.gridLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.gridLookUpEdit.Properties.ImmediatePopup = true;
+            this.gridLookUpEdit.Properties.NullText = "";
             this.gridLookUpEdit.Properties.View = this.gridLookUpEdit1View;
             this.gridLookUpEdit.Size = new System.Drawing.Size(243, 20);
             this.gridLookUpEdit.TabIndex = 9;
@@ -217,8 +226,6 @@
             this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
             this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.gridLookUpEdit1View.OptionsSelection.MultiSelect = true;
-            this.gridLookUpEdit1View.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             this.gridLookUpEdit1View.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.gridLookUpEdit1View_SelectionChanged);
             // 
@@ -228,7 +235,7 @@
             this.gridColumn1.FieldName = "caiMasterName";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
+            this.gridColumn1.VisibleIndex = 0;
             // 
             // gridColumn2
             // 
@@ -236,7 +243,7 @@
             this.gridColumn2.FieldName = "caiSlaveName";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 2;
+            this.gridColumn2.VisibleIndex = 1;
             // 
             // gridColumn3
             // 
@@ -278,6 +285,11 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.lookUpEdit2);
+            this.xtraTabPage1.Controls.Add(this.lookUpEdit1);
+            this.xtraTabPage1.Controls.Add(this.labelControl2);
+            this.xtraTabPage1.Controls.Add(this.labelControl1);
+            this.xtraTabPage1.Controls.Add(this.btnSysReportItem);
             this.xtraTabPage1.Controls.Add(this.btnSysMainItem);
             this.xtraTabPage1.Controls.Add(this.simpleButton1);
             this.xtraTabPage1.Controls.Add(this.gridLookUpEdit);
@@ -294,6 +306,40 @@
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(986, 520);
             this.xtraTabPage1.Text = "xtraTabPage1";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(458, 253);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(70, 14);
+            this.labelControl2.TabIndex = 15;
+            this.labelControl2.Text = "labelControl2";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(499, 292);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(70, 14);
+            this.labelControl1.TabIndex = 14;
+            this.labelControl1.Text = "labelControl1";
+            // 
+            // btnSysReportItem
+            // 
+            this.btnSysReportItem.Location = new System.Drawing.Point(233, 264);
+            this.btnSysReportItem.Name = "btnSysReportItem";
+            this.btnSysReportItem.Size = new System.Drawing.Size(166, 23);
+            this.btnSysReportItem.TabIndex = 13;
+            this.btnSysReportItem.Text = "同步体检报告项目";
+            this.btnSysReportItem.Click += new System.EventHandler(this.btnSysReportItem_Click);
+            // 
+            // btnSysMainItem
+            // 
+            this.btnSysMainItem.Location = new System.Drawing.Point(45, 264);
+            this.btnSysMainItem.Name = "btnSysMainItem";
+            this.btnSysMainItem.Size = new System.Drawing.Size(166, 23);
+            this.btnSysMainItem.TabIndex = 12;
+            this.btnSysMainItem.Text = "同步重要指标";
+            this.btnSysMainItem.Click += new System.EventHandler(this.btnSysMainItem_Click);
             // 
             // xtraTabPage2
             // 
@@ -713,14 +759,23 @@
             this.labelControl30.TabIndex = 0;
             this.labelControl30.Text = "建议>>";
             // 
-            // btnSysMainItem
+            // lookUpEdit1
             // 
-            this.btnSysMainItem.Location = new System.Drawing.Point(45, 264);
-            this.btnSysMainItem.Name = "btnSysMainItem";
-            this.btnSysMainItem.Size = new System.Drawing.Size(166, 23);
-            this.btnSysMainItem.TabIndex = 12;
-            this.btnSysMainItem.Text = "同步重要指标";
-            this.btnSysMainItem.Click += new System.EventHandler(this.btnSysMainItem_Click);
+            this.lookUpEdit1.Location = new System.Drawing.Point(759, 343);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Size = new System.Drawing.Size(100, 20);
+            this.lookUpEdit1.TabIndex = 16;
+            // 
+            // lookUpEdit2
+            // 
+            this.lookUpEdit2.Location = new System.Drawing.Point(621, 373);
+            this.lookUpEdit2.Name = "lookUpEdit2";
+            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit2.Size = new System.Drawing.Size(211, 20);
+            this.lookUpEdit2.TabIndex = 17;
             // 
             // Form1
             // 
@@ -737,6 +792,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
+            this.xtraTabPage1.PerformLayout();
             this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
@@ -765,6 +821,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit4.Properties)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -826,6 +884,11 @@
         private System.Windows.Forms.Panel panel8;
         private DevExpress.XtraEditors.LabelControl labelControl30;
         private DevExpress.XtraEditors.SimpleButton btnSysMainItem;
+        private DevExpress.XtraEditors.SimpleButton btnSysReportItem;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
     }
 }
 

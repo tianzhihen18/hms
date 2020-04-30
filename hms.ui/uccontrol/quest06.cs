@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using weCare.Core.Entity;
+using Hms.Entity;
 
 namespace Hms.Ui
 {
@@ -51,6 +52,45 @@ namespace Hms.Ui
                     }
                 }
             }
+        }
+
+        public List<EntityDicQnSetting> GetQnSettings()
+        {
+            List<EntityDicQnSetting> data = new List<EntityDicQnSetting>();
+
+
+            return data;
+        }
+
+        public EntityDicQnCtlLocation GetQnCtrlsLocation()
+        {
+            EntityDicQnCtlLocation vo = new EntityDicQnCtlLocation();
+            vo.qnCtlFiledId = "quest06";
+            StringBuilder xml = new StringBuilder();
+            xml.Append("<eflayout>");
+            foreach (Control ctrl in plBack.Controls)
+            {
+                if (ctrl is DevExpress.XtraEditors.LabelControl)
+                {
+                    if (ctrl.Name.Contains("F"))
+                    {
+                        xml.Append("<ctrl ctrlname=\"" + ctrl.Name +
+                                   "\" ctrlText=\"" + ctrl.Text +
+                                   "\" ctrltype=\"" + ctrl.GetType() +
+                                   "\" top=\"" + ctrl.Top.ToString() +
+                                   "\" left=\"" + ctrl.Left.ToString() +
+                                   "\" width=\"" + ctrl.Width.ToString() +
+                                   "\" height=\"" + ctrl.Height.ToString() +
+                                   "\" locationX=\"" + ctrl.Location.X +
+                                   "\" locationY=\"" + ctrl.Location.Y + "\"/>");
+
+                    }
+                }
+            }
+            xml.Append("</eflayout>");
+            xml.Append(System.Environment.NewLine);
+            vo.xmlData = xml.ToString();
+            return vo;
         }
 
     }

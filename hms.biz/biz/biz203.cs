@@ -39,7 +39,9 @@ namespace Hms.Biz
                             d.reportNo,
                             d.reportDate,
                             a.reportStatc ,
-                            a.suditState 
+                            a.suditState ,
+                            d.datasource,
+                            d.examinationOrgan
                             from reportRecorde a 
                             left join clientInfo b 
                             on a.clientId = b.id
@@ -63,8 +65,9 @@ namespace Hms.Biz
                     }
                 }
             }
-
+        
             Sql += strSub;
+            Sql += " order by d.reportDate";
 
             DataTable dt = svc.GetDataTable(Sql);
            
@@ -86,6 +89,8 @@ namespace Hms.Biz
                     vo.age = Function.CalcAge(Function.Datetime(dr["birthday"]));
                     vo.reportStatc = Function.Int(dr["reportStatc"]);
                     vo.suditState = Function.Int(dr["suditState"]);
+                    vo.dataSource = dr["dataSource"].ToString();
+                    vo.examinationOrgan = dr["examinationOrgan"].ToString();
                     vo.reportCount = 1;
                     data.Add(vo);
                 }

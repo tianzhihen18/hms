@@ -774,16 +774,17 @@ namespace peDataSys
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            //this.gridLookUpEdit.Properties.DataSource = GetDicCaiRecipe();
+            this.gridLookUpEdit.Properties.DataSource = GetDicCaiRecipe();
 
             //if (gridLookUpEdit1View.DataRowCount > 0)
             //{
             //    MessageBox.Show("gridLookUpEdit1View.RowCount");
             //}
-            List<EntityClientInfo> lstClientInfo = GetClientInfo();
-            gcClient.DataSource = lstClientInfo;
-            gcClient.RefreshDataSource();
-            lstClientSelect = new List<EntityClientInfo>();
+            //List<EntityClientInfo> lstClientInfo = GetClientInfo();
+            //gcClient.DataSource = lstClientInfo;
+            //gcClient.RefreshDataSource();
+            //lstClientSelect = new List<EntityClientInfo>();
+
 
 
         }
@@ -1017,10 +1018,10 @@ namespace peDataSys
 
         private void gridLookUpEdit_Click(object sender, EventArgs e)
         {
-            if (gridLookUpEdit1View.RowCount > 0)
-            {
-                MessageBox.Show("gridLookUpEdit1View.RowCount");
-            }
+            //if (gridLookUpEdit1View.RowCount > 0)
+            //{
+            //    MessageBox.Show("gridLookUpEdit1View.RowCount");
+            //}
         }
 
         private void gridLookUpEdit_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -1400,6 +1401,79 @@ namespace peDataSys
                     }
 
 
+                }
+            }
+            catch (Exception ex)
+            {
+                ExceptionLog.OutPutException(ex);
+            }
+            finally
+            {
+                svc = null;
+            }
+        }
+
+        private void btnSysReportItem_Click(object sender, EventArgs e)
+        {
+            SqlHelper svcOra = new SqlHelper(EnumBiz.interfaceDB);
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            try
+            {
+                List<DacParm> lstParm = new List<DacParm>();
+                int affectRows = -1;
+                string Sql = string.Empty;
+
+                Sql = @"select distinct reportId from reportRecorde";
+                DataTable dtRpt = svc.GetDataTable(Sql);
+                if(dtRpt != null && dtRpt.Rows.Count > 0)
+                {
+                    foreach (DataRow drr in dtRpt.Rows)
+                    {
+                        string reportId = drr["reportId"].ToString();
+                        Sql = @"select * from REPORT_ITEM where report_id = '" + reportId + "'" ;
+                        DataTable dt = svcOra.GetDataTable(Sql);
+
+                        if (dt != null && dt.Rows.Count > 0)
+                        {
+                            foreach (DataRow dr in dt.Rows)
+                            {
+                                EntityReportItem vo = new EntityReportItem();
+
+                                vo.reportId = dr["REPORT_ID"].ToString();
+                                vo.sectionName = dr["SECTION_NAME"].ToString();
+                                vo.itemName = dr["ITEM_NAME"].ToString();
+                                vo.itemValue = dr["ITEM_VALUE"].ToString();
+                                vo.itemUnit = dr["ITEM_UNIT"].ToString();
+                                vo.memo = dr["MEMO"].ToString();
+                                vo.refRange = dr["REF_RANGE"].ToString();
+                                vo.minValue = Function.Dec(dr["MIN_VALUE"]);
+                                vo.maxValue = Function.Dec(dr["MAX_VALUE"]);
+
+
+                                string sql = @"insert into reportItem (reportId,sectionName,itemName,itemValue,
+                                                                    itemUnit,memo,refRange,minValue,
+                                                                    maxValue) values (?,?,?,?,?,?,?,?,?)";
+                                IDataParameter[] parm = svc.CreateParm(9);
+
+                                parm[0].Value = vo.reportId;
+                                parm[1].Value = vo.sectionName;
+                                parm[2].Value = vo.itemName;
+                                parm[3].Value = vo.itemValue;
+                                parm[4].Value = vo.itemUnit;
+                                parm[5].Value = vo.memo;
+                                parm[6].Value = vo.refRange;
+                                parm[7].Value = vo.minValue;
+                                parm[8].Value = vo.maxValue;
+
+                                affectRows = svc.ExecSql(sql, parm);
+                            } 
+                        }
+                    }
+
+                    if (affectRows > 0)
+                    {
+                        MessageBox.Show("success!");
+                    }
                 }
             }
             catch (Exception ex)

@@ -138,6 +138,9 @@ namespace weCare.Core.Entity
         [DataMember]
         public string wbCode { get; set; }
 
+        [DataMember]
+        public string questName { get; set; }
+
         /// <summary>
         /// Columns
         /// </summary>

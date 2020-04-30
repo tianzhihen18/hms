@@ -11,6 +11,8 @@ namespace Hms.Entity
     public class EntityDisplayPromotionPlan :BaseDataContract
     {
         [DataMember]
+        public string clientId { get; set; }
+        [DataMember]
         public string clientName { get; set; }
         [DataMember]
         public string clientNo { get; set; }

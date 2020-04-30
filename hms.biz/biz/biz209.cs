@@ -8,6 +8,7 @@ using System.Data;
 using System.Linq;
 using System.Xml;
 using System.Transactions;
+using Hms.Entity;
 
 namespace Hms.Biz
 {
@@ -26,7 +27,7 @@ namespace Hms.Biz
         /// <param name="lstDet"></param>
         /// <param name="qnId"></param>
         /// <returns></returns>
-        public int SaveQNnormal(EntityDicQnMain vo, List<EntityDicQnDetail> lstDet, out decimal qnId)
+        public int SaveQNnormal(EntityDicQnMain vo, List<EntityDicQnDetail> lstDet, out decimal qnId, List<EntityDicQnCtlLocation> lstLaction = null,List<EntityDicQnSetting> lstSettings = null)
         {
             int affectRows = 0;
             qnId = 0;
@@ -64,6 +65,18 @@ namespace Hms.Biz
                     lstParm.Add(svc.GetDelParm(lstDet[0], EntityDicQnDetail.Columns.qnId));
                     lstParm.Add(svc.GetInsertParm(lstDet.ToArray()));
                 }
+
+                if(lstLaction != null && lstLaction.Count > 0)
+                {
+                    lstParm.Add(svc.GetDelParmByPk(lstLaction.ToArray()));
+                    lstParm.Add(svc.GetInsertParm(lstLaction.ToArray()));
+                }
+                if(lstSettings != null && lstSettings.Count > 0)
+                {
+                    lstParm.Add(svc.GetDelParmByPk(lstSettings.ToArray()));
+                    lstParm.Add(svc.GetInsertParm(lstSettings.FindAll(r=>r.status==1).ToArray()));
+                }
+
                 affectRows = svc.Commit(lstParm);
                 qnId = vo.qnId;
             }
@@ -204,7 +217,8 @@ namespace Hms.Biz
                            c.fieldId,
                            c.fieldName,
                            c.isEssential,
-                           c.parentFieldId
+                           c.parentFieldId,
+                           b.questName
                       from dicQnMain a
                      inner join dicQnDetail b
                         on a.qnId = b.qnId
@@ -230,7 +244,8 @@ namespace Hms.Biz
                         fieldId = dr["fieldId"].ToString(),
                         fieldName = dr["fieldName"].ToString(),
                         parentFieldId = dr["parentFieldId"].ToString(),
-                        isEssential = Function.Int(dr["isEssential"])
+                        isEssential = Function.Int(dr["isEssential"]),
+                        questName = dr["questName"].ToString()
                     });
                     fieldIds += "'" + dr["fieldId"].ToString() + "',";
                 }
@@ -462,9 +477,6 @@ namespace Hms.Biz
             return affectRows;
         }
         #endregion
-
-
-
 
         #endregion
 

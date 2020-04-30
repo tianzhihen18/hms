@@ -121,6 +121,23 @@ namespace Hms.Entity
         /// 单位
         /// </summary>
         public string company { get; set; }
+
+        [DataMember]
+        public string examinationOrgan { get; set; }
+        [DataMember]
+        public string dataSource { get; set; }
+        [DataMember]
+        public string strDataSource
+        {
+            get
+            {
+                if (dataSource == "1")
+                    return "团体";
+                else
+                    return "个人空间";
+            }
+        }
+
         [DataMember]
         public Image image01 { get; set; }
         [DataMember]

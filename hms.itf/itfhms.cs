@@ -21,8 +21,8 @@ namespace Hms.Itf
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        [OperationContract(Name = "GetClientInfos")]
-        List<EntityClientInfo> GetClientInfos(List<EntityParm> parms = null);
+        [OperationContract(Name = "GetClientInfoAndRpt")]
+        List<EntityClientInfo> GetClientInfoAndRpt(List<EntityParm> parms = null);
 
         /// <summary>
         /// 类别列表
@@ -31,9 +31,50 @@ namespace Hms.Itf
         /// <returns></returns>
         [OperationContract(Name = "GetUserGrades")]
         List<EntityUserGrade> GetUserGrades(List<EntityParm> parms = null);
+
+        /// <summary>
+        /// 客户列表
+        /// </summary>
+        /// <param name="search"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetClientInfos")]
+        List<EntityClientInfo> GetClientInfos(string search = null);
         #endregion
 
         #region 202 健康档案
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetQnControl")]
+        List<EntitySetQnControl> GetQnControl(List<EntityParm> parms = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetQnCtrlLocation")]
+        List<EntityCtrlLocation> GetQnCtrlLocation(string qnCtlFiledId);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="qnRecord"></param>
+        /// <param name="qnData"></param>
+        /// <param name="recId"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "SaveQnRecord")]
+        int SaveQnRecord(EntityQnRecord qnRecord, EntityQnData qnData, out decimal recId);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "SaveQnRecord")]
+        List<EntityQnRecord> GetQnRecords(List<EntityParm> parms = null);
 
         #endregion
 
@@ -94,12 +135,28 @@ namespace Hms.Itf
         List<EntityDisplayPromotionPlan> GetPromotionPlanRecords(List<EntityParm> dicParm = null);
 
         /// <summary>
+        /// 健康管理报告评估分数
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetPromotionPlanRecords")]
+        List<EntityDisplayClientModelAcess> GetDisplayClientModelAcess(List<EntityParm> parms);
+
+        /// <summary>
         /// 获取重要指标
         /// </summary>
         /// <param name="reportId"></param>
         /// <returns></returns>
         [OperationContract(Name = "GetReportMainItem")]
         List<EntityReportMainItem> GetReportMainItem(string reportId);
+
+        /// <summary>
+        /// 体检项目列表
+        /// </summary>
+        /// <param name="reportId"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetReportItems")]
+        List<EntityReportItem> GetReportItems(string reportId);
         #endregion
 
         #region 205 慢病管理
@@ -393,7 +450,7 @@ namespace Hms.Itf
         /// <param name="qnId"></param>
         /// <returns></returns>
         [OperationContract(Name = "SaveQNnormal")]
-        int SaveQNnormal(EntityDicQnMain vo, List<EntityDicQnDetail> lstDet, out decimal qnId);
+        int SaveQNnormal(EntityDicQnMain vo, List<EntityDicQnDetail> lstDet, out decimal qnId, List<EntityDicQnCtlLocation>  lstLaction= null, List<EntityDicQnSetting> lstSettings = null);
 
         /// <summary>
         /// 删除

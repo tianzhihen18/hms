@@ -50,6 +50,7 @@
     <Compile Include="biz\biz204.cs" />
     <Compile Include="biz\biz205.cs" />
     <Compile Include="biz\biz206.cs" />
+    <Compile Include="biz\biz202.cs" />
     <Compile Include="biz\biz208.cs" />
     <Compile Include="biz\biz209.cs" />
     <Compile Include="biz\biz210.cs" />

@@ -27,6 +27,13 @@ namespace weCare.Core.Entity
         public System.String fieldId { get; set; }
 
         /// <summary>
+        /// questName
+        /// </summary>
+        [DataMember]
+        [EntityAttribute(FieldName = "questName", DbType = DbType.AnsiString, IsPK = true, IsSeq = false, SerNo = 3)]
+        public System.String questName { get; set; }
+
+        /// <summary>
         /// Columns
         /// </summary>
         public static EnumCols Columns = new EnumCols();
@@ -38,6 +45,7 @@ namespace weCare.Core.Entity
         {
             public string qnId = "qnId";
             public string fieldId = "fieldId";
+            public string questName = "questName";
         }
     }
 }

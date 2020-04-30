@@ -45,17 +45,20 @@
   <ItemGroup>
     <Compile Include="entityadpeitem.cs" />
     <Compile Include="entityclientinfo.cs" />
+    <Compile Include="entityctrllocation.cs" />
     <Compile Include="entitydiccai.cs" />
     <Compile Include="entitydiccaiconfig.cs" />
     <Compile Include="entitydiccaiingredient.cs" />
     <Compile Include="entitydicdientingredient.cs" />
     <Compile Include="entitydicingredientclassify.cs" />
     <Compile Include="entitydicingredientconfig.cs" />
+    <Compile Include="entitydicqnctllocation .cs" />
     <Compile Include="entitydietprinciple.cs" />
     <Compile Include="entitydiettemplate.cs" />
     <Compile Include="entitydiettemplatetype.cs" />
     <Compile Include="entitydiettreatment.cs" />
     <Compile Include="entitydiplaypeitem.cs" />
+    <Compile Include="entitydisplayclientmodelacess.cs" />
     <Compile Include="entitydisplayclientrpt.cs" />
     <Compile Include="entitydisplaydiccairecipe.cs" />
     <Compile Include="entitydisplaypromotionplan.cs" />
@@ -68,11 +71,15 @@
     <Compile Include="entitypromotiontemplate.cs" />
     <Compile Include="entitypromotiontemplateconfig.cs" />
     <Compile Include="entitypromotionwayconfig.cs" />
+    <Compile Include="entityqndata .cs" />
+    <Compile Include="entityqnrecord.cs" />
     <Compile Include="entityreportinfo.cs" />
+    <Compile Include="entityreportitem.cs" />
     <Compile Include="entityreportmainitem.cs" />
     <Compile Include="entityreportrecorde.cs" />
     <Compile Include="entityreporttemplate.cs" />
     <Compile Include="entityrpttemplateconfig.cs" />
+    <Compile Include="entitysetqncontrol.cs" />
     <Compile Include="entitysms.cs" />
     <Compile Include="entitytemplatedetail.cs" />
     <Compile Include="entityunnormal.cs" />

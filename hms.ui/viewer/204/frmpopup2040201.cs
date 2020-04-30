@@ -68,10 +68,25 @@ namespace Hms.Ui
 
         #region events
 
+        #region
         private void btnInfoCollect_Click(object sender, EventArgs e)
         {
             this.navigationFrame.SelectedPage = navInfoCollect;
+
+            using (ProxyHms proxy = new ProxyHms())
+            {
+                List<EntityParm> lstParms = new List<EntityParm>();
+                if (promotionPlan != null)
+                {
+                    EntityParm parm = new EntityParm();
+                    parm.key = "clientId";
+                    parm.value = promotionPlan.clientId;
+                    lstParms.Add(parm);
+                    gcClientModel.DataSource = proxy.Service.GetDisplayClientModelAcess(lstParms);
+                }
+            }
         }
+        #endregion
         private void btnRiskQuestion_Click(object sender, EventArgs e)
         {
             this.navigationFrame.SelectedPage = navRiskQuestion;
@@ -188,10 +203,42 @@ namespace Hms.Ui
         {
             this.navigationFrame.SelectedPage = navDiet;
         }
+        #region 体检报告
         private void btnPeReport_Click(object sender, EventArgs e)
         {
             this.navigationFrame.SelectedPage = navPeReport;
+            using (ProxyHms proxy = new ProxyHms())
+            {
+                List<EntityParm> lstParms = new List<EntityParm>();
+                if (promotionPlan != null)
+                {
+                    EntityParm parm = new EntityParm();
+                    parm.key = "clientNo";
+                    parm.value = promotionPlan.clientNo;
+                    lstParms.Add(parm);
+                    gcReportItem.DataSource = proxy.Service.GetClientReports(lstParms);
+                }
+            }
+
         }
+
+        private void gvReportItem_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        {
+            if (e.RowHandle < 0)
+                return;
+            EntityDisplayClientRpt vo = gvReportItem.GetRow(e.RowHandle) as EntityDisplayClientRpt;
+
+            if (vo == null)
+                return;
+            using (ProxyHms proxy = new ProxyHms())
+            {
+                gcReportItemData.DataSource = proxy.Service.GetReportItems(vo.reportId);
+                gcReportItemData.RefreshDataSource();
+            }  
+        }
+
+        #endregion
+
         private void btnHealthMinitor_Click(object sender, EventArgs e)
         {
             this.navigationFrame.SelectedPage = navHealthMinitor;
@@ -220,6 +267,7 @@ namespace Hms.Ui
         private void frmPopup2040201_Load(object sender, EventArgs e)
         {
             Init();
+            btnInfoCollect_Click(null, null);
         }
         private void timer_Tick(object sender, EventArgs e)
         { 
@@ -230,8 +278,9 @@ namespace Hms.Ui
 
 
 
+
         #endregion
 
-       
+        
     }
 }

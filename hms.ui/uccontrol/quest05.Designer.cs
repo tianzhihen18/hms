@@ -247,7 +247,7 @@
             this.checkEdit378.Properties.Caption = "平均每天静坐时间";
             this.checkEdit378.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit378.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit378.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit378.Size = new System.Drawing.Size(152, 19);
             this.checkEdit378.TabIndex = 709;
             // 
             // checkEdit376
@@ -260,7 +260,7 @@
             this.checkEdit376.Properties.Caption = "您戒酒多长时间了";
             this.checkEdit376.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit376.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit376.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit376.Size = new System.Drawing.Size(152, 19);
             this.checkEdit376.TabIndex = 708;
             // 
             // checkEdit374
@@ -273,7 +273,7 @@
             this.checkEdit374.Properties.Caption = "总共饮酒几年";
             this.checkEdit374.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit374.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit374.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit374.Size = new System.Drawing.Size(152, 19);
             this.checkEdit374.TabIndex = 706;
             // 
             // checkEdit379
@@ -286,7 +286,7 @@
             this.checkEdit379.Properties.Caption = "您每次喝几两：(1两相当于50ml白酒,100ml红酒,300ml啤酒)";
             this.checkEdit379.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit379.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit379.Size = new System.Drawing.Size(520, 20);
+            this.checkEdit379.Size = new System.Drawing.Size(520, 19);
             this.checkEdit379.TabIndex = 713;
             // 
             // checkEdit372
@@ -299,7 +299,7 @@
             this.checkEdit372.Properties.Caption = "平均每天饮酒的两数是：(1两相当于50ml白酒,100ml红酒,300ml啤酒)";
             this.checkEdit372.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit372.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit372.Size = new System.Drawing.Size(472, 20);
+            this.checkEdit372.Size = new System.Drawing.Size(472, 19);
             this.checkEdit372.TabIndex = 710;
             // 
             // labelControl323
@@ -329,7 +329,7 @@
             this.checkEdit377.Properties.Caption = "每年饮酒次数";
             this.checkEdit377.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit377.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit377.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit377.Size = new System.Drawing.Size(152, 19);
             this.checkEdit377.TabIndex = 711;
             // 
             // labelControl324
@@ -415,7 +415,7 @@
             this.checkEdit370.Properties.Caption = "当前饮酒情况";
             this.checkEdit370.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit370.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit370.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit370.Size = new System.Drawing.Size(152, 19);
             this.checkEdit370.TabIndex = 707;
             // 
             // labelControl328
@@ -456,7 +456,7 @@
             this.checkEdit375.Properties.Caption = "几岁开始饮酒";
             this.checkEdit375.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit375.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit375.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit375.Size = new System.Drawing.Size(152, 19);
             this.checkEdit375.TabIndex = 714;
             // 
             // labelControl301
@@ -587,7 +587,7 @@
             this.checkEdit373.Properties.Caption = "饮酒的主要类型：(若已戒酒按戒酒前的情况进行选择，下同)";
             this.checkEdit373.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit373.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit373.Size = new System.Drawing.Size(404, 20);
+            this.checkEdit373.Size = new System.Drawing.Size(404, 19);
             this.checkEdit373.TabIndex = 712;
             // 
             // labelControl304
@@ -917,7 +917,7 @@
             this.checkEdit368.Properties.Caption = "您戒烟多长时间了";
             this.checkEdit368.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit368.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit368.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit368.Size = new System.Drawing.Size(152, 19);
             this.checkEdit368.TabIndex = 665;
             // 
             // checkEdit366
@@ -930,7 +930,7 @@
             this.checkEdit366.Properties.Caption = "被动吸烟";
             this.checkEdit366.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit366.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit366.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit366.Size = new System.Drawing.Size(152, 19);
             this.checkEdit366.TabIndex = 657;
             // 
             // checkEdit364
@@ -943,7 +943,7 @@
             this.checkEdit364.Properties.Caption = "几岁开始吸烟";
             this.checkEdit364.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit364.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit364.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit364.Size = new System.Drawing.Size(152, 19);
             this.checkEdit364.TabIndex = 656;
             // 
             // checkEdit369
@@ -956,7 +956,7 @@
             this.checkEdit369.Properties.Caption = "烟草类型";
             this.checkEdit369.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit369.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit369.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit369.Size = new System.Drawing.Size(152, 19);
             this.checkEdit369.TabIndex = 666;
             // 
             // labelControl260
@@ -997,7 +997,7 @@
             this.checkEdit362.Properties.Caption = "吸烟状态";
             this.checkEdit362.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit362.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit362.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit362.Size = new System.Drawing.Size(152, 19);
             this.checkEdit362.TabIndex = 635;
             // 
             // checkEdit367
@@ -1010,7 +1010,7 @@
             this.checkEdit367.Properties.Caption = "总共吸烟几年";
             this.checkEdit367.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit367.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit367.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit367.Size = new System.Drawing.Size(152, 19);
             this.checkEdit367.TabIndex = 659;
             // 
             // labelControl261
@@ -1141,7 +1141,7 @@
             this.checkEdit365.Properties.Caption = "平均每天几支";
             this.checkEdit365.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit365.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit365.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit365.Size = new System.Drawing.Size(152, 19);
             this.checkEdit365.TabIndex = 658;
             // 
             // labelControl264

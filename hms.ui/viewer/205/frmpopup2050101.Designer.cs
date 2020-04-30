@@ -687,7 +687,7 @@
             this.dteSfDate.MenuManager = this.barManager;
             this.dteSfDate.Name = "dteSfDate";
             this.dteSfDate.Properties.AccessibleName = "SfDate";
-            this.dteSfDate.Properties.Appearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dteSfDate.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dteSfDate.Properties.Appearance.ForeColor = System.Drawing.Color.Crimson;
             this.dteSfDate.Properties.Appearance.Options.UseFont = true;
             this.dteSfDate.Properties.Appearance.Options.UseForeColor = true;
@@ -699,7 +699,7 @@
             this.dteSfDate.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.dteSfDate.Properties.Mask.EditMask = "yyyy-MM-dd";
             this.dteSfDate.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.dteSfDate.Size = new System.Drawing.Size(93, 20);
+            this.dteSfDate.Size = new System.Drawing.Size(93, 22);
             this.dteSfDate.TabIndex = 5;
             // 
             // txtRecomDoctRemark
@@ -1160,7 +1160,7 @@
             this.dteSfRecord.MenuManager = this.barManager;
             this.dteSfRecord.Name = "dteSfRecord";
             this.dteSfRecord.Properties.AccessibleName = "SfRecordDate";
-            this.dteSfRecord.Properties.Appearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dteSfRecord.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dteSfRecord.Properties.Appearance.ForeColor = System.Drawing.Color.Crimson;
             this.dteSfRecord.Properties.Appearance.Options.UseFont = true;
             this.dteSfRecord.Properties.Appearance.Options.UseForeColor = true;
@@ -1172,7 +1172,7 @@
             this.dteSfRecord.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.dteSfRecord.Properties.Mask.EditMask = "yyyy-MM-dd HH:mm";
             this.dteSfRecord.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.dteSfRecord.Size = new System.Drawing.Size(124, 20);
+            this.dteSfRecord.Size = new System.Drawing.Size(124, 22);
             this.dteSfRecord.TabIndex = 77;
             // 
             // dteNextSfDate
@@ -1183,7 +1183,7 @@
             this.dteNextSfDate.MenuManager = this.barManager;
             this.dteNextSfDate.Name = "dteNextSfDate";
             this.dteNextSfDate.Properties.AccessibleName = "NextSfDate";
-            this.dteNextSfDate.Properties.Appearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dteNextSfDate.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dteNextSfDate.Properties.Appearance.ForeColor = System.Drawing.Color.Crimson;
             this.dteNextSfDate.Properties.Appearance.Options.UseFont = true;
             this.dteNextSfDate.Properties.Appearance.Options.UseForeColor = true;
@@ -1195,7 +1195,7 @@
             this.dteNextSfDate.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.dteNextSfDate.Properties.Mask.EditMask = "yyyy-MM-dd";
             this.dteNextSfDate.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.dteNextSfDate.Size = new System.Drawing.Size(93, 20);
+            this.dteNextSfDate.Size = new System.Drawing.Size(93, 22);
             this.dteNextSfDate.TabIndex = 74;
             // 
             // txtPatName

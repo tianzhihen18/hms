@@ -20,11 +20,11 @@ namespace Hms.Svc
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<EntityClientInfo> GetClientInfos(List<EntityParm> parms)
+        public List<EntityClientInfo> GetClientInfoAndRpt(List<EntityParm> parms)
         {
             using (Biz201 biz = new Biz201())
             {
-                return biz.GetClientInfos(parms);
+                return biz.GetClientInfoAndRpt(parms);
             }
         }
 
@@ -40,10 +40,75 @@ namespace Hms.Svc
                 return biz.GetUserGrades(parms);
             }
         }
+
+        /// <summary>
+        /// 客户列表
+        /// </summary>
+        /// <param name="search"></param>
+        /// <returns></returns>
+        public List<EntityClientInfo> GetClientInfos(string search = null)
+        {
+            using (Biz201 biz = new Biz201())
+            {
+                return biz.GetClientInfos(search);
+            }
+        }
         #endregion
 
         #region 202 健康档案
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntitySetQnControl> GetQnControl(List<EntityParm> parms = null)
+        {
+            using (Biz202 biz = new Biz202())
+            {
+                return biz.GetQnControl(parms);
+            }
+        }
 
+        /// <summary>
+        /// 原始表单位置
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityCtrlLocation> GetQnCtrlLocation(string qnCtlFiledId)
+        {
+            using (Biz202 biz = new Biz202())
+            {
+                return biz.GetQnCtrlLocation(qnCtlFiledId);
+            }
+        }
+
+        /// <summary>
+        /// 常规问卷--保存
+        /// </summary>
+        /// <param name="qnRecord"></param>
+        /// <param name="qnData"></param>
+        /// <param name="recId"></param>
+        /// <returns></returns>
+        public int SaveQnRecord(EntityQnRecord qnRecord, EntityQnData qnData, out decimal recId)
+        {
+            using (Biz202 biz = new Biz202())
+            {
+                return biz.SaveQnRecord(qnRecord, qnData, out recId);
+            }
+        }
+
+        /// <summary>
+        /// 常规问卷记录
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityQnRecord> GetQnRecords(List<EntityParm> parms = null)
+        {
+            using (Biz202 biz = new Biz202())
+            {
+                return biz.GetQnRecords(parms);
+            }
+        }
         #endregion
 
         #region 203 健康报告
@@ -138,6 +203,19 @@ namespace Hms.Svc
         }
 
         /// <summary>
+        /// 健康管理报告评估分数
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityDisplayClientModelAcess> GetDisplayClientModelAcess(List<EntityParm> parms)
+        {
+            using (Biz204 biz = new Biz204())
+            {
+                return biz.GetDisplayClientModelAcess(parms);
+            }
+        }
+
+        /// <summary>
         /// 获取重要指标
         /// </summary>
         /// <param name="reportId"></param>
@@ -147,6 +225,19 @@ namespace Hms.Svc
             using (Biz204 biz = new Biz204())
             {
                 return biz.GetReportMainItem(reportId);
+            }
+        }
+
+        /// <summary>
+        /// 体检报告项目
+        /// </summary>
+        /// <param name="reportId"></param>
+        /// <returns></returns>
+        public List<EntityReportItem> GetReportItems(string reportId)
+        {
+            using (Biz204 biz = new Biz204())
+            {
+                return biz.GetReportItems(reportId);
             }
         }
 
@@ -545,7 +636,7 @@ namespace Hms.Svc
         #endregion
 
         #region 207 服务预约
-
+        
         #endregion
 
         #region 208 体检维护
@@ -640,11 +731,11 @@ namespace Hms.Svc
         /// <param name="lstDet"></param>
         /// <param name="qnId"></param>
         /// <returns></returns>
-        public int SaveQNnormal(EntityDicQnMain vo, List<EntityDicQnDetail> lstDet, out decimal qnId)
+        public int SaveQNnormal(EntityDicQnMain vo, List<EntityDicQnDetail> lstDet, out decimal qnId, List<EntityDicQnCtlLocation> lstLaction = null,List<EntityDicQnSetting> lstSettings = null)
         {
             using (Biz209 biz = new Biz209())
             {
-                return biz.SaveQNnormal(vo, lstDet, out qnId);
+                return biz.SaveQNnormal(vo, lstDet, out qnId, lstLaction, lstSettings);
             }
         }
         #endregion

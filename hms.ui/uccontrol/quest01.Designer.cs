@@ -59,11 +59,11 @@
             this.checkEdit172 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit173 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit174 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl42 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl43 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl44 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl45 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl46 = new DevExpress.XtraEditors.LabelControl();
+            this.F034 = new DevExpress.XtraEditors.LabelControl();
+            this.F032 = new DevExpress.XtraEditors.LabelControl();
+            this.F030 = new DevExpress.XtraEditors.LabelControl();
+            this.F028 = new DevExpress.XtraEditors.LabelControl();
+            this.F026 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit175 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit176 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit177 = new DevExpress.XtraEditors.CheckEdit();
@@ -94,11 +94,11 @@
             this.checkEdit202 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit203 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit204 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl47 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl48 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl49 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl50 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl51 = new DevExpress.XtraEditors.LabelControl();
+            this.F033 = new DevExpress.XtraEditors.LabelControl();
+            this.F031 = new DevExpress.XtraEditors.LabelControl();
+            this.F029 = new DevExpress.XtraEditors.LabelControl();
+            this.F027 = new DevExpress.XtraEditors.LabelControl();
+            this.F025 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit74 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit75 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit76 = new DevExpress.XtraEditors.CheckEdit();
@@ -170,24 +170,24 @@
             this.checkEdit142 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit143 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit144 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl32 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl35 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl36 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl37 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl38 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl39 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl40 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl41 = new DevExpress.XtraEditors.LabelControl();
+            this.FT013 = new DevExpress.XtraEditors.LabelControl();
+            this.FT012 = new DevExpress.XtraEditors.LabelControl();
+            this.FT011 = new DevExpress.XtraEditors.LabelControl();
+            this.FT010 = new DevExpress.XtraEditors.LabelControl();
+            this.FT009 = new DevExpress.XtraEditors.LabelControl();
+            this.FT008 = new DevExpress.XtraEditors.LabelControl();
+            this.F024 = new DevExpress.XtraEditors.LabelControl();
+            this.F022 = new DevExpress.XtraEditors.LabelControl();
+            this.F020 = new DevExpress.XtraEditors.LabelControl();
+            this.F018 = new DevExpress.XtraEditors.LabelControl();
+            this.F016 = new DevExpress.XtraEditors.LabelControl();
+            this.F014 = new DevExpress.XtraEditors.LabelControl();
+            this.F012 = new DevExpress.XtraEditors.LabelControl();
+            this.F010 = new DevExpress.XtraEditors.LabelControl();
+            this.F008 = new DevExpress.XtraEditors.LabelControl();
+            this.F006 = new DevExpress.XtraEditors.LabelControl();
+            this.F004 = new DevExpress.XtraEditors.LabelControl();
+            this.F002 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit145 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit68 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit69 = new DevExpress.XtraEditors.CheckEdit();
@@ -260,25 +260,25 @@
             this.checkEdit5 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit4 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit3 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.FT007 = new DevExpress.XtraEditors.LabelControl();
+            this.FT006 = new DevExpress.XtraEditors.LabelControl();
+            this.FT005 = new DevExpress.XtraEditors.LabelControl();
+            this.FT004 = new DevExpress.XtraEditors.LabelControl();
+            this.FT003 = new DevExpress.XtraEditors.LabelControl();
+            this.FT002 = new DevExpress.XtraEditors.LabelControl();
+            this.F023 = new DevExpress.XtraEditors.LabelControl();
+            this.F021 = new DevExpress.XtraEditors.LabelControl();
+            this.F019 = new DevExpress.XtraEditors.LabelControl();
+            this.F017 = new DevExpress.XtraEditors.LabelControl();
+            this.F015 = new DevExpress.XtraEditors.LabelControl();
+            this.F013 = new DevExpress.XtraEditors.LabelControl();
+            this.F011 = new DevExpress.XtraEditors.LabelControl();
+            this.F009 = new DevExpress.XtraEditors.LabelControl();
+            this.F007 = new DevExpress.XtraEditors.LabelControl();
+            this.F005 = new DevExpress.XtraEditors.LabelControl();
+            this.F003 = new DevExpress.XtraEditors.LabelControl();
+            this.F001 = new DevExpress.XtraEditors.LabelControl();
+            this.FM0101 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.plBack.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).BeginInit();
@@ -520,11 +520,11 @@
             this.plBack.Controls.Add(this.checkEdit172);
             this.plBack.Controls.Add(this.checkEdit173);
             this.plBack.Controls.Add(this.checkEdit174);
-            this.plBack.Controls.Add(this.labelControl42);
-            this.plBack.Controls.Add(this.labelControl43);
-            this.plBack.Controls.Add(this.labelControl44);
-            this.plBack.Controls.Add(this.labelControl45);
-            this.plBack.Controls.Add(this.labelControl46);
+            this.plBack.Controls.Add(this.F034);
+            this.plBack.Controls.Add(this.F032);
+            this.plBack.Controls.Add(this.F030);
+            this.plBack.Controls.Add(this.F028);
+            this.plBack.Controls.Add(this.F026);
             this.plBack.Controls.Add(this.checkEdit175);
             this.plBack.Controls.Add(this.checkEdit176);
             this.plBack.Controls.Add(this.checkEdit177);
@@ -555,11 +555,11 @@
             this.plBack.Controls.Add(this.checkEdit202);
             this.plBack.Controls.Add(this.checkEdit203);
             this.plBack.Controls.Add(this.checkEdit204);
-            this.plBack.Controls.Add(this.labelControl47);
-            this.plBack.Controls.Add(this.labelControl48);
-            this.plBack.Controls.Add(this.labelControl49);
-            this.plBack.Controls.Add(this.labelControl50);
-            this.plBack.Controls.Add(this.labelControl51);
+            this.plBack.Controls.Add(this.F033);
+            this.plBack.Controls.Add(this.F031);
+            this.plBack.Controls.Add(this.F029);
+            this.plBack.Controls.Add(this.F027);
+            this.plBack.Controls.Add(this.F025);
             this.plBack.Controls.Add(this.checkEdit74);
             this.plBack.Controls.Add(this.checkEdit75);
             this.plBack.Controls.Add(this.checkEdit76);
@@ -631,24 +631,24 @@
             this.plBack.Controls.Add(this.checkEdit142);
             this.plBack.Controls.Add(this.checkEdit143);
             this.plBack.Controls.Add(this.checkEdit144);
-            this.plBack.Controls.Add(this.labelControl24);
-            this.plBack.Controls.Add(this.labelControl25);
-            this.plBack.Controls.Add(this.labelControl26);
-            this.plBack.Controls.Add(this.labelControl27);
-            this.plBack.Controls.Add(this.labelControl28);
-            this.plBack.Controls.Add(this.labelControl29);
-            this.plBack.Controls.Add(this.labelControl30);
-            this.plBack.Controls.Add(this.labelControl31);
-            this.plBack.Controls.Add(this.labelControl32);
-            this.plBack.Controls.Add(this.labelControl33);
-            this.plBack.Controls.Add(this.labelControl34);
-            this.plBack.Controls.Add(this.labelControl35);
-            this.plBack.Controls.Add(this.labelControl36);
-            this.plBack.Controls.Add(this.labelControl37);
-            this.plBack.Controls.Add(this.labelControl38);
-            this.plBack.Controls.Add(this.labelControl39);
-            this.plBack.Controls.Add(this.labelControl40);
-            this.plBack.Controls.Add(this.labelControl41);
+            this.plBack.Controls.Add(this.FT013);
+            this.plBack.Controls.Add(this.FT012);
+            this.plBack.Controls.Add(this.FT011);
+            this.plBack.Controls.Add(this.FT010);
+            this.plBack.Controls.Add(this.FT009);
+            this.plBack.Controls.Add(this.FT008);
+            this.plBack.Controls.Add(this.F024);
+            this.plBack.Controls.Add(this.F022);
+            this.plBack.Controls.Add(this.F020);
+            this.plBack.Controls.Add(this.F018);
+            this.plBack.Controls.Add(this.F016);
+            this.plBack.Controls.Add(this.F014);
+            this.plBack.Controls.Add(this.F012);
+            this.plBack.Controls.Add(this.F010);
+            this.plBack.Controls.Add(this.F008);
+            this.plBack.Controls.Add(this.F006);
+            this.plBack.Controls.Add(this.F004);
+            this.plBack.Controls.Add(this.F002);
             this.plBack.Controls.Add(this.checkEdit145);
             this.plBack.Controls.Add(this.checkEdit68);
             this.plBack.Controls.Add(this.checkEdit69);
@@ -721,25 +721,25 @@
             this.plBack.Controls.Add(this.checkEdit5);
             this.plBack.Controls.Add(this.checkEdit4);
             this.plBack.Controls.Add(this.checkEdit3);
-            this.plBack.Controls.Add(this.labelControl23);
-            this.plBack.Controls.Add(this.labelControl22);
-            this.plBack.Controls.Add(this.labelControl21);
-            this.plBack.Controls.Add(this.labelControl20);
-            this.plBack.Controls.Add(this.labelControl19);
-            this.plBack.Controls.Add(this.labelControl18);
-            this.plBack.Controls.Add(this.labelControl16);
-            this.plBack.Controls.Add(this.labelControl17);
-            this.plBack.Controls.Add(this.labelControl11);
-            this.plBack.Controls.Add(this.labelControl12);
-            this.plBack.Controls.Add(this.labelControl13);
-            this.plBack.Controls.Add(this.labelControl14);
-            this.plBack.Controls.Add(this.labelControl15);
-            this.plBack.Controls.Add(this.labelControl10);
-            this.plBack.Controls.Add(this.labelControl9);
-            this.plBack.Controls.Add(this.labelControl8);
-            this.plBack.Controls.Add(this.labelControl7);
-            this.plBack.Controls.Add(this.labelControl6);
-            this.plBack.Controls.Add(this.labelControl5);
+            this.plBack.Controls.Add(this.FT007);
+            this.plBack.Controls.Add(this.FT006);
+            this.plBack.Controls.Add(this.FT005);
+            this.plBack.Controls.Add(this.FT004);
+            this.plBack.Controls.Add(this.FT003);
+            this.plBack.Controls.Add(this.FT002);
+            this.plBack.Controls.Add(this.F023);
+            this.plBack.Controls.Add(this.F021);
+            this.plBack.Controls.Add(this.F019);
+            this.plBack.Controls.Add(this.F017);
+            this.plBack.Controls.Add(this.F015);
+            this.plBack.Controls.Add(this.F013);
+            this.plBack.Controls.Add(this.F011);
+            this.plBack.Controls.Add(this.F009);
+            this.plBack.Controls.Add(this.F007);
+            this.plBack.Controls.Add(this.F005);
+            this.plBack.Controls.Add(this.F003);
+            this.plBack.Controls.Add(this.F001);
+            this.plBack.Controls.Add(this.FM0101);
             this.plBack.Controls.Add(this.checkEdit1);
             this.plBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plBack.Location = new System.Drawing.Point(0, 0);
@@ -757,7 +757,7 @@
             this.checkEdit2.Properties.Caption = "";
             this.checkEdit2.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit2.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit2.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit2.Size = new System.Drawing.Size(20, 19);
             this.checkEdit2.TabIndex = 512;
             // 
             // checkEdit146
@@ -770,7 +770,7 @@
             this.checkEdit146.Properties.Caption = "";
             this.checkEdit146.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit146.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit146.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit146.Size = new System.Drawing.Size(20, 19);
             this.checkEdit146.TabIndex = 511;
             // 
             // checkEdit147
@@ -783,7 +783,7 @@
             this.checkEdit147.Properties.Caption = "";
             this.checkEdit147.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit147.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit147.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit147.Size = new System.Drawing.Size(20, 19);
             this.checkEdit147.TabIndex = 510;
             // 
             // checkEdit148
@@ -796,7 +796,7 @@
             this.checkEdit148.Properties.Caption = "";
             this.checkEdit148.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit148.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit148.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit148.Size = new System.Drawing.Size(20, 19);
             this.checkEdit148.TabIndex = 509;
             // 
             // checkEdit149
@@ -809,7 +809,7 @@
             this.checkEdit149.Properties.Caption = "";
             this.checkEdit149.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit149.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit149.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit149.Size = new System.Drawing.Size(20, 19);
             this.checkEdit149.TabIndex = 508;
             // 
             // checkEdit150
@@ -822,7 +822,7 @@
             this.checkEdit150.Properties.Caption = "";
             this.checkEdit150.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit150.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit150.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit150.Size = new System.Drawing.Size(20, 19);
             this.checkEdit150.TabIndex = 507;
             // 
             // checkEdit151
@@ -835,7 +835,7 @@
             this.checkEdit151.Properties.Caption = "";
             this.checkEdit151.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit151.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit151.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit151.Size = new System.Drawing.Size(20, 19);
             this.checkEdit151.TabIndex = 506;
             // 
             // checkEdit152
@@ -848,7 +848,7 @@
             this.checkEdit152.Properties.Caption = "";
             this.checkEdit152.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit152.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit152.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit152.Size = new System.Drawing.Size(20, 19);
             this.checkEdit152.TabIndex = 505;
             // 
             // checkEdit153
@@ -861,7 +861,7 @@
             this.checkEdit153.Properties.Caption = "";
             this.checkEdit153.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit153.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit153.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit153.Size = new System.Drawing.Size(20, 19);
             this.checkEdit153.TabIndex = 504;
             // 
             // checkEdit154
@@ -874,7 +874,7 @@
             this.checkEdit154.Properties.Caption = "";
             this.checkEdit154.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit154.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit154.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit154.Size = new System.Drawing.Size(20, 19);
             this.checkEdit154.TabIndex = 503;
             // 
             // checkEdit155
@@ -887,7 +887,7 @@
             this.checkEdit155.Properties.Caption = "";
             this.checkEdit155.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit155.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit155.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit155.Size = new System.Drawing.Size(20, 19);
             this.checkEdit155.TabIndex = 502;
             // 
             // checkEdit156
@@ -900,7 +900,7 @@
             this.checkEdit156.Properties.Caption = "";
             this.checkEdit156.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit156.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit156.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit156.Size = new System.Drawing.Size(20, 19);
             this.checkEdit156.TabIndex = 501;
             // 
             // checkEdit157
@@ -913,7 +913,7 @@
             this.checkEdit157.Properties.Caption = "";
             this.checkEdit157.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit157.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit157.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit157.Size = new System.Drawing.Size(20, 19);
             this.checkEdit157.TabIndex = 500;
             // 
             // checkEdit158
@@ -926,7 +926,7 @@
             this.checkEdit158.Properties.Caption = "";
             this.checkEdit158.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit158.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit158.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit158.Size = new System.Drawing.Size(20, 19);
             this.checkEdit158.TabIndex = 499;
             // 
             // checkEdit159
@@ -939,7 +939,7 @@
             this.checkEdit159.Properties.Caption = "";
             this.checkEdit159.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit159.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit159.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit159.Size = new System.Drawing.Size(20, 19);
             this.checkEdit159.TabIndex = 498;
             // 
             // checkEdit160
@@ -952,7 +952,7 @@
             this.checkEdit160.Properties.Caption = "";
             this.checkEdit160.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit160.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit160.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit160.Size = new System.Drawing.Size(20, 19);
             this.checkEdit160.TabIndex = 497;
             // 
             // checkEdit161
@@ -965,7 +965,7 @@
             this.checkEdit161.Properties.Caption = "";
             this.checkEdit161.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit161.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit161.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit161.Size = new System.Drawing.Size(20, 19);
             this.checkEdit161.TabIndex = 496;
             // 
             // checkEdit162
@@ -978,7 +978,7 @@
             this.checkEdit162.Properties.Caption = "";
             this.checkEdit162.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit162.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit162.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit162.Size = new System.Drawing.Size(20, 19);
             this.checkEdit162.TabIndex = 495;
             // 
             // checkEdit163
@@ -991,7 +991,7 @@
             this.checkEdit163.Properties.Caption = "";
             this.checkEdit163.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit163.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit163.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit163.Size = new System.Drawing.Size(20, 19);
             this.checkEdit163.TabIndex = 494;
             // 
             // checkEdit164
@@ -1004,7 +1004,7 @@
             this.checkEdit164.Properties.Caption = "";
             this.checkEdit164.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit164.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit164.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit164.Size = new System.Drawing.Size(20, 19);
             this.checkEdit164.TabIndex = 493;
             // 
             // checkEdit165
@@ -1017,7 +1017,7 @@
             this.checkEdit165.Properties.Caption = "";
             this.checkEdit165.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit165.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit165.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit165.Size = new System.Drawing.Size(20, 19);
             this.checkEdit165.TabIndex = 492;
             // 
             // checkEdit166
@@ -1030,7 +1030,7 @@
             this.checkEdit166.Properties.Caption = "";
             this.checkEdit166.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit166.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit166.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit166.Size = new System.Drawing.Size(20, 19);
             this.checkEdit166.TabIndex = 491;
             // 
             // checkEdit167
@@ -1043,7 +1043,7 @@
             this.checkEdit167.Properties.Caption = "";
             this.checkEdit167.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit167.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit167.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit167.Size = new System.Drawing.Size(20, 19);
             this.checkEdit167.TabIndex = 490;
             // 
             // checkEdit168
@@ -1056,7 +1056,7 @@
             this.checkEdit168.Properties.Caption = "";
             this.checkEdit168.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit168.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit168.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit168.Size = new System.Drawing.Size(20, 19);
             this.checkEdit168.TabIndex = 489;
             // 
             // checkEdit169
@@ -1069,7 +1069,7 @@
             this.checkEdit169.Properties.Caption = "";
             this.checkEdit169.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit169.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit169.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit169.Size = new System.Drawing.Size(20, 19);
             this.checkEdit169.TabIndex = 488;
             // 
             // checkEdit170
@@ -1082,7 +1082,7 @@
             this.checkEdit170.Properties.Caption = "";
             this.checkEdit170.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit170.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit170.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit170.Size = new System.Drawing.Size(20, 19);
             this.checkEdit170.TabIndex = 487;
             // 
             // checkEdit171
@@ -1095,7 +1095,7 @@
             this.checkEdit171.Properties.Caption = "";
             this.checkEdit171.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit171.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit171.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit171.Size = new System.Drawing.Size(20, 19);
             this.checkEdit171.TabIndex = 486;
             // 
             // checkEdit172
@@ -1108,7 +1108,7 @@
             this.checkEdit172.Properties.Caption = "";
             this.checkEdit172.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit172.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit172.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit172.Size = new System.Drawing.Size(20, 19);
             this.checkEdit172.TabIndex = 485;
             // 
             // checkEdit173
@@ -1121,7 +1121,7 @@
             this.checkEdit173.Properties.Caption = "";
             this.checkEdit173.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit173.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit173.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit173.Size = new System.Drawing.Size(20, 19);
             this.checkEdit173.TabIndex = 484;
             // 
             // checkEdit174
@@ -1134,78 +1134,78 @@
             this.checkEdit174.Properties.Caption = "";
             this.checkEdit174.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit174.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit174.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit174.Size = new System.Drawing.Size(20, 19);
             this.checkEdit174.TabIndex = 483;
             // 
-            // labelControl42
+            // F034
             // 
-            this.labelControl42.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl42.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl42.Appearance.Options.UseFont = true;
-            this.labelControl42.Appearance.Options.UseForeColor = true;
-            this.labelControl42.Location = new System.Drawing.Point(392, 619);
-            this.labelControl42.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl42.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl42.Name = "labelControl42";
-            this.labelControl42.Size = new System.Drawing.Size(91, 13);
-            this.labelControl42.TabIndex = 482;
-            this.labelControl42.Text = "风湿免疫性疾病";
+            this.F034.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F034.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F034.Appearance.Options.UseFont = true;
+            this.F034.Appearance.Options.UseForeColor = true;
+            this.F034.Location = new System.Drawing.Point(392, 619);
+            this.F034.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F034.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F034.Name = "F034";
+            this.F034.Size = new System.Drawing.Size(91, 13);
+            this.F034.TabIndex = 482;
+            this.F034.Text = "风湿免疫性疾病";
             // 
-            // labelControl43
+            // F032
             // 
-            this.labelControl43.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl43.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl43.Appearance.Options.UseFont = true;
-            this.labelControl43.Appearance.Options.UseForeColor = true;
-            this.labelControl43.Location = new System.Drawing.Point(392, 584);
-            this.labelControl43.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl43.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl43.Name = "labelControl43";
-            this.labelControl43.Size = new System.Drawing.Size(39, 13);
-            this.labelControl43.TabIndex = 481;
-            this.labelControl43.Text = "子宫癌";
+            this.F032.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F032.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F032.Appearance.Options.UseFont = true;
+            this.F032.Appearance.Options.UseForeColor = true;
+            this.F032.Location = new System.Drawing.Point(392, 584);
+            this.F032.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F032.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F032.Name = "F032";
+            this.F032.Size = new System.Drawing.Size(39, 13);
+            this.F032.TabIndex = 481;
+            this.F032.Text = "子宫癌";
             // 
-            // labelControl44
+            // F030
             // 
-            this.labelControl44.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl44.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl44.Appearance.Options.UseFont = true;
-            this.labelControl44.Appearance.Options.UseForeColor = true;
-            this.labelControl44.Location = new System.Drawing.Point(392, 549);
-            this.labelControl44.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl44.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl44.Name = "labelControl44";
-            this.labelControl44.Size = new System.Drawing.Size(52, 13);
-            this.labelControl44.TabIndex = 480;
-            this.labelControl44.Text = "前列腺癌";
+            this.F030.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F030.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F030.Appearance.Options.UseFont = true;
+            this.F030.Appearance.Options.UseForeColor = true;
+            this.F030.Location = new System.Drawing.Point(392, 549);
+            this.F030.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F030.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F030.Name = "F030";
+            this.F030.Size = new System.Drawing.Size(52, 13);
+            this.F030.TabIndex = 480;
+            this.F030.Text = "前列腺癌";
             // 
-            // labelControl45
+            // F028
             // 
-            this.labelControl45.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl45.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl45.Appearance.Options.UseFont = true;
-            this.labelControl45.Appearance.Options.UseForeColor = true;
-            this.labelControl45.Location = new System.Drawing.Point(392, 514);
-            this.labelControl45.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl45.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl45.Name = "labelControl45";
-            this.labelControl45.Size = new System.Drawing.Size(26, 13);
-            this.labelControl45.TabIndex = 479;
-            this.labelControl45.Text = "脑瘤";
+            this.F028.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F028.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F028.Appearance.Options.UseFont = true;
+            this.F028.Appearance.Options.UseForeColor = true;
+            this.F028.Location = new System.Drawing.Point(392, 514);
+            this.F028.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F028.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F028.Name = "F028";
+            this.F028.Size = new System.Drawing.Size(26, 13);
+            this.F028.TabIndex = 479;
+            this.F028.Text = "脑瘤";
             // 
-            // labelControl46
+            // F026
             // 
-            this.labelControl46.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl46.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl46.Appearance.Options.UseFont = true;
-            this.labelControl46.Appearance.Options.UseForeColor = true;
-            this.labelControl46.Location = new System.Drawing.Point(392, 475);
-            this.labelControl46.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl46.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl46.Name = "labelControl46";
-            this.labelControl46.Size = new System.Drawing.Size(39, 13);
-            this.labelControl46.TabIndex = 478;
-            this.labelControl46.Text = "鼻咽癌";
+            this.F026.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F026.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F026.Appearance.Options.UseFont = true;
+            this.F026.Appearance.Options.UseForeColor = true;
+            this.F026.Location = new System.Drawing.Point(392, 475);
+            this.F026.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F026.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F026.Name = "F026";
+            this.F026.Size = new System.Drawing.Size(39, 13);
+            this.F026.TabIndex = 478;
+            this.F026.Text = "鼻咽癌";
             // 
             // checkEdit175
             // 
@@ -1217,7 +1217,7 @@
             this.checkEdit175.Properties.Caption = "";
             this.checkEdit175.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit175.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit175.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit175.Size = new System.Drawing.Size(20, 19);
             this.checkEdit175.TabIndex = 477;
             // 
             // checkEdit176
@@ -1230,7 +1230,7 @@
             this.checkEdit176.Properties.Caption = "";
             this.checkEdit176.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit176.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit176.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit176.Size = new System.Drawing.Size(20, 19);
             this.checkEdit176.TabIndex = 476;
             // 
             // checkEdit177
@@ -1243,7 +1243,7 @@
             this.checkEdit177.Properties.Caption = "";
             this.checkEdit177.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit177.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit177.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit177.Size = new System.Drawing.Size(20, 19);
             this.checkEdit177.TabIndex = 475;
             // 
             // checkEdit178
@@ -1256,7 +1256,7 @@
             this.checkEdit178.Properties.Caption = "";
             this.checkEdit178.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit178.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit178.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit178.Size = new System.Drawing.Size(20, 19);
             this.checkEdit178.TabIndex = 474;
             // 
             // checkEdit179
@@ -1269,7 +1269,7 @@
             this.checkEdit179.Properties.Caption = "";
             this.checkEdit179.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit179.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit179.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit179.Size = new System.Drawing.Size(20, 19);
             this.checkEdit179.TabIndex = 473;
             // 
             // checkEdit180
@@ -1282,7 +1282,7 @@
             this.checkEdit180.Properties.Caption = "";
             this.checkEdit180.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit180.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit180.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit180.Size = new System.Drawing.Size(20, 19);
             this.checkEdit180.TabIndex = 472;
             // 
             // checkEdit181
@@ -1295,7 +1295,7 @@
             this.checkEdit181.Properties.Caption = "";
             this.checkEdit181.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit181.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit181.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit181.Size = new System.Drawing.Size(20, 19);
             this.checkEdit181.TabIndex = 471;
             // 
             // checkEdit182
@@ -1308,7 +1308,7 @@
             this.checkEdit182.Properties.Caption = "";
             this.checkEdit182.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit182.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit182.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit182.Size = new System.Drawing.Size(20, 19);
             this.checkEdit182.TabIndex = 470;
             // 
             // checkEdit183
@@ -1321,7 +1321,7 @@
             this.checkEdit183.Properties.Caption = "";
             this.checkEdit183.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit183.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit183.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit183.Size = new System.Drawing.Size(20, 19);
             this.checkEdit183.TabIndex = 469;
             // 
             // checkEdit184
@@ -1334,7 +1334,7 @@
             this.checkEdit184.Properties.Caption = "";
             this.checkEdit184.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit184.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit184.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit184.Size = new System.Drawing.Size(20, 19);
             this.checkEdit184.TabIndex = 468;
             // 
             // checkEdit185
@@ -1347,7 +1347,7 @@
             this.checkEdit185.Properties.Caption = "";
             this.checkEdit185.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit185.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit185.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit185.Size = new System.Drawing.Size(20, 19);
             this.checkEdit185.TabIndex = 467;
             // 
             // checkEdit186
@@ -1360,7 +1360,7 @@
             this.checkEdit186.Properties.Caption = "";
             this.checkEdit186.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit186.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit186.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit186.Size = new System.Drawing.Size(20, 19);
             this.checkEdit186.TabIndex = 466;
             // 
             // checkEdit187
@@ -1373,7 +1373,7 @@
             this.checkEdit187.Properties.Caption = "";
             this.checkEdit187.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit187.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit187.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit187.Size = new System.Drawing.Size(20, 19);
             this.checkEdit187.TabIndex = 465;
             // 
             // checkEdit188
@@ -1386,7 +1386,7 @@
             this.checkEdit188.Properties.Caption = "";
             this.checkEdit188.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit188.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit188.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit188.Size = new System.Drawing.Size(20, 19);
             this.checkEdit188.TabIndex = 464;
             // 
             // checkEdit189
@@ -1399,7 +1399,7 @@
             this.checkEdit189.Properties.Caption = "";
             this.checkEdit189.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit189.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit189.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit189.Size = new System.Drawing.Size(20, 19);
             this.checkEdit189.TabIndex = 463;
             // 
             // checkEdit190
@@ -1412,7 +1412,7 @@
             this.checkEdit190.Properties.Caption = "";
             this.checkEdit190.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit190.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit190.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit190.Size = new System.Drawing.Size(20, 19);
             this.checkEdit190.TabIndex = 462;
             // 
             // checkEdit191
@@ -1425,7 +1425,7 @@
             this.checkEdit191.Properties.Caption = "";
             this.checkEdit191.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit191.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit191.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit191.Size = new System.Drawing.Size(20, 19);
             this.checkEdit191.TabIndex = 461;
             // 
             // checkEdit192
@@ -1438,7 +1438,7 @@
             this.checkEdit192.Properties.Caption = "";
             this.checkEdit192.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit192.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit192.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit192.Size = new System.Drawing.Size(20, 19);
             this.checkEdit192.TabIndex = 460;
             // 
             // checkEdit193
@@ -1451,7 +1451,7 @@
             this.checkEdit193.Properties.Caption = "";
             this.checkEdit193.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit193.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit193.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit193.Size = new System.Drawing.Size(20, 19);
             this.checkEdit193.TabIndex = 459;
             // 
             // checkEdit194
@@ -1464,7 +1464,7 @@
             this.checkEdit194.Properties.Caption = "";
             this.checkEdit194.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit194.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit194.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit194.Size = new System.Drawing.Size(20, 19);
             this.checkEdit194.TabIndex = 458;
             // 
             // checkEdit195
@@ -1477,7 +1477,7 @@
             this.checkEdit195.Properties.Caption = "";
             this.checkEdit195.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit195.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit195.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit195.Size = new System.Drawing.Size(20, 19);
             this.checkEdit195.TabIndex = 457;
             // 
             // checkEdit196
@@ -1490,7 +1490,7 @@
             this.checkEdit196.Properties.Caption = "";
             this.checkEdit196.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit196.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit196.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit196.Size = new System.Drawing.Size(20, 19);
             this.checkEdit196.TabIndex = 456;
             // 
             // checkEdit197
@@ -1503,7 +1503,7 @@
             this.checkEdit197.Properties.Caption = "";
             this.checkEdit197.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit197.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit197.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit197.Size = new System.Drawing.Size(20, 19);
             this.checkEdit197.TabIndex = 455;
             // 
             // checkEdit198
@@ -1516,7 +1516,7 @@
             this.checkEdit198.Properties.Caption = "";
             this.checkEdit198.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit198.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit198.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit198.Size = new System.Drawing.Size(20, 19);
             this.checkEdit198.TabIndex = 454;
             // 
             // checkEdit199
@@ -1529,7 +1529,7 @@
             this.checkEdit199.Properties.Caption = "";
             this.checkEdit199.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit199.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit199.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit199.Size = new System.Drawing.Size(20, 19);
             this.checkEdit199.TabIndex = 453;
             // 
             // checkEdit200
@@ -1542,7 +1542,7 @@
             this.checkEdit200.Properties.Caption = "";
             this.checkEdit200.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit200.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit200.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit200.Size = new System.Drawing.Size(20, 19);
             this.checkEdit200.TabIndex = 452;
             // 
             // checkEdit201
@@ -1555,7 +1555,7 @@
             this.checkEdit201.Properties.Caption = "";
             this.checkEdit201.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit201.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit201.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit201.Size = new System.Drawing.Size(20, 19);
             this.checkEdit201.TabIndex = 451;
             // 
             // checkEdit202
@@ -1568,7 +1568,7 @@
             this.checkEdit202.Properties.Caption = "";
             this.checkEdit202.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit202.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit202.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit202.Size = new System.Drawing.Size(20, 19);
             this.checkEdit202.TabIndex = 450;
             // 
             // checkEdit203
@@ -1581,7 +1581,7 @@
             this.checkEdit203.Properties.Caption = "";
             this.checkEdit203.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit203.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit203.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit203.Size = new System.Drawing.Size(20, 19);
             this.checkEdit203.TabIndex = 449;
             // 
             // checkEdit204
@@ -1594,78 +1594,78 @@
             this.checkEdit204.Properties.Caption = "";
             this.checkEdit204.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit204.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit204.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit204.Size = new System.Drawing.Size(20, 19);
             this.checkEdit204.TabIndex = 448;
             // 
-            // labelControl47
+            // F033
             // 
-            this.labelControl47.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl47.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl47.Appearance.Options.UseFont = true;
-            this.labelControl47.Appearance.Options.UseForeColor = true;
-            this.labelControl47.Location = new System.Drawing.Point(56, 619);
-            this.labelControl47.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl47.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl47.Name = "labelControl47";
-            this.labelControl47.Size = new System.Drawing.Size(52, 13);
-            this.labelControl47.TabIndex = 447;
-            this.labelControl47.Text = "结直肠癌";
+            this.F033.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F033.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F033.Appearance.Options.UseFont = true;
+            this.F033.Appearance.Options.UseForeColor = true;
+            this.F033.Location = new System.Drawing.Point(56, 619);
+            this.F033.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F033.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F033.Name = "F033";
+            this.F033.Size = new System.Drawing.Size(52, 13);
+            this.F033.TabIndex = 447;
+            this.F033.Text = "结直肠癌";
             // 
-            // labelControl48
+            // F031
             // 
-            this.labelControl48.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl48.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl48.Appearance.Options.UseFont = true;
-            this.labelControl48.Appearance.Options.UseForeColor = true;
-            this.labelControl48.Location = new System.Drawing.Point(56, 584);
-            this.labelControl48.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl48.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl48.Name = "labelControl48";
-            this.labelControl48.Size = new System.Drawing.Size(26, 13);
-            this.labelControl48.TabIndex = 446;
-            this.labelControl48.Text = "肺癌";
+            this.F031.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F031.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F031.Appearance.Options.UseFont = true;
+            this.F031.Appearance.Options.UseForeColor = true;
+            this.F031.Location = new System.Drawing.Point(56, 584);
+            this.F031.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F031.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F031.Name = "F031";
+            this.F031.Size = new System.Drawing.Size(26, 13);
+            this.F031.TabIndex = 446;
+            this.F031.Text = "肺癌";
             // 
-            // labelControl49
+            // F029
             // 
-            this.labelControl49.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl49.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl49.Appearance.Options.UseFont = true;
-            this.labelControl49.Appearance.Options.UseForeColor = true;
-            this.labelControl49.Location = new System.Drawing.Point(56, 549);
-            this.labelControl49.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl49.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl49.Name = "labelControl49";
-            this.labelControl49.Size = new System.Drawing.Size(91, 13);
-            this.labelControl49.TabIndex = 445;
-            this.labelControl49.Text = "慢性阻塞性肺病";
+            this.F029.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F029.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F029.Appearance.Options.UseFont = true;
+            this.F029.Appearance.Options.UseForeColor = true;
+            this.F029.Location = new System.Drawing.Point(56, 549);
+            this.F029.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F029.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F029.Name = "F029";
+            this.F029.Size = new System.Drawing.Size(91, 13);
+            this.F029.TabIndex = 445;
+            this.F029.Text = "慢性阻塞性肺病";
             // 
-            // labelControl50
+            // F027
             // 
-            this.labelControl50.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl50.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl50.Appearance.Options.UseFont = true;
-            this.labelControl50.Appearance.Options.UseForeColor = true;
-            this.labelControl50.Location = new System.Drawing.Point(56, 514);
-            this.labelControl50.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl50.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl50.Name = "labelControl50";
-            this.labelControl50.Size = new System.Drawing.Size(65, 13);
-            this.labelControl50.TabIndex = 444;
-            this.labelControl50.Text = "外周血管病";
+            this.F027.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F027.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F027.Appearance.Options.UseFont = true;
+            this.F027.Appearance.Options.UseForeColor = true;
+            this.F027.Location = new System.Drawing.Point(56, 514);
+            this.F027.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F027.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F027.Name = "F027";
+            this.F027.Size = new System.Drawing.Size(65, 13);
+            this.F027.TabIndex = 444;
+            this.F027.Text = "外周血管病";
             // 
-            // labelControl51
+            // F025
             // 
-            this.labelControl51.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl51.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl51.Appearance.Options.UseFont = true;
-            this.labelControl51.Appearance.Options.UseForeColor = true;
-            this.labelControl51.Location = new System.Drawing.Point(56, 475);
-            this.labelControl51.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl51.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl51.Name = "labelControl51";
-            this.labelControl51.Size = new System.Drawing.Size(39, 13);
-            this.labelControl51.TabIndex = 443;
-            this.labelControl51.Text = "脑卒中";
+            this.F025.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F025.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F025.Appearance.Options.UseFont = true;
+            this.F025.Appearance.Options.UseForeColor = true;
+            this.F025.Location = new System.Drawing.Point(56, 475);
+            this.F025.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F025.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F025.Name = "F025";
+            this.F025.Size = new System.Drawing.Size(39, 13);
+            this.F025.TabIndex = 443;
+            this.F025.Text = "脑卒中";
             // 
             // checkEdit74
             // 
@@ -1677,7 +1677,7 @@
             this.checkEdit74.Properties.Caption = "";
             this.checkEdit74.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit74.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit74.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit74.Size = new System.Drawing.Size(20, 19);
             this.checkEdit74.TabIndex = 442;
             // 
             // checkEdit75
@@ -1690,7 +1690,7 @@
             this.checkEdit75.Properties.Caption = "";
             this.checkEdit75.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit75.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit75.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit75.Size = new System.Drawing.Size(20, 19);
             this.checkEdit75.TabIndex = 441;
             // 
             // checkEdit76
@@ -1703,7 +1703,7 @@
             this.checkEdit76.Properties.Caption = "";
             this.checkEdit76.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit76.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit76.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit76.Size = new System.Drawing.Size(20, 19);
             this.checkEdit76.TabIndex = 440;
             // 
             // checkEdit77
@@ -1716,7 +1716,7 @@
             this.checkEdit77.Properties.Caption = "";
             this.checkEdit77.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit77.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit77.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit77.Size = new System.Drawing.Size(20, 19);
             this.checkEdit77.TabIndex = 439;
             // 
             // checkEdit78
@@ -1729,7 +1729,7 @@
             this.checkEdit78.Properties.Caption = "";
             this.checkEdit78.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit78.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit78.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit78.Size = new System.Drawing.Size(20, 19);
             this.checkEdit78.TabIndex = 438;
             // 
             // checkEdit79
@@ -1742,7 +1742,7 @@
             this.checkEdit79.Properties.Caption = "";
             this.checkEdit79.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit79.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit79.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit79.Size = new System.Drawing.Size(20, 19);
             this.checkEdit79.TabIndex = 437;
             // 
             // checkEdit80
@@ -1755,7 +1755,7 @@
             this.checkEdit80.Properties.Caption = "";
             this.checkEdit80.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit80.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit80.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit80.Size = new System.Drawing.Size(20, 19);
             this.checkEdit80.TabIndex = 436;
             // 
             // checkEdit81
@@ -1768,7 +1768,7 @@
             this.checkEdit81.Properties.Caption = "";
             this.checkEdit81.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit81.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit81.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit81.Size = new System.Drawing.Size(20, 19);
             this.checkEdit81.TabIndex = 435;
             // 
             // checkEdit82
@@ -1781,7 +1781,7 @@
             this.checkEdit82.Properties.Caption = "";
             this.checkEdit82.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit82.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit82.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit82.Size = new System.Drawing.Size(20, 19);
             this.checkEdit82.TabIndex = 434;
             // 
             // checkEdit83
@@ -1794,7 +1794,7 @@
             this.checkEdit83.Properties.Caption = "";
             this.checkEdit83.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit83.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit83.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit83.Size = new System.Drawing.Size(20, 19);
             this.checkEdit83.TabIndex = 433;
             // 
             // checkEdit84
@@ -1807,7 +1807,7 @@
             this.checkEdit84.Properties.Caption = "";
             this.checkEdit84.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit84.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit84.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit84.Size = new System.Drawing.Size(20, 19);
             this.checkEdit84.TabIndex = 432;
             // 
             // checkEdit85
@@ -1820,7 +1820,7 @@
             this.checkEdit85.Properties.Caption = "";
             this.checkEdit85.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit85.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit85.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit85.Size = new System.Drawing.Size(20, 19);
             this.checkEdit85.TabIndex = 431;
             // 
             // checkEdit86
@@ -1833,7 +1833,7 @@
             this.checkEdit86.Properties.Caption = "";
             this.checkEdit86.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit86.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit86.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit86.Size = new System.Drawing.Size(20, 19);
             this.checkEdit86.TabIndex = 430;
             // 
             // checkEdit87
@@ -1846,7 +1846,7 @@
             this.checkEdit87.Properties.Caption = "";
             this.checkEdit87.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit87.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit87.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit87.Size = new System.Drawing.Size(20, 19);
             this.checkEdit87.TabIndex = 429;
             // 
             // checkEdit88
@@ -1859,7 +1859,7 @@
             this.checkEdit88.Properties.Caption = "";
             this.checkEdit88.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit88.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit88.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit88.Size = new System.Drawing.Size(20, 19);
             this.checkEdit88.TabIndex = 428;
             // 
             // checkEdit89
@@ -1872,7 +1872,7 @@
             this.checkEdit89.Properties.Caption = "";
             this.checkEdit89.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit89.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit89.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit89.Size = new System.Drawing.Size(20, 19);
             this.checkEdit89.TabIndex = 427;
             // 
             // checkEdit90
@@ -1885,7 +1885,7 @@
             this.checkEdit90.Properties.Caption = "";
             this.checkEdit90.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit90.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit90.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit90.Size = new System.Drawing.Size(20, 19);
             this.checkEdit90.TabIndex = 426;
             // 
             // checkEdit91
@@ -1898,7 +1898,7 @@
             this.checkEdit91.Properties.Caption = "";
             this.checkEdit91.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit91.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit91.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit91.Size = new System.Drawing.Size(20, 19);
             this.checkEdit91.TabIndex = 425;
             // 
             // checkEdit92
@@ -1911,7 +1911,7 @@
             this.checkEdit92.Properties.Caption = "";
             this.checkEdit92.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit92.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit92.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit92.Size = new System.Drawing.Size(20, 19);
             this.checkEdit92.TabIndex = 424;
             // 
             // checkEdit93
@@ -1924,7 +1924,7 @@
             this.checkEdit93.Properties.Caption = "";
             this.checkEdit93.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit93.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit93.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit93.Size = new System.Drawing.Size(20, 19);
             this.checkEdit93.TabIndex = 423;
             // 
             // checkEdit94
@@ -1937,7 +1937,7 @@
             this.checkEdit94.Properties.Caption = "";
             this.checkEdit94.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit94.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit94.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit94.Size = new System.Drawing.Size(20, 19);
             this.checkEdit94.TabIndex = 422;
             // 
             // checkEdit95
@@ -1950,7 +1950,7 @@
             this.checkEdit95.Properties.Caption = "";
             this.checkEdit95.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit95.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit95.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit95.Size = new System.Drawing.Size(20, 19);
             this.checkEdit95.TabIndex = 421;
             // 
             // checkEdit96
@@ -1963,7 +1963,7 @@
             this.checkEdit96.Properties.Caption = "";
             this.checkEdit96.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit96.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit96.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit96.Size = new System.Drawing.Size(20, 19);
             this.checkEdit96.TabIndex = 420;
             // 
             // checkEdit97
@@ -1976,7 +1976,7 @@
             this.checkEdit97.Properties.Caption = "";
             this.checkEdit97.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit97.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit97.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit97.Size = new System.Drawing.Size(20, 19);
             this.checkEdit97.TabIndex = 419;
             // 
             // checkEdit98
@@ -1989,7 +1989,7 @@
             this.checkEdit98.Properties.Caption = "";
             this.checkEdit98.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit98.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit98.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit98.Size = new System.Drawing.Size(20, 19);
             this.checkEdit98.TabIndex = 418;
             // 
             // checkEdit99
@@ -2002,7 +2002,7 @@
             this.checkEdit99.Properties.Caption = "";
             this.checkEdit99.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit99.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit99.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit99.Size = new System.Drawing.Size(20, 19);
             this.checkEdit99.TabIndex = 417;
             // 
             // checkEdit100
@@ -2015,7 +2015,7 @@
             this.checkEdit100.Properties.Caption = "";
             this.checkEdit100.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit100.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit100.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit100.Size = new System.Drawing.Size(20, 19);
             this.checkEdit100.TabIndex = 416;
             // 
             // checkEdit101
@@ -2028,7 +2028,7 @@
             this.checkEdit101.Properties.Caption = "";
             this.checkEdit101.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit101.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit101.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit101.Size = new System.Drawing.Size(20, 19);
             this.checkEdit101.TabIndex = 415;
             // 
             // checkEdit102
@@ -2041,7 +2041,7 @@
             this.checkEdit102.Properties.Caption = "";
             this.checkEdit102.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit102.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit102.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit102.Size = new System.Drawing.Size(20, 19);
             this.checkEdit102.TabIndex = 414;
             // 
             // checkEdit103
@@ -2054,7 +2054,7 @@
             this.checkEdit103.Properties.Caption = "";
             this.checkEdit103.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit103.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit103.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit103.Size = new System.Drawing.Size(20, 19);
             this.checkEdit103.TabIndex = 413;
             // 
             // checkEdit104
@@ -2067,7 +2067,7 @@
             this.checkEdit104.Properties.Caption = "";
             this.checkEdit104.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit104.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit104.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit104.Size = new System.Drawing.Size(20, 19);
             this.checkEdit104.TabIndex = 412;
             // 
             // checkEdit105
@@ -2080,7 +2080,7 @@
             this.checkEdit105.Properties.Caption = "";
             this.checkEdit105.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit105.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit105.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit105.Size = new System.Drawing.Size(20, 19);
             this.checkEdit105.TabIndex = 411;
             // 
             // checkEdit106
@@ -2093,7 +2093,7 @@
             this.checkEdit106.Properties.Caption = "";
             this.checkEdit106.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit106.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit106.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit106.Size = new System.Drawing.Size(20, 19);
             this.checkEdit106.TabIndex = 410;
             // 
             // checkEdit107
@@ -2106,7 +2106,7 @@
             this.checkEdit107.Properties.Caption = "";
             this.checkEdit107.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit107.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit107.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit107.Size = new System.Drawing.Size(20, 19);
             this.checkEdit107.TabIndex = 409;
             // 
             // checkEdit108
@@ -2119,7 +2119,7 @@
             this.checkEdit108.Properties.Caption = "";
             this.checkEdit108.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit108.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit108.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit108.Size = new System.Drawing.Size(20, 19);
             this.checkEdit108.TabIndex = 408;
             // 
             // checkEdit109
@@ -2132,7 +2132,7 @@
             this.checkEdit109.Properties.Caption = "";
             this.checkEdit109.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit109.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit109.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit109.Size = new System.Drawing.Size(20, 19);
             this.checkEdit109.TabIndex = 407;
             // 
             // checkEdit110
@@ -2145,7 +2145,7 @@
             this.checkEdit110.Properties.Caption = "";
             this.checkEdit110.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit110.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit110.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit110.Size = new System.Drawing.Size(20, 19);
             this.checkEdit110.TabIndex = 406;
             // 
             // checkEdit111
@@ -2158,7 +2158,7 @@
             this.checkEdit111.Properties.Caption = "";
             this.checkEdit111.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit111.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit111.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit111.Size = new System.Drawing.Size(20, 19);
             this.checkEdit111.TabIndex = 405;
             // 
             // checkEdit112
@@ -2171,7 +2171,7 @@
             this.checkEdit112.Properties.Caption = "";
             this.checkEdit112.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit112.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit112.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit112.Size = new System.Drawing.Size(20, 19);
             this.checkEdit112.TabIndex = 404;
             // 
             // checkEdit113
@@ -2184,7 +2184,7 @@
             this.checkEdit113.Properties.Caption = "";
             this.checkEdit113.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit113.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit113.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit113.Size = new System.Drawing.Size(20, 19);
             this.checkEdit113.TabIndex = 403;
             // 
             // checkEdit114
@@ -2197,7 +2197,7 @@
             this.checkEdit114.Properties.Caption = "";
             this.checkEdit114.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit114.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit114.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit114.Size = new System.Drawing.Size(20, 19);
             this.checkEdit114.TabIndex = 402;
             // 
             // checkEdit115
@@ -2210,7 +2210,7 @@
             this.checkEdit115.Properties.Caption = "";
             this.checkEdit115.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit115.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit115.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit115.Size = new System.Drawing.Size(20, 19);
             this.checkEdit115.TabIndex = 401;
             // 
             // checkEdit116
@@ -2223,7 +2223,7 @@
             this.checkEdit116.Properties.Caption = "";
             this.checkEdit116.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit116.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit116.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit116.Size = new System.Drawing.Size(20, 19);
             this.checkEdit116.TabIndex = 400;
             // 
             // checkEdit117
@@ -2236,7 +2236,7 @@
             this.checkEdit117.Properties.Caption = "";
             this.checkEdit117.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit117.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit117.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit117.Size = new System.Drawing.Size(20, 19);
             this.checkEdit117.TabIndex = 399;
             // 
             // checkEdit118
@@ -2249,7 +2249,7 @@
             this.checkEdit118.Properties.Caption = "";
             this.checkEdit118.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit118.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit118.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit118.Size = new System.Drawing.Size(20, 19);
             this.checkEdit118.TabIndex = 398;
             // 
             // checkEdit119
@@ -2262,7 +2262,7 @@
             this.checkEdit119.Properties.Caption = "";
             this.checkEdit119.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit119.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit119.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit119.Size = new System.Drawing.Size(20, 19);
             this.checkEdit119.TabIndex = 397;
             // 
             // checkEdit120
@@ -2275,7 +2275,7 @@
             this.checkEdit120.Properties.Caption = "";
             this.checkEdit120.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit120.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit120.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit120.Size = new System.Drawing.Size(20, 19);
             this.checkEdit120.TabIndex = 396;
             // 
             // checkEdit121
@@ -2288,7 +2288,7 @@
             this.checkEdit121.Properties.Caption = "";
             this.checkEdit121.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit121.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit121.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit121.Size = new System.Drawing.Size(20, 19);
             this.checkEdit121.TabIndex = 395;
             // 
             // checkEdit122
@@ -2301,7 +2301,7 @@
             this.checkEdit122.Properties.Caption = "";
             this.checkEdit122.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit122.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit122.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit122.Size = new System.Drawing.Size(20, 19);
             this.checkEdit122.TabIndex = 394;
             // 
             // checkEdit123
@@ -2314,7 +2314,7 @@
             this.checkEdit123.Properties.Caption = "";
             this.checkEdit123.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit123.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit123.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit123.Size = new System.Drawing.Size(20, 19);
             this.checkEdit123.TabIndex = 393;
             // 
             // checkEdit124
@@ -2327,7 +2327,7 @@
             this.checkEdit124.Properties.Caption = "";
             this.checkEdit124.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit124.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit124.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit124.Size = new System.Drawing.Size(20, 19);
             this.checkEdit124.TabIndex = 392;
             // 
             // checkEdit125
@@ -2340,7 +2340,7 @@
             this.checkEdit125.Properties.Caption = "";
             this.checkEdit125.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit125.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit125.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit125.Size = new System.Drawing.Size(20, 19);
             this.checkEdit125.TabIndex = 391;
             // 
             // checkEdit126
@@ -2353,7 +2353,7 @@
             this.checkEdit126.Properties.Caption = "";
             this.checkEdit126.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit126.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit126.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit126.Size = new System.Drawing.Size(20, 19);
             this.checkEdit126.TabIndex = 390;
             // 
             // checkEdit127
@@ -2366,7 +2366,7 @@
             this.checkEdit127.Properties.Caption = "";
             this.checkEdit127.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit127.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit127.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit127.Size = new System.Drawing.Size(20, 19);
             this.checkEdit127.TabIndex = 389;
             // 
             // checkEdit128
@@ -2379,7 +2379,7 @@
             this.checkEdit128.Properties.Caption = "";
             this.checkEdit128.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit128.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit128.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit128.Size = new System.Drawing.Size(20, 19);
             this.checkEdit128.TabIndex = 388;
             // 
             // checkEdit129
@@ -2392,7 +2392,7 @@
             this.checkEdit129.Properties.Caption = "";
             this.checkEdit129.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit129.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit129.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit129.Size = new System.Drawing.Size(20, 19);
             this.checkEdit129.TabIndex = 387;
             // 
             // checkEdit130
@@ -2405,7 +2405,7 @@
             this.checkEdit130.Properties.Caption = "";
             this.checkEdit130.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit130.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit130.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit130.Size = new System.Drawing.Size(20, 19);
             this.checkEdit130.TabIndex = 386;
             // 
             // checkEdit131
@@ -2418,7 +2418,7 @@
             this.checkEdit131.Properties.Caption = "";
             this.checkEdit131.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit131.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit131.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit131.Size = new System.Drawing.Size(20, 19);
             this.checkEdit131.TabIndex = 385;
             // 
             // checkEdit132
@@ -2431,7 +2431,7 @@
             this.checkEdit132.Properties.Caption = "";
             this.checkEdit132.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit132.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit132.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit132.Size = new System.Drawing.Size(20, 19);
             this.checkEdit132.TabIndex = 384;
             // 
             // checkEdit133
@@ -2444,7 +2444,7 @@
             this.checkEdit133.Properties.Caption = "";
             this.checkEdit133.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit133.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit133.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit133.Size = new System.Drawing.Size(20, 19);
             this.checkEdit133.TabIndex = 383;
             // 
             // checkEdit134
@@ -2457,7 +2457,7 @@
             this.checkEdit134.Properties.Caption = "";
             this.checkEdit134.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit134.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit134.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit134.Size = new System.Drawing.Size(20, 19);
             this.checkEdit134.TabIndex = 382;
             // 
             // checkEdit135
@@ -2470,7 +2470,7 @@
             this.checkEdit135.Properties.Caption = "";
             this.checkEdit135.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit135.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit135.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit135.Size = new System.Drawing.Size(20, 19);
             this.checkEdit135.TabIndex = 381;
             // 
             // checkEdit136
@@ -2483,7 +2483,7 @@
             this.checkEdit136.Properties.Caption = "";
             this.checkEdit136.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit136.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit136.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit136.Size = new System.Drawing.Size(20, 19);
             this.checkEdit136.TabIndex = 380;
             // 
             // checkEdit137
@@ -2496,7 +2496,7 @@
             this.checkEdit137.Properties.Caption = "";
             this.checkEdit137.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit137.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit137.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit137.Size = new System.Drawing.Size(20, 19);
             this.checkEdit137.TabIndex = 379;
             // 
             // checkEdit138
@@ -2509,7 +2509,7 @@
             this.checkEdit138.Properties.Caption = "";
             this.checkEdit138.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit138.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit138.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit138.Size = new System.Drawing.Size(20, 19);
             this.checkEdit138.TabIndex = 378;
             // 
             // checkEdit139
@@ -2522,7 +2522,7 @@
             this.checkEdit139.Properties.Caption = "";
             this.checkEdit139.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit139.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit139.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit139.Size = new System.Drawing.Size(20, 19);
             this.checkEdit139.TabIndex = 377;
             // 
             // checkEdit140
@@ -2535,7 +2535,7 @@
             this.checkEdit140.Properties.Caption = "";
             this.checkEdit140.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit140.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit140.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit140.Size = new System.Drawing.Size(20, 19);
             this.checkEdit140.TabIndex = 376;
             // 
             // checkEdit141
@@ -2548,7 +2548,7 @@
             this.checkEdit141.Properties.Caption = "";
             this.checkEdit141.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit141.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit141.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit141.Size = new System.Drawing.Size(20, 19);
             this.checkEdit141.TabIndex = 375;
             // 
             // checkEdit142
@@ -2561,7 +2561,7 @@
             this.checkEdit142.Properties.Caption = "";
             this.checkEdit142.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit142.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit142.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit142.Size = new System.Drawing.Size(20, 19);
             this.checkEdit142.TabIndex = 374;
             // 
             // checkEdit143
@@ -2574,7 +2574,7 @@
             this.checkEdit143.Properties.Caption = "";
             this.checkEdit143.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit143.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit143.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit143.Size = new System.Drawing.Size(20, 19);
             this.checkEdit143.TabIndex = 373;
             // 
             // checkEdit144
@@ -2587,260 +2587,260 @@
             this.checkEdit144.Properties.Caption = "";
             this.checkEdit144.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit144.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit144.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit144.Size = new System.Drawing.Size(20, 19);
             this.checkEdit144.TabIndex = 372;
             // 
-            // labelControl24
+            // FT013
             // 
-            this.labelControl24.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl24.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl24.Appearance.Options.UseFont = true;
-            this.labelControl24.Appearance.Options.UseForeColor = true;
-            this.labelControl24.Location = new System.Drawing.Point(644, 28);
-            this.labelControl24.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl24.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl24.Name = "labelControl24";
-            this.labelControl24.Size = new System.Drawing.Size(13, 13);
-            this.labelControl24.TabIndex = 371;
-            this.labelControl24.Text = "子";
+            this.FT013.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.FT013.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FT013.Appearance.Options.UseFont = true;
+            this.FT013.Appearance.Options.UseForeColor = true;
+            this.FT013.Location = new System.Drawing.Point(644, 28);
+            this.FT013.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FT013.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FT013.Name = "FT013";
+            this.FT013.Size = new System.Drawing.Size(13, 13);
+            this.FT013.TabIndex = 371;
+            this.FT013.Text = "子";
             // 
-            // labelControl25
+            // FT012
             // 
-            this.labelControl25.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl25.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl25.Appearance.Options.UseFont = true;
-            this.labelControl25.Appearance.Options.UseForeColor = true;
-            this.labelControl25.Location = new System.Drawing.Point(616, 28);
-            this.labelControl25.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl25.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl25.Name = "labelControl25";
-            this.labelControl25.Size = new System.Drawing.Size(13, 13);
-            this.labelControl25.TabIndex = 370;
-            this.labelControl25.Text = "兄";
+            this.FT012.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.FT012.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FT012.Appearance.Options.UseFont = true;
+            this.FT012.Appearance.Options.UseForeColor = true;
+            this.FT012.Location = new System.Drawing.Point(616, 28);
+            this.FT012.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FT012.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FT012.Name = "FT012";
+            this.FT012.Size = new System.Drawing.Size(13, 13);
+            this.FT012.TabIndex = 370;
+            this.FT012.Text = "兄";
             // 
-            // labelControl26
+            // FT011
             // 
-            this.labelControl26.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl26.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl26.Appearance.Options.UseFont = true;
-            this.labelControl26.Appearance.Options.UseForeColor = true;
-            this.labelControl26.Location = new System.Drawing.Point(588, 28);
-            this.labelControl26.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl26.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl26.Name = "labelControl26";
-            this.labelControl26.Size = new System.Drawing.Size(13, 13);
-            this.labelControl26.TabIndex = 369;
-            this.labelControl26.Text = "外";
+            this.FT011.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.FT011.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FT011.Appearance.Options.UseFont = true;
+            this.FT011.Appearance.Options.UseForeColor = true;
+            this.FT011.Location = new System.Drawing.Point(588, 28);
+            this.FT011.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FT011.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FT011.Name = "FT011";
+            this.FT011.Size = new System.Drawing.Size(13, 13);
+            this.FT011.TabIndex = 369;
+            this.FT011.Text = "外";
             // 
-            // labelControl27
+            // FT010
             // 
-            this.labelControl27.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl27.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl27.Appearance.Options.UseFont = true;
-            this.labelControl27.Appearance.Options.UseForeColor = true;
-            this.labelControl27.Location = new System.Drawing.Point(560, 28);
-            this.labelControl27.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl27.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl27.Name = "labelControl27";
-            this.labelControl27.Size = new System.Drawing.Size(13, 13);
-            this.labelControl27.TabIndex = 368;
-            this.labelControl27.Text = "祖";
+            this.FT010.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.FT010.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FT010.Appearance.Options.UseFont = true;
+            this.FT010.Appearance.Options.UseForeColor = true;
+            this.FT010.Location = new System.Drawing.Point(560, 28);
+            this.FT010.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FT010.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FT010.Name = "FT010";
+            this.FT010.Size = new System.Drawing.Size(13, 13);
+            this.FT010.TabIndex = 368;
+            this.FT010.Text = "祖";
             // 
-            // labelControl28
+            // FT009
             // 
-            this.labelControl28.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl28.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl28.Appearance.Options.UseFont = true;
-            this.labelControl28.Appearance.Options.UseForeColor = true;
-            this.labelControl28.Location = new System.Drawing.Point(532, 28);
-            this.labelControl28.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl28.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl28.Name = "labelControl28";
-            this.labelControl28.Size = new System.Drawing.Size(13, 13);
-            this.labelControl28.TabIndex = 367;
-            this.labelControl28.Text = "母";
+            this.FT009.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.FT009.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FT009.Appearance.Options.UseFont = true;
+            this.FT009.Appearance.Options.UseForeColor = true;
+            this.FT009.Location = new System.Drawing.Point(532, 28);
+            this.FT009.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FT009.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FT009.Name = "FT009";
+            this.FT009.Size = new System.Drawing.Size(13, 13);
+            this.FT009.TabIndex = 367;
+            this.FT009.Text = "母";
             // 
-            // labelControl29
+            // FT008
             // 
-            this.labelControl29.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl29.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl29.Appearance.Options.UseFont = true;
-            this.labelControl29.Appearance.Options.UseForeColor = true;
-            this.labelControl29.Location = new System.Drawing.Point(504, 28);
-            this.labelControl29.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl29.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl29.Name = "labelControl29";
-            this.labelControl29.Size = new System.Drawing.Size(13, 13);
-            this.labelControl29.TabIndex = 366;
-            this.labelControl29.Text = "父";
+            this.FT008.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.FT008.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FT008.Appearance.Options.UseFont = true;
+            this.FT008.Appearance.Options.UseForeColor = true;
+            this.FT008.Location = new System.Drawing.Point(504, 28);
+            this.FT008.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FT008.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FT008.Name = "FT008";
+            this.FT008.Size = new System.Drawing.Size(13, 13);
+            this.FT008.TabIndex = 366;
+            this.FT008.Text = "父";
             // 
-            // labelControl30
+            // F024
             // 
-            this.labelControl30.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl30.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl30.Appearance.Options.UseFont = true;
-            this.labelControl30.Appearance.Options.UseForeColor = true;
-            this.labelControl30.Location = new System.Drawing.Point(392, 443);
-            this.labelControl30.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl30.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl30.Name = "labelControl30";
-            this.labelControl30.Size = new System.Drawing.Size(39, 13);
-            this.labelControl30.TabIndex = 365;
-            this.labelControl30.Text = "冠心病";
+            this.F024.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F024.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F024.Appearance.Options.UseFont = true;
+            this.F024.Appearance.Options.UseForeColor = true;
+            this.F024.Location = new System.Drawing.Point(392, 443);
+            this.F024.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F024.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F024.Name = "F024";
+            this.F024.Size = new System.Drawing.Size(39, 13);
+            this.F024.TabIndex = 365;
+            this.F024.Text = "冠心病";
             // 
-            // labelControl31
+            // F022
             // 
-            this.labelControl31.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl31.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl31.Appearance.Options.UseFont = true;
-            this.labelControl31.Appearance.Options.UseForeColor = true;
-            this.labelControl31.Location = new System.Drawing.Point(392, 408);
-            this.labelControl31.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl31.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl31.Name = "labelControl31";
-            this.labelControl31.Size = new System.Drawing.Size(39, 13);
-            this.labelControl31.TabIndex = 364;
-            this.labelControl31.Text = "皮肤癌";
+            this.F022.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F022.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F022.Appearance.Options.UseFont = true;
+            this.F022.Appearance.Options.UseForeColor = true;
+            this.F022.Location = new System.Drawing.Point(392, 408);
+            this.F022.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F022.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F022.Name = "F022";
+            this.F022.Size = new System.Drawing.Size(39, 13);
+            this.F022.TabIndex = 364;
+            this.F022.Text = "皮肤癌";
             // 
-            // labelControl32
+            // F020
             // 
-            this.labelControl32.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl32.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl32.Appearance.Options.UseFont = true;
-            this.labelControl32.Appearance.Options.UseForeColor = true;
-            this.labelControl32.Location = new System.Drawing.Point(392, 373);
-            this.labelControl32.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl32.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl32.Name = "labelControl32";
-            this.labelControl32.Size = new System.Drawing.Size(39, 13);
-            this.labelControl32.TabIndex = 363;
-            this.labelControl32.Text = "宫颈癌";
+            this.F020.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F020.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F020.Appearance.Options.UseFont = true;
+            this.F020.Appearance.Options.UseForeColor = true;
+            this.F020.Location = new System.Drawing.Point(392, 373);
+            this.F020.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F020.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F020.Name = "F020";
+            this.F020.Size = new System.Drawing.Size(39, 13);
+            this.F020.TabIndex = 363;
+            this.F020.Text = "宫颈癌";
             // 
-            // labelControl33
+            // F018
             // 
-            this.labelControl33.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl33.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl33.Appearance.Options.UseFont = true;
-            this.labelControl33.Appearance.Options.UseForeColor = true;
-            this.labelControl33.Location = new System.Drawing.Point(392, 338);
-            this.labelControl33.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl33.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl33.Name = "labelControl33";
-            this.labelControl33.Size = new System.Drawing.Size(39, 13);
-            this.labelControl33.TabIndex = 362;
-            this.labelControl33.Text = "膀胱癌";
+            this.F018.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F018.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F018.Appearance.Options.UseFont = true;
+            this.F018.Appearance.Options.UseForeColor = true;
+            this.F018.Location = new System.Drawing.Point(392, 338);
+            this.F018.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F018.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F018.Name = "F018";
+            this.F018.Size = new System.Drawing.Size(39, 13);
+            this.F018.TabIndex = 362;
+            this.F018.Text = "膀胱癌";
             // 
-            // labelControl34
+            // F016
             // 
-            this.labelControl34.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl34.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl34.Appearance.Options.UseFont = true;
-            this.labelControl34.Appearance.Options.UseForeColor = true;
-            this.labelControl34.Location = new System.Drawing.Point(392, 303);
-            this.labelControl34.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl34.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl34.Name = "labelControl34";
-            this.labelControl34.Size = new System.Drawing.Size(39, 13);
-            this.labelControl34.TabIndex = 361;
-            this.labelControl34.Text = "白血病";
+            this.F016.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F016.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F016.Appearance.Options.UseFont = true;
+            this.F016.Appearance.Options.UseForeColor = true;
+            this.F016.Location = new System.Drawing.Point(392, 303);
+            this.F016.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F016.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F016.Name = "F016";
+            this.F016.Size = new System.Drawing.Size(39, 13);
+            this.F016.TabIndex = 361;
+            this.F016.Text = "白血病";
             // 
-            // labelControl35
+            // F014
             // 
-            this.labelControl35.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl35.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl35.Appearance.Options.UseFont = true;
-            this.labelControl35.Appearance.Options.UseForeColor = true;
-            this.labelControl35.Location = new System.Drawing.Point(392, 268);
-            this.labelControl35.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl35.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl35.Name = "labelControl35";
-            this.labelControl35.Size = new System.Drawing.Size(39, 13);
-            this.labelControl35.TabIndex = 360;
-            this.labelControl35.Text = "胰腺癌";
+            this.F014.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F014.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F014.Appearance.Options.UseFont = true;
+            this.F014.Appearance.Options.UseForeColor = true;
+            this.F014.Location = new System.Drawing.Point(392, 268);
+            this.F014.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F014.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F014.Name = "F014";
+            this.F014.Size = new System.Drawing.Size(39, 13);
+            this.F014.TabIndex = 360;
+            this.F014.Text = "胰腺癌";
             // 
-            // labelControl36
+            // F012
             // 
-            this.labelControl36.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl36.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl36.Appearance.Options.UseFont = true;
-            this.labelControl36.Appearance.Options.UseForeColor = true;
-            this.labelControl36.Location = new System.Drawing.Point(392, 233);
-            this.labelControl36.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl36.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl36.Name = "labelControl36";
-            this.labelControl36.Size = new System.Drawing.Size(26, 13);
-            this.labelControl36.TabIndex = 359;
-            this.labelControl36.Text = "胃癌";
+            this.F012.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F012.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F012.Appearance.Options.UseFont = true;
+            this.F012.Appearance.Options.UseForeColor = true;
+            this.F012.Location = new System.Drawing.Point(392, 233);
+            this.F012.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F012.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F012.Name = "F012";
+            this.F012.Size = new System.Drawing.Size(26, 13);
+            this.F012.TabIndex = 359;
+            this.F012.Text = "胃癌";
             // 
-            // labelControl37
+            // F010
             // 
-            this.labelControl37.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl37.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl37.Appearance.Options.UseFont = true;
-            this.labelControl37.Appearance.Options.UseForeColor = true;
-            this.labelControl37.Location = new System.Drawing.Point(392, 198);
-            this.labelControl37.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl37.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl37.Name = "labelControl37";
-            this.labelControl37.Size = new System.Drawing.Size(78, 13);
-            this.labelControl37.TabIndex = 358;
-            this.labelControl37.Text = "重性精神疾病";
+            this.F010.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F010.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F010.Appearance.Options.UseFont = true;
+            this.F010.Appearance.Options.UseForeColor = true;
+            this.F010.Location = new System.Drawing.Point(392, 198);
+            this.F010.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F010.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F010.Name = "F010";
+            this.F010.Size = new System.Drawing.Size(78, 13);
+            this.F010.TabIndex = 358;
+            this.F010.Text = "重性精神疾病";
             // 
-            // labelControl38
+            // F008
             // 
-            this.labelControl38.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl38.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl38.Appearance.Options.UseFont = true;
-            this.labelControl38.Appearance.Options.UseForeColor = true;
-            this.labelControl38.Location = new System.Drawing.Point(392, 163);
-            this.labelControl38.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl38.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl38.Name = "labelControl38";
-            this.labelControl38.Size = new System.Drawing.Size(52, 13);
-            this.labelControl38.TabIndex = 357;
-            this.labelControl38.Text = "慢性肾病";
+            this.F008.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F008.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F008.Appearance.Options.UseFont = true;
+            this.F008.Appearance.Options.UseForeColor = true;
+            this.F008.Location = new System.Drawing.Point(392, 163);
+            this.F008.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F008.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F008.Name = "F008";
+            this.F008.Size = new System.Drawing.Size(52, 13);
+            this.F008.TabIndex = 357;
+            this.F008.Text = "慢性肾病";
             // 
-            // labelControl39
+            // F006
             // 
-            this.labelControl39.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl39.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl39.Appearance.Options.UseFont = true;
-            this.labelControl39.Appearance.Options.UseForeColor = true;
-            this.labelControl39.Location = new System.Drawing.Point(392, 128);
-            this.labelControl39.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl39.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl39.Name = "labelControl39";
-            this.labelControl39.Size = new System.Drawing.Size(78, 13);
-            this.labelControl39.TabIndex = 356;
-            this.labelControl39.Text = "阿尔兹海默症";
+            this.F006.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F006.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F006.Appearance.Options.UseFont = true;
+            this.F006.Appearance.Options.UseForeColor = true;
+            this.F006.Location = new System.Drawing.Point(392, 128);
+            this.F006.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F006.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F006.Name = "F006";
+            this.F006.Size = new System.Drawing.Size(78, 13);
+            this.F006.TabIndex = 356;
+            this.F006.Text = "阿尔兹海默症";
             // 
-            // labelControl40
+            // F004
             // 
-            this.labelControl40.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl40.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl40.Appearance.Options.UseFont = true;
-            this.labelControl40.Appearance.Options.UseForeColor = true;
-            this.labelControl40.Location = new System.Drawing.Point(392, 93);
-            this.labelControl40.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl40.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl40.Name = "labelControl40";
-            this.labelControl40.Size = new System.Drawing.Size(39, 13);
-            this.labelControl40.TabIndex = 355;
-            this.labelControl40.Text = "肥胖症";
+            this.F004.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F004.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F004.Appearance.Options.UseFont = true;
+            this.F004.Appearance.Options.UseForeColor = true;
+            this.F004.Location = new System.Drawing.Point(392, 93);
+            this.F004.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F004.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F004.Name = "F004";
+            this.F004.Size = new System.Drawing.Size(39, 13);
+            this.F004.TabIndex = 355;
+            this.F004.Text = "肥胖症";
             // 
-            // labelControl41
+            // F002
             // 
-            this.labelControl41.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl41.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl41.Appearance.Options.UseFont = true;
-            this.labelControl41.Appearance.Options.UseForeColor = true;
-            this.labelControl41.Location = new System.Drawing.Point(392, 60);
-            this.labelControl41.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl41.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl41.Name = "labelControl41";
-            this.labelControl41.Size = new System.Drawing.Size(39, 13);
-            this.labelControl41.TabIndex = 354;
-            this.labelControl41.Text = "糖尿病";
+            this.F002.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F002.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F002.Appearance.Options.UseFont = true;
+            this.F002.Appearance.Options.UseForeColor = true;
+            this.F002.Location = new System.Drawing.Point(392, 60);
+            this.F002.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F002.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F002.Name = "F002";
+            this.F002.Size = new System.Drawing.Size(39, 13);
+            this.F002.TabIndex = 354;
+            this.F002.Text = "糖尿病";
             // 
             // checkEdit145
             // 
@@ -2852,7 +2852,7 @@
             this.checkEdit145.Properties.Caption = "";
             this.checkEdit145.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit145.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit145.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit145.Size = new System.Drawing.Size(20, 19);
             this.checkEdit145.TabIndex = 353;
             // 
             // checkEdit68
@@ -2865,7 +2865,7 @@
             this.checkEdit68.Properties.Caption = "";
             this.checkEdit68.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit68.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit68.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit68.Size = new System.Drawing.Size(20, 19);
             this.checkEdit68.TabIndex = 352;
             // 
             // checkEdit69
@@ -2878,7 +2878,7 @@
             this.checkEdit69.Properties.Caption = "";
             this.checkEdit69.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit69.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit69.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit69.Size = new System.Drawing.Size(20, 19);
             this.checkEdit69.TabIndex = 351;
             // 
             // checkEdit70
@@ -2891,7 +2891,7 @@
             this.checkEdit70.Properties.Caption = "";
             this.checkEdit70.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit70.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit70.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit70.Size = new System.Drawing.Size(20, 19);
             this.checkEdit70.TabIndex = 350;
             // 
             // checkEdit71
@@ -2904,7 +2904,7 @@
             this.checkEdit71.Properties.Caption = "";
             this.checkEdit71.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit71.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit71.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit71.Size = new System.Drawing.Size(20, 19);
             this.checkEdit71.TabIndex = 349;
             // 
             // checkEdit72
@@ -2917,7 +2917,7 @@
             this.checkEdit72.Properties.Caption = "";
             this.checkEdit72.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit72.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit72.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit72.Size = new System.Drawing.Size(20, 19);
             this.checkEdit72.TabIndex = 348;
             // 
             // checkEdit73
@@ -2930,7 +2930,7 @@
             this.checkEdit73.Properties.Caption = "";
             this.checkEdit73.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit73.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit73.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit73.Size = new System.Drawing.Size(20, 19);
             this.checkEdit73.TabIndex = 347;
             // 
             // checkEdit62
@@ -2943,7 +2943,7 @@
             this.checkEdit62.Properties.Caption = "";
             this.checkEdit62.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit62.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit62.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit62.Size = new System.Drawing.Size(20, 19);
             this.checkEdit62.TabIndex = 346;
             // 
             // checkEdit63
@@ -2956,7 +2956,7 @@
             this.checkEdit63.Properties.Caption = "";
             this.checkEdit63.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit63.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit63.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit63.Size = new System.Drawing.Size(20, 19);
             this.checkEdit63.TabIndex = 345;
             // 
             // checkEdit64
@@ -2969,7 +2969,7 @@
             this.checkEdit64.Properties.Caption = "";
             this.checkEdit64.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit64.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit64.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit64.Size = new System.Drawing.Size(20, 19);
             this.checkEdit64.TabIndex = 344;
             // 
             // checkEdit65
@@ -2982,7 +2982,7 @@
             this.checkEdit65.Properties.Caption = "";
             this.checkEdit65.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit65.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit65.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit65.Size = new System.Drawing.Size(20, 19);
             this.checkEdit65.TabIndex = 343;
             // 
             // checkEdit66
@@ -2995,7 +2995,7 @@
             this.checkEdit66.Properties.Caption = "";
             this.checkEdit66.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit66.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit66.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit66.Size = new System.Drawing.Size(20, 19);
             this.checkEdit66.TabIndex = 342;
             // 
             // checkEdit67
@@ -3008,7 +3008,7 @@
             this.checkEdit67.Properties.Caption = "";
             this.checkEdit67.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit67.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit67.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit67.Size = new System.Drawing.Size(20, 19);
             this.checkEdit67.TabIndex = 341;
             // 
             // checkEdit56
@@ -3021,7 +3021,7 @@
             this.checkEdit56.Properties.Caption = "";
             this.checkEdit56.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit56.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit56.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit56.Size = new System.Drawing.Size(20, 19);
             this.checkEdit56.TabIndex = 340;
             // 
             // checkEdit57
@@ -3034,7 +3034,7 @@
             this.checkEdit57.Properties.Caption = "";
             this.checkEdit57.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit57.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit57.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit57.Size = new System.Drawing.Size(20, 19);
             this.checkEdit57.TabIndex = 339;
             // 
             // checkEdit58
@@ -3047,7 +3047,7 @@
             this.checkEdit58.Properties.Caption = "";
             this.checkEdit58.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit58.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit58.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit58.Size = new System.Drawing.Size(20, 19);
             this.checkEdit58.TabIndex = 338;
             // 
             // checkEdit59
@@ -3060,7 +3060,7 @@
             this.checkEdit59.Properties.Caption = "";
             this.checkEdit59.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit59.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit59.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit59.Size = new System.Drawing.Size(20, 19);
             this.checkEdit59.TabIndex = 337;
             // 
             // checkEdit60
@@ -3073,7 +3073,7 @@
             this.checkEdit60.Properties.Caption = "";
             this.checkEdit60.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit60.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit60.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit60.Size = new System.Drawing.Size(20, 19);
             this.checkEdit60.TabIndex = 336;
             // 
             // checkEdit61
@@ -3086,7 +3086,7 @@
             this.checkEdit61.Properties.Caption = "";
             this.checkEdit61.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit61.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit61.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit61.Size = new System.Drawing.Size(20, 19);
             this.checkEdit61.TabIndex = 335;
             // 
             // checkEdit50
@@ -3099,7 +3099,7 @@
             this.checkEdit50.Properties.Caption = "";
             this.checkEdit50.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit50.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit50.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit50.Size = new System.Drawing.Size(20, 19);
             this.checkEdit50.TabIndex = 334;
             // 
             // checkEdit51
@@ -3112,7 +3112,7 @@
             this.checkEdit51.Properties.Caption = "";
             this.checkEdit51.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit51.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit51.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit51.Size = new System.Drawing.Size(20, 19);
             this.checkEdit51.TabIndex = 333;
             // 
             // checkEdit52
@@ -3125,7 +3125,7 @@
             this.checkEdit52.Properties.Caption = "";
             this.checkEdit52.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit52.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit52.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit52.Size = new System.Drawing.Size(20, 19);
             this.checkEdit52.TabIndex = 332;
             // 
             // checkEdit53
@@ -3138,7 +3138,7 @@
             this.checkEdit53.Properties.Caption = "";
             this.checkEdit53.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit53.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit53.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit53.Size = new System.Drawing.Size(20, 19);
             this.checkEdit53.TabIndex = 331;
             // 
             // checkEdit54
@@ -3151,7 +3151,7 @@
             this.checkEdit54.Properties.Caption = "";
             this.checkEdit54.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit54.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit54.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit54.Size = new System.Drawing.Size(20, 19);
             this.checkEdit54.TabIndex = 330;
             // 
             // checkEdit55
@@ -3164,7 +3164,7 @@
             this.checkEdit55.Properties.Caption = "";
             this.checkEdit55.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit55.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit55.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit55.Size = new System.Drawing.Size(20, 19);
             this.checkEdit55.TabIndex = 329;
             // 
             // checkEdit44
@@ -3177,7 +3177,7 @@
             this.checkEdit44.Properties.Caption = "";
             this.checkEdit44.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit44.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit44.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit44.Size = new System.Drawing.Size(20, 19);
             this.checkEdit44.TabIndex = 328;
             // 
             // checkEdit45
@@ -3190,7 +3190,7 @@
             this.checkEdit45.Properties.Caption = "";
             this.checkEdit45.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit45.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit45.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit45.Size = new System.Drawing.Size(20, 19);
             this.checkEdit45.TabIndex = 327;
             // 
             // checkEdit46
@@ -3203,7 +3203,7 @@
             this.checkEdit46.Properties.Caption = "";
             this.checkEdit46.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit46.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit46.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit46.Size = new System.Drawing.Size(20, 19);
             this.checkEdit46.TabIndex = 326;
             // 
             // checkEdit47
@@ -3216,7 +3216,7 @@
             this.checkEdit47.Properties.Caption = "";
             this.checkEdit47.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit47.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit47.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit47.Size = new System.Drawing.Size(20, 19);
             this.checkEdit47.TabIndex = 325;
             // 
             // checkEdit48
@@ -3229,7 +3229,7 @@
             this.checkEdit48.Properties.Caption = "";
             this.checkEdit48.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit48.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit48.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit48.Size = new System.Drawing.Size(20, 19);
             this.checkEdit48.TabIndex = 324;
             // 
             // checkEdit49
@@ -3242,7 +3242,7 @@
             this.checkEdit49.Properties.Caption = "";
             this.checkEdit49.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit49.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit49.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit49.Size = new System.Drawing.Size(20, 19);
             this.checkEdit49.TabIndex = 323;
             // 
             // checkEdit38
@@ -3255,7 +3255,7 @@
             this.checkEdit38.Properties.Caption = "";
             this.checkEdit38.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit38.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit38.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit38.Size = new System.Drawing.Size(20, 19);
             this.checkEdit38.TabIndex = 322;
             // 
             // checkEdit39
@@ -3268,7 +3268,7 @@
             this.checkEdit39.Properties.Caption = "";
             this.checkEdit39.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit39.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit39.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit39.Size = new System.Drawing.Size(20, 19);
             this.checkEdit39.TabIndex = 321;
             // 
             // checkEdit40
@@ -3281,7 +3281,7 @@
             this.checkEdit40.Properties.Caption = "";
             this.checkEdit40.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit40.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit40.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit40.Size = new System.Drawing.Size(20, 19);
             this.checkEdit40.TabIndex = 320;
             // 
             // checkEdit41
@@ -3294,7 +3294,7 @@
             this.checkEdit41.Properties.Caption = "";
             this.checkEdit41.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit41.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit41.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit41.Size = new System.Drawing.Size(20, 19);
             this.checkEdit41.TabIndex = 319;
             // 
             // checkEdit42
@@ -3307,7 +3307,7 @@
             this.checkEdit42.Properties.Caption = "";
             this.checkEdit42.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit42.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit42.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit42.Size = new System.Drawing.Size(20, 19);
             this.checkEdit42.TabIndex = 318;
             // 
             // checkEdit43
@@ -3320,7 +3320,7 @@
             this.checkEdit43.Properties.Caption = "";
             this.checkEdit43.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit43.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit43.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit43.Size = new System.Drawing.Size(20, 19);
             this.checkEdit43.TabIndex = 317;
             // 
             // checkEdit32
@@ -3333,7 +3333,7 @@
             this.checkEdit32.Properties.Caption = "";
             this.checkEdit32.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit32.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit32.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit32.Size = new System.Drawing.Size(20, 19);
             this.checkEdit32.TabIndex = 316;
             // 
             // checkEdit33
@@ -3346,7 +3346,7 @@
             this.checkEdit33.Properties.Caption = "";
             this.checkEdit33.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit33.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit33.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit33.Size = new System.Drawing.Size(20, 19);
             this.checkEdit33.TabIndex = 315;
             // 
             // checkEdit34
@@ -3359,7 +3359,7 @@
             this.checkEdit34.Properties.Caption = "";
             this.checkEdit34.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit34.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit34.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit34.Size = new System.Drawing.Size(20, 19);
             this.checkEdit34.TabIndex = 314;
             // 
             // checkEdit35
@@ -3372,7 +3372,7 @@
             this.checkEdit35.Properties.Caption = "";
             this.checkEdit35.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit35.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit35.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit35.Size = new System.Drawing.Size(20, 19);
             this.checkEdit35.TabIndex = 313;
             // 
             // checkEdit36
@@ -3385,7 +3385,7 @@
             this.checkEdit36.Properties.Caption = "";
             this.checkEdit36.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit36.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit36.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit36.Size = new System.Drawing.Size(20, 19);
             this.checkEdit36.TabIndex = 312;
             // 
             // checkEdit37
@@ -3398,7 +3398,7 @@
             this.checkEdit37.Properties.Caption = "";
             this.checkEdit37.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit37.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit37.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit37.Size = new System.Drawing.Size(20, 19);
             this.checkEdit37.TabIndex = 311;
             // 
             // checkEdit26
@@ -3411,7 +3411,7 @@
             this.checkEdit26.Properties.Caption = "";
             this.checkEdit26.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit26.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit26.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit26.Size = new System.Drawing.Size(20, 19);
             this.checkEdit26.TabIndex = 310;
             // 
             // checkEdit27
@@ -3424,7 +3424,7 @@
             this.checkEdit27.Properties.Caption = "";
             this.checkEdit27.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit27.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit27.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit27.Size = new System.Drawing.Size(20, 19);
             this.checkEdit27.TabIndex = 309;
             // 
             // checkEdit28
@@ -3437,7 +3437,7 @@
             this.checkEdit28.Properties.Caption = "";
             this.checkEdit28.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit28.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit28.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit28.Size = new System.Drawing.Size(20, 19);
             this.checkEdit28.TabIndex = 308;
             // 
             // checkEdit29
@@ -3450,7 +3450,7 @@
             this.checkEdit29.Properties.Caption = "";
             this.checkEdit29.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit29.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit29.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit29.Size = new System.Drawing.Size(20, 19);
             this.checkEdit29.TabIndex = 307;
             // 
             // checkEdit30
@@ -3463,7 +3463,7 @@
             this.checkEdit30.Properties.Caption = "";
             this.checkEdit30.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit30.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit30.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit30.Size = new System.Drawing.Size(20, 19);
             this.checkEdit30.TabIndex = 306;
             // 
             // checkEdit31
@@ -3476,7 +3476,7 @@
             this.checkEdit31.Properties.Caption = "";
             this.checkEdit31.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit31.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit31.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit31.Size = new System.Drawing.Size(20, 19);
             this.checkEdit31.TabIndex = 305;
             // 
             // checkEdit20
@@ -3489,7 +3489,7 @@
             this.checkEdit20.Properties.Caption = "";
             this.checkEdit20.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit20.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit20.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit20.Size = new System.Drawing.Size(20, 19);
             this.checkEdit20.TabIndex = 304;
             // 
             // checkEdit21
@@ -3502,7 +3502,7 @@
             this.checkEdit21.Properties.Caption = "";
             this.checkEdit21.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit21.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit21.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit21.Size = new System.Drawing.Size(20, 19);
             this.checkEdit21.TabIndex = 303;
             // 
             // checkEdit22
@@ -3515,7 +3515,7 @@
             this.checkEdit22.Properties.Caption = "";
             this.checkEdit22.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit22.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit22.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit22.Size = new System.Drawing.Size(20, 19);
             this.checkEdit22.TabIndex = 302;
             // 
             // checkEdit23
@@ -3528,7 +3528,7 @@
             this.checkEdit23.Properties.Caption = "";
             this.checkEdit23.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit23.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit23.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit23.Size = new System.Drawing.Size(20, 19);
             this.checkEdit23.TabIndex = 301;
             // 
             // checkEdit24
@@ -3541,7 +3541,7 @@
             this.checkEdit24.Properties.Caption = "";
             this.checkEdit24.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit24.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit24.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit24.Size = new System.Drawing.Size(20, 19);
             this.checkEdit24.TabIndex = 300;
             // 
             // checkEdit25
@@ -3554,7 +3554,7 @@
             this.checkEdit25.Properties.Caption = "";
             this.checkEdit25.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit25.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit25.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit25.Size = new System.Drawing.Size(20, 19);
             this.checkEdit25.TabIndex = 299;
             // 
             // checkEdit14
@@ -3567,7 +3567,7 @@
             this.checkEdit14.Properties.Caption = "";
             this.checkEdit14.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit14.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit14.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit14.Size = new System.Drawing.Size(20, 19);
             this.checkEdit14.TabIndex = 298;
             // 
             // checkEdit15
@@ -3580,7 +3580,7 @@
             this.checkEdit15.Properties.Caption = "";
             this.checkEdit15.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit15.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit15.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit15.Size = new System.Drawing.Size(20, 19);
             this.checkEdit15.TabIndex = 297;
             // 
             // checkEdit16
@@ -3593,7 +3593,7 @@
             this.checkEdit16.Properties.Caption = "";
             this.checkEdit16.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit16.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit16.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit16.Size = new System.Drawing.Size(20, 19);
             this.checkEdit16.TabIndex = 296;
             // 
             // checkEdit17
@@ -3606,7 +3606,7 @@
             this.checkEdit17.Properties.Caption = "";
             this.checkEdit17.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit17.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit17.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit17.Size = new System.Drawing.Size(20, 19);
             this.checkEdit17.TabIndex = 295;
             // 
             // checkEdit18
@@ -3619,7 +3619,7 @@
             this.checkEdit18.Properties.Caption = "";
             this.checkEdit18.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit18.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit18.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit18.Size = new System.Drawing.Size(20, 19);
             this.checkEdit18.TabIndex = 294;
             // 
             // checkEdit19
@@ -3632,7 +3632,7 @@
             this.checkEdit19.Properties.Caption = "";
             this.checkEdit19.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit19.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit19.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit19.Size = new System.Drawing.Size(20, 19);
             this.checkEdit19.TabIndex = 293;
             // 
             // checkEdit8
@@ -3645,7 +3645,7 @@
             this.checkEdit8.Properties.Caption = "";
             this.checkEdit8.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit8.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit8.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit8.Size = new System.Drawing.Size(20, 19);
             this.checkEdit8.TabIndex = 292;
             // 
             // checkEdit9
@@ -3658,7 +3658,7 @@
             this.checkEdit9.Properties.Caption = "";
             this.checkEdit9.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit9.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit9.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit9.Size = new System.Drawing.Size(20, 19);
             this.checkEdit9.TabIndex = 291;
             // 
             // checkEdit10
@@ -3671,7 +3671,7 @@
             this.checkEdit10.Properties.Caption = "";
             this.checkEdit10.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit10.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit10.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit10.Size = new System.Drawing.Size(20, 19);
             this.checkEdit10.TabIndex = 290;
             // 
             // checkEdit11
@@ -3684,7 +3684,7 @@
             this.checkEdit11.Properties.Caption = "";
             this.checkEdit11.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit11.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit11.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit11.Size = new System.Drawing.Size(20, 19);
             this.checkEdit11.TabIndex = 289;
             // 
             // checkEdit12
@@ -3697,7 +3697,7 @@
             this.checkEdit12.Properties.Caption = "";
             this.checkEdit12.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit12.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit12.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit12.Size = new System.Drawing.Size(20, 19);
             this.checkEdit12.TabIndex = 288;
             // 
             // checkEdit13
@@ -3710,7 +3710,7 @@
             this.checkEdit13.Properties.Caption = "";
             this.checkEdit13.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit13.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit13.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit13.Size = new System.Drawing.Size(20, 19);
             this.checkEdit13.TabIndex = 287;
             // 
             // checkEdit7
@@ -3723,7 +3723,7 @@
             this.checkEdit7.Properties.Caption = "";
             this.checkEdit7.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit7.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit7.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit7.Size = new System.Drawing.Size(20, 19);
             this.checkEdit7.TabIndex = 286;
             // 
             // checkEdit6
@@ -3736,7 +3736,7 @@
             this.checkEdit6.Properties.Caption = "";
             this.checkEdit6.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit6.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit6.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit6.Size = new System.Drawing.Size(20, 19);
             this.checkEdit6.TabIndex = 285;
             // 
             // checkEdit5
@@ -3749,7 +3749,7 @@
             this.checkEdit5.Properties.Caption = "";
             this.checkEdit5.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit5.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit5.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit5.Size = new System.Drawing.Size(20, 19);
             this.checkEdit5.TabIndex = 284;
             // 
             // checkEdit4
@@ -3762,7 +3762,7 @@
             this.checkEdit4.Properties.Caption = "";
             this.checkEdit4.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit4.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit4.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit4.Size = new System.Drawing.Size(20, 19);
             this.checkEdit4.TabIndex = 283;
             // 
             // checkEdit3
@@ -3775,274 +3775,274 @@
             this.checkEdit3.Properties.Caption = "";
             this.checkEdit3.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit3.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit3.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit3.Size = new System.Drawing.Size(20, 19);
             this.checkEdit3.TabIndex = 282;
             // 
-            // labelControl23
+            // FT007
             // 
-            this.labelControl23.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl23.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl23.Appearance.Options.UseFont = true;
-            this.labelControl23.Appearance.Options.UseForeColor = true;
-            this.labelControl23.Location = new System.Drawing.Point(304, 28);
-            this.labelControl23.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl23.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl23.Name = "labelControl23";
-            this.labelControl23.Size = new System.Drawing.Size(13, 13);
-            this.labelControl23.TabIndex = 281;
-            this.labelControl23.Text = "子";
+            this.FT007.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.FT007.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FT007.Appearance.Options.UseFont = true;
+            this.FT007.Appearance.Options.UseForeColor = true;
+            this.FT007.Location = new System.Drawing.Point(304, 28);
+            this.FT007.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FT007.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FT007.Name = "FT007";
+            this.FT007.Size = new System.Drawing.Size(13, 13);
+            this.FT007.TabIndex = 281;
+            this.FT007.Text = "子";
             // 
-            // labelControl22
+            // FT006
             // 
-            this.labelControl22.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl22.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl22.Appearance.Options.UseFont = true;
-            this.labelControl22.Appearance.Options.UseForeColor = true;
-            this.labelControl22.Location = new System.Drawing.Point(276, 28);
-            this.labelControl22.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl22.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl22.Name = "labelControl22";
-            this.labelControl22.Size = new System.Drawing.Size(13, 13);
-            this.labelControl22.TabIndex = 280;
-            this.labelControl22.Text = "兄";
+            this.FT006.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.FT006.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FT006.Appearance.Options.UseFont = true;
+            this.FT006.Appearance.Options.UseForeColor = true;
+            this.FT006.Location = new System.Drawing.Point(276, 28);
+            this.FT006.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FT006.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FT006.Name = "FT006";
+            this.FT006.Size = new System.Drawing.Size(13, 13);
+            this.FT006.TabIndex = 280;
+            this.FT006.Text = "兄";
             // 
-            // labelControl21
+            // FT005
             // 
-            this.labelControl21.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl21.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl21.Appearance.Options.UseFont = true;
-            this.labelControl21.Appearance.Options.UseForeColor = true;
-            this.labelControl21.Location = new System.Drawing.Point(248, 28);
-            this.labelControl21.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl21.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(13, 13);
-            this.labelControl21.TabIndex = 279;
-            this.labelControl21.Text = "外";
+            this.FT005.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.FT005.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FT005.Appearance.Options.UseFont = true;
+            this.FT005.Appearance.Options.UseForeColor = true;
+            this.FT005.Location = new System.Drawing.Point(248, 28);
+            this.FT005.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FT005.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FT005.Name = "FT005";
+            this.FT005.Size = new System.Drawing.Size(13, 13);
+            this.FT005.TabIndex = 279;
+            this.FT005.Text = "外";
             // 
-            // labelControl20
+            // FT004
             // 
-            this.labelControl20.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl20.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl20.Appearance.Options.UseFont = true;
-            this.labelControl20.Appearance.Options.UseForeColor = true;
-            this.labelControl20.Location = new System.Drawing.Point(220, 28);
-            this.labelControl20.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl20.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl20.Name = "labelControl20";
-            this.labelControl20.Size = new System.Drawing.Size(13, 13);
-            this.labelControl20.TabIndex = 278;
-            this.labelControl20.Text = "祖";
+            this.FT004.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.FT004.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FT004.Appearance.Options.UseFont = true;
+            this.FT004.Appearance.Options.UseForeColor = true;
+            this.FT004.Location = new System.Drawing.Point(220, 28);
+            this.FT004.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FT004.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FT004.Name = "FT004";
+            this.FT004.Size = new System.Drawing.Size(13, 13);
+            this.FT004.TabIndex = 278;
+            this.FT004.Text = "祖";
             // 
-            // labelControl19
+            // FT003
             // 
-            this.labelControl19.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl19.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl19.Appearance.Options.UseFont = true;
-            this.labelControl19.Appearance.Options.UseForeColor = true;
-            this.labelControl19.Location = new System.Drawing.Point(192, 28);
-            this.labelControl19.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl19.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(13, 13);
-            this.labelControl19.TabIndex = 277;
-            this.labelControl19.Text = "母";
+            this.FT003.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.FT003.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FT003.Appearance.Options.UseFont = true;
+            this.FT003.Appearance.Options.UseForeColor = true;
+            this.FT003.Location = new System.Drawing.Point(192, 28);
+            this.FT003.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FT003.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FT003.Name = "FT003";
+            this.FT003.Size = new System.Drawing.Size(13, 13);
+            this.FT003.TabIndex = 277;
+            this.FT003.Text = "母";
             // 
-            // labelControl18
+            // FT002
             // 
-            this.labelControl18.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl18.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl18.Appearance.Options.UseFont = true;
-            this.labelControl18.Appearance.Options.UseForeColor = true;
-            this.labelControl18.Location = new System.Drawing.Point(164, 28);
-            this.labelControl18.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl18.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(13, 13);
-            this.labelControl18.TabIndex = 276;
-            this.labelControl18.Text = "父";
+            this.FT002.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.FT002.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FT002.Appearance.Options.UseFont = true;
+            this.FT002.Appearance.Options.UseForeColor = true;
+            this.FT002.Location = new System.Drawing.Point(164, 28);
+            this.FT002.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FT002.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FT002.Name = "FT002";
+            this.FT002.Size = new System.Drawing.Size(13, 13);
+            this.FT002.TabIndex = 276;
+            this.FT002.Text = "父";
             // 
-            // labelControl16
+            // F023
             // 
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl16.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Appearance.Options.UseForeColor = true;
-            this.labelControl16.Location = new System.Drawing.Point(56, 443);
-            this.labelControl16.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl16.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(26, 13);
-            this.labelControl16.TabIndex = 275;
-            this.labelControl16.Text = "其他";
+            this.F023.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F023.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F023.Appearance.Options.UseFont = true;
+            this.F023.Appearance.Options.UseForeColor = true;
+            this.F023.Location = new System.Drawing.Point(56, 443);
+            this.F023.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F023.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F023.Name = "F023";
+            this.F023.Size = new System.Drawing.Size(26, 13);
+            this.F023.TabIndex = 275;
+            this.F023.Text = "其他";
             // 
-            // labelControl17
+            // F021
             // 
-            this.labelControl17.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl17.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.Appearance.Options.UseForeColor = true;
-            this.labelControl17.Location = new System.Drawing.Point(56, 408);
-            this.labelControl17.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl17.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(39, 13);
-            this.labelControl17.TabIndex = 274;
-            this.labelControl17.Text = "卵巢癌";
+            this.F021.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F021.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F021.Appearance.Options.UseFont = true;
+            this.F021.Appearance.Options.UseForeColor = true;
+            this.F021.Location = new System.Drawing.Point(56, 408);
+            this.F021.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F021.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F021.Name = "F021";
+            this.F021.Size = new System.Drawing.Size(39, 13);
+            this.F021.TabIndex = 274;
+            this.F021.Text = "卵巢癌";
             // 
-            // labelControl11
+            // F019
             // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl11.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Appearance.Options.UseForeColor = true;
-            this.labelControl11.Location = new System.Drawing.Point(56, 373);
-            this.labelControl11.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl11.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(39, 13);
-            this.labelControl11.TabIndex = 273;
-            this.labelControl11.Text = "乳腺癌";
+            this.F019.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F019.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F019.Appearance.Options.UseFont = true;
+            this.F019.Appearance.Options.UseForeColor = true;
+            this.F019.Location = new System.Drawing.Point(56, 373);
+            this.F019.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F019.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F019.Name = "F019";
+            this.F019.Size = new System.Drawing.Size(39, 13);
+            this.F019.TabIndex = 273;
+            this.F019.Text = "乳腺癌";
             // 
-            // labelControl12
+            // F017
             // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl12.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Appearance.Options.UseForeColor = true;
-            this.labelControl12.Location = new System.Drawing.Point(56, 338);
-            this.labelControl12.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl12.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(26, 13);
-            this.labelControl12.TabIndex = 272;
-            this.labelControl12.Text = "骨癌";
+            this.F017.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F017.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F017.Appearance.Options.UseFont = true;
+            this.F017.Appearance.Options.UseForeColor = true;
+            this.F017.Location = new System.Drawing.Point(56, 338);
+            this.F017.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F017.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F017.Name = "F017";
+            this.F017.Size = new System.Drawing.Size(26, 13);
+            this.F017.TabIndex = 272;
+            this.F017.Text = "骨癌";
             // 
-            // labelControl13
+            // F015
             // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl13.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Appearance.Options.UseForeColor = true;
-            this.labelControl13.Location = new System.Drawing.Point(56, 303);
-            this.labelControl13.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl13.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(52, 13);
-            this.labelControl13.TabIndex = 271;
-            this.labelControl13.Text = "甲状腺癌";
+            this.F015.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F015.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F015.Appearance.Options.UseFont = true;
+            this.F015.Appearance.Options.UseForeColor = true;
+            this.F015.Location = new System.Drawing.Point(56, 303);
+            this.F015.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F015.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F015.Name = "F015";
+            this.F015.Size = new System.Drawing.Size(52, 13);
+            this.F015.TabIndex = 271;
+            this.F015.Text = "甲状腺癌";
             // 
-            // labelControl14
+            // F013
             // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl14.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Appearance.Options.UseForeColor = true;
-            this.labelControl14.Location = new System.Drawing.Point(56, 268);
-            this.labelControl14.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl14.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(39, 13);
-            this.labelControl14.TabIndex = 270;
-            this.labelControl14.Text = "食道癌";
+            this.F013.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F013.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F013.Appearance.Options.UseFont = true;
+            this.F013.Appearance.Options.UseForeColor = true;
+            this.F013.Location = new System.Drawing.Point(56, 268);
+            this.F013.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F013.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F013.Name = "F013";
+            this.F013.Size = new System.Drawing.Size(39, 13);
+            this.F013.TabIndex = 270;
+            this.F013.Text = "食道癌";
             // 
-            // labelControl15
+            // F011
             // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl15.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Appearance.Options.UseForeColor = true;
-            this.labelControl15.Location = new System.Drawing.Point(56, 233);
-            this.labelControl15.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl15.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(26, 13);
-            this.labelControl15.TabIndex = 269;
-            this.labelControl15.Text = "肝癌";
+            this.F011.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F011.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F011.Appearance.Options.UseFont = true;
+            this.F011.Appearance.Options.UseForeColor = true;
+            this.F011.Location = new System.Drawing.Point(56, 233);
+            this.F011.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F011.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F011.Name = "F011";
+            this.F011.Size = new System.Drawing.Size(26, 13);
+            this.F011.TabIndex = 269;
+            this.F011.Text = "肝癌";
             // 
-            // labelControl10
+            // F009
             // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Appearance.Options.UseForeColor = true;
-            this.labelControl10.Location = new System.Drawing.Point(56, 198);
-            this.labelControl10.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl10.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(26, 13);
-            this.labelControl10.TabIndex = 268;
-            this.labelControl10.Text = "通风";
+            this.F009.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F009.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F009.Appearance.Options.UseFont = true;
+            this.F009.Appearance.Options.UseForeColor = true;
+            this.F009.Location = new System.Drawing.Point(56, 198);
+            this.F009.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F009.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F009.Name = "F009";
+            this.F009.Size = new System.Drawing.Size(26, 13);
+            this.F009.TabIndex = 268;
+            this.F009.Text = "通风";
             // 
-            // labelControl9
+            // F007
             // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Appearance.Options.UseForeColor = true;
-            this.labelControl9.Location = new System.Drawing.Point(56, 163);
-            this.labelControl9.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl9.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(52, 13);
-            this.labelControl9.TabIndex = 267;
-            this.labelControl9.Text = "心力衰竭";
+            this.F007.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F007.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F007.Appearance.Options.UseFont = true;
+            this.F007.Appearance.Options.UseForeColor = true;
+            this.F007.Location = new System.Drawing.Point(56, 163);
+            this.F007.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F007.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F007.Name = "F007";
+            this.F007.Size = new System.Drawing.Size(52, 13);
+            this.F007.TabIndex = 267;
+            this.F007.Text = "心力衰竭";
             // 
-            // labelControl8
+            // F005
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(56, 128);
-            this.labelControl8.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl8.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(52, 13);
-            this.labelControl8.TabIndex = 266;
-            this.labelControl8.Text = "骨质疏松";
+            this.F005.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F005.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F005.Appearance.Options.UseFont = true;
+            this.F005.Appearance.Options.UseForeColor = true;
+            this.F005.Location = new System.Drawing.Point(56, 128);
+            this.F005.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F005.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F005.Name = "F005";
+            this.F005.Size = new System.Drawing.Size(52, 13);
+            this.F005.TabIndex = 266;
+            this.F005.Text = "骨质疏松";
             // 
-            // labelControl7
+            // F003
             // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(56, 93);
-            this.labelControl7.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl7.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(52, 13);
-            this.labelControl7.TabIndex = 265;
-            this.labelControl7.Text = "血脂异常";
+            this.F003.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F003.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F003.Appearance.Options.UseFont = true;
+            this.F003.Appearance.Options.UseForeColor = true;
+            this.F003.Location = new System.Drawing.Point(56, 93);
+            this.F003.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F003.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F003.Name = "F003";
+            this.F003.Size = new System.Drawing.Size(52, 13);
+            this.F003.TabIndex = 265;
+            this.F003.Text = "血脂异常";
             // 
-            // labelControl6
+            // F001
             // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Appearance.Options.UseForeColor = true;
-            this.labelControl6.Location = new System.Drawing.Point(56, 60);
-            this.labelControl6.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl6.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(52, 13);
-            this.labelControl6.TabIndex = 264;
-            this.labelControl6.Text = "高血压病";
+            this.F001.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F001.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F001.Appearance.Options.UseFont = true;
+            this.F001.Appearance.Options.UseForeColor = true;
+            this.F001.Location = new System.Drawing.Point(56, 60);
+            this.F001.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F001.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F001.Name = "F001";
+            this.F001.Size = new System.Drawing.Size(52, 13);
+            this.F001.TabIndex = 264;
+            this.F001.Text = "高血压病";
             // 
-            // labelControl5
+            // FM0101
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(4, 8);
-            this.labelControl5.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl5.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(84, 13);
-            this.labelControl5.TabIndex = 263;
-            this.labelControl5.Text = "【家族病史】";
+            this.FM0101.Appearance.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FM0101.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FM0101.Appearance.Options.UseFont = true;
+            this.FM0101.Appearance.Options.UseForeColor = true;
+            this.FM0101.Location = new System.Drawing.Point(4, 8);
+            this.FM0101.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FM0101.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FM0101.Name = "FM0101";
+            this.FM0101.Size = new System.Drawing.Size(84, 13);
+            this.FM0101.TabIndex = 263;
+            this.FM0101.Text = "【家族病史】";
             // 
             // checkEdit1
             // 
@@ -4054,7 +4054,7 @@
             this.checkEdit1.Properties.Caption = "";
             this.checkEdit1.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit1.Size = new System.Drawing.Size(20, 20);
+            this.checkEdit1.Size = new System.Drawing.Size(20, 19);
             this.checkEdit1.TabIndex = 262;
             // 
             // Quest01
@@ -4308,11 +4308,11 @@
         private DevExpress.XtraEditors.CheckEdit checkEdit172;
         private DevExpress.XtraEditors.CheckEdit checkEdit173;
         private DevExpress.XtraEditors.CheckEdit checkEdit174;
-        private DevExpress.XtraEditors.LabelControl labelControl42;
-        private DevExpress.XtraEditors.LabelControl labelControl43;
-        private DevExpress.XtraEditors.LabelControl labelControl44;
-        private DevExpress.XtraEditors.LabelControl labelControl45;
-        private DevExpress.XtraEditors.LabelControl labelControl46;
+        private DevExpress.XtraEditors.LabelControl F034;
+        private DevExpress.XtraEditors.LabelControl F032;
+        private DevExpress.XtraEditors.LabelControl F030;
+        private DevExpress.XtraEditors.LabelControl F028;
+        private DevExpress.XtraEditors.LabelControl F026;
         private DevExpress.XtraEditors.CheckEdit checkEdit175;
         private DevExpress.XtraEditors.CheckEdit checkEdit176;
         private DevExpress.XtraEditors.CheckEdit checkEdit177;
@@ -4343,11 +4343,11 @@
         private DevExpress.XtraEditors.CheckEdit checkEdit202;
         private DevExpress.XtraEditors.CheckEdit checkEdit203;
         private DevExpress.XtraEditors.CheckEdit checkEdit204;
-        private DevExpress.XtraEditors.LabelControl labelControl47;
-        private DevExpress.XtraEditors.LabelControl labelControl48;
-        private DevExpress.XtraEditors.LabelControl labelControl49;
-        private DevExpress.XtraEditors.LabelControl labelControl50;
-        private DevExpress.XtraEditors.LabelControl labelControl51;
+        private DevExpress.XtraEditors.LabelControl F033;
+        private DevExpress.XtraEditors.LabelControl F031;
+        private DevExpress.XtraEditors.LabelControl F029;
+        private DevExpress.XtraEditors.LabelControl F027;
+        private DevExpress.XtraEditors.LabelControl F025;
         private DevExpress.XtraEditors.CheckEdit checkEdit74;
         private DevExpress.XtraEditors.CheckEdit checkEdit75;
         private DevExpress.XtraEditors.CheckEdit checkEdit76;
@@ -4419,24 +4419,24 @@
         private DevExpress.XtraEditors.CheckEdit checkEdit142;
         private DevExpress.XtraEditors.CheckEdit checkEdit143;
         private DevExpress.XtraEditors.CheckEdit checkEdit144;
-        private DevExpress.XtraEditors.LabelControl labelControl24;
-        private DevExpress.XtraEditors.LabelControl labelControl25;
-        private DevExpress.XtraEditors.LabelControl labelControl26;
-        private DevExpress.XtraEditors.LabelControl labelControl27;
-        private DevExpress.XtraEditors.LabelControl labelControl28;
-        private DevExpress.XtraEditors.LabelControl labelControl29;
-        private DevExpress.XtraEditors.LabelControl labelControl30;
-        private DevExpress.XtraEditors.LabelControl labelControl31;
-        private DevExpress.XtraEditors.LabelControl labelControl32;
-        private DevExpress.XtraEditors.LabelControl labelControl33;
-        private DevExpress.XtraEditors.LabelControl labelControl34;
-        private DevExpress.XtraEditors.LabelControl labelControl35;
-        private DevExpress.XtraEditors.LabelControl labelControl36;
-        private DevExpress.XtraEditors.LabelControl labelControl37;
-        private DevExpress.XtraEditors.LabelControl labelControl38;
-        private DevExpress.XtraEditors.LabelControl labelControl39;
-        private DevExpress.XtraEditors.LabelControl labelControl40;
-        private DevExpress.XtraEditors.LabelControl labelControl41;
+        private DevExpress.XtraEditors.LabelControl FT013;
+        private DevExpress.XtraEditors.LabelControl FT012;
+        private DevExpress.XtraEditors.LabelControl FT011;
+        private DevExpress.XtraEditors.LabelControl FT010;
+        private DevExpress.XtraEditors.LabelControl FT009;
+        private DevExpress.XtraEditors.LabelControl FT008;
+        private DevExpress.XtraEditors.LabelControl F024;
+        private DevExpress.XtraEditors.LabelControl F022;
+        private DevExpress.XtraEditors.LabelControl F020;
+        private DevExpress.XtraEditors.LabelControl F018;
+        private DevExpress.XtraEditors.LabelControl F016;
+        private DevExpress.XtraEditors.LabelControl F014;
+        private DevExpress.XtraEditors.LabelControl F012;
+        private DevExpress.XtraEditors.LabelControl F010;
+        private DevExpress.XtraEditors.LabelControl F008;
+        private DevExpress.XtraEditors.LabelControl F006;
+        private DevExpress.XtraEditors.LabelControl F004;
+        private DevExpress.XtraEditors.LabelControl F002;
         private DevExpress.XtraEditors.CheckEdit checkEdit145;
         private DevExpress.XtraEditors.CheckEdit checkEdit68;
         private DevExpress.XtraEditors.CheckEdit checkEdit69;
@@ -4509,25 +4509,25 @@
         private DevExpress.XtraEditors.CheckEdit checkEdit5;
         private DevExpress.XtraEditors.CheckEdit checkEdit4;
         private DevExpress.XtraEditors.CheckEdit checkEdit3;
-        private DevExpress.XtraEditors.LabelControl labelControl23;
-        private DevExpress.XtraEditors.LabelControl labelControl22;
-        private DevExpress.XtraEditors.LabelControl labelControl21;
-        private DevExpress.XtraEditors.LabelControl labelControl20;
-        private DevExpress.XtraEditors.LabelControl labelControl19;
-        private DevExpress.XtraEditors.LabelControl labelControl18;
-        private DevExpress.XtraEditors.LabelControl labelControl16;
-        private DevExpress.XtraEditors.LabelControl labelControl17;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.LabelControl labelControl14;
-        private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl FT007;
+        private DevExpress.XtraEditors.LabelControl FT006;
+        private DevExpress.XtraEditors.LabelControl FT005;
+        private DevExpress.XtraEditors.LabelControl FT004;
+        private DevExpress.XtraEditors.LabelControl FT003;
+        private DevExpress.XtraEditors.LabelControl FT002;
+        private DevExpress.XtraEditors.LabelControl F023;
+        private DevExpress.XtraEditors.LabelControl F021;
+        private DevExpress.XtraEditors.LabelControl F019;
+        private DevExpress.XtraEditors.LabelControl F017;
+        private DevExpress.XtraEditors.LabelControl F015;
+        private DevExpress.XtraEditors.LabelControl F013;
+        private DevExpress.XtraEditors.LabelControl F011;
+        private DevExpress.XtraEditors.LabelControl F009;
+        private DevExpress.XtraEditors.LabelControl F007;
+        private DevExpress.XtraEditors.LabelControl F005;
+        private DevExpress.XtraEditors.LabelControl F003;
+        private DevExpress.XtraEditors.LabelControl F001;
+        private DevExpress.XtraEditors.LabelControl FM0101;
         private DevExpress.XtraEditors.CheckEdit checkEdit1;
     }
 }
