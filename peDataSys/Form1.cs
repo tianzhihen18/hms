@@ -775,6 +775,11 @@ namespace peDataSys
         {
 
             this.gridLookUpEdit.Properties.DataSource = GetDicCaiRecipe();
+            XtraTest xr;
+            xr = new XtraTest();
+            xr.CreateDocument();//创建报表
+            this.documentViewer1.PrintingSystem = xr.PrintingSystem;
+
 
             //if (gridLookUpEdit1View.DataRowCount > 0)
             //{

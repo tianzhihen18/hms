@@ -123,6 +123,12 @@
     <Compile Include="xRptTeam.Designer.cs">
       <DependentUpon>xRptTeam.cs</DependentUpon>
     </Compile>
+    <Compile Include="XtraTest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraTest.Designer.cs">
+      <DependentUpon>XtraTest.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +154,9 @@
     <EmbeddedResource Include="XtraReport.resx">
       <DependentUpon>XtraReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XtraTest.resx">
+      <DependentUpon>XtraTest.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -159,6 +168,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\hms.biz\hms.biz.csproj">
+      <Project>{62203fdf-8727-41b1-963f-417a39551d6d}</Project>
+      <Name>hms.biz</Name>
+    </ProjectReference>
     <ProjectReference Include="..\hms.entity\hms.entity.csproj">
       <Project>{45DA2627-D13F-4005-83BA-738EA3B18F4F}</Project>
       <Name>hms.entity</Name>

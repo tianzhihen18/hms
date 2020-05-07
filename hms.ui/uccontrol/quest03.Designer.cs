@@ -61,7 +61,7 @@
             this.checkEdit338 = new DevExpress.XtraEditors.CheckEdit();
             this.F05401 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit337 = new DevExpress.XtraEditors.CheckEdit();
-            this.F053010 = new DevExpress.XtraEditors.LabelControl();
+            this.F05310 = new DevExpress.XtraEditors.LabelControl();
             this.F05305 = new DevExpress.XtraEditors.LabelControl();
             this.F05309 = new DevExpress.XtraEditors.LabelControl();
             this.F05308 = new DevExpress.XtraEditors.LabelControl();
@@ -193,7 +193,7 @@
             this.plBack.Controls.Add(this.checkEdit338);
             this.plBack.Controls.Add(this.F05401);
             this.plBack.Controls.Add(this.checkEdit337);
-            this.plBack.Controls.Add(this.F053010);
+            this.plBack.Controls.Add(this.F05310);
             this.plBack.Controls.Add(this.F05305);
             this.plBack.Controls.Add(this.F05309);
             this.plBack.Controls.Add(this.F05308);
@@ -743,19 +743,19 @@
             this.checkEdit337.Size = new System.Drawing.Size(220, 19);
             this.checkEdit337.TabIndex = 530;
             // 
-            // F053010
+            // F05310
             // 
-            this.F053010.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.F053010.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.F053010.Appearance.Options.UseFont = true;
-            this.F053010.Appearance.Options.UseForeColor = true;
-            this.F053010.Location = new System.Drawing.Point(568, 684);
-            this.F053010.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.F053010.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.F053010.Name = "F053010";
-            this.F053010.Size = new System.Drawing.Size(53, 13);
-            this.F053010.TabIndex = 529;
-            this.F053010.Text = "10、辛辣";
+            this.F05310.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F05310.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F05310.Appearance.Options.UseFont = true;
+            this.F05310.Appearance.Options.UseForeColor = true;
+            this.F05310.Location = new System.Drawing.Point(568, 684);
+            this.F05310.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F05310.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F05310.Name = "F05310";
+            this.F05310.Size = new System.Drawing.Size(53, 13);
+            this.F05310.TabIndex = 529;
+            this.F05310.Text = "10、辛辣";
             // 
             // F05305
             // 
@@ -1923,7 +1923,7 @@
         private DevExpress.XtraEditors.CheckEdit checkEdit338;
         private DevExpress.XtraEditors.LabelControl F05401;
         private DevExpress.XtraEditors.CheckEdit checkEdit337;
-        private DevExpress.XtraEditors.LabelControl F053010;
+        private DevExpress.XtraEditors.LabelControl F05310;
         private DevExpress.XtraEditors.LabelControl F05305;
         private DevExpress.XtraEditors.LabelControl F05309;
         private DevExpress.XtraEditors.LabelControl F05308;

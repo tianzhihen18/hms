@@ -235,6 +235,7 @@ namespace Hms.Biz
             {
                 lstTopic = new List<EntityDicQnSetting>();
                 string fieldIds = string.Empty;
+                string parentFieldId = string.Empty;
                 foreach (DataRow dr in dt.Rows)
                 {
                     lstTopic.Add(new EntityDicQnSetting()
@@ -247,7 +248,12 @@ namespace Hms.Biz
                         isEssential = Function.Int(dr["isEssential"]),
                         questName = dr["questName"].ToString()
                     });
-                    fieldIds += "'" + dr["fieldId"].ToString() + "',";
+                    parentFieldId = dr["parentFieldId"].ToString();
+                    if (string.IsNullOrEmpty(parentFieldId))
+                        fieldIds += "'" + dr["fieldId"].ToString() + "',";
+                    if (fieldIds.Contains(parentFieldId))
+                        continue;
+                    fieldIds += "'" + dr["parentFieldId"].ToString() + "',";
                 }
                 fieldIds = fieldIds.TrimEnd(',');
                 if (fieldIds != string.Empty)

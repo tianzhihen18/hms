@@ -73,8 +73,16 @@ namespace Hms.Itf
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        [OperationContract(Name = "SaveQnRecord")]
+        [OperationContract(Name = "GetQnRecords")]
         List<EntityQnRecord> GetQnRecords(List<EntityParm> parms = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="qnRecords"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "DelQnRecord")]
+        int DelQnRecord(List<EntityQnRecord> qnRecords);
 
         #endregion
 

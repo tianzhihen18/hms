@@ -54,12 +54,16 @@ namespace Hms.Ui
         }
 
         int idx = 0;
-        List<string> lstQuest = new List<string>() { "quest01", "quest02", "quest03", "quest03", "quest04", "quest05", "quest06", "quest07", "quest08", "quest09", "quest10" };
+        List<string> lstQuest = new List<string>() {"quest01","quest02","quest03","quest04","quest05", "quest06","quest07","quest08","quest09","quest10"};
         Dictionary<int, string> dicXmlData = new Dictionary<int, string>();
         Dictionary<int, IQuest> dicQuestCtrl { get; set; }
 
         public List<EntityClientInfo> lstClientInfo { get; set; }
 
+        List<EntityDicQnSetting> lstTopic = null;
+        List<EntityCtrlLocation> lstCtrlLocation = null;
+        List<EntityDicQnSetting> lstItems = null;
+        List<DevExpress.XtraEditors.CheckEdit> lstCheck = new List<DevExpress.XtraEditors.CheckEdit>();
         public bool IsRequireRefresh { get; set; }
 
         #endregion
@@ -81,7 +85,6 @@ namespace Hms.Ui
                 lueClient.Properties.ValueMember = EntityClientInfo.Columns.clientNo;
                 lueClient.Properties.DisplayMember = EntityClientInfo.Columns.clientName;
                 lueClient.Properties.DataSource = lstClientInfo;
-
 
                 dicQuestCtrl = new Dictionary<int, IQuest>();
                 dicQuestCtrl.Add(0, new Hms.Ui.Quest01());
@@ -115,11 +118,11 @@ namespace Hms.Ui
                 if (!dicXmlData.ContainsKey(9))
                     dicXmlData.Add(9, "<FormIdx9></FormIdx9>");
 
-
                 AddQuestCtrl();
+
                 if (qnRecordVo != null)
                 {
-                    if(!string.IsNullOrEmpty(qnRecordVo.xmlData))
+                    if (!string.IsNullOrEmpty(qnRecordVo.xmlData))
                     {
                         XmlDocument document = new XmlDocument();
                         document.LoadXml(qnRecordVo.xmlData);
@@ -128,11 +131,11 @@ namespace Hms.Ui
 
                         for (int i = 0; i < dicXmlData.Count; i++)
                         {
-                            dicXmlData[i] = list[i+1].OuterXml;
+                            dicXmlData[i] = list[i + 1].OuterXml;
                             SetData(EnumDataType.Data, dicXmlData[i], i);
                         }
                     }
-                }
+                }   
             }
             finally
             {
@@ -152,16 +155,7 @@ namespace Hms.Ui
                 uiHelper.BeginLoading(this);
                 this.timer.Enabled = false;
                 this.plUserCtrl.Controls.Clear();
-                if (idx < 3)
-                {
-                    InitComponent();
-                }
-                else
-                {
-                    this.plUserCtrl.Controls.Add(dicQuestCtrl[idx] as UserControl);
-                    this.plUserCtrl.Height = (dicQuestCtrl[idx] as UserControl).Height;
-                    this.plContent.Height = this.plTitle.Height + this.plUserCtrl.Height + 50;
-                }
+                InitComponent();
             }
             finally
             {
@@ -181,20 +175,21 @@ namespace Hms.Ui
             try
             {
                 this.SuspendLayout();
-
-                List<EntityDicQnSetting> lstTopic = null;
-                List<EntityCtrlLocation> lstCtrlLocation = null;
-                List<EntityDicQnSetting> lstItems = null;
+                lstCheck.Clear();
                 using (ProxyHms proxy = new ProxyHms())
                 {
                     lstCtrlLocation = proxy.Service.GetQnCtrlLocation(lstQuest[idx]);
+                }
+
+                using (ProxyHms proxy = new ProxyHms())
+                {
                     lstTopic = new List<EntityDicQnSetting>();
                     lstItems = new List<EntityDicQnSetting>();
                     proxy.Service.GetQnCustom(1, out lstTopic, out lstItems);
                 }
                 int locationX = 0;
                 int locationY = 0;
-
+                
                 #region quest01
                 if (idx == 0)
                 {
@@ -248,7 +243,7 @@ namespace Hms.Ui
                                     locationY = ctrLocat.locationY;
                                     lblTopic.Location = new System.Drawing.Point(locationX, locationY);
                                     this.plUserCtrl.Controls.Add(lblTopic);
-
+                                    
                                     lstChildSettings = lstTopic.FindAll(r => r.parentFieldId == item.fieldId);
                                     if (lstChildSettings.Count > 0)
                                     {
@@ -295,7 +290,7 @@ namespace Hms.Ui
                         for (int i = 0; i < lstTopic.Count; i++)
                         {
                             EntityDicQnSetting item = lstTopic[i];
-                            if (item.questName == "quest02")
+                            if (item.questName == lstQuest[idx])
                             {
                                 if (item.fieldId.Contains("F035"))
                                 {
@@ -320,7 +315,7 @@ namespace Hms.Ui
                         for (int i2 = 0; i2 < lstTopic.Count; i2++)
                         {
                             EntityDicQnSetting itemVo = lstTopic[i2];
-                            if (itemVo.questName == "quest02")
+                            if (itemVo.questName == lstQuest[idx])
                             {
                                 if (string.IsNullOrEmpty(itemVo.parentFieldId) && !itemVo.fieldId.Contains("F035"))
                                 {
@@ -389,11 +384,10 @@ namespace Hms.Ui
                     this.plContent.Height = (this.plUserCtrl.Height + 200);
                 }
 
-
                 #endregion
 
-                #region quest03
-                if (idx == 2)
+                #region quest03  quest04 quest05 quest06 quest07 quest08 quest09 quest10
+                if (idx == 2 ||idx == 3 || idx == 4 || idx == 5 || idx == 6 || idx == 7 || idx == 8 || idx == 9)
                 {
                     if (lstCtrlLocation != null && lstCtrlLocation.Count > 0)
                     {
@@ -404,7 +398,13 @@ namespace Hms.Ui
                                 DevExpress.XtraEditors.LabelControl lblTopic = new DevExpress.XtraEditors.LabelControl();
                                 lblTopic.Name = clVo.name;
                                 lblTopic.Text = clVo.text;
-                                lblTopic.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Bold);
+                                if(clVo.name == "FM0902" || clVo.name == "FM0903")
+                                {
+                                    lblTopic.Font = new System.Drawing.Font("宋体", 9.5F);
+                                    lblTopic.ForeColor = System.Drawing.Color.Red;
+                                }
+                                else
+                                    lblTopic.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Bold);
                                 locationX = clVo.locationX;
                                 locationY = clVo.locationY;
                                 lblTopic.Location = new System.Drawing.Point(locationX, locationY);
@@ -413,14 +413,13 @@ namespace Hms.Ui
                         }
                     }
 
-
                     List<EntityDicQnSetting> lstChildSettings = new List<EntityDicQnSetting>();
                     if (lstTopic != null && lstTopic.Count > 0)
                     {
                         for (int i = 0; i < lstTopic.Count; i++)
                         {
                             EntityDicQnSetting item = lstTopic[i];
-                            if (item.questName == "quest03")
+                            if (item.questName == lstQuest[idx])
                             {
                                 if (string.IsNullOrEmpty(item.parentFieldId))
                                 {
@@ -439,19 +438,44 @@ namespace Hms.Ui
                                     {
                                         foreach (var childVo in lstChildSettings)
                                         {
-                                            DevExpress.XtraEditors.CheckEdit chkAns = new DevExpress.XtraEditors.CheckEdit();
-                                            string strEndWith = childVo.fieldId.Substring(4, 2);
-                                            chkAns.Text = childVo.fieldName;
-                                            chkAns.Font = new System.Drawing.Font("宋体", 9.5F);
-                                            chkAns.Name = childVo.fieldId;
-                                            chkAns.Properties.AccessibleName = childVo.fieldId;
-                                            EntityCtrlLocation ctrLocatChild = lstCtrlLocation.Find(r => r.name == childVo.fieldId);
-                                            locationX = ctrLocatChild.locationX;
-                                            locationY = ctrLocatChild.locationY;
-                                            chkAns.Width = ctrLocatChild.width;
-                                            chkAns.Height = ctrLocatChild.height;
-                                            chkAns.Location = new System.Drawing.Point(locationX, locationY);
-                                            this.plUserCtrl.Controls.Add(chkAns);
+                                            if(childVo.typeId != "3")
+                                            {
+                                                DevExpress.XtraEditors.CheckEdit chkAns = new DevExpress.XtraEditors.CheckEdit();
+                                                string strEndWith = childVo.fieldId.Substring(4, 2);
+                                                chkAns.Text = childVo.fieldName;
+                                                chkAns.Font = new System.Drawing.Font("宋体", 9.5F);
+                                                chkAns.Name = childVo.fieldId;
+                                                chkAns.Properties.AccessibleName = childVo.fieldId;
+                                                EntityCtrlLocation ctrLocatChild = lstCtrlLocation.Find(r => r.name == childVo.fieldId);
+                                                locationX = ctrLocatChild.locationX;
+                                                locationY = ctrLocatChild.locationY;
+                                                chkAns.Width = ctrLocatChild.width;
+                                                chkAns.Height = ctrLocatChild.height;
+                                                chkAns.Location = new System.Drawing.Point(locationX, locationY);
+                                                chkAns.CheckedChanged += new EventHandler(iChk_CheckedChanged);
+                                                if (!string.IsNullOrEmpty(childVo.parentFieldId) && item.typeId == "1")
+                                                {
+                                                    chkAns.Properties.AccessibleName = childVo.parentFieldId;
+                                                    lstCheck.Add(chkAns);
+                                                }
+                                                this.plUserCtrl.Controls.Add(chkAns);
+                                            }
+                                            else
+                                            {
+                                                DevExpress.XtraEditors.TextEdit txtAns = new DevExpress.XtraEditors.TextEdit();
+                                                string strEndWith = childVo.fieldId.Substring(4, 2);
+                                                txtAns.Text = childVo.fieldName;
+                                                txtAns.Font = new System.Drawing.Font("宋体", 9.5F);
+                                                txtAns.Name = childVo.fieldId;
+                                                txtAns.Properties.AccessibleName = childVo.fieldId;
+                                                EntityCtrlLocation ctrLocatChild = lstCtrlLocation.Find(r => r.name == childVo.fieldId);
+                                                locationX = ctrLocatChild.locationX;
+                                                locationY = ctrLocatChild.locationY;
+                                                txtAns.Width = ctrLocatChild.width;
+                                                txtAns.Height = ctrLocatChild.height;
+                                                txtAns.Location = new System.Drawing.Point(locationX, locationY);
+                                                this.plUserCtrl.Controls.Add(txtAns);
+                                            }
                                         }
                                     }
                                 }
@@ -459,7 +483,7 @@ namespace Hms.Ui
                         }
                     }
 
-                    this.plUserCtrl.Height = 1000;
+                    this.plUserCtrl.Height = 2000;
                     this.plContent.Height = (this.plUserCtrl.Height + 200);
                 }
                 #endregion
@@ -481,6 +505,7 @@ namespace Hms.Ui
         /// </summary>
         void Save()
         {
+            timer.Enabled = false;
             using (ProxyHms proxy = new ProxyHms())
             {
                 string xmlData = string.Empty;
@@ -496,14 +521,17 @@ namespace Hms.Ui
                 xmlData += "</FormData>";
                 this.qnData = new EntityQnData();
                 if (this.qnRecordVo == null)
+                {
                     this.qnRecordVo = new EntityQnRecord();
+                    qnRecordVo.clientNo = clientInfo.clientNo;
+                }
+                    
                 if (this.qnRecordVo != null)
                     this.qnData.recId = qnRecordVo.recId;
                 qnData.xmlData = xmlData;
                 qnRecordVo.qnType = 1;
                 qnRecordVo.qnName = "常规问卷";
                 qnRecordVo.qnSource = 1; 
-                qnRecordVo.clientNo = clientInfo.clientNo;
                 qnRecordVo.qnDate = Function.Datetime(dteQuestDate.Text);
                 decimal recId = 0;
                 bool isNew = this.qnRecordVo.recId <= 0 ? true : false;
@@ -523,6 +551,7 @@ namespace Hms.Ui
                     DialogBox.Msg("保存失败。");
                 }
             }
+            timer.Enabled = true;
         }
         #endregion
 
@@ -571,7 +600,8 @@ namespace Hms.Ui
                 }
                 else if (ctrl is DevExpress.XtraEditors.CheckEdit)
                 {
-                    fieldName = (ctrl as DevExpress.XtraEditors.CheckEdit).Properties.AccessibleName;
+                    //fieldName =  (ctrl as DevExpress.XtraEditors.CheckEdit).Properties.AccessibleName;
+                    fieldName = (ctrl as DevExpress.XtraEditors.CheckEdit).Name;
                     if (!string.IsNullOrEmpty(fieldName))
                     {
                         lstControls.Add(new EntityControl()
@@ -683,6 +713,11 @@ namespace Hms.Ui
             if (idx == 9)
                 nodeName = "FormIdx9";
 
+            if (idx == 0)
+            {
+                idx = 0;
+            }
+
             Dictionary<string, string> dicData = Function.ReadXmlNodes(xmlData, nodeName);
             if (dicData != null && dicData.Count > 0)
             {
@@ -712,7 +747,7 @@ namespace Hms.Ui
                     }
                     else if (ctrl is DevExpress.XtraEditors.CheckEdit)
                     {
-                        fieldName = (ctrl as DevExpress.XtraEditors.CheckEdit).Properties.AccessibleName;
+                        fieldName = (ctrl as DevExpress.XtraEditors.CheckEdit).Name;
                         if (!string.IsNullOrEmpty(fieldName) && dicData.ContainsKey(fieldName))
                         {
                             (ctrl as DevExpress.XtraEditors.CheckEdit).Checked = Function.Int(dicData[fieldName]) == 1 ? true : false;
@@ -874,6 +909,8 @@ namespace Hms.Ui
 
         private void lueClient_EditValueChanged(object sender, EventArgs e)
         {
+            if (qnRecordVo != null)
+                return;
             string clientNo = this.lueClient.EditValue.ToString();
             clientInfo = lstClientInfo.Find(r => r.clientNo == clientNo);
             if (clientInfo != null)
@@ -894,14 +931,43 @@ namespace Hms.Ui
         private void timer_Tick(object sender, EventArgs e)
         {
             if (!dicXmlData.ContainsKey(idx))
+                dicXmlData.Add(idx, GetData(EnumDataType.Data, idx));
+            else
+                dicXmlData[idx] = GetData(EnumDataType.Data, idx);
+        }
+
+        #region iChk_CheckedChanged
+        /// <summary>
+        /// iChk_CheckedChanged
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void iChk_CheckedChanged(object sender, EventArgs e)
+        {
+            DevExpress.XtraEditors.CheckEdit iChk = sender as DevExpress.XtraEditors.CheckEdit;
+            // 同时勾选
+            if (iChk.Checked)
             {
-                dicXmlData.Add(idx, GetData(EnumDataType.Data,idx));
+                // 根据分组属性控制只选一个
+                foreach (DevExpress.XtraEditors.CheckEdit chk in lstCheck)
+                {
+                    if (chk != iChk && chk.Properties.AccessibleName == iChk.Properties.AccessibleName)
+                    {
+                        chk.Checked = false;
+                        ((DevExpress.XtraEditors.CheckEdit)sender).Invalidate();
+                        ((DevExpress.XtraEditors.CheckEdit)sender).Update();
+                    }
+                }
+                ((DevExpress.XtraEditors.CheckEdit)sender).Invalidate();
+                ((DevExpress.XtraEditors.CheckEdit)sender).Update();
             }
             else
             {
-                dicXmlData[idx] = GetData(EnumDataType.Data, idx);
+                ((DevExpress.XtraEditors.CheckEdit)sender).Invalidate();
+                ((DevExpress.XtraEditors.CheckEdit)sender).Update();
             }
         }
+        #endregion
 
         #endregion
 

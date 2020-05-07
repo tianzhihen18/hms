@@ -149,7 +149,7 @@ namespace Hms.Biz
 					 left join userGrade c
 						on b.gradeId = c.id
                       left join code_operator d
-                        on a.recorder = d.oper_code";
+                        on a.recorder = d.oper_code where a.status != -1";
 
             DataTable dt = svc.GetDataTable(Sql);
             if (dt != null && dt.Rows.Count > 0)
@@ -238,6 +238,55 @@ namespace Hms.Biz
             return affectRows;
         }
         #endregion
+
+        #region 
+        /// <summary>
+        /// 常规问卷-删除
+        /// </summary>
+        /// <param name="sfData"></param>
+        /// <param name="sfId"></param>
+        /// <returns></returns>
+        public int DelQnRecord(List<EntityQnRecord> qnRecords)
+        {
+            int affectRows = -1;
+            string Sql = string.Empty;
+            SqlHelper svc = null;
+            try
+            {
+                List<DacParm> lstParm = new List<DacParm>();
+                svc = new SqlHelper(EnumBiz.onlineDB);
+                if (qnRecords == null )
+                    return affectRows;
+
+                Sql = @"update qnRecord set status = -1 where recId = ?";
+
+                foreach (var vo in qnRecords)
+                {
+                    IDataParameter [] param = svc.CreateParm(1);
+                    param[0].Value = vo.recId;
+                    lstParm.Add(svc.GetDacParm(EnumExecType.ExecSql,Sql, param));
+                }
+
+                if (lstParm.Count > 0)
+                {
+                    affectRows = svc.Commit(lstParm);
+                }
+
+            }
+            catch (Exception e)
+            {
+                ExceptionLog.OutPutException(e);
+                affectRows = -1;
+            }
+            finally
+            {
+                svc = null;
+            }
+            return affectRows;
+        }
+        #endregion
+
+
 
         #region Dispose
         /// <summary>

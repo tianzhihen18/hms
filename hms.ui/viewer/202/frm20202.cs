@@ -31,6 +31,9 @@ namespace Hms.Ui
             }
         }
 
+        /// <summary>
+        /// 编辑
+        /// </summary>
         public override void Edit()
         {
             if (this.gvNormalQnRecord.SelectedRowsCount > 0)
@@ -49,7 +52,6 @@ namespace Hms.Ui
             }
         }
 
-
         #region RefreshData
         /// <summary>
         /// RefreshData
@@ -67,6 +69,62 @@ namespace Hms.Ui
             uiHelper.CloseLoading(this);
         }
         #endregion
+
+        /// <summary>
+        /// 查询
+        /// </summary>
+        public override void Search()
+        {
+            string search = this.txtSearch.Text;
+
+            this.gcNormalQnRecord.DataSource = lstQnRecords.FindAll(r => r.clientName.Contains(search) || r.clientNo.Contains(search));
+            this.gcNormalQnRecord.RefreshDataSource();
+        }
+
+        /// <summary>
+        /// 删除
+        /// </summary>
+        public override void Delete()
+        {
+            if (this.gvNormalQnRecord.SelectedRowsCount > 0)
+            {
+                if (DialogBox.Msg("是否删除所选行记录？", MessageBoxIcon.Question) != DialogResult.Yes)
+                    return;
+                bool isRequireRefresh = false;
+                int affect = -1;
+                List<EntityQnRecord> delData = new List<EntityQnRecord>();
+                for (int i = this.gvNormalQnRecord.RowCount - 1; i >= 0; i--)
+                {
+                    if (this.gvNormalQnRecord.IsRowSelected(i))
+                    {
+                        delData.Add((this.gvNormalQnRecord.GetRow(i) as EntityQnRecord));
+                    }
+                }
+
+                if (delData.Count > 0)
+                {
+                    using (ProxyHms proxy = new ProxyHms())
+                    {
+                        affect = proxy.Service.DelQnRecord(delData);
+                    }
+
+                    if (affect < 0)
+                    {
+                        DialogBox.Msg("删除记录失败。");
+                    }
+                    else
+                    {
+                        isRequireRefresh = true;
+                    }
+                }
+                if (isRequireRefresh)
+                    this.RefreshData();
+            }
+            else
+            {
+                DialogBox.Msg("请选择需要删除的记录。");
+            }
+        }
 
         #endregion
 
@@ -96,11 +154,19 @@ namespace Hms.Ui
         {
             Init();
         }
-        #endregion
-
         private void gcNormalQnRecord_DoubleClick(object sender, EventArgs e)
         {
             this.Edit();
         }
+
+        private void gvNormalQnRecord_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if(e.RowHandle>= 0 && e.Info.IsRowIndicator)
+            {
+                e.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+                e.Info.DisplayText = Convert.ToInt32(e.RowHandle + 1).ToString() ;
+            }
+        }
+        #endregion
     }
 }

@@ -41,16 +41,22 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemMemoEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.txtSearch = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pcBackGround)).BeginInit();
+            this.pcBackGround.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcNormalQnRecord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvNormalQnRecord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSearch.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pcBackGround
             // 
+            this.pcBackGround.Controls.Add(this.txtSearch);
+            this.pcBackGround.Controls.Add(this.labelControl2);
             this.pcBackGround.Dock = System.Windows.Forms.DockStyle.Top;
             this.pcBackGround.Location = new System.Drawing.Point(0, 0);
             this.pcBackGround.Size = new System.Drawing.Size(959, 31);
@@ -112,6 +118,7 @@
             this.gvNormalQnRecord.OptionsView.GroupDrawMode = DevExpress.XtraGrid.Views.Grid.GroupDrawMode.Office;
             this.gvNormalQnRecord.OptionsView.ShowGroupPanel = false;
             this.gvNormalQnRecord.RowHeight = 27;
+            this.gvNormalQnRecord.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.gvNormalQnRecord_CustomDrawRowIndicator);
             // 
             // gridColumn1
             // 
@@ -294,6 +301,27 @@
             this.repositoryItemCheckEdit1.ValueChecked = 1;
             this.repositoryItemCheckEdit1.ValueUnchecked = 0;
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(40, 5);
+            this.txtSearch.MenuManager = this.barManager;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Properties.Appearance.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtSearch.Properties.Appearance.Options.UseFont = true;
+            this.txtSearch.Properties.NullValuePrompt = "输入姓名或客户编号";
+            this.txtSearch.Size = new System.Drawing.Size(176, 20);
+            this.txtSearch.TabIndex = 11;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(10, 9);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(24, 12);
+            this.labelControl2.TabIndex = 10;
+            this.labelControl2.Text = "查询";
+            // 
             // frm20202
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -307,11 +335,14 @@
             this.Controls.SetChildIndex(this.pcBackGround, 0);
             this.Controls.SetChildIndex(this.gcNormalQnRecord, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pcBackGround)).EndInit();
+            this.pcBackGround.ResumeLayout(false);
+            this.pcBackGround.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcNormalQnRecord)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvNormalQnRecord)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSearch.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,5 +363,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit repositoryItemMemoEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
+        private DevExpress.XtraEditors.TextEdit txtSearch;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
     }
 }

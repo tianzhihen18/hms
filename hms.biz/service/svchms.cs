@@ -109,6 +109,19 @@ namespace Hms.Svc
                 return biz.GetQnRecords(parms);
             }
         }
+
+        /// <summary>
+        /// 常规问卷--删除
+        /// </summary>
+        /// <param name="qnRecords"></param>
+        /// <returns></returns>
+        public int DelQnRecord(List<EntityQnRecord> qnRecords)
+        {
+            using (Biz202 biz = new Biz202())
+            {
+                return biz.DelQnRecord(qnRecords);
+            }
+        }
         #endregion
 
         #region 203 健康报告
@@ -618,6 +631,7 @@ namespace Hms.Svc
         }
 
         #endregion
+
         #region 中医食疗
 
         /// <summary>

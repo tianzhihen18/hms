@@ -34,76 +34,76 @@
             this.checkEdit392 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit397 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit390 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl417 = new DevExpress.XtraEditors.LabelControl();
+            this.F10903 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit388 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl418 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl403 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl419 = new DevExpress.XtraEditors.LabelControl();
+            this.F10902 = new DevExpress.XtraEditors.LabelControl();
+            this.F10803 = new DevExpress.XtraEditors.LabelControl();
+            this.F10901 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit393 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl404 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl406 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl407 = new DevExpress.XtraEditors.LabelControl();
+            this.F10802 = new DevExpress.XtraEditors.LabelControl();
+            this.F10801 = new DevExpress.XtraEditors.LabelControl();
+            this.F10703 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit386 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl408 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl393 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl409 = new DevExpress.XtraEditors.LabelControl();
+            this.F10702 = new DevExpress.XtraEditors.LabelControl();
+            this.F10603 = new DevExpress.XtraEditors.LabelControl();
+            this.F10701 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit391 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl394 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl396 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl397 = new DevExpress.XtraEditors.LabelControl();
+            this.F10602 = new DevExpress.XtraEditors.LabelControl();
+            this.F10601 = new DevExpress.XtraEditors.LabelControl();
+            this.F10503 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit384 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl398 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl383 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl399 = new DevExpress.XtraEditors.LabelControl();
+            this.F10502 = new DevExpress.XtraEditors.LabelControl();
+            this.F10403 = new DevExpress.XtraEditors.LabelControl();
+            this.F10501 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit389 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl384 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl360 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl386 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl372 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl387 = new DevExpress.XtraEditors.LabelControl();
+            this.F10402 = new DevExpress.XtraEditors.LabelControl();
+            this.F10005 = new DevExpress.XtraEditors.LabelControl();
+            this.F10401 = new DevExpress.XtraEditors.LabelControl();
+            this.F10006 = new DevExpress.XtraEditors.LabelControl();
+            this.F10303 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit382 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl388 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl373 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl389 = new DevExpress.XtraEditors.LabelControl();
+            this.F10302 = new DevExpress.XtraEditors.LabelControl();
+            this.F10203 = new DevExpress.XtraEditors.LabelControl();
+            this.F10301 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit387 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl374 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl361 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl376 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl377 = new DevExpress.XtraEditors.LabelControl();
+            this.F10202 = new DevExpress.XtraEditors.LabelControl();
+            this.F10004 = new DevExpress.XtraEditors.LabelControl();
+            this.F10201 = new DevExpress.XtraEditors.LabelControl();
+            this.F10103 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit380 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl378 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl363 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl379 = new DevExpress.XtraEditors.LabelControl();
+            this.F10102 = new DevExpress.XtraEditors.LabelControl();
+            this.F10003 = new DevExpress.XtraEditors.LabelControl();
+            this.F10101 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit385 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl364 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl351 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl365 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl340 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl366 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl352 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl367 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl368 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl353 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl369 = new DevExpress.XtraEditors.LabelControl();
+            this.F10002 = new DevExpress.XtraEditors.LabelControl();
+            this.F09804 = new DevExpress.XtraEditors.LabelControl();
+            this.F09904 = new DevExpress.XtraEditors.LabelControl();
+            this.F09605 = new DevExpress.XtraEditors.LabelControl();
+            this.F10001 = new DevExpress.XtraEditors.LabelControl();
+            this.F09705 = new DevExpress.XtraEditors.LabelControl();
+            this.F09903 = new DevExpress.XtraEditors.LabelControl();
+            this.F09902 = new DevExpress.XtraEditors.LabelControl();
+            this.F09803 = new DevExpress.XtraEditors.LabelControl();
+            this.F09901 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit383 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl354 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl341 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl355 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl356 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl342 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl357 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl358 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl343 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl359 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl344 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl345 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl346 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl347 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl348 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl349 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl334 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl336 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl339 = new DevExpress.XtraEditors.LabelControl();
+            this.F09802 = new DevExpress.XtraEditors.LabelControl();
+            this.F09604 = new DevExpress.XtraEditors.LabelControl();
+            this.F09704 = new DevExpress.XtraEditors.LabelControl();
+            this.F09801 = new DevExpress.XtraEditors.LabelControl();
+            this.F09505 = new DevExpress.XtraEditors.LabelControl();
+            this.F09703 = new DevExpress.XtraEditors.LabelControl();
+            this.F09702 = new DevExpress.XtraEditors.LabelControl();
+            this.F09603 = new DevExpress.XtraEditors.LabelControl();
+            this.F09701 = new DevExpress.XtraEditors.LabelControl();
+            this.F09602 = new DevExpress.XtraEditors.LabelControl();
+            this.F09504 = new DevExpress.XtraEditors.LabelControl();
+            this.F09601 = new DevExpress.XtraEditors.LabelControl();
+            this.F09503 = new DevExpress.XtraEditors.LabelControl();
+            this.F09502 = new DevExpress.XtraEditors.LabelControl();
+            this.F09501 = new DevExpress.XtraEditors.LabelControl();
+            this.F09402 = new DevExpress.XtraEditors.LabelControl();
+            this.F09401 = new DevExpress.XtraEditors.LabelControl();
+            this.FM0601 = new DevExpress.XtraEditors.LabelControl();
             this.plBack.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit395.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit394.Properties)).BeginInit();
@@ -130,76 +130,76 @@
             this.plBack.Controls.Add(this.checkEdit392);
             this.plBack.Controls.Add(this.checkEdit397);
             this.plBack.Controls.Add(this.checkEdit390);
-            this.plBack.Controls.Add(this.labelControl417);
+            this.plBack.Controls.Add(this.F10903);
             this.plBack.Controls.Add(this.checkEdit388);
-            this.plBack.Controls.Add(this.labelControl418);
-            this.plBack.Controls.Add(this.labelControl403);
-            this.plBack.Controls.Add(this.labelControl419);
+            this.plBack.Controls.Add(this.F10902);
+            this.plBack.Controls.Add(this.F10803);
+            this.plBack.Controls.Add(this.F10901);
             this.plBack.Controls.Add(this.checkEdit393);
-            this.plBack.Controls.Add(this.labelControl404);
-            this.plBack.Controls.Add(this.labelControl406);
-            this.plBack.Controls.Add(this.labelControl407);
+            this.plBack.Controls.Add(this.F10802);
+            this.plBack.Controls.Add(this.F10801);
+            this.plBack.Controls.Add(this.F10703);
             this.plBack.Controls.Add(this.checkEdit386);
-            this.plBack.Controls.Add(this.labelControl408);
-            this.plBack.Controls.Add(this.labelControl393);
-            this.plBack.Controls.Add(this.labelControl409);
+            this.plBack.Controls.Add(this.F10702);
+            this.plBack.Controls.Add(this.F10603);
+            this.plBack.Controls.Add(this.F10701);
             this.plBack.Controls.Add(this.checkEdit391);
-            this.plBack.Controls.Add(this.labelControl394);
-            this.plBack.Controls.Add(this.labelControl396);
-            this.plBack.Controls.Add(this.labelControl397);
+            this.plBack.Controls.Add(this.F10602);
+            this.plBack.Controls.Add(this.F10601);
+            this.plBack.Controls.Add(this.F10503);
             this.plBack.Controls.Add(this.checkEdit384);
-            this.plBack.Controls.Add(this.labelControl398);
-            this.plBack.Controls.Add(this.labelControl383);
-            this.plBack.Controls.Add(this.labelControl399);
+            this.plBack.Controls.Add(this.F10502);
+            this.plBack.Controls.Add(this.F10403);
+            this.plBack.Controls.Add(this.F10501);
             this.plBack.Controls.Add(this.checkEdit389);
-            this.plBack.Controls.Add(this.labelControl384);
-            this.plBack.Controls.Add(this.labelControl360);
-            this.plBack.Controls.Add(this.labelControl386);
-            this.plBack.Controls.Add(this.labelControl372);
-            this.plBack.Controls.Add(this.labelControl387);
+            this.plBack.Controls.Add(this.F10402);
+            this.plBack.Controls.Add(this.F10005);
+            this.plBack.Controls.Add(this.F10401);
+            this.plBack.Controls.Add(this.F10006);
+            this.plBack.Controls.Add(this.F10303);
             this.plBack.Controls.Add(this.checkEdit382);
-            this.plBack.Controls.Add(this.labelControl388);
-            this.plBack.Controls.Add(this.labelControl373);
-            this.plBack.Controls.Add(this.labelControl389);
+            this.plBack.Controls.Add(this.F10302);
+            this.plBack.Controls.Add(this.F10203);
+            this.plBack.Controls.Add(this.F10301);
             this.plBack.Controls.Add(this.checkEdit387);
-            this.plBack.Controls.Add(this.labelControl374);
-            this.plBack.Controls.Add(this.labelControl361);
-            this.plBack.Controls.Add(this.labelControl376);
-            this.plBack.Controls.Add(this.labelControl377);
+            this.plBack.Controls.Add(this.F10202);
+            this.plBack.Controls.Add(this.F10004);
+            this.plBack.Controls.Add(this.F10201);
+            this.plBack.Controls.Add(this.F10103);
             this.plBack.Controls.Add(this.checkEdit380);
-            this.plBack.Controls.Add(this.labelControl378);
-            this.plBack.Controls.Add(this.labelControl363);
-            this.plBack.Controls.Add(this.labelControl379);
+            this.plBack.Controls.Add(this.F10102);
+            this.plBack.Controls.Add(this.F10003);
+            this.plBack.Controls.Add(this.F10101);
             this.plBack.Controls.Add(this.checkEdit385);
-            this.plBack.Controls.Add(this.labelControl364);
-            this.plBack.Controls.Add(this.labelControl351);
-            this.plBack.Controls.Add(this.labelControl365);
-            this.plBack.Controls.Add(this.labelControl340);
-            this.plBack.Controls.Add(this.labelControl366);
-            this.plBack.Controls.Add(this.labelControl352);
-            this.plBack.Controls.Add(this.labelControl367);
-            this.plBack.Controls.Add(this.labelControl368);
-            this.plBack.Controls.Add(this.labelControl353);
-            this.plBack.Controls.Add(this.labelControl369);
+            this.plBack.Controls.Add(this.F10002);
+            this.plBack.Controls.Add(this.F09804);
+            this.plBack.Controls.Add(this.F09904);
+            this.plBack.Controls.Add(this.F09605);
+            this.plBack.Controls.Add(this.F10001);
+            this.plBack.Controls.Add(this.F09705);
+            this.plBack.Controls.Add(this.F09903);
+            this.plBack.Controls.Add(this.F09902);
+            this.plBack.Controls.Add(this.F09803);
+            this.plBack.Controls.Add(this.F09901);
             this.plBack.Controls.Add(this.checkEdit383);
-            this.plBack.Controls.Add(this.labelControl354);
-            this.plBack.Controls.Add(this.labelControl341);
-            this.plBack.Controls.Add(this.labelControl355);
-            this.plBack.Controls.Add(this.labelControl356);
-            this.plBack.Controls.Add(this.labelControl342);
-            this.plBack.Controls.Add(this.labelControl357);
-            this.plBack.Controls.Add(this.labelControl358);
-            this.plBack.Controls.Add(this.labelControl343);
-            this.plBack.Controls.Add(this.labelControl359);
-            this.plBack.Controls.Add(this.labelControl344);
-            this.plBack.Controls.Add(this.labelControl345);
-            this.plBack.Controls.Add(this.labelControl346);
-            this.plBack.Controls.Add(this.labelControl347);
-            this.plBack.Controls.Add(this.labelControl348);
-            this.plBack.Controls.Add(this.labelControl349);
-            this.plBack.Controls.Add(this.labelControl334);
-            this.plBack.Controls.Add(this.labelControl336);
-            this.plBack.Controls.Add(this.labelControl339);
+            this.plBack.Controls.Add(this.F09802);
+            this.plBack.Controls.Add(this.F09604);
+            this.plBack.Controls.Add(this.F09704);
+            this.plBack.Controls.Add(this.F09801);
+            this.plBack.Controls.Add(this.F09505);
+            this.plBack.Controls.Add(this.F09703);
+            this.plBack.Controls.Add(this.F09702);
+            this.plBack.Controls.Add(this.F09603);
+            this.plBack.Controls.Add(this.F09701);
+            this.plBack.Controls.Add(this.F09602);
+            this.plBack.Controls.Add(this.F09504);
+            this.plBack.Controls.Add(this.F09601);
+            this.plBack.Controls.Add(this.F09503);
+            this.plBack.Controls.Add(this.F09502);
+            this.plBack.Controls.Add(this.F09501);
+            this.plBack.Controls.Add(this.F09402);
+            this.plBack.Controls.Add(this.F09401);
+            this.plBack.Controls.Add(this.FM0601);
             this.plBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plBack.Location = new System.Drawing.Point(0, 0);
             this.plBack.Name = "plBack";
@@ -216,7 +216,7 @@
             this.checkEdit395.Properties.Caption = "容易焦虑不安，心烦意乱";
             this.checkEdit395.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit395.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit395.Size = new System.Drawing.Size(184, 20);
+            this.checkEdit395.Size = new System.Drawing.Size(184, 19);
             this.checkEdit395.TabIndex = 679;
             // 
             // checkEdit394
@@ -229,7 +229,7 @@
             this.checkEdit394.Properties.Caption = "感觉压抑或沮丧";
             this.checkEdit394.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit394.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit394.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit394.Size = new System.Drawing.Size(152, 19);
             this.checkEdit394.TabIndex = 672;
             // 
             // checkEdit392
@@ -242,7 +242,7 @@
             this.checkEdit392.Properties.Caption = "感到心力枯竭，对人对事缺乏热情";
             this.checkEdit392.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit392.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit392.Size = new System.Drawing.Size(240, 20);
+            this.checkEdit392.Size = new System.Drawing.Size(240, 19);
             this.checkEdit392.TabIndex = 670;
             // 
             // checkEdit397
@@ -255,7 +255,7 @@
             this.checkEdit397.Properties.Caption = "注意力集中有困难";
             this.checkEdit397.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit397.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit397.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit397.Size = new System.Drawing.Size(152, 19);
             this.checkEdit397.TabIndex = 678;
             // 
             // checkEdit390
@@ -268,25 +268,25 @@
             this.checkEdit390.Properties.Caption = "比平常容易紧张和着急";
             this.checkEdit390.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit390.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit390.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit390.Size = new System.Drawing.Size(152, 19);
             this.checkEdit390.TabIndex = 669;
             // 
-            // labelControl417
+            // F10903
             // 
-            this.labelControl417.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl417.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl417.Appearance.Options.UseFont = true;
-            this.labelControl417.Appearance.Options.UseForeColor = true;
-            this.labelControl417.Appearance.Options.UseTextOptions = true;
-            this.labelControl417.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl417.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl417.Location = new System.Drawing.Point(300, 840);
-            this.labelControl417.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl417.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl417.Name = "labelControl417";
-            this.labelControl417.Size = new System.Drawing.Size(84, 13);
-            this.labelControl417.TabIndex = 658;
-            this.labelControl417.Text = "3、经常";
+            this.F10903.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10903.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10903.Appearance.Options.UseFont = true;
+            this.F10903.Appearance.Options.UseForeColor = true;
+            this.F10903.Appearance.Options.UseTextOptions = true;
+            this.F10903.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F10903.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F10903.Location = new System.Drawing.Point(300, 840);
+            this.F10903.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10903.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10903.Name = "F10903";
+            this.F10903.Size = new System.Drawing.Size(84, 13);
+            this.F10903.TabIndex = 658;
+            this.F10903.Text = "3、经常";
             // 
             // checkEdit388
             // 
@@ -298,53 +298,53 @@
             this.checkEdit388.Properties.Caption = "容易情绪激动或生气";
             this.checkEdit388.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit388.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit388.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit388.Size = new System.Drawing.Size(152, 19);
             this.checkEdit388.TabIndex = 668;
             // 
-            // labelControl418
+            // F10902
             // 
-            this.labelControl418.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl418.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl418.Appearance.Options.UseFont = true;
-            this.labelControl418.Appearance.Options.UseForeColor = true;
-            this.labelControl418.Location = new System.Drawing.Point(184, 840);
-            this.labelControl418.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl418.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl418.Name = "labelControl418";
-            this.labelControl418.Size = new System.Drawing.Size(46, 13);
-            this.labelControl418.TabIndex = 641;
-            this.labelControl418.Text = "2、偶尔";
+            this.F10902.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10902.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10902.Appearance.Options.UseFont = true;
+            this.F10902.Appearance.Options.UseForeColor = true;
+            this.F10902.Location = new System.Drawing.Point(184, 840);
+            this.F10902.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10902.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10902.Name = "F10902";
+            this.F10902.Size = new System.Drawing.Size(46, 13);
+            this.F10902.TabIndex = 641;
+            this.F10902.Text = "2、偶尔";
             // 
-            // labelControl403
+            // F10803
             // 
-            this.labelControl403.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl403.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl403.Appearance.Options.UseFont = true;
-            this.labelControl403.Appearance.Options.UseForeColor = true;
-            this.labelControl403.Appearance.Options.UseTextOptions = true;
-            this.labelControl403.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl403.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl403.Location = new System.Drawing.Point(300, 788);
-            this.labelControl403.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl403.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl403.Name = "labelControl403";
-            this.labelControl403.Size = new System.Drawing.Size(80, 13);
-            this.labelControl403.TabIndex = 651;
-            this.labelControl403.Text = "3、经常";
+            this.F10803.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10803.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10803.Appearance.Options.UseFont = true;
+            this.F10803.Appearance.Options.UseForeColor = true;
+            this.F10803.Appearance.Options.UseTextOptions = true;
+            this.F10803.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F10803.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F10803.Location = new System.Drawing.Point(300, 788);
+            this.F10803.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10803.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10803.Name = "F10803";
+            this.F10803.Size = new System.Drawing.Size(80, 13);
+            this.F10803.TabIndex = 651;
+            this.F10803.Text = "3、经常";
             // 
-            // labelControl419
+            // F10901
             // 
-            this.labelControl419.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl419.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl419.Appearance.Options.UseFont = true;
-            this.labelControl419.Appearance.Options.UseForeColor = true;
-            this.labelControl419.Location = new System.Drawing.Point(68, 840);
-            this.labelControl419.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl419.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl419.Name = "labelControl419";
-            this.labelControl419.Size = new System.Drawing.Size(46, 13);
-            this.labelControl419.TabIndex = 633;
-            this.labelControl419.Text = "1、没有";
+            this.F10901.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10901.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10901.Appearance.Options.UseFont = true;
+            this.F10901.Appearance.Options.UseForeColor = true;
+            this.F10901.Location = new System.Drawing.Point(68, 840);
+            this.F10901.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10901.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10901.Name = "F10901";
+            this.F10901.Size = new System.Drawing.Size(46, 13);
+            this.F10901.TabIndex = 633;
+            this.F10901.Text = "1、没有";
             // 
             // checkEdit393
             // 
@@ -356,53 +356,53 @@
             this.checkEdit393.Properties.Caption = "容易发脾气，没有耐性";
             this.checkEdit393.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit393.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit393.Size = new System.Drawing.Size(176, 20);
+            this.checkEdit393.Size = new System.Drawing.Size(176, 19);
             this.checkEdit393.TabIndex = 676;
             // 
-            // labelControl404
+            // F10802
             // 
-            this.labelControl404.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl404.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl404.Appearance.Options.UseFont = true;
-            this.labelControl404.Appearance.Options.UseForeColor = true;
-            this.labelControl404.Location = new System.Drawing.Point(184, 788);
-            this.labelControl404.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl404.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl404.Name = "labelControl404";
-            this.labelControl404.Size = new System.Drawing.Size(46, 13);
-            this.labelControl404.TabIndex = 637;
-            this.labelControl404.Text = "2、偶尔";
+            this.F10802.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10802.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10802.Appearance.Options.UseFont = true;
+            this.F10802.Appearance.Options.UseForeColor = true;
+            this.F10802.Location = new System.Drawing.Point(184, 788);
+            this.F10802.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10802.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10802.Name = "F10802";
+            this.F10802.Size = new System.Drawing.Size(46, 13);
+            this.F10802.TabIndex = 637;
+            this.F10802.Text = "2、偶尔";
             // 
-            // labelControl406
+            // F10801
             // 
-            this.labelControl406.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl406.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl406.Appearance.Options.UseFont = true;
-            this.labelControl406.Appearance.Options.UseForeColor = true;
-            this.labelControl406.Location = new System.Drawing.Point(68, 788);
-            this.labelControl406.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl406.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl406.Name = "labelControl406";
-            this.labelControl406.Size = new System.Drawing.Size(46, 13);
-            this.labelControl406.TabIndex = 623;
-            this.labelControl406.Text = "1、没有";
+            this.F10801.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10801.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10801.Appearance.Options.UseFont = true;
+            this.F10801.Appearance.Options.UseForeColor = true;
+            this.F10801.Location = new System.Drawing.Point(68, 788);
+            this.F10801.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10801.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10801.Name = "F10801";
+            this.F10801.Size = new System.Drawing.Size(46, 13);
+            this.F10801.TabIndex = 623;
+            this.F10801.Text = "1、没有";
             // 
-            // labelControl407
+            // F10703
             // 
-            this.labelControl407.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl407.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl407.Appearance.Options.UseFont = true;
-            this.labelControl407.Appearance.Options.UseForeColor = true;
-            this.labelControl407.Appearance.Options.UseTextOptions = true;
-            this.labelControl407.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl407.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl407.Location = new System.Drawing.Point(300, 736);
-            this.labelControl407.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl407.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl407.Name = "labelControl407";
-            this.labelControl407.Size = new System.Drawing.Size(80, 13);
-            this.labelControl407.TabIndex = 655;
-            this.labelControl407.Text = "3、经常";
+            this.F10703.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10703.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10703.Appearance.Options.UseFont = true;
+            this.F10703.Appearance.Options.UseForeColor = true;
+            this.F10703.Appearance.Options.UseTextOptions = true;
+            this.F10703.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F10703.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F10703.Location = new System.Drawing.Point(300, 736);
+            this.F10703.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10703.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10703.Name = "F10703";
+            this.F10703.Size = new System.Drawing.Size(80, 13);
+            this.F10703.TabIndex = 655;
+            this.F10703.Text = "3、经常";
             // 
             // checkEdit386
             // 
@@ -414,53 +414,53 @@
             this.checkEdit386.Properties.Caption = "主要压力来源";
             this.checkEdit386.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit386.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit386.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit386.Size = new System.Drawing.Size(152, 19);
             this.checkEdit386.TabIndex = 671;
             // 
-            // labelControl408
+            // F10702
             // 
-            this.labelControl408.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl408.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl408.Appearance.Options.UseFont = true;
-            this.labelControl408.Appearance.Options.UseForeColor = true;
-            this.labelControl408.Location = new System.Drawing.Point(184, 736);
-            this.labelControl408.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl408.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl408.Name = "labelControl408";
-            this.labelControl408.Size = new System.Drawing.Size(46, 13);
-            this.labelControl408.TabIndex = 643;
-            this.labelControl408.Text = "2、偶尔";
+            this.F10702.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10702.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10702.Appearance.Options.UseFont = true;
+            this.F10702.Appearance.Options.UseForeColor = true;
+            this.F10702.Location = new System.Drawing.Point(184, 736);
+            this.F10702.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10702.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10702.Name = "F10702";
+            this.F10702.Size = new System.Drawing.Size(46, 13);
+            this.F10702.TabIndex = 643;
+            this.F10702.Text = "2、偶尔";
             // 
-            // labelControl393
+            // F10603
             // 
-            this.labelControl393.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl393.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl393.Appearance.Options.UseFont = true;
-            this.labelControl393.Appearance.Options.UseForeColor = true;
-            this.labelControl393.Appearance.Options.UseTextOptions = true;
-            this.labelControl393.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl393.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl393.Location = new System.Drawing.Point(300, 684);
-            this.labelControl393.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl393.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl393.Name = "labelControl393";
-            this.labelControl393.Size = new System.Drawing.Size(76, 13);
-            this.labelControl393.TabIndex = 648;
-            this.labelControl393.Text = "3、经常";
+            this.F10603.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10603.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10603.Appearance.Options.UseFont = true;
+            this.F10603.Appearance.Options.UseForeColor = true;
+            this.F10603.Appearance.Options.UseTextOptions = true;
+            this.F10603.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F10603.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F10603.Location = new System.Drawing.Point(300, 684);
+            this.F10603.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10603.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10603.Name = "F10603";
+            this.F10603.Size = new System.Drawing.Size(76, 13);
+            this.F10603.TabIndex = 648;
+            this.F10603.Text = "3、经常";
             // 
-            // labelControl409
+            // F10701
             // 
-            this.labelControl409.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl409.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl409.Appearance.Options.UseFont = true;
-            this.labelControl409.Appearance.Options.UseForeColor = true;
-            this.labelControl409.Location = new System.Drawing.Point(68, 736);
-            this.labelControl409.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl409.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl409.Name = "labelControl409";
-            this.labelControl409.Size = new System.Drawing.Size(46, 13);
-            this.labelControl409.TabIndex = 628;
-            this.labelControl409.Text = "1、没有";
+            this.F10701.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10701.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10701.Appearance.Options.UseFont = true;
+            this.F10701.Appearance.Options.UseForeColor = true;
+            this.F10701.Location = new System.Drawing.Point(68, 736);
+            this.F10701.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10701.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10701.Name = "F10701";
+            this.F10701.Size = new System.Drawing.Size(46, 13);
+            this.F10701.TabIndex = 628;
+            this.F10701.Text = "1、没有";
             // 
             // checkEdit391
             // 
@@ -472,53 +472,53 @@
             this.checkEdit391.Properties.Caption = "感到精神紧张，很难放松";
             this.checkEdit391.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit391.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit391.Size = new System.Drawing.Size(196, 20);
+            this.checkEdit391.Size = new System.Drawing.Size(196, 19);
             this.checkEdit391.TabIndex = 674;
             // 
-            // labelControl394
+            // F10602
             // 
-            this.labelControl394.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl394.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl394.Appearance.Options.UseFont = true;
-            this.labelControl394.Appearance.Options.UseForeColor = true;
-            this.labelControl394.Location = new System.Drawing.Point(184, 684);
-            this.labelControl394.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl394.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl394.Name = "labelControl394";
-            this.labelControl394.Size = new System.Drawing.Size(46, 13);
-            this.labelControl394.TabIndex = 638;
-            this.labelControl394.Text = "2、偶尔";
+            this.F10602.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10602.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10602.Appearance.Options.UseFont = true;
+            this.F10602.Appearance.Options.UseForeColor = true;
+            this.F10602.Location = new System.Drawing.Point(184, 684);
+            this.F10602.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10602.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10602.Name = "F10602";
+            this.F10602.Size = new System.Drawing.Size(46, 13);
+            this.F10602.TabIndex = 638;
+            this.F10602.Text = "2、偶尔";
             // 
-            // labelControl396
+            // F10601
             // 
-            this.labelControl396.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl396.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl396.Appearance.Options.UseFont = true;
-            this.labelControl396.Appearance.Options.UseForeColor = true;
-            this.labelControl396.Location = new System.Drawing.Point(68, 684);
-            this.labelControl396.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl396.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl396.Name = "labelControl396";
-            this.labelControl396.Size = new System.Drawing.Size(46, 13);
-            this.labelControl396.TabIndex = 621;
-            this.labelControl396.Text = "1、没有";
+            this.F10601.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10601.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10601.Appearance.Options.UseFont = true;
+            this.F10601.Appearance.Options.UseForeColor = true;
+            this.F10601.Location = new System.Drawing.Point(68, 684);
+            this.F10601.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10601.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10601.Name = "F10601";
+            this.F10601.Size = new System.Drawing.Size(46, 13);
+            this.F10601.TabIndex = 621;
+            this.F10601.Text = "1、没有";
             // 
-            // labelControl397
+            // F10503
             // 
-            this.labelControl397.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl397.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl397.Appearance.Options.UseFont = true;
-            this.labelControl397.Appearance.Options.UseForeColor = true;
-            this.labelControl397.Appearance.Options.UseTextOptions = true;
-            this.labelControl397.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl397.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl397.Location = new System.Drawing.Point(300, 632);
-            this.labelControl397.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl397.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl397.Name = "labelControl397";
-            this.labelControl397.Size = new System.Drawing.Size(76, 13);
-            this.labelControl397.TabIndex = 654;
-            this.labelControl397.Text = "3、经常";
+            this.F10503.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10503.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10503.Appearance.Options.UseFont = true;
+            this.F10503.Appearance.Options.UseForeColor = true;
+            this.F10503.Appearance.Options.UseTextOptions = true;
+            this.F10503.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F10503.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F10503.Location = new System.Drawing.Point(300, 632);
+            this.F10503.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10503.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10503.Name = "F10503";
+            this.F10503.Size = new System.Drawing.Size(76, 13);
+            this.F10503.TabIndex = 654;
+            this.F10503.Text = "3、经常";
             // 
             // checkEdit384
             // 
@@ -530,53 +530,53 @@
             this.checkEdit384.Properties.Caption = "情绪对工作或生活的影响";
             this.checkEdit384.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit384.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit384.Size = new System.Drawing.Size(188, 20);
+            this.checkEdit384.Size = new System.Drawing.Size(188, 19);
             this.checkEdit384.TabIndex = 667;
             // 
-            // labelControl398
+            // F10502
             // 
-            this.labelControl398.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl398.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl398.Appearance.Options.UseFont = true;
-            this.labelControl398.Appearance.Options.UseForeColor = true;
-            this.labelControl398.Location = new System.Drawing.Point(184, 632);
-            this.labelControl398.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl398.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl398.Name = "labelControl398";
-            this.labelControl398.Size = new System.Drawing.Size(46, 13);
-            this.labelControl398.TabIndex = 644;
-            this.labelControl398.Text = "2、偶尔";
+            this.F10502.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10502.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10502.Appearance.Options.UseFont = true;
+            this.F10502.Appearance.Options.UseForeColor = true;
+            this.F10502.Location = new System.Drawing.Point(184, 632);
+            this.F10502.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10502.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10502.Name = "F10502";
+            this.F10502.Size = new System.Drawing.Size(46, 13);
+            this.F10502.TabIndex = 644;
+            this.F10502.Text = "2、偶尔";
             // 
-            // labelControl383
+            // F10403
             // 
-            this.labelControl383.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl383.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl383.Appearance.Options.UseFont = true;
-            this.labelControl383.Appearance.Options.UseForeColor = true;
-            this.labelControl383.Appearance.Options.UseTextOptions = true;
-            this.labelControl383.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl383.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl383.Location = new System.Drawing.Point(300, 580);
-            this.labelControl383.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl383.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl383.Name = "labelControl383";
-            this.labelControl383.Size = new System.Drawing.Size(76, 13);
-            this.labelControl383.TabIndex = 652;
-            this.labelControl383.Text = "3、经常";
+            this.F10403.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10403.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10403.Appearance.Options.UseFont = true;
+            this.F10403.Appearance.Options.UseForeColor = true;
+            this.F10403.Appearance.Options.UseTextOptions = true;
+            this.F10403.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F10403.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F10403.Location = new System.Drawing.Point(300, 580);
+            this.F10403.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10403.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10403.Name = "F10403";
+            this.F10403.Size = new System.Drawing.Size(76, 13);
+            this.F10403.TabIndex = 652;
+            this.F10403.Text = "3、经常";
             // 
-            // labelControl399
+            // F10501
             // 
-            this.labelControl399.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl399.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl399.Appearance.Options.UseFont = true;
-            this.labelControl399.Appearance.Options.UseForeColor = true;
-            this.labelControl399.Location = new System.Drawing.Point(68, 632);
-            this.labelControl399.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl399.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl399.Name = "labelControl399";
-            this.labelControl399.Size = new System.Drawing.Size(46, 13);
-            this.labelControl399.TabIndex = 631;
-            this.labelControl399.Text = "1、没有";
+            this.F10501.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10501.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10501.Appearance.Options.UseFont = true;
+            this.F10501.Appearance.Options.UseForeColor = true;
+            this.F10501.Location = new System.Drawing.Point(68, 632);
+            this.F10501.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10501.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10501.Name = "F10501";
+            this.F10501.Size = new System.Drawing.Size(46, 13);
+            this.F10501.TabIndex = 631;
+            this.F10501.Text = "1、没有";
             // 
             // checkEdit389
             // 
@@ -588,81 +588,81 @@
             this.checkEdit389.Properties.Caption = "感到闷闷不乐，情绪低落";
             this.checkEdit389.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit389.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit389.Size = new System.Drawing.Size(188, 20);
+            this.checkEdit389.Size = new System.Drawing.Size(188, 19);
             this.checkEdit389.TabIndex = 673;
             // 
-            // labelControl384
+            // F10402
             // 
-            this.labelControl384.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl384.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl384.Appearance.Options.UseFont = true;
-            this.labelControl384.Appearance.Options.UseForeColor = true;
-            this.labelControl384.Location = new System.Drawing.Point(184, 580);
-            this.labelControl384.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl384.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl384.Name = "labelControl384";
-            this.labelControl384.Size = new System.Drawing.Size(46, 13);
-            this.labelControl384.TabIndex = 639;
-            this.labelControl384.Text = "2、偶尔";
+            this.F10402.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10402.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10402.Appearance.Options.UseFont = true;
+            this.F10402.Appearance.Options.UseForeColor = true;
+            this.F10402.Location = new System.Drawing.Point(184, 580);
+            this.F10402.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10402.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10402.Name = "F10402";
+            this.F10402.Size = new System.Drawing.Size(46, 13);
+            this.F10402.TabIndex = 639;
+            this.F10402.Text = "2、偶尔";
             // 
-            // labelControl360
+            // F10005
             // 
-            this.labelControl360.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl360.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl360.Appearance.Options.UseFont = true;
-            this.labelControl360.Appearance.Options.UseForeColor = true;
-            this.labelControl360.Location = new System.Drawing.Point(458, 372);
-            this.labelControl360.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl360.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl360.Name = "labelControl360";
-            this.labelControl360.Size = new System.Drawing.Size(46, 13);
-            this.labelControl360.TabIndex = 664;
-            this.labelControl360.Text = "5、社交";
+            this.F10005.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10005.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10005.Appearance.Options.UseFont = true;
+            this.F10005.Appearance.Options.UseForeColor = true;
+            this.F10005.Location = new System.Drawing.Point(458, 372);
+            this.F10005.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10005.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10005.Name = "F10005";
+            this.F10005.Size = new System.Drawing.Size(46, 13);
+            this.F10005.TabIndex = 664;
+            this.F10005.Text = "5、社交";
             // 
-            // labelControl386
+            // F10401
             // 
-            this.labelControl386.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl386.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl386.Appearance.Options.UseFont = true;
-            this.labelControl386.Appearance.Options.UseForeColor = true;
-            this.labelControl386.Location = new System.Drawing.Point(68, 580);
-            this.labelControl386.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl386.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl386.Name = "labelControl386";
-            this.labelControl386.Size = new System.Drawing.Size(46, 13);
-            this.labelControl386.TabIndex = 625;
-            this.labelControl386.Text = "1、没有";
+            this.F10401.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10401.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10401.Appearance.Options.UseFont = true;
+            this.F10401.Appearance.Options.UseForeColor = true;
+            this.F10401.Location = new System.Drawing.Point(68, 580);
+            this.F10401.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10401.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10401.Name = "F10401";
+            this.F10401.Size = new System.Drawing.Size(46, 13);
+            this.F10401.TabIndex = 625;
+            this.F10401.Text = "1、没有";
             // 
-            // labelControl372
+            // F10006
             // 
-            this.labelControl372.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl372.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl372.Appearance.Options.UseFont = true;
-            this.labelControl372.Appearance.Options.UseForeColor = true;
-            this.labelControl372.Location = new System.Drawing.Point(552, 372);
-            this.labelControl372.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl372.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl372.Name = "labelControl372";
-            this.labelControl372.Size = new System.Drawing.Size(46, 13);
-            this.labelControl372.TabIndex = 665;
-            this.labelControl372.Text = "6、其他";
+            this.F10006.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10006.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10006.Appearance.Options.UseFont = true;
+            this.F10006.Appearance.Options.UseForeColor = true;
+            this.F10006.Location = new System.Drawing.Point(552, 372);
+            this.F10006.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10006.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10006.Name = "F10006";
+            this.F10006.Size = new System.Drawing.Size(46, 13);
+            this.F10006.TabIndex = 665;
+            this.F10006.Text = "6、其他";
             // 
-            // labelControl387
+            // F10303
             // 
-            this.labelControl387.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl387.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl387.Appearance.Options.UseFont = true;
-            this.labelControl387.Appearance.Options.UseForeColor = true;
-            this.labelControl387.Appearance.Options.UseTextOptions = true;
-            this.labelControl387.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl387.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl387.Location = new System.Drawing.Point(300, 528);
-            this.labelControl387.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl387.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl387.Name = "labelControl387";
-            this.labelControl387.Size = new System.Drawing.Size(76, 13);
-            this.labelControl387.TabIndex = 657;
-            this.labelControl387.Text = "3、经常";
+            this.F10303.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10303.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10303.Appearance.Options.UseFont = true;
+            this.F10303.Appearance.Options.UseForeColor = true;
+            this.F10303.Appearance.Options.UseTextOptions = true;
+            this.F10303.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F10303.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F10303.Location = new System.Drawing.Point(300, 528);
+            this.F10303.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10303.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10303.Name = "F10303";
+            this.F10303.Size = new System.Drawing.Size(76, 13);
+            this.F10303.TabIndex = 657;
+            this.F10303.Text = "3、经常";
             // 
             // checkEdit382
             // 
@@ -674,53 +674,53 @@
             this.checkEdit382.Properties.Caption = "生活满意度";
             this.checkEdit382.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit382.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit382.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit382.Size = new System.Drawing.Size(152, 19);
             this.checkEdit382.TabIndex = 619;
             // 
-            // labelControl388
+            // F10302
             // 
-            this.labelControl388.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl388.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl388.Appearance.Options.UseFont = true;
-            this.labelControl388.Appearance.Options.UseForeColor = true;
-            this.labelControl388.Location = new System.Drawing.Point(184, 528);
-            this.labelControl388.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl388.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl388.Name = "labelControl388";
-            this.labelControl388.Size = new System.Drawing.Size(46, 13);
-            this.labelControl388.TabIndex = 640;
-            this.labelControl388.Text = "2、偶尔";
+            this.F10302.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10302.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10302.Appearance.Options.UseFont = true;
+            this.F10302.Appearance.Options.UseForeColor = true;
+            this.F10302.Location = new System.Drawing.Point(184, 528);
+            this.F10302.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10302.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10302.Name = "F10302";
+            this.F10302.Size = new System.Drawing.Size(46, 13);
+            this.F10302.TabIndex = 640;
+            this.F10302.Text = "2、偶尔";
             // 
-            // labelControl373
+            // F10203
             // 
-            this.labelControl373.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl373.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl373.Appearance.Options.UseFont = true;
-            this.labelControl373.Appearance.Options.UseForeColor = true;
-            this.labelControl373.Appearance.Options.UseTextOptions = true;
-            this.labelControl373.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl373.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl373.Location = new System.Drawing.Point(300, 476);
-            this.labelControl373.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl373.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl373.Name = "labelControl373";
-            this.labelControl373.Size = new System.Drawing.Size(68, 13);
-            this.labelControl373.TabIndex = 650;
-            this.labelControl373.Text = "3、经常";
+            this.F10203.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10203.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10203.Appearance.Options.UseFont = true;
+            this.F10203.Appearance.Options.UseForeColor = true;
+            this.F10203.Appearance.Options.UseTextOptions = true;
+            this.F10203.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F10203.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F10203.Location = new System.Drawing.Point(300, 476);
+            this.F10203.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10203.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10203.Name = "F10203";
+            this.F10203.Size = new System.Drawing.Size(68, 13);
+            this.F10203.TabIndex = 650;
+            this.F10203.Text = "3、经常";
             // 
-            // labelControl389
+            // F10301
             // 
-            this.labelControl389.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl389.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl389.Appearance.Options.UseFont = true;
-            this.labelControl389.Appearance.Options.UseForeColor = true;
-            this.labelControl389.Location = new System.Drawing.Point(68, 528);
-            this.labelControl389.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl389.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl389.Name = "labelControl389";
-            this.labelControl389.Size = new System.Drawing.Size(46, 13);
-            this.labelControl389.TabIndex = 627;
-            this.labelControl389.Text = "1、没有";
+            this.F10301.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10301.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10301.Appearance.Options.UseFont = true;
+            this.F10301.Appearance.Options.UseForeColor = true;
+            this.F10301.Location = new System.Drawing.Point(68, 528);
+            this.F10301.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10301.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10301.Name = "F10301";
+            this.F10301.Size = new System.Drawing.Size(46, 13);
+            this.F10301.TabIndex = 627;
+            this.F10301.Text = "1、没有";
             // 
             // checkEdit387
             // 
@@ -732,67 +732,67 @@
             this.checkEdit387.Properties.Caption = "感到精神压力";
             this.checkEdit387.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit387.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit387.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit387.Size = new System.Drawing.Size(152, 19);
             this.checkEdit387.TabIndex = 675;
             // 
-            // labelControl374
+            // F10202
             // 
-            this.labelControl374.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl374.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl374.Appearance.Options.UseFont = true;
-            this.labelControl374.Appearance.Options.UseForeColor = true;
-            this.labelControl374.Location = new System.Drawing.Point(184, 476);
-            this.labelControl374.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl374.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl374.Name = "labelControl374";
-            this.labelControl374.Size = new System.Drawing.Size(46, 13);
-            this.labelControl374.TabIndex = 636;
-            this.labelControl374.Text = "2、偶尔";
+            this.F10202.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10202.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10202.Appearance.Options.UseFont = true;
+            this.F10202.Appearance.Options.UseForeColor = true;
+            this.F10202.Location = new System.Drawing.Point(184, 476);
+            this.F10202.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10202.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10202.Name = "F10202";
+            this.F10202.Size = new System.Drawing.Size(46, 13);
+            this.F10202.TabIndex = 636;
+            this.F10202.Text = "2、偶尔";
             // 
-            // labelControl361
+            // F10004
             // 
-            this.labelControl361.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl361.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl361.Appearance.Options.UseFont = true;
-            this.labelControl361.Appearance.Options.UseForeColor = true;
-            this.labelControl361.Location = new System.Drawing.Point(364, 372);
-            this.labelControl361.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl361.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl361.Name = "labelControl361";
-            this.labelControl361.Size = new System.Drawing.Size(46, 13);
-            this.labelControl361.TabIndex = 660;
-            this.labelControl361.Text = "4、工作";
+            this.F10004.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10004.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10004.Appearance.Options.UseFont = true;
+            this.F10004.Appearance.Options.UseForeColor = true;
+            this.F10004.Location = new System.Drawing.Point(364, 372);
+            this.F10004.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10004.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10004.Name = "F10004";
+            this.F10004.Size = new System.Drawing.Size(46, 13);
+            this.F10004.TabIndex = 660;
+            this.F10004.Text = "4、工作";
             // 
-            // labelControl376
+            // F10201
             // 
-            this.labelControl376.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl376.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl376.Appearance.Options.UseFont = true;
-            this.labelControl376.Appearance.Options.UseForeColor = true;
-            this.labelControl376.Location = new System.Drawing.Point(68, 476);
-            this.labelControl376.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl376.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl376.Name = "labelControl376";
-            this.labelControl376.Size = new System.Drawing.Size(46, 13);
-            this.labelControl376.TabIndex = 624;
-            this.labelControl376.Text = "1、没有";
+            this.F10201.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10201.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10201.Appearance.Options.UseFont = true;
+            this.F10201.Appearance.Options.UseForeColor = true;
+            this.F10201.Location = new System.Drawing.Point(68, 476);
+            this.F10201.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10201.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10201.Name = "F10201";
+            this.F10201.Size = new System.Drawing.Size(46, 13);
+            this.F10201.TabIndex = 624;
+            this.F10201.Text = "1、没有";
             // 
-            // labelControl377
+            // F10103
             // 
-            this.labelControl377.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl377.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl377.Appearance.Options.UseFont = true;
-            this.labelControl377.Appearance.Options.UseForeColor = true;
-            this.labelControl377.Appearance.Options.UseTextOptions = true;
-            this.labelControl377.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl377.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl377.Location = new System.Drawing.Point(300, 424);
-            this.labelControl377.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl377.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl377.Name = "labelControl377";
-            this.labelControl377.Size = new System.Drawing.Size(72, 13);
-            this.labelControl377.TabIndex = 653;
-            this.labelControl377.Text = "3、经常";
+            this.F10103.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10103.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10103.Appearance.Options.UseFont = true;
+            this.F10103.Appearance.Options.UseForeColor = true;
+            this.F10103.Appearance.Options.UseTextOptions = true;
+            this.F10103.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F10103.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F10103.Location = new System.Drawing.Point(300, 424);
+            this.F10103.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10103.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10103.Name = "F10103";
+            this.F10103.Size = new System.Drawing.Size(72, 13);
+            this.F10103.TabIndex = 653;
+            this.F10103.Text = "3、经常";
             // 
             // checkEdit380
             // 
@@ -804,53 +804,53 @@
             this.checkEdit380.Properties.Caption = "遭受重大意外困扰";
             this.checkEdit380.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit380.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit380.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit380.Size = new System.Drawing.Size(152, 19);
             this.checkEdit380.TabIndex = 618;
             // 
-            // labelControl378
+            // F10102
             // 
-            this.labelControl378.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl378.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl378.Appearance.Options.UseFont = true;
-            this.labelControl378.Appearance.Options.UseForeColor = true;
-            this.labelControl378.Location = new System.Drawing.Point(184, 424);
-            this.labelControl378.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl378.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl378.Name = "labelControl378";
-            this.labelControl378.Size = new System.Drawing.Size(46, 13);
-            this.labelControl378.TabIndex = 645;
-            this.labelControl378.Text = "2、偶尔";
+            this.F10102.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10102.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10102.Appearance.Options.UseFont = true;
+            this.F10102.Appearance.Options.UseForeColor = true;
+            this.F10102.Location = new System.Drawing.Point(184, 424);
+            this.F10102.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10102.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10102.Name = "F10102";
+            this.F10102.Size = new System.Drawing.Size(46, 13);
+            this.F10102.TabIndex = 645;
+            this.F10102.Text = "2、偶尔";
             // 
-            // labelControl363
+            // F10003
             // 
-            this.labelControl363.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl363.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl363.Appearance.Options.UseFont = true;
-            this.labelControl363.Appearance.Options.UseForeColor = true;
-            this.labelControl363.Appearance.Options.UseTextOptions = true;
-            this.labelControl363.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl363.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl363.Location = new System.Drawing.Point(256, 372);
-            this.labelControl363.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl363.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl363.Name = "labelControl363";
-            this.labelControl363.Size = new System.Drawing.Size(60, 13);
-            this.labelControl363.TabIndex = 647;
-            this.labelControl363.Text = "3、情感";
+            this.F10003.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10003.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10003.Appearance.Options.UseFont = true;
+            this.F10003.Appearance.Options.UseForeColor = true;
+            this.F10003.Appearance.Options.UseTextOptions = true;
+            this.F10003.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F10003.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F10003.Location = new System.Drawing.Point(256, 372);
+            this.F10003.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10003.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10003.Name = "F10003";
+            this.F10003.Size = new System.Drawing.Size(60, 13);
+            this.F10003.TabIndex = 647;
+            this.F10003.Text = "3、情感";
             // 
-            // labelControl379
+            // F10101
             // 
-            this.labelControl379.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl379.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl379.Appearance.Options.UseFont = true;
-            this.labelControl379.Appearance.Options.UseForeColor = true;
-            this.labelControl379.Location = new System.Drawing.Point(68, 424);
-            this.labelControl379.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl379.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl379.Name = "labelControl379";
-            this.labelControl379.Size = new System.Drawing.Size(46, 13);
-            this.labelControl379.TabIndex = 630;
-            this.labelControl379.Text = "1、没有";
+            this.F10101.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10101.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10101.Appearance.Options.UseFont = true;
+            this.F10101.Appearance.Options.UseForeColor = true;
+            this.F10101.Location = new System.Drawing.Point(68, 424);
+            this.F10101.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10101.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10101.Name = "F10101";
+            this.F10101.Size = new System.Drawing.Size(46, 13);
+            this.F10101.TabIndex = 630;
+            this.F10101.Text = "1、没有";
             // 
             // checkEdit385
             // 
@@ -862,154 +862,154 @@
             this.checkEdit385.Properties.Caption = "工作满意度";
             this.checkEdit385.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit385.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit385.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit385.Size = new System.Drawing.Size(152, 19);
             this.checkEdit385.TabIndex = 677;
             // 
-            // labelControl364
+            // F10002
             // 
-            this.labelControl364.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl364.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl364.Appearance.Options.UseFont = true;
-            this.labelControl364.Appearance.Options.UseForeColor = true;
-            this.labelControl364.Location = new System.Drawing.Point(162, 372);
-            this.labelControl364.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl364.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl364.Name = "labelControl364";
-            this.labelControl364.Size = new System.Drawing.Size(46, 13);
-            this.labelControl364.TabIndex = 634;
-            this.labelControl364.Text = "2、经济";
+            this.F10002.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10002.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10002.Appearance.Options.UseFont = true;
+            this.F10002.Appearance.Options.UseForeColor = true;
+            this.F10002.Location = new System.Drawing.Point(162, 372);
+            this.F10002.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10002.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10002.Name = "F10002";
+            this.F10002.Size = new System.Drawing.Size(46, 13);
+            this.F10002.TabIndex = 634;
+            this.F10002.Text = "2、经济";
             // 
-            // labelControl351
+            // F09804
             // 
-            this.labelControl351.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl351.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl351.Appearance.Options.UseFont = true;
-            this.labelControl351.Appearance.Options.UseForeColor = true;
-            this.labelControl351.Location = new System.Drawing.Point(436, 268);
-            this.labelControl351.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl351.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl351.Name = "labelControl351";
-            this.labelControl351.Size = new System.Drawing.Size(46, 13);
-            this.labelControl351.TabIndex = 661;
-            this.labelControl351.Text = "4、很大";
+            this.F09804.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09804.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09804.Appearance.Options.UseFont = true;
+            this.F09804.Appearance.Options.UseForeColor = true;
+            this.F09804.Location = new System.Drawing.Point(436, 268);
+            this.F09804.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09804.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09804.Name = "F09804";
+            this.F09804.Size = new System.Drawing.Size(46, 13);
+            this.F09804.TabIndex = 661;
+            this.F09804.Text = "4、很大";
             // 
-            // labelControl365
+            // F09904
             // 
-            this.labelControl365.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl365.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl365.Appearance.Options.UseFont = true;
-            this.labelControl365.Appearance.Options.UseForeColor = true;
-            this.labelControl365.Location = new System.Drawing.Point(436, 320);
-            this.labelControl365.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl365.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl365.Name = "labelControl365";
-            this.labelControl365.Size = new System.Drawing.Size(46, 13);
-            this.labelControl365.TabIndex = 662;
-            this.labelControl365.Text = "4、很大";
+            this.F09904.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09904.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09904.Appearance.Options.UseFont = true;
+            this.F09904.Appearance.Options.UseForeColor = true;
+            this.F09904.Location = new System.Drawing.Point(436, 320);
+            this.F09904.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09904.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09904.Name = "F09904";
+            this.F09904.Size = new System.Drawing.Size(46, 13);
+            this.F09904.TabIndex = 662;
+            this.F09904.Text = "4、很大";
             // 
-            // labelControl340
+            // F09605
             // 
-            this.labelControl340.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl340.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl340.Appearance.Options.UseFont = true;
-            this.labelControl340.Appearance.Options.UseForeColor = true;
-            this.labelControl340.Location = new System.Drawing.Point(552, 164);
-            this.labelControl340.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl340.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl340.Name = "labelControl340";
-            this.labelControl340.Size = new System.Drawing.Size(72, 13);
-            this.labelControl340.TabIndex = 616;
-            this.labelControl340.Text = "5、很不满意";
+            this.F09605.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09605.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09605.Appearance.Options.UseFont = true;
+            this.F09605.Appearance.Options.UseForeColor = true;
+            this.F09605.Location = new System.Drawing.Point(552, 164);
+            this.F09605.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09605.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09605.Name = "F09605";
+            this.F09605.Size = new System.Drawing.Size(72, 13);
+            this.F09605.TabIndex = 616;
+            this.F09605.Text = "5、很不满意";
             // 
-            // labelControl366
+            // F10001
             // 
-            this.labelControl366.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl366.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl366.Appearance.Options.UseFont = true;
-            this.labelControl366.Appearance.Options.UseForeColor = true;
-            this.labelControl366.Location = new System.Drawing.Point(68, 372);
-            this.labelControl366.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl366.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl366.Name = "labelControl366";
-            this.labelControl366.Size = new System.Drawing.Size(46, 13);
-            this.labelControl366.TabIndex = 622;
-            this.labelControl366.Text = "1、健康";
+            this.F10001.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F10001.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F10001.Appearance.Options.UseFont = true;
+            this.F10001.Appearance.Options.UseForeColor = true;
+            this.F10001.Location = new System.Drawing.Point(68, 372);
+            this.F10001.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F10001.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F10001.Name = "F10001";
+            this.F10001.Size = new System.Drawing.Size(46, 13);
+            this.F10001.TabIndex = 622;
+            this.F10001.Text = "1、健康";
             // 
-            // labelControl352
+            // F09705
             // 
-            this.labelControl352.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl352.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl352.Appearance.Options.UseFont = true;
-            this.labelControl352.Appearance.Options.UseForeColor = true;
-            this.labelControl352.Location = new System.Drawing.Point(552, 216);
-            this.labelControl352.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl352.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl352.Name = "labelControl352";
-            this.labelControl352.Size = new System.Drawing.Size(72, 13);
-            this.labelControl352.TabIndex = 666;
-            this.labelControl352.Text = "5、很不满意";
+            this.F09705.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09705.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09705.Appearance.Options.UseFont = true;
+            this.F09705.Appearance.Options.UseForeColor = true;
+            this.F09705.Location = new System.Drawing.Point(552, 216);
+            this.F09705.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09705.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09705.Name = "F09705";
+            this.F09705.Size = new System.Drawing.Size(72, 13);
+            this.F09705.TabIndex = 666;
+            this.F09705.Text = "5、很不满意";
             // 
-            // labelControl367
+            // F09903
             // 
-            this.labelControl367.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl367.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl367.Appearance.Options.UseFont = true;
-            this.labelControl367.Appearance.Options.UseForeColor = true;
-            this.labelControl367.Appearance.Options.UseTextOptions = true;
-            this.labelControl367.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl367.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl367.Location = new System.Drawing.Point(300, 320);
-            this.labelControl367.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl367.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl367.Name = "labelControl367";
-            this.labelControl367.Size = new System.Drawing.Size(72, 13);
-            this.labelControl367.TabIndex = 656;
-            this.labelControl367.Text = "3、较明显";
+            this.F09903.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09903.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09903.Appearance.Options.UseFont = true;
+            this.F09903.Appearance.Options.UseForeColor = true;
+            this.F09903.Appearance.Options.UseTextOptions = true;
+            this.F09903.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F09903.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F09903.Location = new System.Drawing.Point(300, 320);
+            this.F09903.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09903.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09903.Name = "F09903";
+            this.F09903.Size = new System.Drawing.Size(72, 13);
+            this.F09903.TabIndex = 656;
+            this.F09903.Text = "3、较明显";
             // 
-            // labelControl368
+            // F09902
             // 
-            this.labelControl368.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl368.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl368.Appearance.Options.UseFont = true;
-            this.labelControl368.Appearance.Options.UseForeColor = true;
-            this.labelControl368.Location = new System.Drawing.Point(184, 320);
-            this.labelControl368.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl368.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl368.Name = "labelControl368";
-            this.labelControl368.Size = new System.Drawing.Size(59, 13);
-            this.labelControl368.TabIndex = 646;
-            this.labelControl368.Text = "2、有一点";
+            this.F09902.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09902.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09902.Appearance.Options.UseFont = true;
+            this.F09902.Appearance.Options.UseForeColor = true;
+            this.F09902.Location = new System.Drawing.Point(184, 320);
+            this.F09902.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09902.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09902.Name = "F09902";
+            this.F09902.Size = new System.Drawing.Size(59, 13);
+            this.F09902.TabIndex = 646;
+            this.F09902.Text = "2、有一点";
             // 
-            // labelControl353
+            // F09803
             // 
-            this.labelControl353.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl353.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl353.Appearance.Options.UseFont = true;
-            this.labelControl353.Appearance.Options.UseForeColor = true;
-            this.labelControl353.Appearance.Options.UseTextOptions = true;
-            this.labelControl353.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl353.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl353.Location = new System.Drawing.Point(300, 268);
-            this.labelControl353.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl353.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl353.Name = "labelControl353";
-            this.labelControl353.Size = new System.Drawing.Size(72, 13);
-            this.labelControl353.TabIndex = 649;
-            this.labelControl353.Text = "3、较明显";
+            this.F09803.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09803.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09803.Appearance.Options.UseFont = true;
+            this.F09803.Appearance.Options.UseForeColor = true;
+            this.F09803.Appearance.Options.UseTextOptions = true;
+            this.F09803.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F09803.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F09803.Location = new System.Drawing.Point(300, 268);
+            this.F09803.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09803.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09803.Name = "F09803";
+            this.F09803.Size = new System.Drawing.Size(72, 13);
+            this.F09803.TabIndex = 649;
+            this.F09803.Text = "3、较明显";
             // 
-            // labelControl369
+            // F09901
             // 
-            this.labelControl369.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl369.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl369.Appearance.Options.UseFont = true;
-            this.labelControl369.Appearance.Options.UseForeColor = true;
-            this.labelControl369.Location = new System.Drawing.Point(68, 320);
-            this.labelControl369.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl369.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl369.Name = "labelControl369";
-            this.labelControl369.Size = new System.Drawing.Size(72, 13);
-            this.labelControl369.TabIndex = 629;
-            this.labelControl369.Text = "1、几乎没有";
+            this.F09901.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09901.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09901.Appearance.Options.UseFont = true;
+            this.F09901.Appearance.Options.UseForeColor = true;
+            this.F09901.Location = new System.Drawing.Point(68, 320);
+            this.F09901.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09901.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09901.Name = "F09901";
+            this.F09901.Size = new System.Drawing.Size(72, 13);
+            this.F09901.TabIndex = 629;
+            this.F09901.Text = "1、几乎没有";
             // 
             // checkEdit383
             // 
@@ -1021,269 +1021,269 @@
             this.checkEdit383.Properties.Caption = "健康满意度";
             this.checkEdit383.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit383.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkEdit383.Size = new System.Drawing.Size(152, 20);
+            this.checkEdit383.Size = new System.Drawing.Size(152, 19);
             this.checkEdit383.TabIndex = 620;
             // 
-            // labelControl354
+            // F09802
             // 
-            this.labelControl354.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl354.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl354.Appearance.Options.UseFont = true;
-            this.labelControl354.Appearance.Options.UseForeColor = true;
-            this.labelControl354.Location = new System.Drawing.Point(184, 268);
-            this.labelControl354.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl354.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl354.Name = "labelControl354";
-            this.labelControl354.Size = new System.Drawing.Size(59, 13);
-            this.labelControl354.TabIndex = 635;
-            this.labelControl354.Text = "2、有一点";
+            this.F09802.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09802.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09802.Appearance.Options.UseFont = true;
+            this.F09802.Appearance.Options.UseForeColor = true;
+            this.F09802.Location = new System.Drawing.Point(184, 268);
+            this.F09802.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09802.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09802.Name = "F09802";
+            this.F09802.Size = new System.Drawing.Size(59, 13);
+            this.F09802.TabIndex = 635;
+            this.F09802.Text = "2、有一点";
             // 
-            // labelControl341
+            // F09604
             // 
-            this.labelControl341.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl341.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl341.Appearance.Options.UseFont = true;
-            this.labelControl341.Appearance.Options.UseForeColor = true;
-            this.labelControl341.Location = new System.Drawing.Point(436, 164);
-            this.labelControl341.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl341.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl341.Name = "labelControl341";
-            this.labelControl341.Size = new System.Drawing.Size(59, 13);
-            this.labelControl341.TabIndex = 614;
-            this.labelControl341.Text = "4、不满意";
+            this.F09604.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09604.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09604.Appearance.Options.UseFont = true;
+            this.F09604.Appearance.Options.UseForeColor = true;
+            this.F09604.Location = new System.Drawing.Point(436, 164);
+            this.F09604.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09604.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09604.Name = "F09604";
+            this.F09604.Size = new System.Drawing.Size(59, 13);
+            this.F09604.TabIndex = 614;
+            this.F09604.Text = "4、不满意";
             // 
-            // labelControl355
+            // F09704
             // 
-            this.labelControl355.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl355.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl355.Appearance.Options.UseFont = true;
-            this.labelControl355.Appearance.Options.UseForeColor = true;
-            this.labelControl355.Location = new System.Drawing.Point(436, 216);
-            this.labelControl355.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl355.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl355.Name = "labelControl355";
-            this.labelControl355.Size = new System.Drawing.Size(59, 13);
-            this.labelControl355.TabIndex = 663;
-            this.labelControl355.Text = "4、不满意";
+            this.F09704.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09704.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09704.Appearance.Options.UseFont = true;
+            this.F09704.Appearance.Options.UseForeColor = true;
+            this.F09704.Location = new System.Drawing.Point(436, 216);
+            this.F09704.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09704.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09704.Name = "F09704";
+            this.F09704.Size = new System.Drawing.Size(59, 13);
+            this.F09704.TabIndex = 663;
+            this.F09704.Text = "4、不满意";
             // 
-            // labelControl356
+            // F09801
             // 
-            this.labelControl356.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl356.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl356.Appearance.Options.UseFont = true;
-            this.labelControl356.Appearance.Options.UseForeColor = true;
-            this.labelControl356.Location = new System.Drawing.Point(68, 268);
-            this.labelControl356.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl356.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl356.Name = "labelControl356";
-            this.labelControl356.Size = new System.Drawing.Size(72, 13);
-            this.labelControl356.TabIndex = 626;
-            this.labelControl356.Text = "1、几乎没有";
+            this.F09801.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09801.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09801.Appearance.Options.UseFont = true;
+            this.F09801.Appearance.Options.UseForeColor = true;
+            this.F09801.Location = new System.Drawing.Point(68, 268);
+            this.F09801.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09801.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09801.Name = "F09801";
+            this.F09801.Size = new System.Drawing.Size(72, 13);
+            this.F09801.TabIndex = 626;
+            this.F09801.Text = "1、几乎没有";
             // 
-            // labelControl342
+            // F09505
             // 
-            this.labelControl342.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl342.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl342.Appearance.Options.UseFont = true;
-            this.labelControl342.Appearance.Options.UseForeColor = true;
-            this.labelControl342.Location = new System.Drawing.Point(552, 112);
-            this.labelControl342.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl342.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl342.Name = "labelControl342";
-            this.labelControl342.Size = new System.Drawing.Size(72, 13);
-            this.labelControl342.TabIndex = 617;
-            this.labelControl342.Text = "5、很不满意";
+            this.F09505.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09505.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09505.Appearance.Options.UseFont = true;
+            this.F09505.Appearance.Options.UseForeColor = true;
+            this.F09505.Location = new System.Drawing.Point(552, 112);
+            this.F09505.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09505.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09505.Name = "F09505";
+            this.F09505.Size = new System.Drawing.Size(72, 13);
+            this.F09505.TabIndex = 617;
+            this.F09505.Text = "5、很不满意";
             // 
-            // labelControl357
+            // F09703
             // 
-            this.labelControl357.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl357.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl357.Appearance.Options.UseFont = true;
-            this.labelControl357.Appearance.Options.UseForeColor = true;
-            this.labelControl357.Appearance.Options.UseTextOptions = true;
-            this.labelControl357.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl357.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl357.Location = new System.Drawing.Point(300, 216);
-            this.labelControl357.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl357.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl357.Name = "labelControl357";
-            this.labelControl357.Size = new System.Drawing.Size(72, 13);
-            this.labelControl357.TabIndex = 659;
-            this.labelControl357.Text = "3、一般";
+            this.F09703.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09703.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09703.Appearance.Options.UseFont = true;
+            this.F09703.Appearance.Options.UseForeColor = true;
+            this.F09703.Appearance.Options.UseTextOptions = true;
+            this.F09703.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F09703.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F09703.Location = new System.Drawing.Point(300, 216);
+            this.F09703.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09703.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09703.Name = "F09703";
+            this.F09703.Size = new System.Drawing.Size(72, 13);
+            this.F09703.TabIndex = 659;
+            this.F09703.Text = "3、一般";
             // 
-            // labelControl358
+            // F09702
             // 
-            this.labelControl358.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl358.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl358.Appearance.Options.UseFont = true;
-            this.labelControl358.Appearance.Options.UseForeColor = true;
-            this.labelControl358.Location = new System.Drawing.Point(184, 216);
-            this.labelControl358.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl358.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl358.Name = "labelControl358";
-            this.labelControl358.Size = new System.Drawing.Size(46, 13);
-            this.labelControl358.TabIndex = 642;
-            this.labelControl358.Text = "2、满意";
+            this.F09702.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09702.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09702.Appearance.Options.UseFont = true;
+            this.F09702.Appearance.Options.UseForeColor = true;
+            this.F09702.Location = new System.Drawing.Point(184, 216);
+            this.F09702.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09702.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09702.Name = "F09702";
+            this.F09702.Size = new System.Drawing.Size(46, 13);
+            this.F09702.TabIndex = 642;
+            this.F09702.Text = "2、满意";
             // 
-            // labelControl343
+            // F09603
             // 
-            this.labelControl343.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl343.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl343.Appearance.Options.UseFont = true;
-            this.labelControl343.Appearance.Options.UseForeColor = true;
-            this.labelControl343.Appearance.Options.UseTextOptions = true;
-            this.labelControl343.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl343.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl343.Location = new System.Drawing.Point(300, 164);
-            this.labelControl343.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl343.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl343.Name = "labelControl343";
-            this.labelControl343.Size = new System.Drawing.Size(72, 13);
-            this.labelControl343.TabIndex = 612;
-            this.labelControl343.Text = "3、一般";
+            this.F09603.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09603.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09603.Appearance.Options.UseFont = true;
+            this.F09603.Appearance.Options.UseForeColor = true;
+            this.F09603.Appearance.Options.UseTextOptions = true;
+            this.F09603.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F09603.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F09603.Location = new System.Drawing.Point(300, 164);
+            this.F09603.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09603.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09603.Name = "F09603";
+            this.F09603.Size = new System.Drawing.Size(72, 13);
+            this.F09603.TabIndex = 612;
+            this.F09603.Text = "3、一般";
             // 
-            // labelControl359
+            // F09701
             // 
-            this.labelControl359.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl359.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl359.Appearance.Options.UseFont = true;
-            this.labelControl359.Appearance.Options.UseForeColor = true;
-            this.labelControl359.Location = new System.Drawing.Point(68, 216);
-            this.labelControl359.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl359.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl359.Name = "labelControl359";
-            this.labelControl359.Size = new System.Drawing.Size(59, 13);
-            this.labelControl359.TabIndex = 632;
-            this.labelControl359.Text = "1、很满意";
+            this.F09701.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09701.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09701.Appearance.Options.UseFont = true;
+            this.F09701.Appearance.Options.UseForeColor = true;
+            this.F09701.Location = new System.Drawing.Point(68, 216);
+            this.F09701.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09701.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09701.Name = "F09701";
+            this.F09701.Size = new System.Drawing.Size(59, 13);
+            this.F09701.TabIndex = 632;
+            this.F09701.Text = "1、很满意";
             // 
-            // labelControl344
+            // F09602
             // 
-            this.labelControl344.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl344.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl344.Appearance.Options.UseFont = true;
-            this.labelControl344.Appearance.Options.UseForeColor = true;
-            this.labelControl344.Location = new System.Drawing.Point(184, 164);
-            this.labelControl344.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl344.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl344.Name = "labelControl344";
-            this.labelControl344.Size = new System.Drawing.Size(46, 13);
-            this.labelControl344.TabIndex = 610;
-            this.labelControl344.Text = "2、满意";
+            this.F09602.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09602.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09602.Appearance.Options.UseFont = true;
+            this.F09602.Appearance.Options.UseForeColor = true;
+            this.F09602.Location = new System.Drawing.Point(184, 164);
+            this.F09602.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09602.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09602.Name = "F09602";
+            this.F09602.Size = new System.Drawing.Size(46, 13);
+            this.F09602.TabIndex = 610;
+            this.F09602.Text = "2、满意";
             // 
-            // labelControl345
+            // F09504
             // 
-            this.labelControl345.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl345.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl345.Appearance.Options.UseFont = true;
-            this.labelControl345.Appearance.Options.UseForeColor = true;
-            this.labelControl345.Location = new System.Drawing.Point(436, 112);
-            this.labelControl345.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl345.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl345.Name = "labelControl345";
-            this.labelControl345.Size = new System.Drawing.Size(59, 13);
-            this.labelControl345.TabIndex = 615;
-            this.labelControl345.Text = "4、不满意";
+            this.F09504.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09504.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09504.Appearance.Options.UseFont = true;
+            this.F09504.Appearance.Options.UseForeColor = true;
+            this.F09504.Location = new System.Drawing.Point(436, 112);
+            this.F09504.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09504.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09504.Name = "F09504";
+            this.F09504.Size = new System.Drawing.Size(59, 13);
+            this.F09504.TabIndex = 615;
+            this.F09504.Text = "4、不满意";
             // 
-            // labelControl346
+            // F09601
             // 
-            this.labelControl346.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl346.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl346.Appearance.Options.UseFont = true;
-            this.labelControl346.Appearance.Options.UseForeColor = true;
-            this.labelControl346.Location = new System.Drawing.Point(68, 164);
-            this.labelControl346.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl346.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl346.Name = "labelControl346";
-            this.labelControl346.Size = new System.Drawing.Size(59, 13);
-            this.labelControl346.TabIndex = 605;
-            this.labelControl346.Text = "1、很满意";
+            this.F09601.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09601.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09601.Appearance.Options.UseFont = true;
+            this.F09601.Appearance.Options.UseForeColor = true;
+            this.F09601.Location = new System.Drawing.Point(68, 164);
+            this.F09601.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09601.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09601.Name = "F09601";
+            this.F09601.Size = new System.Drawing.Size(59, 13);
+            this.F09601.TabIndex = 605;
+            this.F09601.Text = "1、很满意";
             // 
-            // labelControl347
+            // F09503
             // 
-            this.labelControl347.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl347.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl347.Appearance.Options.UseFont = true;
-            this.labelControl347.Appearance.Options.UseForeColor = true;
-            this.labelControl347.Appearance.Options.UseTextOptions = true;
-            this.labelControl347.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.labelControl347.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl347.Location = new System.Drawing.Point(300, 112);
-            this.labelControl347.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl347.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl347.Name = "labelControl347";
-            this.labelControl347.Size = new System.Drawing.Size(72, 13);
-            this.labelControl347.TabIndex = 613;
-            this.labelControl347.Text = "3、一般";
+            this.F09503.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09503.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09503.Appearance.Options.UseFont = true;
+            this.F09503.Appearance.Options.UseForeColor = true;
+            this.F09503.Appearance.Options.UseTextOptions = true;
+            this.F09503.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.F09503.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.F09503.Location = new System.Drawing.Point(300, 112);
+            this.F09503.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09503.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09503.Name = "F09503";
+            this.F09503.Size = new System.Drawing.Size(72, 13);
+            this.F09503.TabIndex = 613;
+            this.F09503.Text = "3、一般";
             // 
-            // labelControl348
+            // F09502
             // 
-            this.labelControl348.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl348.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl348.Appearance.Options.UseFont = true;
-            this.labelControl348.Appearance.Options.UseForeColor = true;
-            this.labelControl348.Location = new System.Drawing.Point(184, 112);
-            this.labelControl348.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl348.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl348.Name = "labelControl348";
-            this.labelControl348.Size = new System.Drawing.Size(46, 13);
-            this.labelControl348.TabIndex = 611;
-            this.labelControl348.Text = "2、满意";
+            this.F09502.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09502.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09502.Appearance.Options.UseFont = true;
+            this.F09502.Appearance.Options.UseForeColor = true;
+            this.F09502.Location = new System.Drawing.Point(184, 112);
+            this.F09502.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09502.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09502.Name = "F09502";
+            this.F09502.Size = new System.Drawing.Size(46, 13);
+            this.F09502.TabIndex = 611;
+            this.F09502.Text = "2、满意";
             // 
-            // labelControl349
+            // F09501
             // 
-            this.labelControl349.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl349.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl349.Appearance.Options.UseFont = true;
-            this.labelControl349.Appearance.Options.UseForeColor = true;
-            this.labelControl349.Location = new System.Drawing.Point(68, 112);
-            this.labelControl349.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl349.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl349.Name = "labelControl349";
-            this.labelControl349.Size = new System.Drawing.Size(59, 13);
-            this.labelControl349.TabIndex = 608;
-            this.labelControl349.Text = "1、很满意";
+            this.F09501.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09501.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09501.Appearance.Options.UseFont = true;
+            this.F09501.Appearance.Options.UseForeColor = true;
+            this.F09501.Location = new System.Drawing.Point(68, 112);
+            this.F09501.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09501.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09501.Name = "F09501";
+            this.F09501.Size = new System.Drawing.Size(59, 13);
+            this.F09501.TabIndex = 608;
+            this.F09501.Text = "1、很满意";
             // 
-            // labelControl334
+            // F09402
             // 
-            this.labelControl334.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl334.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl334.Appearance.Options.UseFont = true;
-            this.labelControl334.Appearance.Options.UseForeColor = true;
-            this.labelControl334.Location = new System.Drawing.Point(184, 60);
-            this.labelControl334.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl334.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl334.Name = "labelControl334";
-            this.labelControl334.Size = new System.Drawing.Size(33, 13);
-            this.labelControl334.TabIndex = 609;
-            this.labelControl334.Text = "2、否";
+            this.F09402.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09402.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09402.Appearance.Options.UseFont = true;
+            this.F09402.Appearance.Options.UseForeColor = true;
+            this.F09402.Location = new System.Drawing.Point(184, 60);
+            this.F09402.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09402.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09402.Name = "F09402";
+            this.F09402.Size = new System.Drawing.Size(33, 13);
+            this.F09402.TabIndex = 609;
+            this.F09402.Text = "2、否";
             // 
-            // labelControl336
+            // F09401
             // 
-            this.labelControl336.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl336.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl336.Appearance.Options.UseFont = true;
-            this.labelControl336.Appearance.Options.UseForeColor = true;
-            this.labelControl336.Location = new System.Drawing.Point(68, 60);
-            this.labelControl336.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl336.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl336.Name = "labelControl336";
-            this.labelControl336.Size = new System.Drawing.Size(33, 13);
-            this.labelControl336.TabIndex = 606;
-            this.labelControl336.Text = "1、是";
+            this.F09401.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
+            this.F09401.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.F09401.Appearance.Options.UseFont = true;
+            this.F09401.Appearance.Options.UseForeColor = true;
+            this.F09401.Location = new System.Drawing.Point(68, 60);
+            this.F09401.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.F09401.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.F09401.Name = "F09401";
+            this.F09401.Size = new System.Drawing.Size(33, 13);
+            this.F09401.TabIndex = 606;
+            this.F09401.Text = "1、是";
             // 
-            // labelControl339
+            // FM0601
             // 
-            this.labelControl339.Appearance.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl339.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl339.Appearance.Options.UseFont = true;
-            this.labelControl339.Appearance.Options.UseForeColor = true;
-            this.labelControl339.Location = new System.Drawing.Point(4, 8);
-            this.labelControl339.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl339.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl339.Name = "labelControl339";
-            this.labelControl339.Size = new System.Drawing.Size(84, 13);
-            this.labelControl339.TabIndex = 607;
-            this.labelControl339.Text = "【心理健康】";
+            this.FM0601.Appearance.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FM0601.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.FM0601.Appearance.Options.UseFont = true;
+            this.FM0601.Appearance.Options.UseForeColor = true;
+            this.FM0601.Location = new System.Drawing.Point(4, 8);
+            this.FM0601.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.FM0601.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.FM0601.Name = "FM0601";
+            this.FM0601.Size = new System.Drawing.Size(84, 13);
+            this.FM0601.TabIndex = 607;
+            this.FM0601.Text = "【心理健康】";
             // 
             // Quest06
             // 
@@ -1322,76 +1322,76 @@
         private DevExpress.XtraEditors.CheckEdit checkEdit392;
         private DevExpress.XtraEditors.CheckEdit checkEdit397;
         private DevExpress.XtraEditors.CheckEdit checkEdit390;
-        private DevExpress.XtraEditors.LabelControl labelControl417;
+        private DevExpress.XtraEditors.LabelControl F10903;
         private DevExpress.XtraEditors.CheckEdit checkEdit388;
-        private DevExpress.XtraEditors.LabelControl labelControl418;
-        private DevExpress.XtraEditors.LabelControl labelControl403;
-        private DevExpress.XtraEditors.LabelControl labelControl419;
+        private DevExpress.XtraEditors.LabelControl F10902;
+        private DevExpress.XtraEditors.LabelControl F10803;
+        private DevExpress.XtraEditors.LabelControl F10901;
         private DevExpress.XtraEditors.CheckEdit checkEdit393;
-        private DevExpress.XtraEditors.LabelControl labelControl404;
-        private DevExpress.XtraEditors.LabelControl labelControl406;
-        private DevExpress.XtraEditors.LabelControl labelControl407;
+        private DevExpress.XtraEditors.LabelControl F10802;
+        private DevExpress.XtraEditors.LabelControl F10801;
+        private DevExpress.XtraEditors.LabelControl F10703;
         private DevExpress.XtraEditors.CheckEdit checkEdit386;
-        private DevExpress.XtraEditors.LabelControl labelControl408;
-        private DevExpress.XtraEditors.LabelControl labelControl393;
-        private DevExpress.XtraEditors.LabelControl labelControl409;
+        private DevExpress.XtraEditors.LabelControl F10702;
+        private DevExpress.XtraEditors.LabelControl F10603;
+        private DevExpress.XtraEditors.LabelControl F10701;
         private DevExpress.XtraEditors.CheckEdit checkEdit391;
-        private DevExpress.XtraEditors.LabelControl labelControl394;
-        private DevExpress.XtraEditors.LabelControl labelControl396;
-        private DevExpress.XtraEditors.LabelControl labelControl397;
+        private DevExpress.XtraEditors.LabelControl F10602;
+        private DevExpress.XtraEditors.LabelControl F10601;
+        private DevExpress.XtraEditors.LabelControl F10503;
         private DevExpress.XtraEditors.CheckEdit checkEdit384;
-        private DevExpress.XtraEditors.LabelControl labelControl398;
-        private DevExpress.XtraEditors.LabelControl labelControl383;
-        private DevExpress.XtraEditors.LabelControl labelControl399;
+        private DevExpress.XtraEditors.LabelControl F10502;
+        private DevExpress.XtraEditors.LabelControl F10403;
+        private DevExpress.XtraEditors.LabelControl F10501;
         private DevExpress.XtraEditors.CheckEdit checkEdit389;
-        private DevExpress.XtraEditors.LabelControl labelControl384;
-        private DevExpress.XtraEditors.LabelControl labelControl360;
-        private DevExpress.XtraEditors.LabelControl labelControl386;
-        private DevExpress.XtraEditors.LabelControl labelControl372;
-        private DevExpress.XtraEditors.LabelControl labelControl387;
+        private DevExpress.XtraEditors.LabelControl F10402;
+        private DevExpress.XtraEditors.LabelControl F10005;
+        private DevExpress.XtraEditors.LabelControl F10401;
+        private DevExpress.XtraEditors.LabelControl F10006;
+        private DevExpress.XtraEditors.LabelControl F10303;
         private DevExpress.XtraEditors.CheckEdit checkEdit382;
-        private DevExpress.XtraEditors.LabelControl labelControl388;
-        private DevExpress.XtraEditors.LabelControl labelControl373;
-        private DevExpress.XtraEditors.LabelControl labelControl389;
+        private DevExpress.XtraEditors.LabelControl F10302;
+        private DevExpress.XtraEditors.LabelControl F10203;
+        private DevExpress.XtraEditors.LabelControl F10301;
         private DevExpress.XtraEditors.CheckEdit checkEdit387;
-        private DevExpress.XtraEditors.LabelControl labelControl374;
-        private DevExpress.XtraEditors.LabelControl labelControl361;
-        private DevExpress.XtraEditors.LabelControl labelControl376;
-        private DevExpress.XtraEditors.LabelControl labelControl377;
+        private DevExpress.XtraEditors.LabelControl F10202;
+        private DevExpress.XtraEditors.LabelControl F10004;
+        private DevExpress.XtraEditors.LabelControl F10201;
+        private DevExpress.XtraEditors.LabelControl F10103;
         private DevExpress.XtraEditors.CheckEdit checkEdit380;
-        private DevExpress.XtraEditors.LabelControl labelControl378;
-        private DevExpress.XtraEditors.LabelControl labelControl363;
-        private DevExpress.XtraEditors.LabelControl labelControl379;
+        private DevExpress.XtraEditors.LabelControl F10102;
+        private DevExpress.XtraEditors.LabelControl F10003;
+        private DevExpress.XtraEditors.LabelControl F10101;
         private DevExpress.XtraEditors.CheckEdit checkEdit385;
-        private DevExpress.XtraEditors.LabelControl labelControl364;
-        private DevExpress.XtraEditors.LabelControl labelControl351;
-        private DevExpress.XtraEditors.LabelControl labelControl365;
-        private DevExpress.XtraEditors.LabelControl labelControl340;
-        private DevExpress.XtraEditors.LabelControl labelControl366;
-        private DevExpress.XtraEditors.LabelControl labelControl352;
-        private DevExpress.XtraEditors.LabelControl labelControl367;
-        private DevExpress.XtraEditors.LabelControl labelControl368;
-        private DevExpress.XtraEditors.LabelControl labelControl353;
-        private DevExpress.XtraEditors.LabelControl labelControl369;
+        private DevExpress.XtraEditors.LabelControl F10002;
+        private DevExpress.XtraEditors.LabelControl F09804;
+        private DevExpress.XtraEditors.LabelControl F09904;
+        private DevExpress.XtraEditors.LabelControl F09605;
+        private DevExpress.XtraEditors.LabelControl F10001;
+        private DevExpress.XtraEditors.LabelControl F09705;
+        private DevExpress.XtraEditors.LabelControl F09903;
+        private DevExpress.XtraEditors.LabelControl F09902;
+        private DevExpress.XtraEditors.LabelControl F09803;
+        private DevExpress.XtraEditors.LabelControl F09901;
         private DevExpress.XtraEditors.CheckEdit checkEdit383;
-        private DevExpress.XtraEditors.LabelControl labelControl354;
-        private DevExpress.XtraEditors.LabelControl labelControl341;
-        private DevExpress.XtraEditors.LabelControl labelControl355;
-        private DevExpress.XtraEditors.LabelControl labelControl356;
-        private DevExpress.XtraEditors.LabelControl labelControl342;
-        private DevExpress.XtraEditors.LabelControl labelControl357;
-        private DevExpress.XtraEditors.LabelControl labelControl358;
-        private DevExpress.XtraEditors.LabelControl labelControl343;
-        private DevExpress.XtraEditors.LabelControl labelControl359;
-        private DevExpress.XtraEditors.LabelControl labelControl344;
-        private DevExpress.XtraEditors.LabelControl labelControl345;
-        private DevExpress.XtraEditors.LabelControl labelControl346;
-        private DevExpress.XtraEditors.LabelControl labelControl347;
-        private DevExpress.XtraEditors.LabelControl labelControl348;
-        private DevExpress.XtraEditors.LabelControl labelControl349;
-        private DevExpress.XtraEditors.LabelControl labelControl334;
-        private DevExpress.XtraEditors.LabelControl labelControl336;
-        private DevExpress.XtraEditors.LabelControl labelControl339;
+        private DevExpress.XtraEditors.LabelControl F09802;
+        private DevExpress.XtraEditors.LabelControl F09604;
+        private DevExpress.XtraEditors.LabelControl F09704;
+        private DevExpress.XtraEditors.LabelControl F09801;
+        private DevExpress.XtraEditors.LabelControl F09505;
+        private DevExpress.XtraEditors.LabelControl F09703;
+        private DevExpress.XtraEditors.LabelControl F09702;
+        private DevExpress.XtraEditors.LabelControl F09603;
+        private DevExpress.XtraEditors.LabelControl F09701;
+        private DevExpress.XtraEditors.LabelControl F09602;
+        private DevExpress.XtraEditors.LabelControl F09504;
+        private DevExpress.XtraEditors.LabelControl F09601;
+        private DevExpress.XtraEditors.LabelControl F09503;
+        private DevExpress.XtraEditors.LabelControl F09502;
+        private DevExpress.XtraEditors.LabelControl F09501;
+        private DevExpress.XtraEditors.LabelControl F09402;
+        private DevExpress.XtraEditors.LabelControl F09401;
+        private DevExpress.XtraEditors.LabelControl FM0601;
         private DevExpress.XtraEditors.CheckEdit checkEdit395;
     }
 }
