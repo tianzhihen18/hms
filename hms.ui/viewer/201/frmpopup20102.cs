@@ -4,7 +4,6 @@ using System;
 using System.Windows.Forms;
 using weCare.Core.Entity;
 using weCare.Core.Utils;
-using System.Windows.Forms;
 
 namespace Hms.Ui
 {

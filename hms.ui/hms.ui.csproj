@@ -105,6 +105,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\debug\DevExpress.XtraEditors.v16.2.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.XtraGauges.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\debug\DevExpress.XtraGrid.v16.2.dll</HintPath>
@@ -157,6 +158,96 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="viewer\203\frmpopup2030102.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewer\203\frmpopup2030102.Designer.cs">
+      <DependentUpon>frmpopup2030102.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uccontrol\ucReportItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uccontrol\ucReportItem.Designer.cs">
+      <DependentUpon>ucReportItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewer\202\frmpopup2020101.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewer\202\frmpopup2020101.Designer.cs">
+      <DependentUpon>frmpopup2020101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewer\202\frmpopup2020701.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewer\202\frmpopup2020701.Designer.cs">
+      <DependentUpon>frmpopup2020701.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uccontrol\xrptQn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uccontrol\xrptQn.Designer.cs">
+      <DependentUpon>xrptQn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest01.Designer.cs">
+      <DependentUpon>xrptQuest01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest10.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest10.Designer.cs">
+      <DependentUpon>xrptQuest10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest09.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest09.Designer.cs">
+      <DependentUpon>xrptQuest09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest08.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest08.Designer.cs">
+      <DependentUpon>xrptQuest08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest07.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest07.Designer.cs">
+      <DependentUpon>xrptQuest07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest06.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest06.Designer.cs">
+      <DependentUpon>xrptQuest06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest05.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest05.Designer.cs">
+      <DependentUpon>xrptQuest05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest04.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest04.Designer.cs">
+      <DependentUpon>xrptQuest04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest03.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest03.Designer.cs">
+      <DependentUpon>xrptQuest03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest02.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uccontrol\xrptQuest02.Designer.cs">
+      <DependentUpon>xrptQuest02.cs</DependentUpon>
+    </Compile>
     <Compile Include="viewer\202\frmpopup2020702.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -349,11 +440,17 @@
     <Compile Include="viewer\202\frm20207.Designer.cs">
       <DependentUpon>frm20207.cs</DependentUpon>
     </Compile>
-    <Compile Include="viewer\202\frmpopup2020101.cs">
+    <Compile Include="viewer\202\frmpopup2020201.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="viewer\202\frmpopup2020101.Designer.cs">
-      <DependentUpon>frmpopup2020101.cs</DependentUpon>
+    <Compile Include="viewer\202\frmpopup2020201.Designer.cs">
+      <DependentUpon>frmpopup2020201.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewer\202\frmpopup2020202.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewer\202\frmpopup2020202.Designer.cs">
+      <DependentUpon>frmpopup2020202.cs</DependentUpon>
     </Compile>
     <Compile Include="viewer\203\frm20301.cs">
       <SubType>Form</SubType>
@@ -883,8 +980,56 @@
     <Compile Include="viewer\205\frmpopup2050102.Designer.cs">
       <DependentUpon>frmpopup2050102.cs</DependentUpon>
     </Compile>
+    <Compile Include="uccontrol\xrptCustomQn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uccontrol\xrptCustomQn.Designer.cs">
+      <DependentUpon>xrptCustomQn.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="uccontrol\ucReportItem.resx">
+      <DependentUpon>ucReportItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewer\202\frmpopup2020101.resx">
+      <DependentUpon>frmpopup2020101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewer\202\frmpopup2020701.resx">
+      <DependentUpon>frmpopup2020701.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uccontrol\xrptQn.resx">
+      <DependentUpon>xrptQn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uccontrol\xrptQuest01.resx">
+      <DependentUpon>xrptQuest01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uccontrol\xrptQuest10.resx">
+      <DependentUpon>xrptQuest10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uccontrol\xrptQuest09.resx">
+      <DependentUpon>xrptQuest09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uccontrol\xrptQuest08.resx">
+      <DependentUpon>xrptQuest08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uccontrol\xrptQuest07.resx">
+      <DependentUpon>xrptQuest07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uccontrol\xrptQuest06.resx">
+      <DependentUpon>xrptQuest06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uccontrol\xrptQuest05.resx">
+      <DependentUpon>xrptQuest05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uccontrol\xrptQuest04.resx">
+      <DependentUpon>xrptQuest04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uccontrol\xrptQuest03.resx">
+      <DependentUpon>xrptQuest03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uccontrol\xrptQuest02.resx">
+      <DependentUpon>xrptQuest02.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="viewer\202\frmpopup2020702.resx">
       <DependentUpon>frmpopup2020702.cs</DependentUpon>
     </EmbeddedResource>
@@ -984,8 +1129,11 @@
     <EmbeddedResource Include="viewer\202\frm20207.resx">
       <DependentUpon>frm20207.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="viewer\202\frmpopup2020101.resx">
-      <DependentUpon>frmpopup2020101.cs</DependentUpon>
+    <EmbeddedResource Include="viewer\202\frmpopup2020201.resx">
+      <DependentUpon>frmpopup2020201.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewer\202\frmpopup2020202.resx">
+      <DependentUpon>frmpopup2020202.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewer\203\frm20301.resx">
       <DependentUpon>frm20301.cs</DependentUpon>
@@ -995,6 +1143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="viewer\203\frmpopup2030101.resx">
       <DependentUpon>frmpopup2030101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewer\203\frmpopup2030102.resx">
+      <DependentUpon>frmpopup2030102.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewer\204\frm20401.resx">
       <DependentUpon>frm20401.cs</DependentUpon>
@@ -1250,6 +1401,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="viewer\205\frmpopup2050102.resx">
       <DependentUpon>frmpopup2050102.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uccontrol\xrptCustomQn.resx">
+      <DependentUpon>xrptCustomQn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

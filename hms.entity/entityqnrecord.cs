@@ -78,6 +78,10 @@ namespace Hms.Entity
         public System.Decimal status { get; set; }
 
         [DataMember]
+        [EntityAttribute(FieldName = "qnId", DbType = DbType.Decimal, IsPK = false, IsSeq = false, SerNo = 10)]
+        public decimal qnId { get; set; }
+
+        [DataMember]
         public string clientName { get; set; }
         [DataMember]
         public int gender { get; set; }

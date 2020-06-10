@@ -73,7 +73,6 @@ namespace Hms.Ui
                         vo.fieldId = ((DevExpress.XtraEditors.CheckEdit)ctr).Properties.AccessibleName;
                         vo.qnClassId = 1;
                         vo.typeId = "2";
-                        vo.fieldName = "";
                         vo.parentFieldId = vo.fieldId.Substring(0, 4);
                         vo.status = 1;
                         vo.sortNo = Function.Int(vo.fieldId.Replace('F', ' ').Trim());

@@ -1,6 +1,6 @@
 ﻿namespace Hms.Ui
 {
-    partial class frmpopup2020702
+    partial class frmPopup2020702
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmpopup2020702));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPopup2020702));
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.bar3 = new DevExpress.XtraBars.Bar();
-            this.barLargeButtonItem1 = new DevExpress.XtraBars.BarLargeButtonItem();
+            this.blbiSave = new DevExpress.XtraBars.BarLargeButtonItem();
             this.barLargeButtonItem2 = new DevExpress.XtraBars.BarLargeButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -44,16 +44,19 @@
             this.plContent = new System.Windows.Forms.Panel();
             this.plUserCtrl = new System.Windows.Forms.Panel();
             this.plTitle = new System.Windows.Forms.Panel();
-            this.dteQuestion = new DevExpress.XtraEditors.DateEdit();
+            this.txtBirthday = new DevExpress.XtraEditors.TextEdit();
+            this.txtClientNo = new DevExpress.XtraEditors.TextEdit();
+            this.txtSex = new DevExpress.XtraEditors.TextEdit();
+            this.lblTitle = new DevExpress.XtraEditors.LabelControl();
+            this.lueClient = new DevExpress.XtraEditors.LookUpEdit();
+            this.dteQuestDate = new DevExpress.XtraEditors.DateEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.blbiPrint = new DevExpress.XtraBars.BarLargeButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.pcBackGround)).BeginInit();
             this.pcBackGround.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl.Properties)).BeginInit();
@@ -61,8 +64,12 @@
             this.xtraScrollableControl.SuspendLayout();
             this.plContent.SuspendLayout();
             this.plTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dteQuestion.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dteQuestion.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBirthday.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtClientNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSex.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueClient.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteQuestDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteQuestDate.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pcBackGround
@@ -100,10 +107,11 @@
             this.barManager.Form = this;
             this.barManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.barButtonItem1,
-            this.barLargeButtonItem1,
-            this.barLargeButtonItem2});
+            this.blbiSave,
+            this.barLargeButtonItem2,
+            this.blbiPrint});
             this.barManager.MainMenu = this.bar3;
-            this.barManager.MaxItemId = 3;
+            this.barManager.MaxItemId = 4;
             // 
             // bar3
             // 
@@ -112,18 +120,20 @@
             this.bar3.DockRow = 0;
             this.bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar3.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barLargeButtonItem1, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.blbiSave, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.blbiPrint, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barLargeButtonItem2, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
-            this.bar3.OptionsBar.MultiLine = true;
+            this.bar3.OptionsBar.AllowQuickCustomization = false;
             this.bar3.OptionsBar.UseWholeRow = true;
             this.bar3.Text = "Main menu";
             // 
-            // barLargeButtonItem1
+            // blbiSave
             // 
-            this.barLargeButtonItem1.Caption = "保存";
-            this.barLargeButtonItem1.Id = 1;
-            this.barLargeButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLargeButtonItem1.ImageOptions.Image")));
-            this.barLargeButtonItem1.Name = "barLargeButtonItem1";
+            this.blbiSave.Caption = "保存";
+            this.blbiSave.Id = 1;
+            this.blbiSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("blbiSave.ImageOptions.Image")));
+            this.blbiSave.Name = "blbiSave";
+            this.blbiSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.blbiSave_ItemClick);
             // 
             // barLargeButtonItem2
             // 
@@ -189,50 +199,118 @@
             this.plContent.Controls.Add(this.plTitle);
             this.plContent.Location = new System.Drawing.Point(10, 4);
             this.plContent.Name = "plContent";
-            this.plContent.Size = new System.Drawing.Size(856, 181);
+            this.plContent.Size = new System.Drawing.Size(856, 226);
             this.plContent.TabIndex = 0;
             // 
             // plUserCtrl
             // 
-            this.plUserCtrl.Location = new System.Drawing.Point(15, 150);
+            this.plUserCtrl.Location = new System.Drawing.Point(15, 171);
             this.plUserCtrl.Name = "plUserCtrl";
-            this.plUserCtrl.Size = new System.Drawing.Size(828, 14);
+            this.plUserCtrl.Size = new System.Drawing.Size(828, 45);
             this.plUserCtrl.TabIndex = 479;
             // 
             // plTitle
             // 
-            this.plTitle.Controls.Add(this.dteQuestion);
+            this.plTitle.Controls.Add(this.txtBirthday);
+            this.plTitle.Controls.Add(this.txtClientNo);
+            this.plTitle.Controls.Add(this.txtSex);
+            this.plTitle.Controls.Add(this.lblTitle);
+            this.plTitle.Controls.Add(this.lueClient);
+            this.plTitle.Controls.Add(this.dteQuestDate);
             this.plTitle.Controls.Add(this.labelControl9);
             this.plTitle.Controls.Add(this.labelControl8);
-            this.plTitle.Controls.Add(this.labelControl7);
-            this.plTitle.Controls.Add(this.labelControl6);
-            this.plTitle.Controls.Add(this.labelControl5);
             this.plTitle.Controls.Add(this.labelControl1);
             this.plTitle.Controls.Add(this.labelControl2);
             this.plTitle.Controls.Add(this.labelControl3);
             this.plTitle.Controls.Add(this.labelControl4);
             this.plTitle.Location = new System.Drawing.Point(15, 14);
             this.plTitle.Name = "plTitle";
-            this.plTitle.Size = new System.Drawing.Size(828, 130);
+            this.plTitle.Size = new System.Drawing.Size(828, 151);
             this.plTitle.TabIndex = 478;
             // 
-            // dteQuestion
+            // txtBirthday
             // 
-            this.dteQuestion.EditValue = null;
-            this.dteQuestion.Location = new System.Drawing.Point(121, 92);
-            this.dteQuestion.MenuManager = this.barManager;
-            this.dteQuestion.Name = "dteQuestion";
-            this.dteQuestion.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.txtBirthday.Location = new System.Drawing.Point(165, 113);
+            this.txtBirthday.MenuManager = this.barManager;
+            this.txtBirthday.Name = "txtBirthday";
+            this.txtBirthday.Properties.AccessibleName = "Birthday";
+            this.txtBirthday.Properties.ReadOnly = true;
+            this.txtBirthday.Size = new System.Drawing.Size(123, 20);
+            this.txtBirthday.TabIndex = 27;
+            // 
+            // txtClientNo
+            // 
+            this.txtClientNo.Location = new System.Drawing.Point(520, 79);
+            this.txtClientNo.MenuManager = this.barManager;
+            this.txtClientNo.Name = "txtClientNo";
+            this.txtClientNo.Properties.AccessibleName = "ClientNo";
+            this.txtClientNo.Properties.ReadOnly = true;
+            this.txtClientNo.Size = new System.Drawing.Size(130, 20);
+            this.txtClientNo.TabIndex = 26;
+            // 
+            // txtSex
+            // 
+            this.txtSex.Location = new System.Drawing.Point(375, 80);
+            this.txtSex.MenuManager = this.barManager;
+            this.txtSex.Name = "txtSex";
+            this.txtSex.Properties.AccessibleName = "Sex";
+            this.txtSex.Properties.ReadOnly = true;
+            this.txtSex.Size = new System.Drawing.Size(56, 20);
+            this.txtSex.TabIndex = 25;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Appearance.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblTitle.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.Appearance.Options.UseFont = true;
+            this.lblTitle.Appearance.Options.UseForeColor = true;
+            this.lblTitle.Location = new System.Drawing.Point(275, 12);
+            this.lblTitle.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
+            this.lblTitle.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(50, 24);
+            this.lblTitle.TabIndex = 21;
+            this.lblTitle.Text = "标题";
+            // 
+            // lueClient
+            // 
+            this.lueClient.Location = new System.Drawing.Point(165, 80);
+            this.lueClient.Name = "lueClient";
+            this.lueClient.Properties.AccessibleName = "ClientName";
+            this.lueClient.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lueClient.Properties.Appearance.Options.UseFont = true;
+            this.lueClient.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dteQuestion.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lueClient.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("clientNo", "编号", 100, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("clientName", "姓名", 80, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("sex", "性别", 40, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("strBirthday", "出生日期", 110, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
+            this.lueClient.Properties.DropDownRows = 10;
+            this.lueClient.Properties.NullText = "";
+            this.lueClient.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.lueClient.Size = new System.Drawing.Size(123, 20);
+            this.lueClient.TabIndex = 20;
+            this.lueClient.EditValueChanged += new System.EventHandler(this.lueClient_EditValueChanged);
+            // 
+            // dteQuestDate
+            // 
+            this.dteQuestDate.EditValue = null;
+            this.dteQuestDate.Location = new System.Drawing.Point(375, 117);
+            this.dteQuestDate.MenuManager = this.barManager;
+            this.dteQuestDate.Name = "dteQuestDate";
+            this.dteQuestDate.Properties.AccessibleName = "QuestionDate";
+            this.dteQuestDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dteQuestion.Properties.DisplayFormat.FormatString = "yyyy-MM-dd";
-            this.dteQuestion.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.dteQuestion.Properties.EditFormat.FormatString = "yyyy-MM-dd";
-            this.dteQuestion.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.dteQuestion.Properties.Mask.EditMask = "yyyy-MM-dd";
-            this.dteQuestion.Size = new System.Drawing.Size(144, 20);
-            this.dteQuestion.TabIndex = 15;
+            this.dteQuestDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dteQuestDate.Properties.DisplayFormat.FormatString = "yyyy-MM-dd";
+            this.dteQuestDate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dteQuestDate.Properties.EditFormat.FormatString = "yyyy-MM-dd";
+            this.dteQuestDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dteQuestDate.Properties.Mask.EditMask = "yyyy-MM-dd";
+            this.dteQuestDate.Size = new System.Drawing.Size(130, 20);
+            this.dteQuestDate.TabIndex = 15;
             // 
             // labelControl9
             // 
@@ -240,7 +318,7 @@
             this.labelControl9.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl9.Appearance.Options.UseFont = true;
             this.labelControl9.Appearance.Options.UseForeColor = true;
-            this.labelControl9.Location = new System.Drawing.Point(50, 96);
+            this.labelControl9.Location = new System.Drawing.Point(304, 120);
             this.labelControl9.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.labelControl9.LookAndFeel.UseDefaultLookAndFeel = false;
             this.labelControl9.Name = "labelControl9";
@@ -254,7 +332,7 @@
             this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(272, 67);
+            this.labelControl8.Location = new System.Drawing.Point(90, 116);
             this.labelControl8.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.labelControl8.LookAndFeel.UseDefaultLookAndFeel = false;
             this.labelControl8.Name = "labelControl8";
@@ -262,55 +340,13 @@
             this.labelControl8.TabIndex = 13;
             this.labelControl8.Text = "出生日期：";
             // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(343, 35);
-            this.labelControl7.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl7.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(65, 13);
-            this.labelControl7.TabIndex = 12;
-            this.labelControl7.Text = "客户编号：";
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Appearance.Options.UseForeColor = true;
-            this.labelControl6.Location = new System.Drawing.Point(121, 35);
-            this.labelControl6.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl6.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(39, 13);
-            this.labelControl6.TabIndex = 11;
-            this.labelControl6.Text = "性别：";
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(121, 67);
-            this.labelControl5.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
-            this.labelControl5.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(39, 13);
-            this.labelControl5.TabIndex = 10;
-            this.labelControl5.Text = "性别：";
-            // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(6, 8);
+            this.labelControl1.Location = new System.Drawing.Point(78, 56);
             this.labelControl1.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.labelControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.labelControl1.Name = "labelControl1";
@@ -324,7 +360,7 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(50, 35);
+            this.labelControl2.Location = new System.Drawing.Point(90, 84);
             this.labelControl2.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.labelControl2.LookAndFeel.UseDefaultLookAndFeel = false;
             this.labelControl2.Name = "labelControl2";
@@ -338,7 +374,7 @@
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(50, 67);
+            this.labelControl3.Location = new System.Drawing.Point(304, 83);
             this.labelControl3.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.labelControl3.LookAndFeel.UseDefaultLookAndFeel = false;
             this.labelControl3.Name = "labelControl3";
@@ -352,7 +388,7 @@
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(272, 35);
+            this.labelControl4.Location = new System.Drawing.Point(449, 83);
             this.labelControl4.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.labelControl4.LookAndFeel.UseDefaultLookAndFeel = false;
             this.labelControl4.Name = "labelControl4";
@@ -360,7 +396,15 @@
             this.labelControl4.TabIndex = 7;
             this.labelControl4.Text = "客户编号：";
             // 
-            // frmpopup2020702
+            // blbiPrint
+            // 
+            this.blbiPrint.Caption = "打印";
+            this.blbiPrint.Id = 3;
+            this.blbiPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLargeButtonItem1.ImageOptions.Image")));
+            this.blbiPrint.Name = "blbiPrint";
+            this.blbiPrint.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.blbiPrint_ItemClick);
+            // 
+            // frmPopup2020702
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -369,8 +413,9 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Name = "frmpopup2020702";
+            this.Name = "frmPopup2020702";
             this.Text = "自定义问卷添加";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmpopup2020702_Load);
             this.Controls.SetChildIndex(this.barDockControlTop, 0);
             this.Controls.SetChildIndex(this.barDockControlBottom, 0);
@@ -386,8 +431,12 @@
             this.plContent.ResumeLayout(false);
             this.plTitle.ResumeLayout(false);
             this.plTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dteQuestion.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dteQuestion.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBirthday.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtClientNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSex.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueClient.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteQuestDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteQuestDate.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,7 +447,7 @@
         private DevExpress.XtraBars.Bar bar2;
         private DevExpress.XtraBars.BarManager barManager;
         private DevExpress.XtraBars.Bar bar3;
-        private DevExpress.XtraBars.BarLargeButtonItem barLargeButtonItem1;
+        private DevExpress.XtraBars.BarLargeButtonItem blbiSave;
         private DevExpress.XtraBars.BarLargeButtonItem barLargeButtonItem2;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
@@ -413,11 +462,14 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private System.Windows.Forms.Panel plUserCtrl;
-        private DevExpress.XtraEditors.DateEdit dteQuestion;
+        private DevExpress.XtraEditors.DateEdit dteQuestDate;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
+        public DevExpress.XtraEditors.LookUpEdit lueClient;
+        private DevExpress.XtraEditors.LabelControl lblTitle;
+        private DevExpress.XtraEditors.TextEdit txtSex;
+        private DevExpress.XtraEditors.TextEdit txtBirthday;
+        private DevExpress.XtraEditors.TextEdit txtClientNo;
+        private DevExpress.XtraBars.BarLargeButtonItem blbiPrint;
     }
 }

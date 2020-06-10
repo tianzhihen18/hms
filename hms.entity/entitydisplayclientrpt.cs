@@ -31,9 +31,7 @@ namespace Hms.Entity
         /// </summary>
         [DataMember]
         public string reportNo { get; set; }
-        /// <summary>
-        /// 体检ID
-        /// </summary>
+
         [DataMember]
         public string reportId { get; set; }
         /// <summary>
@@ -66,20 +64,6 @@ namespace Hms.Entity
         /// </summary>
         [DataMember]
         public string gradeName { get; set; }
-
-        [DataMember]
-        public string sex
-        {
-            get
-            {
-                if (gender == 1)
-                    return "男";
-                else if (gender == 2)
-                    return "女";
-                else
-                    return "不限";
-            }
-        }
 
         [DataMember]
         public string confirmState
@@ -122,6 +106,30 @@ namespace Hms.Entity
         /// </summary>
         public string company { get; set; }
 
+        public string sex
+        {
+            get
+            {
+                if (gender == 1)
+                    return "男";
+                if (gender == 2)
+                    return "女";
+                return "";
+            }
+        }
+
+        /// <summary>
+        /// 问卷日期
+        /// </summary>
+        [DataMember]
+        public string strQnDate { get; set; }
+        /// <summary>
+        /// 问卷
+        /// </summary>
+        [DataMember]
+        public EntityQnRecord qnRecord { get; set; }
+
+
         [DataMember]
         public string examinationOrgan { get; set; }
         [DataMember]
@@ -138,6 +146,7 @@ namespace Hms.Entity
             }
         }
 
+        #region  个人报告内容
         [DataMember]
         public Image image01 { get; set; }
         [DataMember]
@@ -299,6 +308,6 @@ namespace Hms.Entity
         [DataMember]
         public List<EntityMedicalAdvicecs> lstMedAdvices { get; set; }
 
-
+        #endregion  
     }
 }

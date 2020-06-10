@@ -287,7 +287,7 @@ namespace Hms.Ui
             if(lstSelectCaiRecipe == null)
             {
                 //菜分类
-                if (cai.lstCaiSlaveId != null)
+                if (cai != null)
                 {
                     foreach (var strId in cai.lstCaiSlaveId)
                     {

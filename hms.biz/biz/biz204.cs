@@ -193,13 +193,39 @@ namespace Hms.Biz
             SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
             string strSub = string.Empty;
             string Sql = string.Empty;
+            //Sql = @"select a.clientId, b.clientName,
+            //                b.clientNo,
+            //                b.gender,
+            //                b.birthday,
+            //                b.company,
+            //                b.mobile,
+            //                c.gradeName,
+            //                d.planWay,
+            //                e.planContent,
+            //                a.planRemind,
+            //                a.planDate,
+            //                a.auditState,
+            //                a.createDate,
+            //                a.createName,
+            //                a.executeTime,
+            //                a.createName
+            //                from promotionPlan a
+            //                left join clientInfo b
+            //                on a.clientId = b.id
+            //                left join userGrade c
+            //                on b.gradeId = c.id
+            //                left join promotionWayConfig d
+            //                on a.planWay = d.id
+            //                left join promotionContentConfig e
+            //                on a.planContent = e.id where  a.planState = 2 ";
+
             Sql = @"select a.clientId, b.clientName,
                             b.clientNo,
                             b.gender,
                             b.birthday,
                             b.company,
-                            b.mobile,
-                            c.gradeName,
+                            --b.mobile,
+                            b.gradename,
                             d.planWay,
                             e.planContent,
                             a.planRemind,
@@ -210,14 +236,14 @@ namespace Hms.Biz
                             a.executeTime,
                             a.createName
                             from promotionPlan a
-                            left join clientInfo b
-                            on a.clientId = b.id
-                            left join userGrade c
-                            on b.gradeId = c.id
+                            left join v_clientinfo b
+                            on a.clientId = b.clientNo
                             left join promotionWayConfig d
                             on a.planWay = d.id
                             left join promotionContentConfig e
-                            on a.planContent = e.id where  a.planState = 2 ";
+                            on a.planContent = e.id 
+							where  a.planState = 2 
+							and b.clientNo is not null  ";
 
             List<IDataParameter> lstParm = new List<IDataParameter>();
 
@@ -257,7 +283,7 @@ namespace Hms.Biz
                     vo.gender = Function.Int(dr["gender"]);
                     vo.age = Function.CalcAge(Function.Datetime(dr["birthday"]));
                     vo.company = dr["company"].ToString();
-                    vo.mobile = dr["mobile"].ToString();
+                    //vo.mobile = dr["mobile"].ToString();
                     vo.gradeName = dr["gradeName"].ToString();
                     vo.planWay = dr["planWay"].ToString();
                     vo.planContent = dr["planContent"].ToString();
@@ -377,7 +403,7 @@ namespace Hms.Biz
         /// </summary>
         /// <param name="promotionPlans"></param>
         /// <returns></returns>
-        public int SavePromotionPan(ref List<EntityPromotionPlan> promotionPlans)
+        public int SavePromotionPan(List<EntityPromotionPlan> promotionPlans)
         {
             int affect = -1;
             SqlHelper svc = null;
@@ -637,6 +663,37 @@ namespace Hms.Biz
             }
             return data;
         }
+        #endregion
+
+        #region 获取疾病模型
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public List<EntityModelAccess> GetModelAccesses()
+        {
+            List<EntityModelAccess> data = null;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            string Sql = string.Empty;
+            Sql = @"select a.modelId,
+                           a.modelName
+                      from modelAccess a ";
+            DataTable dt = svc.GetDataTable(Sql);
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                data = new List<EntityModelAccess>();
+                EntityModelAccess vo = null;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    vo = new EntityModelAccess();
+                    vo.modelId = Function.Int(dr["modelId"]);
+                    vo.modelName = dr["modelName"].ToString();
+                    data.Add(vo);
+                }
+            }
+            return data;
+        }
+
         #endregion
 
         #region Dispose

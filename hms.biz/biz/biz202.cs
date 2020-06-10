@@ -15,6 +15,188 @@ namespace Hms.Biz
     public class Biz202 : IDisposable
     {
 
+        #region 列表
+        /// <summary>
+        /// 列表
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityDisplayClientRpt> GetTjReports(List<EntityParm> parms = null)
+        {
+            List<EntityDisplayClientRpt> data = null;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            string Sql = string.Empty;
+            Sql = @"select clientName,
+                           clientNo,
+                           gender,
+                           age,
+                           company,
+                           gradeName,
+                           reportNo,
+	                       regTimes,
+	                       idcard,
+	                       reportDate
+                       from v_tjxx a where clientNo is not null ";
+            List<IDataParameter> lstParm = new List<IDataParameter>();
+            string strSub = string.Empty;
+            if (parms != null)
+            {
+                foreach (var po in parms)
+                {
+                    switch (po.key)
+                    {
+                        case "search":
+                            strSub += " and (a.clientName like '%" + po.value + "%' or a.clientNo like '" + po.value + "%' or a.reportNo like '%" + po.value + "%' )";
+                            break;
+                        case "reportDate":
+                            IDataParameter parm1 = svc.CreateParm();
+                            parm1.Value = po.value.Split('|')[0];
+                            lstParm.Add(parm1);
+                            IDataParameter parm2 = svc.CreateParm();
+                            parm2.Value = po.value.Split('|')[1];
+                            lstParm.Add(parm2);
+                            strSub += " and (a.reportDate between ? and ? )";
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+
+            Sql += strSub;
+            Sql += " order by reportDate";
+
+            DataTable dt = svc.GetDataTable(Sql, lstParm.ToArray());
+
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                data = new List<EntityDisplayClientRpt>();
+                EntityDisplayClientRpt vo = null;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    vo = new EntityDisplayClientRpt();
+                    vo.clientName = dr["clientName"].ToString();
+                    vo.clientNo = dr["clientNo"].ToString();
+                    vo.gender = Function.Int(dr["gender"]);
+                    vo.reportNo = dr["reportNo"].ToString();
+                    vo.reportDate = Function.Datetime(dr["reportDate"]).ToString("yyyy-MM-dd");
+                    vo.company = dr["company"].ToString();
+                    vo.gradeName = dr["gradeName"].ToString();
+                    vo.age = dr["age"].ToString();
+                    vo.reportCount = Function.Int(dr["regTimes"]);
+
+                    data.Add(vo);
+                }
+            }
+            return data;
+        }
+        #endregion
+
+        #region 体检项目结果名细
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="regNo"></param>
+        /// <param name="deptName"></param>
+        /// <returns></returns>
+        public Dictionary<string, List<EntityTjResult>> GetTjResult(string regNo, out List<EntityTjResult> dataResult, out List<EntityTjResult> xjResult,  out EntityTjjljy tjjljyVo)
+        {
+            dataResult = null;
+            tjjljyVo = null;
+            xjResult = null;
+            if (string.IsNullOrEmpty(regNo))
+                return null;
+
+            Dictionary<string, List<EntityTjResult>> dicDataResult = new Dictionary<string, List<EntityTjResult>>();
+            List<string> lstExaminatino = new List<string>();
+            bool pFlag = false;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            IDataParameter param = null;
+            string Sql = string.Empty;
+            Sql = @"select a.pat_name AS clientName,
+	                    a.reg_no AS regNo,
+                        a.pFlag,
+	                    a.sex,
+	                    a.examination_no AS examination,
+                        a.ttop,
+	                    a.comb_code AS itemCode,
+	                    a.comb_name AS itemName,
+	                    a.result AS itemResult,
+                        a.hint,
+	                    a.bound AS range,
+	                    a.unit,
+	                    a.doct_name AS doctName,
+	                    a.rec_date AS regDate
+                    FROM V_TJBG a
+                    WHERE a.reg_no = ?";
+            param = svc.CreateParm();
+            param.Value = regNo;
+            
+            DataTable dt = svc.GetDataTable(Sql,param);
+
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                dataResult = new List<EntityTjResult>();
+                xjResult = new List<EntityTjResult>();
+                EntityTjResult vo = null;
+                lstExaminatino = new List<string>();
+                foreach (DataRow dr in dt.Rows)
+                {
+                    vo = new EntityTjResult();
+                    vo.ttop = dr["ttop"].ToString();
+                    vo.clientName = dr["clientName"].ToString();
+                    vo.regNo = dr["regNo"].ToString();
+                    vo.pFlag = dr["pFlag"].ToString();
+                    pFlag = dr["pFlag"].ToString().Trim() == "R" ? true : false;
+                    vo.sex = dr["sex"].ToString();
+                    vo.itemName = dr["itemName"].ToString();
+                    vo.itemCode = dr["itemCode"].ToString();
+                    vo.itemResult = dr["itemResult"].ToString() + " " + dr["hint"].ToString();
+                    vo.range = dr["range"].ToString();
+                    vo.unit = dr["unit"].ToString();
+                    vo.doctName = dr["doctName"].ToString();
+                    vo.regDate = dr["regDate"].ToString();
+                    vo.examinationNo = dr["examination"].ToString();
+                    dataResult.Add(vo);
+                    if (string.IsNullOrEmpty(vo.examinationNo) || vo.ttop == "1")
+                        xjResult.Add(vo);
+                    if (string.IsNullOrEmpty(vo.examinationNo) || lstExaminatino.Contains(vo.examinationNo))
+                        continue;
+                    lstExaminatino.Add(vo.examinationNo);
+                }
+
+                if(lstExaminatino.Count > 0)
+                {
+                    foreach(var examination in lstExaminatino)
+                    {
+                        dicDataResult.Add(examination, dataResult.FindAll(r => r.examinationNo == examination));
+                    }
+                }
+            }
+
+            string sqlPt = @"select results,sumup,suggTag from V_TJPTJLJY where regNo = ?";
+            string sqlZyb = @"select results,sumup,suggTag from V_TJZYBJLJY where regNo = ?";
+
+            param = svc.CreateParm();
+            param.Value = regNo;
+            DataTable dtTjjl = null;
+            if(pFlag)
+                dtTjjl = svc.GetDataTable(sqlZyb, param);
+            else
+                dtTjjl = svc.GetDataTable(sqlPt, param);
+
+            if (dtTjjl != null && dtTjjl.Rows.Count > 0)
+            {
+                tjjljyVo = new EntityTjjljy();
+                tjjljyVo.results = dtTjjl.Rows[0]["results"].ToString();
+                tjjljyVo.sumup = dtTjjl.Rows[0]["sumup"].ToString();
+                tjjljyVo.suggTage = dtTjjl.Rows[0]["suggTag"].ToString();
+            }
+
+            return dicDataResult;
+        }
+        #endregion
+
         #region  获取表单控件
         /// <summary>
         /// 获取表单控件
@@ -118,7 +300,7 @@ namespace Hms.Biz
         }
         #endregion
 
-        #region 获取常规问卷记录
+        #region 问卷记录
         /// <summary>
         /// 
         /// </summary>
@@ -133,23 +315,47 @@ namespace Hms.Biz
                            b.clientNo,
                            b.clientName,
                            b.gender,
-						   c.gradeName,
+						   b.gradeName,
                            b.birthday,
                            a.qnName,
 						   a.qnType,
                            a.qnDate,
                            a.qnSource,
+                          a.qnId,
                            d.oper_name as recorder,
                            q.xmlData
                         from qnRecord a
                      left join qnData q
                         on a.recId = q.recId
-                     inner join clientInfo b
+                     inner join v_clientInfo b
                         on a.clientNo = b.clientNo
-					 left join userGrade c
-						on b.gradeId = c.id
                       left join code_operator d
-                        on a.recorder = d.oper_code where a.status != -1";
+                        on a.recorder = d.oper_code 
+                            where a.status != -1";
+
+            string sub = string.Empty;
+            if(parms != null)
+            {
+                foreach(EntityParm pa in parms)
+                {
+                    string key = pa.key;
+
+                    switch (key)
+                    {
+                        case "qnType":
+                            sub += " and a.qnType = '" + pa.value + "'" ;
+                            break;
+                        case "clientNo":
+                            sub += " and a.clientNo = '" + pa.value + "'";
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+
+            if (!string.IsNullOrEmpty(sub))
+                Sql += sub;
 
             DataTable dt = svc.GetDataTable(Sql);
             if (dt != null && dt.Rows.Count > 0)
@@ -166,11 +372,14 @@ namespace Hms.Biz
                     vo.gradeName = dr["gradeName"].ToString();
                     vo.age = dr["birthday"] == DBNull.Value ? "" : CalcAge.GetAge(Function.Datetime(dr["birthday"]));
                     vo.qnName = dr["qnName"].ToString();
+                    vo.qnId = Function.Dec(dr["qnId"]);
                     vo.qnSource = Function.Dec(dr["qnSource"]);
                     vo.qnDate = Function.Datetime(dr["qnDate"]);
                     vo.strQnDate = Function.Datetime(dr["qnDate"]).ToString("yyyy-MM-dd");
                     vo.recorder = dr["recorder"].ToString();
                     vo.xmlData = dr["xmlData"].ToString();
+                    if (data.Any(r => r.recId == vo.recId))
+                        continue;
                     data.Add(vo);
                 }
             }
@@ -178,7 +387,7 @@ namespace Hms.Biz
         }
         #endregion
 
-        #region 常规问卷-保存
+        #region 问卷-保存
         /// <summary>
         /// 常规问卷-保存
         /// </summary>
@@ -239,9 +448,9 @@ namespace Hms.Biz
         }
         #endregion
 
-        #region 
+        #region 问卷-删除
         /// <summary>
-        /// 常规问卷-删除
+        /// 问卷-删除
         /// </summary>
         /// <param name="sfData"></param>
         /// <param name="sfId"></param>
@@ -286,6 +495,37 @@ namespace Hms.Biz
         }
         #endregion
 
+        #region  获取自定义表单
+        /// <summary>
+        /// 获取自定义表单
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityDicQnMain> GetQnMain(List<EntityParm> parms = null)
+        {
+            List<EntityDicQnMain> data = null;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            string Sql = string.Empty;
+            Sql = @"select qnid,qnName,classId,qnDesc from dicQnMain  where classId != 1 ";
+            DataTable dt = svc.GetDataTable(Sql);
+
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                data = new List<EntityDicQnMain>();
+                EntityDicQnMain vo = null;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    vo = new EntityDicQnMain();
+                    vo.qnId = Function.Dec(dr["qnId"]);
+                    vo.qnName = dr["qnName"].ToString();
+                    vo.classId = Function.Int(dr["classId"]);
+
+                    data.Add(vo);
+                }
+            }
+            return data;
+        }
+        #endregion
 
 
         #region Dispose

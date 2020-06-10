@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.plBack = new System.Windows.Forms.Panel();
+            this.FM0903 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit455 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit453 = new DevExpress.XtraEditors.CheckEdit();
             this.F16109 = new DevExpress.XtraEditors.LabelControl();
@@ -137,7 +138,6 @@
             this.F13701 = new DevExpress.XtraEditors.LabelControl();
             this.FM0901 = new DevExpress.XtraEditors.LabelControl();
             this.FM0902 = new DevExpress.XtraEditors.LabelControl();
-            this.FM0903 = new DevExpress.XtraEditors.LabelControl();
             this.plBack.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit455.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit453.Properties)).BeginInit();
@@ -284,6 +284,16 @@
             this.plBack.Size = new System.Drawing.Size(700, 1450);
             this.plBack.TabIndex = 0;
             // 
+            // FM0903
+            // 
+            this.FM0903.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.FM0903.Appearance.Options.UseForeColor = true;
+            this.FM0903.Location = new System.Drawing.Point(96, 23);
+            this.FM0903.Name = "FM0903";
+            this.FM0903.Size = new System.Drawing.Size(381, 14);
+            this.FM0903.TabIndex = 738;
+            this.FM0903.Text = "表示每周5-6天，“总是”表示每周7天。家庭病史部分：“兄”表示兄弟姐妹";
+            // 
             // checkEdit455
             // 
             this.checkEdit455.Location = new System.Drawing.Point(44, 1372);
@@ -316,7 +326,7 @@
             this.F16109.Appearance.ForeColor = System.Drawing.Color.Black;
             this.F16109.Appearance.Options.UseFont = true;
             this.F16109.Appearance.Options.UseForeColor = true;
-            this.F16109.Location = new System.Drawing.Point(440, 1348);
+            this.F16109.Location = new System.Drawing.Point(374, 1348);
             this.F16109.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.F16109.LookAndFeel.UseDefaultLookAndFeel = false;
             this.F16109.Name = "F16109";
@@ -330,7 +340,7 @@
             this.F16105.Appearance.ForeColor = System.Drawing.Color.Black;
             this.F16105.Appearance.Options.UseFont = true;
             this.F16105.Appearance.Options.UseForeColor = true;
-            this.F16105.Location = new System.Drawing.Point(552, 1324);
+            this.F16105.Location = new System.Drawing.Point(446, 1324);
             this.F16105.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.F16105.LookAndFeel.UseDefaultLookAndFeel = false;
             this.F16105.Name = "F16105";
@@ -378,7 +388,7 @@
             this.F16108.Appearance.Options.UseTextOptions = true;
             this.F16108.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.F16108.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.F16108.Location = new System.Drawing.Point(316, 1348);
+            this.F16108.Location = new System.Drawing.Point(280, 1348);
             this.F16108.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.F16108.LookAndFeel.UseDefaultLookAndFeel = false;
             this.F16108.Name = "F16108";
@@ -420,7 +430,7 @@
             this.F16104.Appearance.ForeColor = System.Drawing.Color.Black;
             this.F16104.Appearance.Options.UseFont = true;
             this.F16104.Appearance.Options.UseForeColor = true;
-            this.F16104.Location = new System.Drawing.Point(440, 1324);
+            this.F16104.Location = new System.Drawing.Point(374, 1324);
             this.F16104.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.F16104.LookAndFeel.UseDefaultLookAndFeel = false;
             this.F16104.Name = "F16104";
@@ -451,7 +461,7 @@
             this.F16103.Appearance.Options.UseTextOptions = true;
             this.F16103.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.F16103.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.F16103.Location = new System.Drawing.Point(316, 1324);
+            this.F16103.Location = new System.Drawing.Point(280, 1324);
             this.F16103.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.F16103.LookAndFeel.UseDefaultLookAndFeel = false;
             this.F16103.Name = "F16103";
@@ -1831,26 +1841,13 @@
             this.FM0902.Appearance.ForeColor = System.Drawing.Color.Red;
             this.FM0902.Appearance.Options.UseFont = true;
             this.FM0902.Appearance.Options.UseForeColor = true;
-            this.FM0902.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.FM0902.Location = new System.Drawing.Point(96, 4);
             this.FM0902.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.FM0902.LookAndFeel.UseDefaultLookAndFeel = false;
             this.FM0902.Name = "FM0902";
-            this.FM0902.Size = new System.Drawing.Size(587, 20);
+            this.FM0902.Size = new System.Drawing.Size(580, 13);
             this.FM0902.TabIndex = 629;
             this.FM0902.Text = "答案选项中频率表示天数： \"从不\"表示0天，\"偶尔\"表示每周1-2天，\"有时\"表示每周3-4天，\"经常\"";
-            // 
-            // FM0903
-            // 
-            this.FM0903.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.FM0903.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.FM0903.Appearance.Options.UseFont = true;
-            this.FM0903.Appearance.Options.UseForeColor = true;
-            this.FM0903.Location = new System.Drawing.Point(96, 28);
-            this.FM0903.Name = "FM0903";
-            this.FM0903.Size = new System.Drawing.Size(396, 12);
-            this.FM0903.TabIndex = 737;
-            this.FM0903.Text = "表示每周5-6天，\"总是\"表示每周7天。家族病史部分：\"兄\"代表兄弟姐妹。";
             // 
             // Quest09
             // 

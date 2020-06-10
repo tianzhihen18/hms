@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using Hms.Entity;
+using weCare.Core.Utils;
 
 namespace Hms.Ui
 {
@@ -23,7 +24,7 @@ namespace Hms.Ui
         #region override
         public override void New()
         {
-            frmPopup2020101 frm = new frmPopup2020101(lstClientInfo);
+            frmPopup2020201 frm = new frmPopup2020201(lstClientInfo);
             frm.ShowDialog();
             if (frm.IsRequireRefresh)
             {
@@ -39,7 +40,7 @@ namespace Hms.Ui
             if (this.gvNormalQnRecord.SelectedRowsCount > 0)
             {
                 EntityQnRecord vo = this.gvNormalQnRecord.GetRow(this.gvNormalQnRecord.GetSelectedRows()[0]) as EntityQnRecord;
-                frmPopup2020101 frm = new frmPopup2020101(vo,lstClientInfo);
+                frmPopup2020201 frm = new frmPopup2020201(vo,lstClientInfo);
                 frm.ShowDialog();
                 if (frm.IsRequireRefresh)
                 {
@@ -62,7 +63,12 @@ namespace Hms.Ui
 
             using (ProxyHms proxy = new ProxyHms())
             {
-                lstQnRecords = proxy.Service.GetQnRecords();
+                List<EntityParm> parms = new List<EntityParm>();
+                EntityParm vo = new EntityParm();
+                vo.key = "qnType";
+                vo.value = "1";
+                parms.Add(vo);
+                lstQnRecords = proxy.Service.GetQnRecords(parms);
             }
             this.gcNormalQnRecord.DataSource = lstQnRecords;
             this.gcNormalQnRecord.RefreshDataSource();
@@ -139,7 +145,15 @@ namespace Hms.Ui
             using (ProxyHms proxy = new ProxyHms())
             {
                 lstQnRecords = proxy.Service.GetQnRecords();
-                lstClientInfo = proxy.Service.GetClientInfos();
+
+                List<EntityParm> dicParm = new List<EntityParm>();
+                string beginDate = DateTime.Now.AddDays(-7).ToString("yyyy.MM.dd");
+                string endDate = DateTime.Now.ToString("yyyy.MM.dd");
+                if (beginDate != string.Empty && endDate != string.Empty)
+                {
+                    dicParm.Add(Function.GetParm("genDate", beginDate + "|" + endDate));
+                }
+                lstClientInfo = proxy.Service.GetClientInfoAndRpt(dicParm);
             }
             this.gcNormalQnRecord.DataSource = lstQnRecords;
             this.gcNormalQnRecord.RefreshDataSource();

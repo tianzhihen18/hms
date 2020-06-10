@@ -57,6 +57,33 @@ namespace Hms.Svc
 
         #region 202 健康档案
         /// <summary>
+        /// 体检报告
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityDisplayClientRpt> GetTjReports(List<EntityParm> parms = null)
+        {
+            using (Biz202 biz = new Biz202())
+            {
+                return biz.GetTjReports(parms);
+            }
+        }
+
+        /// <summary>
+        /// 体检报告结果
+        /// </summary>
+        /// <param name="regNo"></param>
+        /// <param name="deptName"></param>
+        /// <returns></returns>
+        public Dictionary<string, List<EntityTjResult>> GetTjResult(string regNo, out List<EntityTjResult> dataResult, out List<EntityTjResult> xjResult, out EntityTjjljy tjjljyVo)
+        {
+            using (Biz202 biz = new Biz202())
+            {
+                return biz.GetTjResult(regNo,out dataResult,out xjResult, out tjjljyVo);
+            }
+        }
+
+        /// <summary>
         /// 
         /// </summary>
         /// <param name="parms"></param>
@@ -122,6 +149,19 @@ namespace Hms.Svc
                 return biz.DelQnRecord(qnRecords);
             }
         }
+
+        /// <summary>
+        /// 获取自定义问卷
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityDicQnMain> GetQnMain(List<EntityParm> parms = null)
+        {
+            using (Biz202 biz = new Biz202())
+            {
+                return biz.GetQnMain(parms);
+            }
+        }
         #endregion
 
         #region 203 健康报告
@@ -136,6 +176,45 @@ namespace Hms.Svc
             using (Biz203 biz = new Biz203())
             {
                 return biz.GetClientReports(parms);
+            }
+        }
+
+        /// <summary>
+        /// 重要指标字典
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityReportMainItemConfig> GetReportMainItemConfig(List<EntityParm> parms = null)
+        {
+            using (Biz203 biz = new Biz203())
+            {
+                return biz.GetReportMainItemConfig(parms);
+            }
+        }
+
+        /// <summary>
+        /// 模型参数
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityModelParam> GetModelParam(List<EntityParm> parms = null)
+        {
+            using (Biz203 biz = new Biz203())
+            {
+                return biz.GetModelParam(parms);
+            }
+        }
+
+        /// <summary>
+        /// 疾病模型分析要点
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityModelAnalysisPoint> GetModelAnalysisPoint(List<EntityParm> parms = null)
+        {
+            using (Biz203 biz = new Biz203())
+            {
+                return biz.GetModelAnalysisPoint(parms);
             }
         }
         #endregion
@@ -164,6 +243,20 @@ namespace Hms.Svc
             using (Biz204 biz = new Biz204())
             {
                 return biz.GetPromotionTemplateConfigs(parms);
+            }
+        }
+
+        /// <summary>
+        /// 保存计划
+        /// </summary>
+        /// <param name="promotionPlans"></param>
+        /// <returns></returns>
+
+        public int SavePromotionPan(List<EntityPromotionPlan> promotionPlans)
+        {
+            using (Biz204 biz = new Biz204())
+            {
+                return biz.SavePromotionPan(promotionPlans);
             }
         }
 
@@ -251,6 +344,18 @@ namespace Hms.Svc
             using (Biz204 biz = new Biz204())
             {
                 return biz.GetReportItems(reportId);
+            }
+        }
+
+        /// <summary>
+        /// 获取疾病模型
+        /// </summary>
+        /// <returns></returns>
+        public List<EntityModelAccess> GetModelAccesses()
+        {
+            using (Biz204 biz = new Biz204())
+            {
+                return biz.GetModelAccesses();
             }
         }
 

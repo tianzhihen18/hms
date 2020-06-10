@@ -14,7 +14,7 @@ namespace Hms.Ui
 {
     public partial class frmPopup2030101  : frmBasePopup
     {
-        public frmPopup2030101(EntityDisplayClientRpt _rpt =null)
+        public frmPopup2030101(EntityClientReport _rpt =null)
         {
             InitializeComponent();
             rpt = _rpt;
@@ -24,7 +24,7 @@ namespace Hms.Ui
         /// <summary>
         /// 
         /// </summary>
-        EntityDisplayClientRpt rpt { get; set; }
+        EntityClientReport rpt { get; set; }
         xRptPerson xr;
         #endregion
 

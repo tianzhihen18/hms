@@ -8,6 +8,12 @@ using Hms.Entity;
 using System.Drawing;
 using System.IO;
 using System.Reflection;
+using DevExpress.XtraEditors.Controls;
+using DevExpress.Utils;
+using DevExpress.Data;
+using weCare.Core.Utils;
+using System.Xml;
+using System.Linq;
 
 namespace Hms.Ui
 {
@@ -20,7 +26,12 @@ namespace Hms.Ui
 
 
         #region var/property
+        List<EntityModelAnalysisPoint> lstModelPoint { get; set; }
+        List<EntityModelParam> lstModelParam { get; set; }
         List<EntityDisplayClientRpt> lstClientInfo { get; set; }
+        List<EntityTjResult> lstXjResult;
+        List<EntityTjResult> lstTjResult;
+        EntityTjjljy tjjljyVo;
         #endregion
 
         #region  override
@@ -29,38 +40,151 @@ namespace Hms.Ui
         /// </summary>
         public override void Search()
         {
-            string name = this.txtName.Text;
+            string search = this.txtSearch.Text;
+            List<EntityParm> dicParm = new List<EntityParm>();
+            string beginDate = this.dteBegin.Text.Replace('-', '.') + " 00:00:00";
+            string endDate = this.dteEnd.Text.Replace('-', '.') + " 23:59:59";
+            if (beginDate != string.Empty && endDate != string.Empty)
+            {
+                dicParm.Add(Function.GetParm("reportDate", beginDate + "|" + endDate));
+            }
+            if (!string.IsNullOrEmpty(search))
+            {
+                dicParm.Add(Function.GetParm("search", search));
+            }
+            using (ProxyHms proxy = new ProxyHms())
+            {
+                this.gridControl.DataSource = proxy.Service.GetClientReports(dicParm);
+            }
 
-            if (!string.IsNullOrEmpty(name))
-            {
-                this.gridControl.DataSource = this.lstClientInfo.FindAll(r => r.clientName.Contains(name));
-            }
-            else
-            {
-                this.gridControl.DataSource = this.lstClientInfo;
-            }
             this.gridControl.RefreshDataSource();
         }
 
+        #region 生成个人报告
         public override void Edit()
         {
-            EntityDisplayClientRpt rpt = GetRowObject();
+            EntityDisplayClientRpt disClientRpt = GetRowObject();
+            EntityClientReport rpt = new EntityClientReport();
+            rpt.clientName = disClientRpt.clientName;
+            rpt.clientNo = disClientRpt.clientNo;
+            rpt.reportDate = disClientRpt.reportDate;
+            rpt.reportNo = disClientRpt.reportNo;
+            rpt.sex = disClientRpt.sex;
             rpt.image01 = ReadImageFile("pic01.png");
             rpt.image02 = ReadImageFile("pic02.jpg");
             rpt.image03 = ReadImageFile("pic03.png");
             rpt.image04 = ReadImageFile("pic04.png");
             rpt.image05 = ReadImageFile("pic05.png");
-            rpt.imageFx = ReadImageFile("picFx.png");
             rpt.imageTip = ReadImageFile("picTip.png");
             rpt.image07 = ReadImageFile("pic07.png");
-            rpt.lstGxy = GetGxy();
-            rpt.lstMainIndicate = GetMainIndicate();
-            rpt.lstAdPeItemBse = GetAdPebse();
-            rpt.lstAdPeItemSpecial = GetAdPeSpecial();
-            rpt.lstMedAdvices = GetMedicalAdvicecs();
+            #region 健康汇总及重要指标
+            rpt.lstMainItem = GetMainIndicate();
+            if (tjjljyVo != null)
+                rpt.tjSumup = tjjljyVo.sumup;
+            #endregion
+
+            #region 高血压
+            rpt.lstGxyModelParam = GetModelParam(1);
+            //预防要点
+            List<int> lstPoint = new List<int>();
+            if(rpt.lstGxyModelParam !=null)
+            {
+                foreach(var pVo in rpt.lstGxyModelParam)
+                {
+                    EntityEvaluateParams vo = rpt.lstGxyModelParam.Find(r=>r.paramNo == pVo.paramNo);
+                    if(vo != null && !lstPoint.Contains(vo.pointId))
+                    {
+                        lstPoint.Add(vo.pointId);
+                    }
+                }
+
+                for(int i =0;i<lstPoint.Count;i++)
+                {
+                    if (i == 0)
+                        rpt.gxyPoint1 = lstModelPoint.Find(r=>r.id == lstPoint[0]).pintAdvice;
+                    if (i == 1)
+                        rpt.gxyPoint2 = lstModelPoint.Find(r => r.id == lstPoint[1]).pintAdvice;
+                    if (i == 2)
+                        rpt.gxyPoint3 = lstModelPoint.Find(r => r.id == lstPoint[2]).pintAdvice;
+                    if (i == 3)
+                        rpt.gxyPoint4 = lstModelPoint.Find(r => r.id == lstPoint[3]).pintAdvice;
+                    if (i == 4)
+                        rpt.gxyPoint5 = lstModelPoint.Find(r => r.id == lstPoint[4]).pintAdvice;
+                    if (i == 5)
+                        rpt.gxyPoint6 = lstModelPoint.Find(r => r.id == lstPoint[5]).pintAdvice;
+                    if (i == 6)
+                        rpt.gxyPoint7 = lstModelPoint.Find(r => r.id == lstPoint[6]).pintAdvice;
+                    if (i == 7)
+                        rpt.gxyPoint8 = lstModelPoint.Find(r => r.id == lstPoint[7]).pintAdvice;
+                }
+            }
+            
+            decimal gxyBestDf = 0;
+            rpt.gxyDf = CalcModelResult(1,out gxyBestDf);
+            rpt.gxyBestDf = gxyBestDf;
+            rpt.gxyAbasableDf = rpt.gxyDf - rpt.gxyBestDf;
+            if (rpt.gxyDf <= 5)
+                rpt.imgGxyFx01 = ReadImageFile("picFx.png");
+            else if(rpt.gxyDf > 5 && rpt.gxyDf < 20)
+                rpt.imgGxyFx02 = ReadImageFile("picFx.png");
+            else if (rpt.gxyDf > 20 && rpt.gxyDf < 50)
+                rpt.imgGxyFx03 = ReadImageFile("picFx.png");
+            else if (rpt.gxyDf >= 50)
+                rpt.imgGxyFx04 = ReadImageFile("picFx.png");
+
+            rpt.lstEvaluateGxy = new List<EntityEvaluateResult>();
+            EntityEvaluateResult voEr = new EntityEvaluateResult();
+            voEr.result = Function.Double(rpt.gxyDf.ToString("0.00")) ;
+            voEr.evaluationName = "本次结果";
+            rpt.lstEvaluateGxy.Add(voEr);
+            EntityEvaluateResult voEb = new EntityEvaluateResult();
+            voEb.result = Function.Double(rpt.gxyBestDf.ToString("0.00"));
+            voEb.evaluationName = "最佳状态";
+            rpt.lstEvaluateGxy.Add(voEb);
+            EntityEvaluateResult voEa = new EntityEvaluateResult();
+            voEa.result = 18;
+            voEa.evaluationName = "平均水平";
+            rpt.lstEvaluateGxy.Add(voEa);
+            #endregion
+
             frmPopup2030101 frm = new frmPopup2030101(rpt);
             frm.ShowDialog();
+
         }
+        #endregion
+
+        #region 问卷
+        /// <summary>
+        /// 问卷
+        /// </summary>
+
+        public override void Remind()
+        {
+            List<EntityQnRecord> dataQn = null;
+            EntityDisplayClientRpt vo = GetRowObject();
+            if (vo != null)
+            {
+                List<EntityParm> lstParms = new List<EntityParm>();
+                EntityParm parm = new EntityParm();
+                parm.key = "clientNo";
+                parm.value = vo.clientNo;
+                lstParms.Add(parm);
+                using (ProxyHms proxy = new ProxyHms())
+                {
+                    dataQn = proxy.Service.GetQnRecords(lstParms);
+                }
+
+                frmPopup2030102 frm = new frmPopup2030102(dataQn);
+                frm.ShowDialog();
+
+                if (frm.isSelect)
+                {
+                    vo.strQnDate = frm.qnRecord.strQnDate;
+                    vo.qnRecord = frm.qnRecord;
+                }
+            }
+        }
+        #endregion
 
         #endregion
 
@@ -72,6 +196,15 @@ namespace Hms.Ui
             try
             {
                 uiHelper.BeginLoading(this);
+                this.dteBegin.Text = DateTime.Now.AddDays(-7).ToString("yyyy-MM-dd");
+                this.dteEnd.Text = DateTime.Now.ToString("yyyy-MM-dd");
+
+                using (ProxyHms proxy = new ProxyHms())
+                {
+                    lstModelParam = proxy.Service.GetModelParam();
+                    lstModelPoint = proxy.Service.GetModelAnalysisPoint();
+                }
+
                 RefreshData();
             }
             finally
@@ -102,9 +235,16 @@ namespace Hms.Ui
         void LoadQnDataSource()
         {
             lstClientInfo = null;
+            List<EntityParm> dicParm = new List<EntityParm>();
+            string beginDate = this.dteBegin.Text + " 00:00:00";
+            string endDate = this.dteEnd.Text + " 23:59:59";
+            if (beginDate != string.Empty && endDate != string.Empty)
+            {
+                dicParm.Add(Function.GetParm("reportDate", beginDate + "|" + endDate));
+            }
             using (ProxyHms proxy = new ProxyHms())
             {
-                lstClientInfo = proxy.Service.GetClientReports();
+                lstClientInfo = proxy.Service.GetClientReports(dicParm);
             }
         }
         #endregion
@@ -114,174 +254,247 @@ namespace Hms.Ui
         /// 重要指标
         /// </summary>
         /// <returns></returns>
-        internal List<EntityEvaluateParams> GetMainIndicate()
+        internal List<EntityReportMainItem> GetMainIndicate()
         {
-            List<EntityEvaluateParams> data = new List<EntityEvaluateParams>();
-            EntityEvaluateParams vo1 = new EntityEvaluateParams();
-            vo1.item = "身高";
-            vo1.result = "176.5";
-            vo1.range = "";
-            vo1.unit = "cm";
-            data.Add(vo1);
-            EntityEvaluateParams vo2 = new EntityEvaluateParams();
-            vo2.item = "体重";
-            vo2.result = "72.2";
-            vo2.range = "";
-            vo2.unit = "kg";
-            data.Add(vo2);
-            EntityEvaluateParams vo3 = new EntityEvaluateParams();
-            vo3.item = "身高体重指数";
-            vo3.result = "23.05";
-            vo3.range = "";
-            vo3.unit = "";
-            data.Add(vo3);
-
-            EntityEvaluateParams vo4 = new EntityEvaluateParams();
-            vo4.item = "收缩压";
-            vo4.result = "114";
-            vo4.range = "130 - 139";
-            vo4.unit = "mmHg";
-            data.Add(vo4);
-
-            EntityEvaluateParams vo5 = new EntityEvaluateParams();
-            vo5.item = "舒张压";
-            vo5.result = "75";
-            vo5.range = "85 - 89";
-            vo5.unit = "mmHg";
-            data.Add(vo5);
-
-            EntityEvaluateParams vo6 = new EntityEvaluateParams();
-            vo6.pic = ReadImageFile("pic06.png");
-            vo6.item = "尿酸（UA）";
-            vo6.result = "488 ↑";
-            vo6.range = "90 - 420";
-            vo6.unit = "umol/L";
-            data.Add(vo6);
-
-            EntityEvaluateParams vo7 = new EntityEvaluateParams();
-            vo7.item = "总胆固醇(TCHO)";
-            vo7.result = "3.76";
-            vo7.range = "3.76";
-            vo7.unit = "mmol/L";
-            data.Add(vo7);
-
-            EntityEvaluateParams vo8 = new EntityEvaluateParams();
-            vo8.item = "甘油三酯(TG)";
-            vo8.result = "1.74";
-            vo8.range = "0.41-1.86";
-            vo8.unit = "mmol/L";
-            data.Add(vo8);
-
-            EntityEvaluateParams vo9 = new EntityEvaluateParams();
-            vo9.item = "高密度脂蛋白胆固醇(HDL - C)";
-            vo9.result = "1.29";
-            vo9.range = "0.83-2.16";
-            vo9.unit = "mmol/L";
-            data.Add(vo9);
-
-            EntityEvaluateParams vo10 = new EntityEvaluateParams();
-            vo10.item = "低密度脂蛋白胆固醇(LDL - C)";
-            vo10.result = "2.18";
-            vo10.range = "0-3.10";
-            vo10.unit = "mmol/L";
-            data.Add(vo10);
-
-            EntityEvaluateParams vo11 = new EntityEvaluateParams();
-            vo11.item = "糖化血红蛋白(HbA1c))";
-            vo11.result = "4.6";
-            vo11.range = "3-6.2";
-            vo11.unit = "%";
-            data.Add(vo11);
-
-            EntityEvaluateParams vo12 = new EntityEvaluateParams();
-            vo12.item = "空腹血糖(GLU)";
-            vo12.result = "4.92";
-            vo12.range = "3.9-6.1";
-            vo12.unit = "mmol/L";
-            data.Add(vo12);
-
-            EntityEvaluateParams vo13 = new EntityEvaluateParams();
-            vo13.item = "同型半胱氨酸(HCY)";
-            vo13.result = "9.1";
-            vo13.range = "4.0-15.0";
-            vo13.unit = "mmol/L";
-            data.Add(vo13);
+            List<EntityReportMainItem> data = new List<EntityReportMainItem>();
+            List<EntityReportMainItemConfig> lstMainItemConfig;
+            EntityDisplayClientRpt vo = GetRowObject();
+            using (ProxyHms proxy = new ProxyHms())
+            {
+                proxy.Service.GetTjResult(vo.reportNo, out lstTjResult, out lstXjResult, out tjjljyVo);
+                lstMainItemConfig = proxy.Service.GetReportMainItemConfig();
+            }
+            if (lstTjResult == null)
+                return null;
+            EntityReportMainItem mainItem;
+            foreach (var mConfig in lstMainItemConfig)
+            {
+                EntityTjResult result = lstTjResult.Find(r => r.itemCode == mConfig.itemCode);
+                if (result != null)
+                {
+                    mainItem = new EntityReportMainItem();
+                    mainItem.reportId = result.regNo;
+                    mainItem.sectionName = result.itemName;
+                    mainItem.itemName = result.itemName;
+                    mainItem.itemValue = result.itemResult;
+                    mainItem.itemUnits = result.unit;
+                    mainItem.itemRefrange = result.range;
+                    mainItem.isNormal = result.hint;
+                    if (result.ttop == "2" && !string.IsNullOrEmpty(result.examinationNo))
+                    {
+                        EntityTjResult resultTmp = lstTjResult.Find(r => r.itemCode == result.examinationNo);
+                        mainItem.sectionName = resultTmp.itemName;
+                    }
+                    data.Add(mainItem);
+                }
+            }
 
             return data;
         }
         #endregion
 
-        #region 高血压
+        #region 疾病模型主要评估参数
         /// <summary>
-        /// 高血压
+        /// 疾病模型主要评估参数
         /// </summary>
         /// <returns></returns>
-        internal List<EntityEvaluateParams> GetGxy()
+        internal List<EntityEvaluateParams> GetModelParam(int modelId)
         {
             List<EntityEvaluateParams> data = new List<EntityEvaluateParams>();
-            EntityEvaluateParams vo1 = new EntityEvaluateParams();
-            vo1.item = "身高体重指数";
-            vo1.result = "23.05";
-            vo1.range = "";
-            vo1.unit = "";
-            data.Add(vo1);
-            EntityEvaluateParams vo2 = new EntityEvaluateParams();
-            vo2.item = "收缩压";
-            vo2.result = "114";
-            vo2.range = "130－139";
-            vo2.unit = "mmHg";
-            data.Add(vo2);
-            EntityEvaluateParams vo3 = new EntityEvaluateParams();
-            vo3.item = "舒张压";
-            vo3.result = "舒张压";
-            vo3.range = "85－89";
-            vo3.unit = "";
-            data.Add(vo3);
+            Dictionary<string, string> dicData = new Dictionary<string, string>();
+            EntityEvaluateParams param = null;
+            List<EntityModelParam> lstModelParamGxy = lstModelParam.FindAll(r => r.modelId == modelId && r.isMain == "1");
+            EntityDisplayClientRpt vo = GetRowObject();
+            if (lstModelParamGxy != null )
+            {
+                foreach (var model in lstModelParamGxy)
+                {
+                    if (model.paramNo.Contains("F"))        //问卷
+                    {
+                        if (!string.IsNullOrEmpty(vo.qnRecord.xmlData))
+                        {
+                            XmlDocument document = new XmlDocument();
+                            document.LoadXml(vo.qnRecord.xmlData);
+                            XmlNodeList list = document["FormData"].ChildNodes;
+                            dicData = Function.ReadXML(vo.qnRecord.xmlData);
+                            if (dicData.ContainsKey(model.paramNo))
+                            {
+                                string parentFieldId = model.parentFieldId;
+                                param = data.Find(r => r.itemCode == parentFieldId);
+                                if (param == null)
+                                {
+                                    param = new EntityEvaluateParams();
+                                    param.paramNo = model.paramNo;
+                                    param.itemCode = model.parentFieldId;
+                                    param.itemName = model.paramName;
+                                    param.range = model.normalRange;
+                                    param.pointId = model.pointId;
+                                    if (model.judgeType == 2)
+                                    {
+                                        if (Function.Dec(dicData[model.paramNo]) == model.judgeValue)
+                                            param.result = model.judgeRange;
+                                        else
+                                            param.result = "未填";
+                                    }
+                                    else
+                                    {
+                                        param.result = dicData[model.paramNo];
+                                    }
 
-            EntityEvaluateParams vo4 = new EntityEvaluateParams();
-            vo4.item = "饮食喜好咸";
-            vo4.result = "未填";
-            vo4.range = "否";
-            vo4.unit = "";
-            data.Add(vo4);
-
-            EntityEvaluateParams vo5 = new EntityEvaluateParams();
-            vo5.item = "每次运动锻炼时间";
-            vo5.result = "未填";
-            vo5.range = "30~<60分钟";
-            vo5.unit = "";
-            data.Add(vo5);
-
-            EntityEvaluateParams vo6 = new EntityEvaluateParams();
-            vo6.item = "饮酒状态";
-            vo6.result = "未填";
-            vo6.range = "从不";
-            vo6.unit = "";
-            data.Add(vo6);
-
-            EntityEvaluateParams vo7 = new EntityEvaluateParams();
-            vo7.item = "总胆固醇(TCHO)";
-            vo7.result = "3.76";
-            vo7.range = "2.9~5.7";
-            vo7.unit = "mmol/L";
-            data.Add(vo7);
-
-
-            EntityEvaluateParams vo8 = new EntityEvaluateParams();
-            vo8.item = "低密度脂蛋白胆固醇(LDL-C)";
-            vo8.result = "2.18";
-            vo8.range = "2.18";
-            vo8.unit = "mmol/L";
-            data.Add(vo8);
-
-            EntityEvaluateParams vo9 = new EntityEvaluateParams();
-            vo9.item = "糖尿病";
-            vo9.result = "无";
-            vo9.range = "无";
-            vo9.unit = "";
-            data.Add(vo9);
+                                    data.Add(param);
+                                }
+                                else
+                                {
+                                    if (model.judgeType == 2)
+                                    {
+                                        if (Function.Dec(dicData[model.paramNo]) == model.judgeValue)
+                                            param.result = model.judgeRange;
+                                    }
+                                    else
+                                    {
+                                        param.result = dicData[model.paramNo];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else                            //体检报告
+                    {
+                        if (lstTjResult == null)
+                            continue;
+                        param = new EntityEvaluateParams();
+                        param.itemCode = model.paramNo;
+                        if (data.Any(r => r.itemCode.Contains(model.paramNo)))
+                            continue;
+                        if (!lstTjResult.Any(r => r.itemCode == param.itemCode))
+                            continue;
+                        param.pointId = model.pointId;
+                        param.itemName = lstTjResult.Find(r => r.itemCode == param.itemCode).itemName;
+                        param.result = lstTjResult.Find(r => r.itemCode == param.itemCode).itemResult;
+                        param.range = lstTjResult.Find(r => r.itemCode == param.itemCode).range;
+                        data.Add(param);
+                    }
+                }
+            }
 
             return data;
+        }
+        #endregion
+
+        #region 计算疾病风险评估得分
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="modelId"></param>
+        /// <returns></returns>
+        internal decimal  CalcModelResult(int modelId,out decimal bestDf)
+        {
+            decimal result = 0;
+            bestDf = 0;
+            Dictionary<string, string> dicData = new Dictionary<string, string>();
+            EntityDisplayClientRpt vo = GetRowObject();
+            List<EntityModelParam> lstModelParamGxy = lstModelParam.FindAll(r => r.modelId == modelId);
+            
+            if (lstModelParamGxy != null)
+            {
+                foreach (var model in lstModelParamGxy)
+                {
+                    if (model.paramNo.Contains("F")) //问卷
+                    {
+                        if (!string.IsNullOrEmpty(vo.qnRecord.xmlData))
+                        {
+                            XmlDocument document = new XmlDocument();
+                            document.LoadXml(vo.qnRecord.xmlData);
+                            XmlNodeList list = document["FormData"].ChildNodes;
+                            dicData = Function.ReadXML(vo.qnRecord.xmlData);
+
+                            //评估得分
+                            if (dicData.ContainsKey(model.paramNo))
+                            {
+                                decimal score = 0;
+                                if (dicData[model.paramNo] == "1")
+                                {
+                                    score += Function.Dec(model.score);
+                                }
+
+                                result += score;
+                            }
+
+                            //最佳状态 得分
+                            string parentFieldId = model.parentFieldId;
+                            EntityModelParam modelBest = lstModelParamGxy.FindAll(r => r.parentFieldId == parentFieldId && r.isBest == "1").FirstOrDefault();
+                            if(modelBest != null)
+                            {
+                                bestDf += Function.Dec(modelBest.score);
+                            }
+                        }
+                    }
+                    else                            //体检报告
+                    {
+                        if (lstTjResult == null)
+                            continue;
+                        EntityTjResult tjVo = lstTjResult.Find(r => r.itemCode == model.paramNo);
+                        if (tjVo == null)
+                            continue;
+                        decimal tjValue = Function.Dec(tjVo.itemResult);
+                        List<EntityModelParam> lstModelTmp = lstModelParam.FindAll(r => r.paramNo == model.paramNo);
+                        if(lstModelTmp != null)
+                        {
+                            foreach(var mVo in lstModelTmp)
+                            {
+                                decimal minValue = 0;
+                                decimal maxValue = 0;
+                                decimal score = 0;
+                                
+                                if (mVo.judgeRange.Contains("~<"))
+                                {
+                                    minValue = Function.Dec(mVo.judgeRange.Replace("<", "").Trim().Split('~')[0]);
+                                    maxValue = Function.Dec(mVo.judgeRange.Replace("<", "").Trim().Split('~')[1]);
+                                    if (tjValue >= minValue && tjValue <= maxValue)
+                                    {
+                                        score += (tjValue - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
+                                    }
+                                }
+                                else if (mVo.judgeRange.Contains("≥"))
+                                {
+                                    maxValue = Function.Dec(mVo.judgeRange.Replace("≥", "").Trim());
+                                    if(tjValue >= maxValue)
+                                    {
+                                        score += (tjValue - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
+                                    }
+                                }
+                                else if(mVo.judgeRange.Contains("<") )
+                                {
+                                    minValue = Function.Dec(mVo.judgeRange.Replace("<", "").Trim());
+                                    if (tjValue < minValue)
+                                    {
+                                        score += (tjValue - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
+                                    }
+                                }
+                                else if( mVo.judgeRange.Contains("≤"))
+                                {
+                                    minValue = Function.Dec(mVo.judgeRange.Replace("≤", "").Trim());
+                                    if (tjValue < minValue)
+                                    {
+                                        score += (tjValue - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
+                                    }
+                                }
+                                result += score;
+
+                                //最佳状态 得分
+                                if (mVo.isBest == "1")
+                                {
+                                    bestDf  += (tjValue - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
+                                }
+                                    
+
+                            }
+                        }
+                    }
+                }
+            }
+            
+            return result;
         }
         #endregion
 
@@ -494,6 +707,9 @@ namespace Hms.Ui
         {
             this.Edit();
         }
+
+
         #endregion
+
     }
 }

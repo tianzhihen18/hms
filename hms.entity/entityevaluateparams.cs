@@ -9,18 +9,22 @@ using weCare.Core.Entity;
 namespace Hms.Entity
 {
     /// <summary>
-    /// 重要指标
+    /// 主要评估参数
     /// </summary>
     [DataContract,Serializable]
     public class EntityEvaluateParams : BaseDataContract
     {
         [DataMember]
         public Image pic { get; set; }
+        [DataMember]
+        public string paramNo { get; set; }
+        [DataMember]
+        public string itemCode { get; set; }
         /// <summary>
         /// 项目名称
         /// </summary>
         [DataMember]
-        public string item { get; set; }
+        public string itemName { get; set; }
         /// <summary>
         /// 结果
         /// </summary>
@@ -36,5 +40,9 @@ namespace Hms.Entity
         /// </summary>
         [DataMember]
         public string unit { get; set; }
+        [DataMember]
+        public string parentFieldId { get; set; }
+        [DataMember]
+        public int pointId { get; set; }
     }
 }

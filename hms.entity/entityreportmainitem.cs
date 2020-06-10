@@ -3,6 +3,7 @@ using System.Text;
 using System.Data;
 using System.Runtime.Serialization;
 using weCare.Core.Entity;
+using System.Drawing;
 
 namespace Hms.Entity
 {
@@ -152,6 +153,9 @@ namespace Hms.Entity
         [DataMember]
         [EntityAttribute(FieldName = "modifyName", DbType = DbType.AnsiString, IsPK = false, IsSeq = false, SerNo = 20)]
         public System.String modifyName { get; set; }
+         
+        [DataMember]
+        public Image pic { get; set; }
 
         /// <summary>
         /// Columns

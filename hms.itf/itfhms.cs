@@ -43,6 +43,23 @@ namespace Hms.Itf
 
         #region 202 健康档案
         /// <summary>
+        /// /
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetTjReports")]
+        List<EntityDisplayClientRpt> GetTjReports(List<EntityParm> parms = null);
+
+        /// <summary>
+        /// 体检报告项目结果
+        /// </summary>
+        /// <param name="regNo"></param>
+        /// <param name="deptName"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetTjResult")]
+        Dictionary<string, List<EntityTjResult>> GetTjResult(string regNo, out List<EntityTjResult> dataResult, out List<EntityTjResult> xjResult, out EntityTjjljy tjjljyVo);
+
+        /// <summary>
         /// 
         /// </summary>
         /// <param name="parms"></param>
@@ -84,6 +101,14 @@ namespace Hms.Itf
         [OperationContract(Name = "DelQnRecord")]
         int DelQnRecord(List<EntityQnRecord> qnRecords);
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetQnMain")]
+        List<EntityDicQnMain> GetQnMain(List<EntityParm> parms = null);
+
         #endregion
 
         #region 203 健康报告
@@ -94,6 +119,29 @@ namespace Hms.Itf
         /// <returns></returns>
         [OperationContract(Name = "GetClientReports")]
         List<EntityDisplayClientRpt> GetClientReports(List<EntityParm> parms = null);
+
+        /// <summary>
+        /// 重要指标字典
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetReportMainItemConfig")]
+        List<EntityReportMainItemConfig> GetReportMainItemConfig(List<EntityParm> parms = null);
+
+        /// <summary>
+        /// 模型参数
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetModelParam")]
+        List<EntityModelParam> GetModelParam(List<EntityParm> parms = null);
+
+        /// <summary>
+        /// 疾病模型分析要点
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        List<EntityModelAnalysisPoint> GetModelAnalysisPoint(List<EntityParm> parms = null);
         #endregion
 
         #region 204 健康干预
@@ -111,6 +159,14 @@ namespace Hms.Itf
         /// <returns></returns>
         [OperationContract(Name = "GetPromotionTemplateConfigs")]
         List<EntityPromotionTemplateConfig> GetPromotionTemplateConfigs(List<EntityParm> parms = null);
+
+        /// <summary>
+        /// 保存计划
+        /// </summary>
+        /// <param name="promotionPlans"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "SavePromotionPan")]
+        int SavePromotionPan(List<EntityPromotionPlan> promotionPlans);
 
         /// <summary>
         /// 干预形式

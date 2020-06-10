@@ -647,6 +647,7 @@
             // 
             // navInfoCollect
             // 
+            this.navInfoCollect.Caption = "navInfoCollect";
             this.navInfoCollect.Controls.Add(this.panelControl17);
             this.navInfoCollect.Controls.Add(this.panelControl15);
             this.navInfoCollect.Controls.Add(this.panelControl13);
@@ -1135,6 +1136,7 @@
             // 
             // navRiskQuestion
             // 
+            this.navRiskQuestion.Caption = "navRiskQuestion";
             this.navRiskQuestion.Controls.Add(this.panelControl21);
             this.navRiskQuestion.Controls.Add(this.panelControl19);
             this.navRiskQuestion.Name = "navRiskQuestion";
@@ -1438,6 +1440,7 @@
             // 
             // navImportantIdicate
             // 
+            this.navImportantIdicate.Caption = "navImportantIdicate";
             this.navImportantIdicate.Controls.Add(this.panelControl26);
             this.navImportantIdicate.Controls.Add(this.panelControl25);
             this.navImportantIdicate.Controls.Add(this.panelControl23);
@@ -1657,6 +1660,7 @@
             // 
             // navHmsReport
             // 
+            this.navHmsReport.Caption = "navHmsReport";
             this.navHmsReport.Controls.Add(this.panelControl27);
             this.navHmsReport.Name = "navHmsReport";
             this.navHmsReport.Size = new System.Drawing.Size(679, 1315);
@@ -1804,6 +1808,7 @@
             // 
             // navService
             // 
+            this.navService.Caption = "navService";
             this.navService.Controls.Add(this.panelControl31);
             this.navService.Controls.Add(this.panelControl29);
             this.navService.Name = "navService";
@@ -2043,6 +2048,7 @@
             // 
             // navPromotionCase
             // 
+            this.navPromotionCase.Caption = "navPromotionCase";
             this.navPromotionCase.Controls.Add(this.panelControl33);
             this.navPromotionCase.Name = "navPromotionCase";
             this.navPromotionCase.Size = new System.Drawing.Size(679, 1315);
@@ -2263,6 +2269,7 @@
             // 
             // navPromotionPlan
             // 
+            this.navPromotionPlan.Caption = "navPromotionPlan";
             this.navPromotionPlan.Controls.Add(this.panelControl36);
             this.navPromotionPlan.Name = "navPromotionPlan";
             this.navPromotionPlan.Size = new System.Drawing.Size(679, 1315);
@@ -2517,6 +2524,7 @@
             // 
             // navPromotionRecord
             // 
+            this.navPromotionRecord.Caption = "navPromotionRecord";
             this.navPromotionRecord.Controls.Add(this.panelControl39);
             this.navPromotionRecord.Name = "navPromotionRecord";
             this.navPromotionRecord.Size = new System.Drawing.Size(679, 1315);
@@ -2735,6 +2743,7 @@
             // 
             // navDiet
             // 
+            this.navDiet.Caption = "navDiet";
             this.navDiet.Controls.Add(this.panelControl42);
             this.navDiet.Name = "navDiet";
             this.navDiet.Size = new System.Drawing.Size(679, 1315);
@@ -2857,11 +2866,13 @@
             // 
             // navHealthMinitor
             // 
+            this.navHealthMinitor.Caption = "navHealthMinitor";
             this.navHealthMinitor.Name = "navHealthMinitor";
             this.navHealthMinitor.Size = new System.Drawing.Size(679, 1315);
             // 
             // navPeReport
             // 
+            this.navPeReport.Caption = "navPeReport";
             this.navPeReport.Controls.Add(this.gcReportItemData);
             this.navPeReport.Controls.Add(this.panelControl43);
             this.navPeReport.Name = "navPeReport";
@@ -3123,6 +3134,7 @@
             // 
             // navQuestionnaire
             // 
+            this.navQuestionnaire.Caption = "navQuestionnaire";
             this.navQuestionnaire.Controls.Add(this.panelControl46);
             this.navQuestionnaire.Name = "navQuestionnaire";
             this.navQuestionnaire.Size = new System.Drawing.Size(679, 1315);
@@ -3228,6 +3240,7 @@
             // 
             // navMedRecord
             // 
+            this.navMedRecord.Caption = "navMedRecord";
             this.navMedRecord.Controls.Add(this.panelControl48);
             this.navMedRecord.Name = "navMedRecord";
             this.navMedRecord.Size = new System.Drawing.Size(679, 1315);
@@ -3435,6 +3448,7 @@
             // 
             // navClinicRecord
             // 
+            this.navClinicRecord.Caption = "navClinicRecord";
             this.navClinicRecord.Controls.Add(this.panelControl50);
             this.navClinicRecord.Name = "navClinicRecord";
             this.navClinicRecord.Size = new System.Drawing.Size(679, 1315);
@@ -3557,6 +3571,7 @@
             // 
             // navGxy
             // 
+            this.navGxy.Caption = "navGxy";
             this.navGxy.Controls.Add(this.panelControl55);
             this.navGxy.Controls.Add(this.panelControl52);
             this.navGxy.Controls.Add(this.panelControl54);
@@ -3858,6 +3873,7 @@
             // 
             // navTnb
             // 
+            this.navTnb.Caption = "navTnb";
             this.navTnb.Controls.Add(this.panelControl57);
             this.navTnb.Controls.Add(this.panelControl59);
             this.navTnb.Name = "navTnb";

@@ -67,7 +67,7 @@
             this.xrTableRow24 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell52 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell53 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrLabel35 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTjSumup = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTableRow25 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell55 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell56 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -425,6 +425,9 @@
             this.GroupHeader3 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.dtRptGxyFxpg = new DevExpress.XtraReports.UI.DetailReportBand();
             this.Detail11 = new DevExpress.XtraReports.UI.DetailBand();
+            this.lblGxyAbasableDf = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblGxyBestDf = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblGxyDf = new DevExpress.XtraReports.UI.XRLabel();
             this.xrChartGxy = new DevExpress.XtraReports.UI.XRChart();
             this.xrLabel120 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel121 = new DevExpress.XtraReports.UI.XRLabel();
@@ -434,10 +437,10 @@
             this.xrLabel125 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel126 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel127 = new DevExpress.XtraReports.UI.XRLabel();
-            this.picFx01 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.picFx02 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.picFx03 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.picFx04 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.picGxyFx01 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.picGxyFx02 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.picGxyFx03 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.picGxyFx04 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrLabel128 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel129 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel130 = new DevExpress.XtraReports.UI.XRLabel();
@@ -446,16 +449,16 @@
             this.xrLabel133 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel134 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel135 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel136 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblGxyTip = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel34 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel36 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel37 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel38 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel39 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel40 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel41 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel42 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel119 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblGxyPoint8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblGxyPoint2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblGxyPoint3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblGxyPoint4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblGxyPoint5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblGxyPoint6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblGxyPoint7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblGxyPoint1 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.xrLabel31 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
@@ -1253,9 +1256,8 @@
             this.xrLabel32,
             this.xrLabel25});
             this.Detail.Dpi = 100F;
-            this.Detail.Expanded = false;
             this.Detail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(172)))), ((int)(((byte)(225)))));
-            this.Detail.HeightF = 473.0001F;
+            this.Detail.HeightF = 403.2916F;
             this.Detail.Name = "Detail";
             this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.Detail.StylePriority.UseBackColor = false;
@@ -1268,7 +1270,7 @@
             // xrTable9
             // 
             this.xrTable9.Dpi = 100F;
-            this.xrTable9.LocationFloat = new DevExpress.Utils.PointFloat(81.38498F, 87.66683F);
+            this.xrTable9.LocationFloat = new DevExpress.Utils.PointFloat(81.39339F, 74.1251F);
             this.xrTable9.Name = "xrTable9";
             this.xrTable9.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow24,
@@ -1299,24 +1301,24 @@
             // xrTableCell53
             // 
             this.xrTableCell53.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel35});
+            this.lblTjSumup});
             this.xrTableCell53.Dpi = 100F;
             this.xrTableCell53.Name = "xrTableCell53";
             this.xrTableCell53.Text = "xrTableCell53";
             this.xrTableCell53.Weight = 2.5701661383977945D;
             // 
-            // xrLabel35
+            // lblTjSumup
             // 
-            this.xrLabel35.Dpi = 100F;
-            this.xrLabel35.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel35.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.xrLabel35.Name = "xrLabel35";
-            this.xrLabel35.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel35.SizeF = new System.Drawing.SizeF(556.6501F, 29.25002F);
-            this.xrLabel35.StylePriority.UseFont = false;
-            this.xrLabel35.StylePriority.UseTextAlignment = false;
-            this.xrLabel35.Text = "右肾结石、双眼屈光不正、尿酸（UA）偏高、鼻甲肥大、心内结构大致正常，CDFI:三尖瓣、主动脉瓣轻度返流";
-            this.xrLabel35.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.lblTjSumup.Dpi = 100F;
+            this.lblTjSumup.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTjSumup.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.lblTjSumup.Name = "lblTjSumup";
+            this.lblTjSumup.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTjSumup.SizeF = new System.Drawing.SizeF(556.6501F, 29.25002F);
+            this.lblTjSumup.StylePriority.UseFont = false;
+            this.lblTjSumup.StylePriority.UseTextAlignment = false;
+            this.lblTjSumup.Text = "右肾结石、双眼屈光不正、尿酸（UA）偏高、鼻甲肥大、心内结构大致正常，CDFI:三尖瓣、主动脉瓣轻度返流";
+            this.lblTjSumup.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrTableRow25
             // 
@@ -1380,7 +1382,7 @@
             this.xrLabel64.Dpi = 100F;
             this.xrLabel64.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel64.ForeColor = System.Drawing.Color.White;
-            this.xrLabel64.LocationFloat = new DevExpress.Utils.PointFloat(604.0284F, 368.0417F);
+            this.xrLabel64.LocationFloat = new DevExpress.Utils.PointFloat(607.0368F, 300.8751F);
             this.xrLabel64.Name = "xrLabel64";
             this.xrLabel64.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel64.SizeF = new System.Drawing.SizeF(45.29144F, 22.73343F);
@@ -1403,7 +1405,7 @@
             this.xrLabel63.Dpi = 100F;
             this.xrLabel63.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel63.ForeColor = System.Drawing.Color.White;
-            this.xrLabel63.LocationFloat = new DevExpress.Utils.PointFloat(604.8535F, 331.3317F);
+            this.xrLabel63.LocationFloat = new DevExpress.Utils.PointFloat(604.3204F, 272.4984F);
             this.xrLabel63.Name = "xrLabel63";
             this.xrLabel63.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel63.SizeF = new System.Drawing.SizeF(45.29144F, 22.73343F);
@@ -1426,7 +1428,7 @@
             this.xrLabel62.Dpi = 100F;
             this.xrLabel62.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel62.ForeColor = System.Drawing.Color.White;
-            this.xrLabel62.LocationFloat = new DevExpress.Utils.PointFloat(545.3946F, 331.3317F);
+            this.xrLabel62.LocationFloat = new DevExpress.Utils.PointFloat(544.8615F, 272.4984F);
             this.xrLabel62.Name = "xrLabel62";
             this.xrLabel62.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel62.SizeF = new System.Drawing.SizeF(45.29144F, 22.73343F);
@@ -1449,7 +1451,7 @@
             this.xrLabel61.Dpi = 100F;
             this.xrLabel61.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel61.ForeColor = System.Drawing.Color.White;
-            this.xrLabel61.LocationFloat = new DevExpress.Utils.PointFloat(542.3946F, 368.0417F);
+            this.xrLabel61.LocationFloat = new DevExpress.Utils.PointFloat(545.403F, 300.8751F);
             this.xrLabel61.Name = "xrLabel61";
             this.xrLabel61.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel61.SizeF = new System.Drawing.SizeF(45.29144F, 22.73343F);
@@ -1472,7 +1474,7 @@
             this.xrLabel60.Dpi = 100F;
             this.xrLabel60.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(166)))), ((int)(((byte)(73)))));
-            this.xrLabel60.LocationFloat = new DevExpress.Utils.PointFloat(604.8535F, 381F);
+            this.xrLabel60.LocationFloat = new DevExpress.Utils.PointFloat(607.861F, 313.8334F);
             this.xrLabel60.Name = "xrLabel60";
             this.xrLabel60.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel60.SizeF = new System.Drawing.SizeF(165.1659F, 87.12515F);
@@ -1495,7 +1497,7 @@
             this.xrLabel59.Dpi = 100F;
             this.xrLabel59.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(177)))), ((int)(((byte)(83)))));
-            this.xrLabel59.LocationFloat = new DevExpress.Utils.PointFloat(420.4781F, 381F);
+            this.xrLabel59.LocationFloat = new DevExpress.Utils.PointFloat(423.4865F, 313.8334F);
             this.xrLabel59.Name = "xrLabel59";
             this.xrLabel59.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel59.SizeF = new System.Drawing.SizeF(167.2078F, 87.12515F);
@@ -1517,7 +1519,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel58.Dpi = 100F;
             this.xrLabel58.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel58.LocationFloat = new DevExpress.Utils.PointFloat(604.8526F, 260.375F);
+            this.xrLabel58.LocationFloat = new DevExpress.Utils.PointFloat(604.3196F, 201.5418F);
             this.xrLabel58.Name = "xrLabel58";
             this.xrLabel58.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel58.SizeF = new System.Drawing.SizeF(165.1667F, 81.33337F);
@@ -1538,7 +1540,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel57.Dpi = 100F;
             this.xrLabel57.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel57.LocationFloat = new DevExpress.Utils.PointFloat(424.0195F, 260.375F);
+            this.xrLabel57.LocationFloat = new DevExpress.Utils.PointFloat(423.4865F, 201.5418F);
             this.xrLabel57.Name = "xrLabel57";
             this.xrLabel57.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel57.SizeF = new System.Drawing.SizeF(166.6665F, 81.33337F);
@@ -1553,7 +1555,7 @@
             // pic04
             // 
             this.pic04.Dpi = 100F;
-            this.pic04.LocationFloat = new DevExpress.Utils.PointFloat(423.4781F, 208.2919F);
+            this.pic04.LocationFloat = new DevExpress.Utils.PointFloat(423.4865F, 161.8754F);
             this.pic04.Name = "pic04";
             this.pic04.SizeF = new System.Drawing.SizeF(43.24957F, 39.66669F);
             // 
@@ -1561,7 +1563,7 @@
             // 
             this.xrLabel56.Dpi = 100F;
             this.xrLabel56.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel56.LocationFloat = new DevExpress.Utils.PointFloat(466.7275F, 218.7083F);
+            this.xrLabel56.LocationFloat = new DevExpress.Utils.PointFloat(466.7359F, 172.2918F);
             this.xrLabel56.Name = "xrLabel56";
             this.xrLabel56.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel56.SizeF = new System.Drawing.SizeF(220.2083F, 29.25003F);
@@ -1577,7 +1579,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel55.Dpi = 100F;
             this.xrLabel55.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel55.LocationFloat = new DevExpress.Utils.PointFloat(164.7182F, 438.8751F);
+            this.xrLabel55.LocationFloat = new DevExpress.Utils.PointFloat(163.0899F, 373.4585F);
             this.xrLabel55.Name = "xrLabel55";
             this.xrLabel55.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel55.SizeF = new System.Drawing.SizeF(202.1267F, 29.24994F);
@@ -1595,7 +1597,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel54.Dpi = 100F;
             this.xrLabel54.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel54.LocationFloat = new DevExpress.Utils.PointFloat(164.7182F, 404.4918F);
+            this.xrLabel54.LocationFloat = new DevExpress.Utils.PointFloat(163.0899F, 339.0752F);
             this.xrLabel54.Name = "xrLabel54";
             this.xrLabel54.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel54.SizeF = new System.Drawing.SizeF(202.1266F, 29.25003F);
@@ -1613,7 +1615,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel53.Dpi = 100F;
             this.xrLabel53.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel53.LocationFloat = new DevExpress.Utils.PointFloat(164.7182F, 370.1084F);
+            this.xrLabel53.LocationFloat = new DevExpress.Utils.PointFloat(163.0899F, 304.6918F);
             this.xrLabel53.Name = "xrLabel53";
             this.xrLabel53.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel53.SizeF = new System.Drawing.SizeF(202.1266F, 29.25003F);
@@ -1631,7 +1633,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel52.Dpi = 100F;
             this.xrLabel52.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel52.LocationFloat = new DevExpress.Utils.PointFloat(164.7182F, 335.725F);
+            this.xrLabel52.LocationFloat = new DevExpress.Utils.PointFloat(163.0899F, 270.3084F);
             this.xrLabel52.Name = "xrLabel52";
             this.xrLabel52.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel52.SizeF = new System.Drawing.SizeF(202.1266F, 29.25003F);
@@ -1649,7 +1651,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel51.Dpi = 100F;
             this.xrLabel51.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel51.LocationFloat = new DevExpress.Utils.PointFloat(164.7182F, 301.3417F);
+            this.xrLabel51.LocationFloat = new DevExpress.Utils.PointFloat(163.0899F, 235.9252F);
             this.xrLabel51.Name = "xrLabel51";
             this.xrLabel51.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel51.SizeF = new System.Drawing.SizeF(202.1266F, 29.25003F);
@@ -1664,7 +1666,7 @@
             this.xrLabel50.Dpi = 100F;
             this.xrLabel50.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel50.ForeColor = System.Drawing.Color.White;
-            this.xrLabel50.LocationFloat = new DevExpress.Utils.PointFloat(81.38498F, 438.8751F);
+            this.xrLabel50.LocationFloat = new DevExpress.Utils.PointFloat(79.75663F, 373.4585F);
             this.xrLabel50.Name = "xrLabel50";
             this.xrLabel50.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel50.SizeF = new System.Drawing.SizeF(83.33217F, 29.25F);
@@ -1682,7 +1684,7 @@
             this.xrLabel49.Dpi = 100F;
             this.xrLabel49.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel49.ForeColor = System.Drawing.Color.White;
-            this.xrLabel49.LocationFloat = new DevExpress.Utils.PointFloat(81.38586F, 404.4918F);
+            this.xrLabel49.LocationFloat = new DevExpress.Utils.PointFloat(79.75752F, 339.0752F);
             this.xrLabel49.Name = "xrLabel49";
             this.xrLabel49.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel49.SizeF = new System.Drawing.SizeF(83.33217F, 29.25003F);
@@ -1700,7 +1702,7 @@
             this.xrLabel48.Dpi = 100F;
             this.xrLabel48.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel48.ForeColor = System.Drawing.Color.White;
-            this.xrLabel48.LocationFloat = new DevExpress.Utils.PointFloat(81.38586F, 370.1084F);
+            this.xrLabel48.LocationFloat = new DevExpress.Utils.PointFloat(79.75752F, 304.6918F);
             this.xrLabel48.Name = "xrLabel48";
             this.xrLabel48.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel48.SizeF = new System.Drawing.SizeF(83.33217F, 29.25003F);
@@ -1718,7 +1720,7 @@
             this.xrLabel47.Dpi = 100F;
             this.xrLabel47.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel47.ForeColor = System.Drawing.Color.White;
-            this.xrLabel47.LocationFloat = new DevExpress.Utils.PointFloat(81.38504F, 335.7251F);
+            this.xrLabel47.LocationFloat = new DevExpress.Utils.PointFloat(79.7567F, 270.3086F);
             this.xrLabel47.Name = "xrLabel47";
             this.xrLabel47.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel47.SizeF = new System.Drawing.SizeF(83.33293F, 29.25003F);
@@ -1736,7 +1738,7 @@
             this.xrLabel46.Dpi = 100F;
             this.xrLabel46.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel46.ForeColor = System.Drawing.Color.White;
-            this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(81.38504F, 301.3417F);
+            this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(79.7567F, 235.9252F);
             this.xrLabel46.Name = "xrLabel46";
             this.xrLabel46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel46.SizeF = new System.Drawing.SizeF(83.33217F, 29.25003F);
@@ -1757,7 +1759,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel45.Dpi = 100F;
             this.xrLabel45.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel45.LocationFloat = new DevExpress.Utils.PointFloat(164.7172F, 266.9584F);
+            this.xrLabel45.LocationFloat = new DevExpress.Utils.PointFloat(163.0889F, 201.5418F);
             this.xrLabel45.Name = "xrLabel45";
             this.xrLabel45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel45.SizeF = new System.Drawing.SizeF(202.1267F, 29.25003F);
@@ -1772,7 +1774,7 @@
             this.xrLabel44.Dpi = 100F;
             this.xrLabel44.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel44.ForeColor = System.Drawing.Color.White;
-            this.xrLabel44.LocationFloat = new DevExpress.Utils.PointFloat(81.38498F, 266.9584F);
+            this.xrLabel44.LocationFloat = new DevExpress.Utils.PointFloat(79.75663F, 201.5418F);
             this.xrLabel44.Name = "xrLabel44";
             this.xrLabel44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel44.SizeF = new System.Drawing.SizeF(83.3322F, 29.25003F);
@@ -1788,7 +1790,7 @@
             // 
             this.xrLabel43.Dpi = 100F;
             this.xrLabel43.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel43.LocationFloat = new DevExpress.Utils.PointFloat(124.6346F, 218.7082F);
+            this.xrLabel43.LocationFloat = new DevExpress.Utils.PointFloat(124.643F, 172.2916F);
             this.xrLabel43.Name = "xrLabel43";
             this.xrLabel43.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel43.SizeF = new System.Drawing.SizeF(152.5833F, 29.25002F);
@@ -1798,14 +1800,14 @@
             // pic03
             // 
             this.pic03.Dpi = 100F;
-            this.pic03.LocationFloat = new DevExpress.Utils.PointFloat(81.38498F, 208.2916F);
+            this.pic03.LocationFloat = new DevExpress.Utils.PointFloat(81.39339F, 161.8752F);
             this.pic03.Name = "pic03";
             this.pic03.SizeF = new System.Drawing.SizeF(43.24957F, 39.66669F);
             // 
             // pic02
             // 
             this.pic02.Dpi = 100F;
-            this.pic02.LocationFloat = new DevExpress.Utils.PointFloat(81.38498F, 48.00014F);
+            this.pic02.LocationFloat = new DevExpress.Utils.PointFloat(81.39339F, 34.45835F);
             this.pic02.Name = "pic02";
             this.pic02.SizeF = new System.Drawing.SizeF(43.24957F, 39.66669F);
             // 
@@ -1813,7 +1815,7 @@
             // 
             this.xrLabel32.Dpi = 100F;
             this.xrLabel32.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(124.6344F, 58.41681F);
+            this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(124.6428F, 44.87502F);
             this.xrLabel32.Name = "xrLabel32";
             this.xrLabel32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel32.SizeF = new System.Drawing.SizeF(152.5833F, 29.25002F);
@@ -1877,7 +1879,6 @@
             this.Detail1,
             this.GroupHeader1});
             this.dtRptMainIndicate.Dpi = 100F;
-            this.dtRptMainIndicate.Expanded = false;
             this.dtRptMainIndicate.Level = 0;
             this.dtRptMainIndicate.Name = "dtRptMainIndicate";
             // 
@@ -2527,7 +2528,6 @@
             this.dtRptMain.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.Detail2});
             this.dtRptMain.Dpi = 100F;
-            this.dtRptMain.Expanded = false;
             this.dtRptMain.Level = 1;
             this.dtRptMain.Name = "dtRptMain";
             // 
@@ -2543,14 +2543,13 @@
             this.xrLabel83,
             this.xrLabel82});
             this.Detail2.Dpi = 100F;
-            this.Detail2.Expanded = false;
-            this.Detail2.HeightF = 275.0208F;
+            this.Detail2.HeightF = 258.3542F;
             this.Detail2.Name = "Detail2";
             // 
             // xrPageBreak1
             // 
             this.xrPageBreak1.Dpi = 100F;
-            this.xrPageBreak1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 270.8749F);
+            this.xrPageBreak1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 255.6249F);
             this.xrPageBreak1.Name = "xrPageBreak1";
             // 
             // xrTable4
@@ -2559,7 +2558,7 @@
             this.xrTable4.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable4.Dpi = 100F;
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(81.25254F, 240.875F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(81.25254F, 225.6249F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
@@ -2614,7 +2613,7 @@
             this.xrLabel86.Dpi = 100F;
             this.xrLabel86.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel86.ForeColor = System.Drawing.Color.White;
-            this.xrLabel86.LocationFloat = new DevExpress.Utils.PointFloat(81.25082F, 211.6249F);
+            this.xrLabel86.LocationFloat = new DevExpress.Utils.PointFloat(81.25082F, 196.3748F);
             this.xrLabel86.Name = "xrLabel86";
             this.xrLabel86.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel86.SizeF = new System.Drawing.SizeF(694.7491F, 29.25F);
@@ -2633,7 +2632,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable3.Dpi = 100F;
             this.xrTable3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(172)))), ((int)(((byte)(225)))));
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(81.25089F, 138.0833F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(81.25089F, 122.8332F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3,
@@ -2739,7 +2738,7 @@
             this.xrLabel85.Dpi = 100F;
             this.xrLabel85.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel85.ForeColor = System.Drawing.Color.White;
-            this.xrLabel85.LocationFloat = new DevExpress.Utils.PointFloat(81.2458F, 108.8333F);
+            this.xrLabel85.LocationFloat = new DevExpress.Utils.PointFloat(81.2458F, 93.58322F);
             this.xrLabel85.Name = "xrLabel85";
             this.xrLabel85.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel85.SizeF = new System.Drawing.SizeF(694.7515F, 29.25F);
@@ -2756,7 +2755,7 @@
             this.xrLabel84.Dpi = 100F;
             this.xrLabel84.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(172)))), ((int)(((byte)(225)))));
-            this.xrLabel84.LocationFloat = new DevExpress.Utils.PointFloat(81.25254F, 84.99998F);
+            this.xrLabel84.LocationFloat = new DevExpress.Utils.PointFloat(81.25254F, 69.74995F);
             this.xrLabel84.Name = "xrLabel84";
             this.xrLabel84.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel84.SizeF = new System.Drawing.SizeF(694.7448F, 23.83327F);
@@ -2771,7 +2770,7 @@
             this.xrLabel83.Dpi = 100F;
             this.xrLabel83.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel83.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(172)))), ((int)(((byte)(225)))));
-            this.xrLabel83.LocationFloat = new DevExpress.Utils.PointFloat(81.25095F, 45.91675F);
+            this.xrLabel83.LocationFloat = new DevExpress.Utils.PointFloat(81.25095F, 34.45835F);
             this.xrLabel83.Name = "xrLabel83";
             this.xrLabel83.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel83.SizeF = new System.Drawing.SizeF(694.7463F, 35.2916F);
@@ -5335,7 +5334,6 @@
             this.dtRptGxyGroup,
             this.dtRptGxyFxpg});
             this.dtRptGxy.Dpi = 100F;
-            this.dtRptGxy.Expanded = false;
             this.dtRptGxy.Level = 2;
             this.dtRptGxy.Name = "dtRptGxy";
             // 
@@ -5345,7 +5343,6 @@
             this.xrLabel88,
             this.xrLabel87});
             this.Detail7.Dpi = 100F;
-            this.Detail7.Expanded = false;
             this.Detail7.HeightF = 73.91657F;
             this.Detail7.Name = "Detail7";
             // 
@@ -5380,13 +5377,15 @@
             this.Detail11,
             this.ReportFooter});
             this.dtRptGxyFxpg.Dpi = 100F;
-            this.dtRptGxyFxpg.Expanded = false;
             this.dtRptGxyFxpg.Level = 1;
             this.dtRptGxyFxpg.Name = "dtRptGxyFxpg";
             // 
             // Detail11
             // 
             this.Detail11.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.lblGxyAbasableDf,
+            this.lblGxyBestDf,
+            this.lblGxyDf,
             this.xrChartGxy,
             this.xrLabel120,
             this.xrLabel121,
@@ -5396,10 +5395,10 @@
             this.xrLabel125,
             this.xrLabel126,
             this.xrLabel127,
-            this.picFx01,
-            this.picFx02,
-            this.picFx03,
-            this.picFx04,
+            this.picGxyFx01,
+            this.picGxyFx02,
+            this.picGxyFx03,
+            this.picGxyFx04,
             this.xrLabel128,
             this.xrLabel129,
             this.xrLabel130,
@@ -5408,21 +5407,56 @@
             this.xrLabel133,
             this.xrLabel134,
             this.xrLabel135,
-            this.xrLabel136,
+            this.lblGxyTip,
             this.xrLabel90,
             this.xrLabel34,
-            this.xrLabel36,
-            this.xrLabel37,
-            this.xrLabel38,
-            this.xrLabel39,
-            this.xrLabel40,
-            this.xrLabel41,
-            this.xrLabel42,
-            this.xrLabel119});
+            this.lblGxyPoint8,
+            this.lblGxyPoint2,
+            this.lblGxyPoint3,
+            this.lblGxyPoint4,
+            this.lblGxyPoint5,
+            this.lblGxyPoint6,
+            this.lblGxyPoint7,
+            this.lblGxyPoint1});
             this.Detail11.Dpi = 100F;
-            this.Detail11.Expanded = false;
             this.Detail11.HeightF = 542.9583F;
             this.Detail11.Name = "Detail11";
+            // 
+            // lblGxyAbasableDf
+            // 
+            this.lblGxyAbasableDf.Dpi = 100F;
+            this.lblGxyAbasableDf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(137)))), ((int)(((byte)(44)))));
+            this.lblGxyAbasableDf.LocationFloat = new DevExpress.Utils.PointFloat(703.2592F, 252.6253F);
+            this.lblGxyAbasableDf.Name = "lblGxyAbasableDf";
+            this.lblGxyAbasableDf.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblGxyAbasableDf.SizeF = new System.Drawing.SizeF(69.75897F, 29.24997F);
+            this.lblGxyAbasableDf.StylePriority.UseForeColor = false;
+            this.lblGxyAbasableDf.StylePriority.UseTextAlignment = false;
+            this.lblGxyAbasableDf.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // lblGxyBestDf
+            // 
+            this.lblGxyBestDf.Dpi = 100F;
+            this.lblGxyBestDf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(137)))), ((int)(((byte)(44)))));
+            this.lblGxyBestDf.LocationFloat = new DevExpress.Utils.PointFloat(521.1795F, 252.6253F);
+            this.lblGxyBestDf.Name = "lblGxyBestDf";
+            this.lblGxyBestDf.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblGxyBestDf.SizeF = new System.Drawing.SizeF(66.73981F, 29.24995F);
+            this.lblGxyBestDf.StylePriority.UseForeColor = false;
+            this.lblGxyBestDf.StylePriority.UseTextAlignment = false;
+            this.lblGxyBestDf.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // lblGxyDf
+            // 
+            this.lblGxyDf.Dpi = 100F;
+            this.lblGxyDf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(137)))), ((int)(((byte)(44)))));
+            this.lblGxyDf.LocationFloat = new DevExpress.Utils.PointFloat(521.179F, 223.3754F);
+            this.lblGxyDf.Name = "lblGxyDf";
+            this.lblGxyDf.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblGxyDf.SizeF = new System.Drawing.SizeF(66.73981F, 29.24995F);
+            this.lblGxyDf.StylePriority.UseForeColor = false;
+            this.lblGxyDf.StylePriority.UseTextAlignment = false;
+            this.lblGxyDf.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrChartGxy
             // 
@@ -5566,33 +5600,33 @@
             this.xrLabel127.Text = "≥ 50";
             this.xrLabel127.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // picFx01
+            // picGxyFx01
             // 
-            this.picFx01.Dpi = 100F;
-            this.picFx01.LocationFloat = new DevExpress.Utils.PointFloat(431.5918F, 131.4584F);
-            this.picFx01.Name = "picFx01";
-            this.picFx01.SizeF = new System.Drawing.SizeF(43.24957F, 39.66669F);
+            this.picGxyFx01.Dpi = 100F;
+            this.picGxyFx01.LocationFloat = new DevExpress.Utils.PointFloat(431.5918F, 131.4584F);
+            this.picGxyFx01.Name = "picGxyFx01";
+            this.picGxyFx01.SizeF = new System.Drawing.SizeF(43.24957F, 39.66669F);
             // 
-            // picFx02
+            // picGxyFx02
             // 
-            this.picFx02.Dpi = 100F;
-            this.picFx02.LocationFloat = new DevExpress.Utils.PointFloat(525.842F, 114.7917F);
-            this.picFx02.Name = "picFx02";
-            this.picFx02.SizeF = new System.Drawing.SizeF(43.24957F, 39.66669F);
+            this.picGxyFx02.Dpi = 100F;
+            this.picGxyFx02.LocationFloat = new DevExpress.Utils.PointFloat(525.842F, 114.7917F);
+            this.picGxyFx02.Name = "picGxyFx02";
+            this.picGxyFx02.SizeF = new System.Drawing.SizeF(43.24957F, 39.66669F);
             // 
-            // picFx03
+            // picGxyFx03
             // 
-            this.picFx03.Dpi = 100F;
-            this.picFx03.LocationFloat = new DevExpress.Utils.PointFloat(608.1332F, 97.08341F);
-            this.picFx03.Name = "picFx03";
-            this.picFx03.SizeF = new System.Drawing.SizeF(51.54218F, 39.66669F);
+            this.picGxyFx03.Dpi = 100F;
+            this.picGxyFx03.LocationFloat = new DevExpress.Utils.PointFloat(608.1332F, 97.08341F);
+            this.picGxyFx03.Name = "picGxyFx03";
+            this.picGxyFx03.SizeF = new System.Drawing.SizeF(51.54218F, 39.66669F);
             // 
-            // picFx04
+            // picGxyFx04
             // 
-            this.picFx04.Dpi = 100F;
-            this.picFx04.LocationFloat = new DevExpress.Utils.PointFloat(707.0085F, 78.33341F);
-            this.picFx04.Name = "picFx04";
-            this.picFx04.SizeF = new System.Drawing.SizeF(53.12531F, 39.66669F);
+            this.picGxyFx04.Dpi = 100F;
+            this.picGxyFx04.LocationFloat = new DevExpress.Utils.PointFloat(707.0085F, 78.33341F);
+            this.picGxyFx04.Name = "picGxyFx04";
+            this.picGxyFx04.SizeF = new System.Drawing.SizeF(53.12531F, 39.66669F);
             // 
             // xrLabel128
             // 
@@ -5656,7 +5690,6 @@
             this.xrLabel130.StylePriority.UseFont = false;
             this.xrLabel130.StylePriority.UseForeColor = false;
             this.xrLabel130.StylePriority.UseTextAlignment = false;
-            this.xrLabel130.Text = "8.65";
             this.xrLabel130.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel131
@@ -5700,7 +5733,6 @@
             this.xrLabel132.StylePriority.UseBorders = false;
             this.xrLabel132.StylePriority.UseFont = false;
             this.xrLabel132.StylePriority.UseTextAlignment = false;
-            this.xrLabel132.Text = "6.65";
             this.xrLabel132.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel133
@@ -5723,7 +5755,6 @@
             this.xrLabel133.StylePriority.UseFont = false;
             this.xrLabel133.StylePriority.UseForeColor = false;
             this.xrLabel133.StylePriority.UseTextAlignment = false;
-            this.xrLabel133.Text = "2.00";
             this.xrLabel133.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel134
@@ -5768,28 +5799,28 @@
             this.xrLabel135.Text = "您的最佳状态";
             this.xrLabel135.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel136
+            // lblGxyTip
             // 
-            this.xrLabel136.BackColor = System.Drawing.Color.Transparent;
-            this.xrLabel136.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(172)))), ((int)(((byte)(225)))));
-            this.xrLabel136.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblGxyTip.BackColor = System.Drawing.Color.Transparent;
+            this.lblGxyTip.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(172)))), ((int)(((byte)(225)))));
+            this.lblGxyTip.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel136.Dpi = 100F;
-            this.xrLabel136.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel136.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel136.LocationFloat = new DevExpress.Utils.PointFloat(81.38586F, 281.8754F);
-            this.xrLabel136.Name = "xrLabel136";
-            this.xrLabel136.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel136.SizeF = new System.Drawing.SizeF(693.1039F, 22.99997F);
-            this.xrLabel136.StylePriority.UseBackColor = false;
-            this.xrLabel136.StylePriority.UseBorderColor = false;
-            this.xrLabel136.StylePriority.UseBorders = false;
-            this.xrLabel136.StylePriority.UseFont = false;
-            this.xrLabel136.StylePriority.UseForeColor = false;
-            this.xrLabel136.StylePriority.UseTextAlignment = false;
-            this.xrLabel136.Text = "【说明】您在未来5~10年高血压的患病风险为8.65%，有一定风险，但仍然低于同年龄、同性别人群的平均水平。";
-            this.xrLabel136.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblGxyTip.Dpi = 100F;
+            this.lblGxyTip.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGxyTip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblGxyTip.LocationFloat = new DevExpress.Utils.PointFloat(81.38586F, 281.8754F);
+            this.lblGxyTip.Name = "lblGxyTip";
+            this.lblGxyTip.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblGxyTip.SizeF = new System.Drawing.SizeF(693.1039F, 22.99997F);
+            this.lblGxyTip.StylePriority.UseBackColor = false;
+            this.lblGxyTip.StylePriority.UseBorderColor = false;
+            this.lblGxyTip.StylePriority.UseBorders = false;
+            this.lblGxyTip.StylePriority.UseFont = false;
+            this.lblGxyTip.StylePriority.UseForeColor = false;
+            this.lblGxyTip.StylePriority.UseTextAlignment = false;
+            this.lblGxyTip.Text = "【说明】您在未来5~10年高血压的患病风险为8.65%，有一定风险，但仍然低于同年龄、同性别人群的平均水平。";
+            this.lblGxyTip.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel34
             // 
@@ -5809,189 +5840,189 @@
             this.xrLabel34.Text = "预防要点";
             this.xrLabel34.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel36
+            // lblGxyPoint8
             // 
-            this.xrLabel36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel36.BorderColor = System.Drawing.Color.White;
-            this.xrLabel36.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblGxyPoint8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblGxyPoint8.BorderColor = System.Drawing.Color.White;
+            this.lblGxyPoint8.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel36.Dpi = 100F;
-            this.xrLabel36.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel36.LocationFloat = new DevExpress.Utils.PointFloat(79.7471F, 513.8438F);
-            this.xrLabel36.Name = "xrLabel36";
-            this.xrLabel36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel36.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
-            this.xrLabel36.StylePriority.UseBackColor = false;
-            this.xrLabel36.StylePriority.UseBorderColor = false;
-            this.xrLabel36.StylePriority.UseBorders = false;
-            this.xrLabel36.StylePriority.UseFont = false;
-            this.xrLabel36.StylePriority.UseForeColor = false;
-            this.xrLabel36.StylePriority.UseTextAlignment = false;
-            this.xrLabel36.Text = "8.选择摄入不含胆固醇的食物如硬壳果类、蔬菜类，增加水果摄入，有助于控制血脂水平。";
-            this.xrLabel36.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblGxyPoint8.Dpi = 100F;
+            this.lblGxyPoint8.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGxyPoint8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblGxyPoint8.LocationFloat = new DevExpress.Utils.PointFloat(79.7471F, 513.8438F);
+            this.lblGxyPoint8.Name = "lblGxyPoint8";
+            this.lblGxyPoint8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblGxyPoint8.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
+            this.lblGxyPoint8.StylePriority.UseBackColor = false;
+            this.lblGxyPoint8.StylePriority.UseBorderColor = false;
+            this.lblGxyPoint8.StylePriority.UseBorders = false;
+            this.lblGxyPoint8.StylePriority.UseFont = false;
+            this.lblGxyPoint8.StylePriority.UseForeColor = false;
+            this.lblGxyPoint8.StylePriority.UseTextAlignment = false;
+            this.lblGxyPoint8.Text = "8.选择摄入不含胆固醇的食物如硬壳果类、蔬菜类，增加水果摄入，有助于控制血脂水平。";
+            this.lblGxyPoint8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel37
+            // lblGxyPoint2
             // 
-            this.xrLabel37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel37.BorderColor = System.Drawing.Color.White;
-            this.xrLabel37.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblGxyPoint2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblGxyPoint2.BorderColor = System.Drawing.Color.White;
+            this.lblGxyPoint2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel37.Dpi = 100F;
-            this.xrLabel37.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel37.LocationFloat = new DevExpress.Utils.PointFloat(79.7471F, 375.8437F);
-            this.xrLabel37.Name = "xrLabel37";
-            this.xrLabel37.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel37.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
-            this.xrLabel37.StylePriority.UseBackColor = false;
-            this.xrLabel37.StylePriority.UseBorderColor = false;
-            this.xrLabel37.StylePriority.UseBorders = false;
-            this.xrLabel37.StylePriority.UseFont = false;
-            this.xrLabel37.StylePriority.UseForeColor = false;
-            this.xrLabel37.StylePriority.UseTextAlignment = false;
-            this.xrLabel37.Text = "2.体重与诸多慢性病的发生有关，可通过优化饮食、运动结构，调节情志等控制自身的体重。";
-            this.xrLabel37.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblGxyPoint2.Dpi = 100F;
+            this.lblGxyPoint2.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGxyPoint2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblGxyPoint2.LocationFloat = new DevExpress.Utils.PointFloat(79.7471F, 375.8437F);
+            this.lblGxyPoint2.Name = "lblGxyPoint2";
+            this.lblGxyPoint2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblGxyPoint2.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
+            this.lblGxyPoint2.StylePriority.UseBackColor = false;
+            this.lblGxyPoint2.StylePriority.UseBorderColor = false;
+            this.lblGxyPoint2.StylePriority.UseBorders = false;
+            this.lblGxyPoint2.StylePriority.UseFont = false;
+            this.lblGxyPoint2.StylePriority.UseForeColor = false;
+            this.lblGxyPoint2.StylePriority.UseTextAlignment = false;
+            this.lblGxyPoint2.Text = "2.体重与诸多慢性病的发生有关，可通过优化饮食、运动结构，调节情志等控制自身的体重。";
+            this.lblGxyPoint2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel38
+            // lblGxyPoint3
             // 
-            this.xrLabel38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel38.BorderColor = System.Drawing.Color.White;
-            this.xrLabel38.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblGxyPoint3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblGxyPoint3.BorderColor = System.Drawing.Color.White;
+            this.lblGxyPoint3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel38.Dpi = 100F;
-            this.xrLabel38.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel38.LocationFloat = new DevExpress.Utils.PointFloat(79.7471F, 398.8437F);
-            this.xrLabel38.Name = "xrLabel38";
-            this.xrLabel38.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel38.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
-            this.xrLabel38.StylePriority.UseBackColor = false;
-            this.xrLabel38.StylePriority.UseBorderColor = false;
-            this.xrLabel38.StylePriority.UseBorders = false;
-            this.xrLabel38.StylePriority.UseFont = false;
-            this.xrLabel38.StylePriority.UseForeColor = false;
-            this.xrLabel38.StylePriority.UseTextAlignment = false;
-            this.xrLabel38.Text = "3.收缩压的控制尤为重要，应注意饮食清淡，调节生活方式，保持良好的心态尤其重要。";
-            this.xrLabel38.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblGxyPoint3.Dpi = 100F;
+            this.lblGxyPoint3.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGxyPoint3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblGxyPoint3.LocationFloat = new DevExpress.Utils.PointFloat(79.7471F, 398.8437F);
+            this.lblGxyPoint3.Name = "lblGxyPoint3";
+            this.lblGxyPoint3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblGxyPoint3.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
+            this.lblGxyPoint3.StylePriority.UseBackColor = false;
+            this.lblGxyPoint3.StylePriority.UseBorderColor = false;
+            this.lblGxyPoint3.StylePriority.UseBorders = false;
+            this.lblGxyPoint3.StylePriority.UseFont = false;
+            this.lblGxyPoint3.StylePriority.UseForeColor = false;
+            this.lblGxyPoint3.StylePriority.UseTextAlignment = false;
+            this.lblGxyPoint3.Text = "3.收缩压的控制尤为重要，应注意饮食清淡，调节生活方式，保持良好的心态尤其重要。";
+            this.lblGxyPoint3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel39
+            // lblGxyPoint4
             // 
-            this.xrLabel39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel39.BorderColor = System.Drawing.Color.White;
-            this.xrLabel39.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblGxyPoint4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblGxyPoint4.BorderColor = System.Drawing.Color.White;
+            this.lblGxyPoint4.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel39.Dpi = 100F;
-            this.xrLabel39.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel39.LocationFloat = new DevExpress.Utils.PointFloat(79.74663F, 421.8438F);
-            this.xrLabel39.Name = "xrLabel39";
-            this.xrLabel39.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel39.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
-            this.xrLabel39.StylePriority.UseBackColor = false;
-            this.xrLabel39.StylePriority.UseBorderColor = false;
-            this.xrLabel39.StylePriority.UseBorders = false;
-            this.xrLabel39.StylePriority.UseFont = false;
-            this.xrLabel39.StylePriority.UseForeColor = false;
-            this.xrLabel39.StylePriority.UseTextAlignment = false;
-            this.xrLabel39.Text = "4.减少钠盐、脂肪摄入，保持心理平衡，以控制血压，可有效降低心脑血管等事件的发生率。";
-            this.xrLabel39.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblGxyPoint4.Dpi = 100F;
+            this.lblGxyPoint4.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGxyPoint4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblGxyPoint4.LocationFloat = new DevExpress.Utils.PointFloat(79.74663F, 421.8438F);
+            this.lblGxyPoint4.Name = "lblGxyPoint4";
+            this.lblGxyPoint4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblGxyPoint4.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
+            this.lblGxyPoint4.StylePriority.UseBackColor = false;
+            this.lblGxyPoint4.StylePriority.UseBorderColor = false;
+            this.lblGxyPoint4.StylePriority.UseBorders = false;
+            this.lblGxyPoint4.StylePriority.UseFont = false;
+            this.lblGxyPoint4.StylePriority.UseForeColor = false;
+            this.lblGxyPoint4.StylePriority.UseTextAlignment = false;
+            this.lblGxyPoint4.Text = "4.减少钠盐、脂肪摄入，保持心理平衡，以控制血压，可有效降低心脑血管等事件的发生率。";
+            this.lblGxyPoint4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel40
+            // lblGxyPoint5
             // 
-            this.xrLabel40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel40.BorderColor = System.Drawing.Color.White;
-            this.xrLabel40.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblGxyPoint5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblGxyPoint5.BorderColor = System.Drawing.Color.White;
+            this.lblGxyPoint5.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel40.Dpi = 100F;
-            this.xrLabel40.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel40.LocationFloat = new DevExpress.Utils.PointFloat(79.7471F, 444.8437F);
-            this.xrLabel40.Name = "xrLabel40";
-            this.xrLabel40.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel40.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
-            this.xrLabel40.StylePriority.UseBackColor = false;
-            this.xrLabel40.StylePriority.UseBorderColor = false;
-            this.xrLabel40.StylePriority.UseBorders = false;
-            this.xrLabel40.StylePriority.UseFont = false;
-            this.xrLabel40.StylePriority.UseForeColor = false;
-            this.xrLabel40.StylePriority.UseTextAlignment = false;
-            this.xrLabel40.Text = "5.饮食尽量清淡，盐分过多会阻碍钙的吸收，还会增加多种慢性病发生的风险。";
-            this.xrLabel40.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblGxyPoint5.Dpi = 100F;
+            this.lblGxyPoint5.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGxyPoint5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblGxyPoint5.LocationFloat = new DevExpress.Utils.PointFloat(79.7471F, 444.8437F);
+            this.lblGxyPoint5.Name = "lblGxyPoint5";
+            this.lblGxyPoint5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblGxyPoint5.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
+            this.lblGxyPoint5.StylePriority.UseBackColor = false;
+            this.lblGxyPoint5.StylePriority.UseBorderColor = false;
+            this.lblGxyPoint5.StylePriority.UseBorders = false;
+            this.lblGxyPoint5.StylePriority.UseFont = false;
+            this.lblGxyPoint5.StylePriority.UseForeColor = false;
+            this.lblGxyPoint5.StylePriority.UseTextAlignment = false;
+            this.lblGxyPoint5.Text = "5.饮食尽量清淡，盐分过多会阻碍钙的吸收，还会增加多种慢性病发生的风险。";
+            this.lblGxyPoint5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel41
+            // lblGxyPoint6
             // 
-            this.xrLabel41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel41.BorderColor = System.Drawing.Color.White;
-            this.xrLabel41.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblGxyPoint6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblGxyPoint6.BorderColor = System.Drawing.Color.White;
+            this.lblGxyPoint6.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel41.Dpi = 100F;
-            this.xrLabel41.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel41.LocationFloat = new DevExpress.Utils.PointFloat(79.74081F, 467.8437F);
-            this.xrLabel41.Name = "xrLabel41";
-            this.xrLabel41.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel41.SizeF = new System.Drawing.SizeF(694.7516F, 23.00012F);
-            this.xrLabel41.StylePriority.UseBackColor = false;
-            this.xrLabel41.StylePriority.UseBorderColor = false;
-            this.xrLabel41.StylePriority.UseBorders = false;
-            this.xrLabel41.StylePriority.UseFont = false;
-            this.xrLabel41.StylePriority.UseForeColor = false;
-            this.xrLabel41.StylePriority.UseTextAlignment = false;
-            this.xrLabel41.Text = "6.持续的运动对肌肉锻炼、心肺功能皆有好处，可适当延长每次锻炼的时间，以达到最佳的效果。";
-            this.xrLabel41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblGxyPoint6.Dpi = 100F;
+            this.lblGxyPoint6.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGxyPoint6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblGxyPoint6.LocationFloat = new DevExpress.Utils.PointFloat(79.74081F, 467.8437F);
+            this.lblGxyPoint6.Name = "lblGxyPoint6";
+            this.lblGxyPoint6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblGxyPoint6.SizeF = new System.Drawing.SizeF(694.7516F, 23.00012F);
+            this.lblGxyPoint6.StylePriority.UseBackColor = false;
+            this.lblGxyPoint6.StylePriority.UseBorderColor = false;
+            this.lblGxyPoint6.StylePriority.UseBorders = false;
+            this.lblGxyPoint6.StylePriority.UseFont = false;
+            this.lblGxyPoint6.StylePriority.UseForeColor = false;
+            this.lblGxyPoint6.StylePriority.UseTextAlignment = false;
+            this.lblGxyPoint6.Text = "6.持续的运动对肌肉锻炼、心肺功能皆有好处，可适当延长每次锻炼的时间，以达到最佳的效果。";
+            this.lblGxyPoint6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel42
+            // lblGxyPoint7
             // 
-            this.xrLabel42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel42.BorderColor = System.Drawing.Color.White;
-            this.xrLabel42.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblGxyPoint7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblGxyPoint7.BorderColor = System.Drawing.Color.White;
+            this.lblGxyPoint7.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel42.Dpi = 100F;
-            this.xrLabel42.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel42.LocationFloat = new DevExpress.Utils.PointFloat(79.7471F, 490.8439F);
-            this.xrLabel42.Name = "xrLabel42";
-            this.xrLabel42.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel42.SizeF = new System.Drawing.SizeF(694.7452F, 22.99994F);
-            this.xrLabel42.StylePriority.UseBackColor = false;
-            this.xrLabel42.StylePriority.UseBorderColor = false;
-            this.xrLabel42.StylePriority.UseBorders = false;
-            this.xrLabel42.StylePriority.UseFont = false;
-            this.xrLabel42.StylePriority.UseForeColor = false;
-            this.xrLabel42.StylePriority.UseTextAlignment = false;
-            this.xrLabel42.Text = "7.限酒有益健康，可有效预防酒精性脂肪肝，降低高血压、脑卒中等疾病的危险";
-            this.xrLabel42.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblGxyPoint7.Dpi = 100F;
+            this.lblGxyPoint7.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGxyPoint7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblGxyPoint7.LocationFloat = new DevExpress.Utils.PointFloat(79.7471F, 490.8439F);
+            this.lblGxyPoint7.Name = "lblGxyPoint7";
+            this.lblGxyPoint7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblGxyPoint7.SizeF = new System.Drawing.SizeF(694.7452F, 22.99994F);
+            this.lblGxyPoint7.StylePriority.UseBackColor = false;
+            this.lblGxyPoint7.StylePriority.UseBorderColor = false;
+            this.lblGxyPoint7.StylePriority.UseBorders = false;
+            this.lblGxyPoint7.StylePriority.UseFont = false;
+            this.lblGxyPoint7.StylePriority.UseForeColor = false;
+            this.lblGxyPoint7.StylePriority.UseTextAlignment = false;
+            this.lblGxyPoint7.Text = "7.限酒有益健康，可有效预防酒精性脂肪肝，降低高血压、脑卒中等疾病的危险";
+            this.lblGxyPoint7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel119
+            // lblGxyPoint1
             // 
-            this.xrLabel119.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel119.BorderColor = System.Drawing.Color.White;
-            this.xrLabel119.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblGxyPoint1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblGxyPoint1.BorderColor = System.Drawing.Color.White;
+            this.lblGxyPoint1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel119.Dpi = 100F;
-            this.xrLabel119.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel119.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel119.LocationFloat = new DevExpress.Utils.PointFloat(79.7471F, 352.8438F);
-            this.xrLabel119.Name = "xrLabel119";
-            this.xrLabel119.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel119.SizeF = new System.Drawing.SizeF(694.7452F, 23.00003F);
-            this.xrLabel119.StylePriority.UseBackColor = false;
-            this.xrLabel119.StylePriority.UseBorderColor = false;
-            this.xrLabel119.StylePriority.UseBorders = false;
-            this.xrLabel119.StylePriority.UseFont = false;
-            this.xrLabel119.StylePriority.UseForeColor = false;
-            this.xrLabel119.StylePriority.UseTextAlignment = false;
-            this.xrLabel119.Text = "1.血尿酸可反映肾功能，限制高嘌呤食物、蛋白类食物摄入量，可调节血尿酸水平。";
-            this.xrLabel119.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblGxyPoint1.Dpi = 100F;
+            this.lblGxyPoint1.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGxyPoint1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblGxyPoint1.LocationFloat = new DevExpress.Utils.PointFloat(79.7471F, 352.8438F);
+            this.lblGxyPoint1.Name = "lblGxyPoint1";
+            this.lblGxyPoint1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblGxyPoint1.SizeF = new System.Drawing.SizeF(694.7452F, 23.00003F);
+            this.lblGxyPoint1.StylePriority.UseBackColor = false;
+            this.lblGxyPoint1.StylePriority.UseBorderColor = false;
+            this.lblGxyPoint1.StylePriority.UseBorders = false;
+            this.lblGxyPoint1.StylePriority.UseFont = false;
+            this.lblGxyPoint1.StylePriority.UseForeColor = false;
+            this.lblGxyPoint1.StylePriority.UseTextAlignment = false;
+            this.lblGxyPoint1.Text = "1.血尿酸可反映肾功能，限制高嘌呤食物、蛋白类食物摄入量，可调节血尿酸水平。";
+            this.lblGxyPoint1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // ReportFooter
             // 
@@ -15618,6 +15649,7 @@
             this.dtRptAdviceGroup,
             this.ReportFooter12});
             this.dtRptMedicalAdvice.Dpi = 100F;
+            this.dtRptMedicalAdvice.Expanded = false;
             this.dtRptMedicalAdvice.Level = 14;
             this.dtRptMedicalAdvice.Name = "dtRptMedicalAdvice";
             // 
@@ -16220,7 +16252,7 @@
         private DevExpress.XtraReports.UI.XRLabel lblPageHeader;
         private DevExpress.XtraReports.UI.XRPictureBox pic02;
         private DevExpress.XtraReports.UI.XRLabel xrLabel32;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel35;
+        private DevExpress.XtraReports.UI.XRLabel lblTjSumup;
         private DevExpress.XtraReports.UI.XRLabel xrLabel43;
         private DevExpress.XtraReports.UI.XRPictureBox pic03;
         private DevExpress.XtraReports.UI.XRLabel xrLabel64;
@@ -16405,10 +16437,10 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel125;
         private DevExpress.XtraReports.UI.XRLabel xrLabel126;
         private DevExpress.XtraReports.UI.XRLabel xrLabel127;
-        private DevExpress.XtraReports.UI.XRPictureBox picFx01;
-        private DevExpress.XtraReports.UI.XRPictureBox picFx02;
-        private DevExpress.XtraReports.UI.XRPictureBox picFx03;
-        private DevExpress.XtraReports.UI.XRPictureBox picFx04;
+        private DevExpress.XtraReports.UI.XRPictureBox picGxyFx01;
+        private DevExpress.XtraReports.UI.XRPictureBox picGxyFx02;
+        private DevExpress.XtraReports.UI.XRPictureBox picGxyFx03;
+        private DevExpress.XtraReports.UI.XRPictureBox picGxyFx04;
         private DevExpress.XtraReports.UI.XRLabel xrLabel128;
         private DevExpress.XtraReports.UI.XRLabel xrLabel129;
         private DevExpress.XtraReports.UI.XRLabel xrLabel130;
@@ -16417,16 +16449,16 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel133;
         private DevExpress.XtraReports.UI.XRLabel xrLabel134;
         private DevExpress.XtraReports.UI.XRLabel xrLabel135;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel136;
+        private DevExpress.XtraReports.UI.XRLabel lblGxyTip;
         private DevExpress.XtraReports.UI.XRLabel xrLabel34;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel36;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel37;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel38;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel39;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel40;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel41;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel42;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel119;
+        private DevExpress.XtraReports.UI.XRLabel lblGxyPoint8;
+        private DevExpress.XtraReports.UI.XRLabel lblGxyPoint2;
+        private DevExpress.XtraReports.UI.XRLabel lblGxyPoint3;
+        private DevExpress.XtraReports.UI.XRLabel lblGxyPoint4;
+        private DevExpress.XtraReports.UI.XRLabel lblGxyPoint5;
+        private DevExpress.XtraReports.UI.XRLabel lblGxyPoint6;
+        private DevExpress.XtraReports.UI.XRLabel lblGxyPoint7;
+        private DevExpress.XtraReports.UI.XRLabel lblGxyPoint1;
         private DevExpress.XtraReports.UI.XRLabel xrLabel14;
         private DevExpress.XtraReports.UI.XRLabel xrLabel13;
         private DevExpress.XtraReports.UI.DetailReportBand dtRptTnbGroup;
@@ -17244,5 +17276,8 @@
         private DevExpress.XtraReports.UI.XRLine xrLine5;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter12;
         private DevExpress.XtraReports.UI.XRLabel xrLabel448;
+        private DevExpress.XtraReports.UI.XRLabel lblGxyDf;
+        private DevExpress.XtraReports.UI.XRLabel lblGxyAbasableDf;
+        private DevExpress.XtraReports.UI.XRLabel lblGxyBestDf;
     }
 }

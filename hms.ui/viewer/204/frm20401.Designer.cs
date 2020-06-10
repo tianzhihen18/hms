@@ -45,7 +45,7 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnAddPerson = new DevExpress.XtraEditors.SimpleButton();
             this.btnQuery = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtDw = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtQnName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -100,7 +100,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDw.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQnName.Properties)).BeginInit();
             this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -331,7 +331,7 @@
             // 
             this.panelControl1.Controls.Add(this.btnAddPerson);
             this.panelControl1.Controls.Add(this.btnQuery);
-            this.panelControl1.Controls.Add(this.textEdit1);
+            this.panelControl1.Controls.Add(this.txtDw);
             this.panelControl1.Controls.Add(this.labelControl4);
             this.panelControl1.Controls.Add(this.txtQnName);
             this.panelControl1.Controls.Add(this.labelControl3);
@@ -365,16 +365,17 @@
             this.btnQuery.Size = new System.Drawing.Size(92, 23);
             this.btnQuery.TabIndex = 6;
             this.btnQuery.Text = " 查询";
+            this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
             // 
-            // textEdit1
+            // txtDw
             // 
-            this.textEdit1.EnterMoveNextControl = true;
-            this.textEdit1.Location = new System.Drawing.Point(243, 10);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(314, 20);
-            this.textEdit1.TabIndex = 5;
+            this.txtDw.EnterMoveNextControl = true;
+            this.txtDw.Location = new System.Drawing.Point(243, 10);
+            this.txtDw.Name = "txtDw";
+            this.txtDw.Properties.Appearance.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDw.Properties.Appearance.Options.UseFont = true;
+            this.txtDw.Size = new System.Drawing.Size(314, 20);
+            this.txtDw.TabIndex = 5;
             // 
             // labelControl4
             // 
@@ -627,6 +628,8 @@
             // 
             this.itemName.AppearanceCell.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.itemName.AppearanceCell.Options.UseFont = true;
+            this.itemName.AppearanceCell.Options.UseTextOptions = true;
+            this.itemName.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.itemName.AppearanceHeader.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.itemName.AppearanceHeader.Options.UseFont = true;
             this.itemName.AppearanceHeader.Options.UseTextOptions = true;
@@ -959,7 +962,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDw.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQnName.Properties)).EndInit();
             this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
@@ -1014,7 +1017,7 @@
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
         private DevExpress.XtraEditors.SimpleButton btnQuery;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtDw;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.TextEdit txtQnName;
         private DevExpress.XtraEditors.LabelControl labelControl3;

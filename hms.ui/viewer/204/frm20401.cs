@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Drawing;
 using Hms.Entity;
+using weCare.Core.Utils;
 
 namespace Hms.Ui
 {
@@ -18,9 +19,14 @@ namespace Hms.Ui
 
         #region var/property
         List<EntityClientInfo> lstClientInfo { get; set; }
+        List<EntityClientInfo> lstSelectClient { get; set; }
         List<EntityPromotionTemplate> lstPromotionTemplate { get; set; }
         List<EntityPromotionTemplateConfig> lstPromotionTemplateConfig { get; set; }
-        List<EntityPromotionTemplateConfig> lstPromotionPlans { get; set; }
+        List<EntityPromotionTemplateConfig> lstPromotionSelect { get; set; }
+
+
+        List<EntityPromotionContentConfig> dicPromotionContentConfig { get; set; }
+        List<EntityPromotionWayConfig> dicPromotionWayConfig { get; set; }
         #endregion
 
         #region override
@@ -34,14 +40,14 @@ namespace Hms.Ui
             frmPopup2040101 frm = new frmPopup2040101();
             frm.ShowDialog();
 
-            if(frm.IsRequireRefresh)
+            if (frm.IsRequireRefresh)
             {
                 EntityPromotionTemplateConfig vo = frm.promotionTemplateConfig;
 
-                if(!lstPromotionPlans.Exists(r=>r.planPeriod == vo.planPeriod && r.planWay == vo.planWay && r.planContent == vo.planContent))
+                if (!lstPromotionSelect.Exists(r => r.planPeriod == vo.planPeriod && r.planWay == vo.planWay && r.planContent == vo.planContent))
                 {
-                    lstPromotionPlans.Add(vo);
-                    gcPlan.DataSource = lstPromotionPlans;
+                    lstPromotionSelect.Add(vo);
+                    gcPlan.DataSource = lstPromotionSelect;
                     gcPlan.RefreshDataSource();
                 }
             }
@@ -66,12 +72,12 @@ namespace Hms.Ui
                     }
                 }
 
-                foreach(var vo in lstTmp)
+                foreach (var vo in lstTmp)
                 {
-                    lstPromotionPlans.Remove(vo);
+                    lstPromotionSelect.Remove(vo);
                 }
 
-                gcPlan.DataSource = lstPromotionPlans;
+                gcPlan.DataSource = lstPromotionSelect;
                 gcPlan.RefreshDataSource();
             }
         }
@@ -83,7 +89,61 @@ namespace Hms.Ui
         /// </summary>
         public override void Complete()
         {
-            
+            int affect = -1;
+            List<EntityPromotionPlan> data = new List<EntityPromotionPlan>();
+            if (lstClientInfo.Count <= 0)
+            {
+                DialogBox.Msg("请选择客户！");
+                return;
+            }
+                
+            if (lstPromotionSelect.Count <= 0)
+            {
+                DialogBox.Msg("请选择干预模板");
+                return;
+            }
+               
+            foreach (var client in lstSelectClient)
+            {
+                if (lstPromotionSelect.Count > 0)
+                {
+                    foreach (var promotion in lstPromotionSelect)
+                    {
+                        EntityPromotionPlan plan = new EntityPromotionPlan();
+                        plan.clientId = client.clientNo;
+                        plan.planType = "4";
+                        plan.planDate = Function.Datetime(promotion.planPeriod) ;
+                        plan.planState = "2";                       
+                        plan.auditState = chkConfirm.Checked ? "3" : "1";
+                        string planWay = dicPromotionWayConfig.Find(r=>r.planWay == promotion.planWay).id;
+                        string planContent = dicPromotionContentConfig.Find(r=>r.planContent == promotion.planContent).id;
+                        plan.planWay = planWay;
+                        plan.planContent = planContent;
+                        plan.planRemind = promotion.planRemind;
+                        plan.ignorPlan = "2";
+                        plan.planState = "2";
+                        plan.createId = "00";
+                        plan.createDate = DateTime.Now;
+                        data.Add(plan);
+                    }
+                }
+            }
+
+            if (data.Count > 0)
+            {
+                using (ProxyHms proxy = new ProxyHms())
+                {
+                    affect = proxy.Service.SavePromotionPan(data);
+                }
+            }
+
+            if (affect > 0)
+            {
+                Init();
+                DialogBox.Msg("保存成功！");
+            } 
+            else
+                DialogBox.Msg("保存失败！");
         }
         #endregion
 
@@ -96,11 +156,42 @@ namespace Hms.Ui
             {
                 uiHelper.BeginLoading(this);
                 LoadQnDataSource();
-                lstPromotionPlans = new List<EntityPromotionTemplateConfig>();
+                lstPromotionSelect = new List<EntityPromotionTemplateConfig>();
+                lstSelectClient = new List<EntityClientInfo>();
+
+                gridControl.DataSource = lstSelectClient;
+                gridControl.RefreshDataSource();
+                gcPlan.DataSource = lstPromotionSelect;
+                gcPlan.RefreshDataSource();
             }
             finally
             {
                 uiHelper.CloseLoading(this);
+            }
+        }
+
+        public void QueryClinets()
+        {
+            string name = this.txtQnName.Text;
+            string dw = this.txtDw.Text;
+            List<EntityParm> dicParm = new List<EntityParm>();
+
+            if (!string.IsNullOrEmpty(name))
+            {
+                dicParm.Add(Function.GetParm("search", name));
+            }
+            if (!string.IsNullOrEmpty(dw))
+            {
+                dicParm.Add(Function.GetParm("dw", dw));
+            }
+
+            if(string.IsNullOrEmpty(name) && string.IsNullOrEmpty(dw))
+                return;
+
+            using (ProxyHms proxy = new ProxyHms())
+            {
+                this.gcClient.DataSource = proxy.Service.GetClientInfoAndRpt(dicParm);
+                this.gcClient.RefreshDataSource();
             }
         }
 
@@ -112,9 +203,18 @@ namespace Hms.Ui
         void LoadQnDataSource()
         {
             lstClientInfo = null;
+
+            List<EntityParm> dicParm = new List<EntityParm>();
+            string beginDate = DateTime.Now.AddDays(-7).ToString("yyyy.MM.dd");
+            string endDate = DateTime.Now.ToString("yyyy.MM.dd");
+            if (beginDate != string.Empty && endDate != string.Empty)
+            {
+                dicParm.Add(Function.GetParm("genDate", beginDate + "|" + endDate));
+            }
+
             using (ProxyHms proxy = new ProxyHms())
             {
-                lstClientInfo = proxy.Service.GetClientInfoAndRpt();
+                lstClientInfo = proxy.Service.GetClientInfoAndRpt(dicParm);
                 gcClient.DataSource = lstClientInfo;
                 gcClient.RefreshDataSource();
 
@@ -129,6 +229,9 @@ namespace Hms.Ui
                     gcPromotionTemplateConfig.DataSource = lstPromotionTemplateConfig.FindAll(r => r.templateId == vo.id);
                     gcPromotionTemplateConfig.RefreshDataSource();
                 }
+
+                dicPromotionWayConfig= proxy.Service.GetPromotionWayConfigs();
+                dicPromotionContentConfig = proxy.Service.GetPromotionContentConfigs();
             }
         }
         #endregion
@@ -151,7 +254,7 @@ namespace Hms.Ui
         {
             List<EntityClientInfo> data = new List<EntityClientInfo>();
 
-            for (int i = 0;i< this.gvClient.RowCount ; i++)
+            for (int i = 0; i < this.gvClient.RowCount; i++)
             {
                 if (this.gvClient.IsRowSelected(i))
                 {
@@ -217,30 +320,31 @@ namespace Hms.Ui
 
         }
 
-        
+
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            this.gridControl.DataSource = GetSelectData();
+            lstSelectClient = GetSelectData();
+            this.gridControl.DataSource = lstSelectClient;
             this.gridControl.RefreshDataSource();
-            lblSelect.Text = "共 " + GetSelectData().Count.ToString() + " 人";
+            lblSelect.Text = "共 " + lstSelectClient.Count.ToString() + " 人";
         }
 
         private void gvPromotionTemplate_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
-            if(e.RowHandle >= 0)
+            if (e.RowHandle >= 0)
             {
                 EntityPromotionTemplate vo = GetRowTemplateObject();
-                gcPromotionTemplateConfig.DataSource = lstPromotionTemplateConfig.FindAll(r=>r.templateId == vo.id);
+                gcPromotionTemplateConfig.DataSource = lstPromotionTemplateConfig.FindAll(r => r.templateId == vo.id);
                 gcPromotionTemplateConfig.RefreshDataSource();
-                List<EntityPromotionTemplateConfig>  lstTmp = lstPromotionPlans.FindAll(r=>r.templateId ==vo.id);
-                if(lstTmp != null && lstTmp.Count> 0)
+                List<EntityPromotionTemplateConfig> lstTmp = lstPromotionSelect.FindAll(r => r.templateId == vo.id);
+                if (lstTmp != null && lstTmp.Count > 0)
                 {
-                    foreach(var tmp in lstTmp)
+                    foreach (var tmp in lstTmp)
                     {
-                        for(int  i =0;i<gvPromotionTemplateConfig.RowCount;i++)
+                        for (int i = 0; i < gvPromotionTemplateConfig.RowCount; i++)
                         {
-                            EntityPromotionTemplateConfig ptConfig = gvPromotionTemplateConfig.GetRow(i)  as EntityPromotionTemplateConfig;
+                            EntityPromotionTemplateConfig ptConfig = gvPromotionTemplateConfig.GetRow(i) as EntityPromotionTemplateConfig;
                             if (tmp.id == ptConfig.id)
                                 gvPromotionTemplateConfig.SelectRow(i);
                         }
@@ -257,20 +361,25 @@ namespace Hms.Ui
                 if (gvPromotionTemplateConfig.IsRowSelected(e.RowHandle))
                 {
                     gvPromotionTemplateConfig.UnselectRow(e.RowHandle);
-                    lstPromotionPlans.Remove(vo);
+                    lstPromotionSelect.Remove(vo);
                 }
                 else
                 {
                     gvPromotionTemplateConfig.SelectRow(e.RowHandle);
-                    if(!lstPromotionPlans.Exists(r=>r.id == vo.id))
-                        lstPromotionPlans.Add(vo);
+                    if (!lstPromotionSelect.Exists(r => r.id == vo.id))
+                        lstPromotionSelect.Add(vo);
                 }
 
-                gcPlan.DataSource = lstPromotionPlans;
+                gcPlan.DataSource = lstPromotionSelect;
                 gcPlan.RefreshDataSource();
             }
         }
 
         #endregion
+
+        private void btnQuery_Click(object sender, EventArgs e)
+        {
+            this.QueryClinets();
+        }
     }
 }

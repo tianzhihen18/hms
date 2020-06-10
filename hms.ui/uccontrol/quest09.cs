@@ -155,13 +155,10 @@ namespace Hms.Ui
             vo.qnCtlFiledId = "quest09";
             StringBuilder xml = new StringBuilder();
             xml.Append("<eflayout>");
-            int i = 0;
             foreach (Control ctrl in plBack.Controls)
             {
                 if (ctrl is DevExpress.XtraEditors.LabelControl)
                 {
-                    if (ctrl.Name.Contains("FM"))
-                        i = 1;
                     if (ctrl.Name.Contains("F"))
                     {
 

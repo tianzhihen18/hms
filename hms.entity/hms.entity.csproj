@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="entityadpeitem.cs" />
     <Compile Include="entityclientinfo.cs" />
+    <Compile Include="EntityClientReport.cs" />
     <Compile Include="entityctrllocation.cs" />
     <Compile Include="entitydiccai.cs" />
     <Compile Include="entitydiccaiconfig.cs" />
@@ -66,6 +67,9 @@
     <Compile Include="entityhmssf.cs" />
     <Compile Include="entityevaluateparams.cs" />
     <Compile Include="entitymedicaladvicecs.cs" />
+    <Compile Include="entitymodelaccess.cs" />
+    <Compile Include="entitymodelanalysispoint.cs" />
+    <Compile Include="entitymodelparam.cs" />
     <Compile Include="entitypromotioncontentconfig.cs" />
     <Compile Include="entitypromotionplan.cs" />
     <Compile Include="entitypromotiontemplate.cs" />
@@ -76,12 +80,16 @@
     <Compile Include="entityreportinfo.cs" />
     <Compile Include="entityreportitem.cs" />
     <Compile Include="entityreportmainitem.cs" />
+    <Compile Include="entityreportmainitemconfig .cs" />
     <Compile Include="entityreportrecorde.cs" />
     <Compile Include="entityreporttemplate.cs" />
     <Compile Include="entityrpttemplateconfig.cs" />
     <Compile Include="entitysetqncontrol.cs" />
     <Compile Include="entitysms.cs" />
     <Compile Include="entitytemplatedetail.cs" />
+    <Compile Include="entitytjdea.cs" />
+    <Compile Include="entitytjjljy.cs" />
+    <Compile Include="entitytjresult.cs" />
     <Compile Include="entityunnormal.cs" />
     <Compile Include="entityunnormalcombin.cs" />
     <Compile Include="entityusergrade.cs" />

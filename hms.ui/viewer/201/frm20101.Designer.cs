@@ -383,7 +383,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Properties.Appearance.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtName.Properties.Appearance.Options.UseFont = true;
-            this.txtName.Size = new System.Drawing.Size(115, 20);
+            this.txtName.Size = new System.Drawing.Size(195, 20);
             this.txtName.TabIndex = 13;
             // 
             // labelControl2
@@ -394,7 +394,7 @@
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(36, 12);
             this.labelControl2.TabIndex = 12;
-            this.labelControl2.Text = "姓名：";
+            this.labelControl2.Text = "查询：";
             // 
             // frm20101
             // 

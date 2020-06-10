@@ -12,6 +12,7 @@ using weCare.Core.Utils;
 using Hms.Entity;
 using Hms.Ui;
 using Oracle.DataAccess.Client;
+using Hms.Biz;
 
 namespace peDataSys
 {
@@ -113,6 +114,7 @@ namespace peDataSys
         #endregion
 
 
+        #region tab
         public void sysReportDetail()
         {
             SqlHelper svcPe = new SqlHelper(EnumBiz.peDB);
@@ -769,29 +771,6 @@ namespace peDataSys
             {
                 svc = null;
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-            this.gridLookUpEdit.Properties.DataSource = GetDicCaiRecipe();
-            XtraTest xr;
-            xr = new XtraTest();
-            xr.CreateDocument();//创建报表
-            this.documentViewer1.PrintingSystem = xr.PrintingSystem;
-
-
-            //if (gridLookUpEdit1View.DataRowCount > 0)
-            //{
-            //    MessageBox.Show("gridLookUpEdit1View.RowCount");
-            //}
-            //List<EntityClientInfo> lstClientInfo = GetClientInfo();
-            //gcClient.DataSource = lstClientInfo;
-            //gcClient.RefreshDataSource();
-            //lstClientSelect = new List<EntityClientInfo>();
-
-
-
         }
 
         #region 客户列表
@@ -1490,5 +1469,255 @@ namespace peDataSys
                 svc = null;
             }
         }
+
+        #endregion
+
+
+        List<EntityModelParamTop> lstTopic = null;
+        List<EntityModelParam> lstItems = null;
+        Dictionary<string, decimal> dicModelAccess = new Dictionary<string, decimal>();
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //this.gridLookUpEdit.Properties.DataSource = GetDicCaiRecipe();
+            //using (Biz202 biz = new Biz202())
+            //{
+
+            //    List<EntityQnRecord> lstQnRecords = biz.GetQnRecords();
+
+            //    xrptQuest02 xr2 = new xrptQuest02(lstQnRecords[0]);
+            //    xr2.CreateDocument();//创建报表
+            //    xrptQuest01 xr1 = new xrptQuest01(lstQnRecords[0]);
+            //    xr1.CreateDocument();//创建报表
+            //    xrptQn xr = new xrptQn();
+            //    xr.xrptQuest02.ReportSource = xr2;
+            //    xr.xrptQuest01.ReportSource = xr1;
+            //    xr.CreateDocument();//创建报表
+            //    this.documentViewer1.PrintingSystem = xr.PrintingSystem;
+            //}
+
+            //labelControl1.Text = this.labelControl2.Text.Length.ToString();
+            //labelControl3.Text = this.checkEdit1.Text.Length.ToString();
+            //labelControl4.Text = this.checkEdit1.Width.ToString();
+
+            
+            GetQnCustom(1, out lstTopic, out lstItems);
+            if(lstTopic != null)
+            {
+                gcPromotionTemplate.DataSource = lstTopic;
+                gcPromotionTemplate.RefreshDataSource();
+            }
+
+            List<EntityModelAccess> lstModelAccess = GetModelAccesses();
+            if(lstModelAccess != null)
+            {
+                foreach(var vo in lstModelAccess)
+                {
+                    cboModel.Properties.Items.Add(vo.modelName);
+                    dicModelAccess.Add(vo.modelName, vo.modelId);
+                }
+            }
+
+        }
+
+        #region tab5
+
+        #region 获取疾病模型
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public List<EntityModelAccess> GetModelAccesses()
+        {
+            List<EntityModelAccess> data = null;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            string Sql = string.Empty;
+            Sql = @"select a.modelId,
+                           a.modelName
+                      from modelAccess a ";
+            DataTable dt = svc.GetDataTable(Sql);
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                data = new List<EntityModelAccess>();
+                EntityModelAccess vo = null;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    vo = new EntityModelAccess();
+                    vo.modelId = Function.Int(dr["modelId"]);
+                    vo.modelName = dr["modelName"].ToString();
+                    data.Add(vo);
+                }
+            }
+            return data;
+        }
+
+        #endregion
+
+        #region GetQnCustom
+        /// <summary>
+        /// GetQnCustom
+        /// </summary>
+        /// <param name="qnId"></param>
+        /// <param name="lstTopic"></param>
+        /// <param name="lstItems"></param>
+        public void GetQnCustom(decimal qnId, out List<EntityModelParamTop> lstTopic, out List<EntityModelParam> lstItems)
+        {
+            lstTopic = null;
+            lstItems = null;
+            string Sql = string.Empty;
+            DataTable dt = null;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            IDataParameter[] parm = null;
+
+            // 题目(标题)
+            Sql = @"select c.qnClassId,
+                           c.typeId,
+                           c.fieldId,
+                           c.fieldName,
+                           c.isEssential,
+                           c.parentFieldId,
+                           b.questName
+                      from dicQnMain a
+                     inner join dicQnDetail b
+                        on a.qnId = b.qnId
+                     inner join dicQnSetting c
+                        on b.fieldId = c.fieldId
+                     where a.qnId = ? 
+                       and c.status = 1  
+                     order by c.sortNo ";
+
+            parm = svc.CreateParm(1);
+            parm[0].Value = qnId;
+            dt = svc.GetDataTable(Sql, parm);
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                lstTopic = new List<EntityModelParamTop>();
+                string fieldIds = string.Empty;
+                string parentFieldId = string.Empty;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    lstTopic.Add(new EntityModelParamTop()
+                    {
+                        filedId = dr["fieldId"].ToString(),
+                        fieldName = dr["fieldName"].ToString()
+                    });
+                    parentFieldId = dr["parentFieldId"].ToString();
+                    if (string.IsNullOrEmpty(parentFieldId))
+                        fieldIds += "'" + dr["fieldId"].ToString() + "',";
+                    if (fieldIds.Contains(parentFieldId))
+                        continue;
+                    fieldIds += "'" + dr["parentFieldId"].ToString() + "',";
+                }
+                fieldIds = fieldIds.TrimEnd(',');
+                if (fieldIds != string.Empty)
+                {
+                    // 题目选项
+                    lstItems = new List<EntityModelParam>();
+                    Sql = @"select c.qnClassId,
+                                   c.typeId,
+                                   c.fieldId,
+                                   c.fieldName,
+                                   c.isEssential,
+                                   c.parentFieldId
+                              from dicQnSetting c
+                             where c.parentFieldId in ({0}) 
+                               and c.status = 1 ";
+                    dt = svc.GetDataTable(string.Format(Sql, fieldIds));
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        lstItems.Add(new EntityModelParam()
+                        {
+                            parentFieldId = dr["parentFieldId"].ToString(),
+                            paramNo = dr["fieldId"].ToString(),
+                            judgeRange = string.IsNullOrEmpty(dr["fieldName"].ToString()) ? "是" : dr["fieldName"].ToString()
+                        });
+                    }
+                }
+            }
+        }
+
+
+        #endregion
+
+        #endregion
+
+        private void gvPromotionTemplate_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        {
+            if(e.RowHandle >= 0)
+            {
+                EntityModelParamTop vo = gvPromotionTemplate.GetRow(e.RowHandle) as EntityModelParamTop;
+
+                if(vo !=null)
+                {
+                    gcPromotionTemplateConfig.DataSource = lstItems.FindAll(r=>r.parentFieldId == vo.filedId);
+                }
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            IDataParameter[] parm = null;
+            string sql = @"INSERT INTO modelParam( modelId, 
+                            judgeType,
+                            paramType,
+                            gender, 
+                            isChange, 
+                            paramNo, 
+                            paramName, 
+                            judgeValue, 
+                            judgeRange, 
+                            score, 
+                            modulus ) VALUES 
+                            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ";
+            if(gvPromotionTemplateConfig.RowCount > 0)
+            {
+                for(int i = 0;i< gvPromotionTemplateConfig.RowCount;i++)
+                {
+                    if(gvPromotionTemplateConfig.IsRowSelected(i))
+                    {
+                        EntityModelParam vo = gvPromotionTemplateConfig.GetRow(i) as EntityModelParam;
+                        vo.modelId = dicModelAccess[cboModel.Text];
+                        vo.gender = 0;
+                        vo.paramType = 3;
+                        vo.isChange = 1;
+                        parm = svc.CreateParm(11);
+                        parm[0].Value = vo.modelId;
+                        parm[1].Value = vo.judgeType;
+                        parm[2].Value = vo.paramType;
+                        parm[3].Value = vo.gender;
+                        parm[4].Value = vo.isChange;
+                        parm[5].Value = vo.paramNo;
+                        parm[6].Value = vo.paramName;
+                        parm[7].Value = vo.judgeValue;
+                        parm[8].Value = vo.judgeRange;
+                        parm[9].Value = vo.score;
+                        parm[10].Value = vo.modulus;
+                        svc.ExecSql(sql, parm);
+                    }
+                }
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtSearch.Text) )
+            {
+                gcPromotionTemplate.DataSource = lstTopic;
+                gcPromotionTemplate.RefreshDataSource();
+            }
+            else
+            {
+                gcPromotionTemplate.DataSource = lstTopic.FindAll(r=>r.fieldName.Contains(txtSearch.Text));
+                gcPromotionTemplate.RefreshDataSource();
+            }
+        }
+    }
+
+    public class EntityModelParamTop
+    {
+        public string filedId { get; set; }
+        public string fieldName { get; set; }
+        public string paramName { get; set; }
     }
 }
