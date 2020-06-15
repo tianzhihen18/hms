@@ -1668,8 +1668,8 @@ namespace peDataSys
                             judgeValue, 
                             judgeRange, 
                             score, 
-                            modulus ) VALUES 
-                            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ";
+                            modulus,parentFieldId ) VALUES 
+                            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?) ";
             if(gvPromotionTemplateConfig.RowCount > 0)
             {
                 for(int i = 0;i< gvPromotionTemplateConfig.RowCount;i++)
@@ -1677,11 +1677,17 @@ namespace peDataSys
                     if(gvPromotionTemplateConfig.IsRowSelected(i))
                     {
                         EntityModelParam vo = gvPromotionTemplateConfig.GetRow(i) as EntityModelParam;
+                        if (string.IsNullOrEmpty(cboModel.Text))
+                        {
+                            MessageBox.Show("疾病类型为空！");
+                            return;
+                        }
+                            
                         vo.modelId = dicModelAccess[cboModel.Text];
                         vo.gender = 0;
                         vo.paramType = 3;
                         vo.isChange = 1;
-                        parm = svc.CreateParm(11);
+                        parm = svc.CreateParm(12);
                         parm[0].Value = vo.modelId;
                         parm[1].Value = vo.judgeType;
                         parm[2].Value = vo.paramType;
@@ -1693,6 +1699,7 @@ namespace peDataSys
                         parm[8].Value = vo.judgeRange;
                         parm[9].Value = vo.score;
                         parm[10].Value = vo.modulus;
+                        parm[11].Value = vo.paramNo.Substring(0, 4);
                         svc.ExecSql(sql, parm);
                     }
                 }

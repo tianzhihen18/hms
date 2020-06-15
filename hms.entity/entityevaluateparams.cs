@@ -35,6 +35,8 @@ namespace Hms.Entity
         /// </summary>
         [DataMember]
         public string range { get; set; }
+        [DataMember]
+        public string judeValue { get; set; }
         /// <summary>
         /// 单位
         /// </summary>

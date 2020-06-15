@@ -119,28 +119,102 @@ namespace Hms.Entity
 
         #endregion
 
-
+        #region 糖尿病
         /// <summary>
         /// 糖尿病
         /// </summary>
         [DataMember]
-        public List<EntityEvaluateParams> lstTnb { get; set; }
+        public List<EntityEvaluateParams> lstTnbModelParam { get; set; }
         /// <summary>
         /// 糖尿病风险评估 
         /// </summary>
         [DataMember]
-        public List<EntityEvaluateResult> lstEvaluateGxb { get; set; }
+        public List<EntityEvaluateResult> lstEvaluateTnb { get; set; }
+        /// <summary>
+        /// 糖尿病得分
+        /// </summary>
+        [DataMember]
+        public decimal tnbDf { get; set; }
+        [DataMember]
+        public decimal tnbBestDf { get; set; }
+        [DataMember]
+        public decimal tnbAbasableDf { get; set; }
 
+        [DataMember]
+        public Image imgTnbFx01 { get; set; }
+        [DataMember]
+        public Image imgTnbFx02 { get; set; }
+        [DataMember]
+        public Image imgTnbFx03 { get; set; }
+        [DataMember]
+        public Image imgTnbFx04 { get; set; }
+
+        [DataMember]
+        public string tnbPoint1 { get; set; }
+        [DataMember]
+        public string tnbPoint2 { get; set; }
+        [DataMember]
+        public string tnbPoint3 { get; set; }
+        [DataMember]
+        public string tnbPoint4 { get; set; }
+        [DataMember]
+        public string tnbPoint5 { get; set; }
+        [DataMember]
+        public string tnbPoint6 { get; set; }
+        [DataMember]
+        public string tnbPoint7 { get; set; }
+        [DataMember]
+        public string tnbPoint8 { get; set; }
+        #endregion
+
+        #region 冠心病
         /// <summary>
         /// 冠心病
         /// </summary>
         [DataMember]
-        public List<EntityEvaluateParams> lstGxb { get; set; }
+        public List<EntityEvaluateParams> lstGxbModelParam { get; set; }
         /// <summary>
         /// 冠心病风险评估 
         /// </summary>
         [DataMember]
-        public List<EntityEvaluateResult> lstEvaluateTnb { get; set; }
+        public List<EntityEvaluateResult> lstEvaluateGxb { get; set; }
+        /// <summary>
+        /// 冠心病得分
+        /// </summary>
+        [DataMember]
+        public decimal gxbDf { get; set; }
+        [DataMember]
+        public decimal gxbBestDf { get; set; }
+        [DataMember]
+        public decimal gxAbasableDf { get; set; }
+
+        [DataMember]
+        public Image imgGxbFx01 { get; set; }
+        [DataMember]
+        public Image imgGxbFx02 { get; set; }
+        [DataMember]
+        public Image imgGxbFx03 { get; set; }
+        [DataMember]
+        public Image imgGxbFx04 { get; set; }
+
+        [DataMember]
+        public string gxbPoint1 { get; set; }
+        [DataMember]
+        public string gxbPoint2 { get; set; }
+        [DataMember]
+        public string gxbPoint3 { get; set; }
+        [DataMember]
+        public string gxbPoint4 { get; set; }
+        [DataMember]
+        public string gxbPoint5 { get; set; }
+        [DataMember]
+        public string gxbPoint6 { get; set; }
+        [DataMember]
+        public string gxbPoint7 { get; set; }
+        [DataMember]
+        public string gxbPoint8 { get; set; }
+
+        #endregion
 
         /// <summary>
         /// 血脂异常

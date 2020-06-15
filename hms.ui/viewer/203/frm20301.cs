@@ -26,11 +26,18 @@ namespace Hms.Ui
 
 
         #region var/property
+        //疾病模型预防要求
         List<EntityModelAnalysisPoint> lstModelPoint { get; set; }
+        //疾病模型主要评估参数
         List<EntityModelParam> lstModelParam { get; set; }
+        //疾病模型
+        List<EntityModelAccess> lstModelAccess { get; set; }
         List<EntityDisplayClientRpt> lstClientInfo { get; set; }
+        //体检小结信息
         List<EntityTjResult> lstXjResult;
+        //体检结果
         List<EntityTjResult> lstTjResult;
+        //体检结论建议
         EntityTjjljy tjjljyVo;
         #endregion
 
@@ -77,17 +84,20 @@ namespace Hms.Ui
             rpt.image05 = ReadImageFile("pic05.png");
             rpt.imageTip = ReadImageFile("picTip.png");
             rpt.image07 = ReadImageFile("pic07.png");
+
             #region 健康汇总及重要指标
             rpt.lstMainItem = GetMainIndicate();
             if (tjjljyVo != null)
                 rpt.tjSumup = tjjljyVo.sumup;
             #endregion
 
+            List<int> lstPoint = null;
+
             #region 高血压
             rpt.lstGxyModelParam = GetModelParam(1);
             //预防要点
-            List<int> lstPoint = new List<int>();
-            if(rpt.lstGxyModelParam !=null)
+            lstPoint = new List<int>();
+            if (rpt.lstGxyModelParam !=null)
             {
                 foreach(var pVo in rpt.lstGxyModelParam)
                 {
@@ -147,6 +157,134 @@ namespace Hms.Ui
             rpt.lstEvaluateGxy.Add(voEa);
             #endregion
 
+            #region  糖尿病
+            rpt.lstTnbModelParam = GetModelParam(2);
+            //预防要点
+            lstPoint = new List<int>();
+            if (rpt.lstTnbModelParam != null)
+            {
+                foreach (var pVo in rpt.lstTnbModelParam)
+                {
+                    EntityEvaluateParams vo = rpt.lstTnbModelParam.Find(r => r.paramNo == pVo.paramNo);
+                    if (vo != null && !lstPoint.Contains(vo.pointId))
+                    {
+                        lstPoint.Add(vo.pointId);
+                    }
+                }
+
+                for (int i = 0; i < lstPoint.Count; i++)
+                {
+                    if (i == 0)
+                        rpt.tnbPoint1 = lstModelPoint.Find(r => r.id == lstPoint[0]).pintAdvice;
+                    if (i == 1)
+                        rpt.tnbPoint2 = lstModelPoint.Find(r => r.id == lstPoint[1]).pintAdvice;
+                    if (i == 2)
+                        rpt.tnbPoint3 = lstModelPoint.Find(r => r.id == lstPoint[2]).pintAdvice;
+                    if (i == 3)
+                        rpt.tnbPoint4 = lstModelPoint.Find(r => r.id == lstPoint[3]).pintAdvice;
+                    if (i == 4)
+                        rpt.tnbPoint5 = lstModelPoint.Find(r => r.id == lstPoint[4]).pintAdvice;
+                    if (i == 5)
+                        rpt.tnbPoint6 = lstModelPoint.Find(r => r.id == lstPoint[5]).pintAdvice;
+                    if (i == 6)
+                        rpt.tnbPoint7 = lstModelPoint.Find(r => r.id == lstPoint[6]).pintAdvice;
+                    if (i == 7)
+                        rpt.tnbPoint8 = lstModelPoint.Find(r => r.id == lstPoint[7]).pintAdvice;
+                }
+            }
+
+            decimal tnbBestDf = 0;
+            rpt.tnbDf = CalcModelResult(1, out tnbBestDf);
+            rpt.tnbBestDf = tnbBestDf;
+            rpt.tnbAbasableDf = rpt.tnbDf - rpt.tnbBestDf;
+            if (rpt.tnbDf <= 5)
+                rpt.imgTnbFx01 = ReadImageFile("picFx.png");
+            else if (rpt.tnbDf > 5 && rpt.tnbDf < 20)
+                rpt.imgTnbFx02 = ReadImageFile("picFx.png");
+            else if (rpt.tnbDf > 20 && rpt.tnbDf < 50)
+                rpt.imgTnbFx03 = ReadImageFile("picFx.png");
+            else if (rpt.tnbDf >= 50)
+                rpt.imgTnbFx04 = ReadImageFile("picFx.png");
+
+            rpt.lstEvaluateTnb = new List<EntityEvaluateResult>();
+            EntityEvaluateResult voTnbEr = new EntityEvaluateResult();
+            voTnbEr.result = Function.Double(rpt.tnbDf.ToString("0.00"));
+            voTnbEr.evaluationName = "本次结果";
+            rpt.lstEvaluateTnb.Add(voTnbEr);
+            EntityEvaluateResult voTnbEb = new EntityEvaluateResult();
+            voTnbEb.result = Function.Double(rpt.tnbBestDf.ToString("0.00"));
+            voTnbEb.evaluationName = "最佳状态";
+            rpt.lstEvaluateTnb.Add(voTnbEb);
+            EntityEvaluateResult voTnbEa = new EntityEvaluateResult();
+            voTnbEa.result = 5;
+            voTnbEa.evaluationName = "平均水平";
+            rpt.lstEvaluateTnb.Add(voTnbEa);
+            #endregion
+
+            #region 冠心病
+            rpt.lstGxbModelParam = GetModelParam(3);
+            //预防要点
+            lstPoint = new List<int>();
+            if (rpt.lstGxbModelParam != null)
+            {
+                foreach (var pVo in rpt.lstGxbModelParam)
+                {
+                    EntityEvaluateParams vo = rpt.lstGxbModelParam.Find(r => r.paramNo == pVo.paramNo);
+                    if (vo != null && !lstPoint.Contains(vo.pointId))
+                    {
+                        lstPoint.Add(vo.pointId);
+                    }
+                }
+
+                for (int i = 0; i < lstPoint.Count; i++)
+                {
+                    if (i == 0)
+                        rpt.gxbPoint1 = lstModelPoint.Find(r => r.id == lstPoint[0]).pintAdvice;
+                    if (i == 1)
+                        rpt.gxbPoint2 = lstModelPoint.Find(r => r.id == lstPoint[1]).pintAdvice;
+                    if (i == 2)
+                        rpt.gxbPoint3 = lstModelPoint.Find(r => r.id == lstPoint[2]).pintAdvice;
+                    if (i == 3)
+                        rpt.gxbPoint4 = lstModelPoint.Find(r => r.id == lstPoint[3]).pintAdvice;
+                    if (i == 4)
+                        rpt.gxbPoint5 = lstModelPoint.Find(r => r.id == lstPoint[4]).pintAdvice;
+                    if (i == 5)
+                        rpt.gxbPoint6 = lstModelPoint.Find(r => r.id == lstPoint[5]).pintAdvice;
+                    if (i == 6)
+                        rpt.gxbPoint7 = lstModelPoint.Find(r => r.id == lstPoint[6]).pintAdvice;
+                    if (i == 7)
+                        rpt.gxbPoint8 = lstModelPoint.Find(r => r.id == lstPoint[7]).pintAdvice;
+                }
+            }
+
+            decimal gxbBestDf = 0;
+            rpt.gxbDf = CalcModelResult(1, out gxbBestDf);
+            rpt.gxbBestDf = tnbBestDf;
+            rpt.tnbAbasableDf = rpt.tnbDf - rpt.gxbBestDf;
+            if (rpt.tnbDf <= 5)
+                rpt.imgGxbFx01 = ReadImageFile("picFx.png");
+            else if (rpt.gxbDf > 5 && rpt.gxbDf < 20)
+                rpt.imgGxbFx02 = ReadImageFile("picFx.png");
+            else if (rpt.gxbDf > 20 && rpt.gxbDf < 50)
+                rpt.imgGxbFx03 = ReadImageFile("picFx.png");
+            else if (rpt.gxbDf >= 50)
+                rpt.imgGxbFx04 = ReadImageFile("picFx.png");
+
+            rpt.lstEvaluateGxb = new List<EntityEvaluateResult>();
+            EntityEvaluateResult voGxbEr = new EntityEvaluateResult();
+            voGxbEr.result = Function.Double(rpt.gxbDf.ToString("0.00"));
+            voGxbEr.evaluationName = "本次结果";
+            rpt.lstEvaluateGxb.Add(voGxbEr);
+            EntityEvaluateResult voGxbEb = new EntityEvaluateResult();
+            voGxbEb.result = Function.Double(rpt.gxbBestDf.ToString("0.00"));
+            voGxbEb.evaluationName = "最佳状态";
+            rpt.lstEvaluateGxb.Add(voGxbEb);
+            EntityEvaluateResult voGxbEa = new EntityEvaluateResult();
+            voGxbEa.result = 5;
+            voGxbEa.evaluationName = "平均水平";
+            rpt.lstEvaluateGxb.Add(voGxbEa);
+            #endregion
+
             frmPopup2030101 frm = new frmPopup2030101(rpt);
             frm.ShowDialog();
 
@@ -203,6 +341,7 @@ namespace Hms.Ui
                 {
                     lstModelParam = proxy.Service.GetModelParam();
                     lstModelPoint = proxy.Service.GetModelAnalysisPoint();
+                    lstModelAccess = proxy.Service.GetModelAccess();
                 }
 
                 RefreshData();
@@ -280,6 +419,8 @@ namespace Hms.Ui
                     mainItem.itemUnits = result.unit;
                     mainItem.itemRefrange = result.range;
                     mainItem.isNormal = result.hint;
+                    if (!string.IsNullOrEmpty(result.hint))
+                        mainItem.pic = ReadImageFile("picHint.png");
                     if (result.ttop == "2" && !string.IsNullOrEmpty(result.examinationNo))
                     {
                         EntityTjResult resultTmp = lstTjResult.Find(r => r.itemCode == result.examinationNo);
@@ -328,6 +469,8 @@ namespace Hms.Ui
                                     param.itemCode = model.parentFieldId;
                                     param.itemName = model.paramName;
                                     param.range = model.normalRange;
+                                    param.judeValue = model.judgeRange;
+                                    
                                     param.pointId = model.pointId;
                                     if (model.judgeType == 2)
                                     {
@@ -355,6 +498,10 @@ namespace Hms.Ui
                                         param.result = dicData[model.paramNo];
                                     }
                                 }
+                                if (param.result != param.range && param.result != "未填")
+                                    param.pic = ReadImageFile("picHint.png");
+                                else
+                                    param.pic = null;
                             }
                         }
                     }
@@ -391,6 +538,7 @@ namespace Hms.Ui
         {
             decimal result = 0;
             bestDf = 0;
+            bool ageFlag = false;
             Dictionary<string, string> dicData = new Dictionary<string, string>();
             EntityDisplayClientRpt vo = GetRowObject();
             List<EntityModelParam> lstModelParamGxy = lstModelParam.FindAll(r => r.modelId == modelId);
@@ -399,7 +547,7 @@ namespace Hms.Ui
             {
                 foreach (var model in lstModelParamGxy)
                 {
-                    if (model.paramNo.Contains("F")) //问卷
+                    if (model.paramNo.Contains("F") || model.paramNo == "Age") //问卷
                     {
                         if (!string.IsNullOrEmpty(vo.qnRecord.xmlData))
                         {
@@ -419,6 +567,22 @@ namespace Hms.Ui
 
                                 result += score;
                             }
+                            if(model.paramNo == "Age")
+                            {
+                                decimal df = 0;
+                                decimal bDf = 0;
+                                decimal age = 0;
+                                if(dicData.ContainsKey("Birthday") && !ageFlag)
+                                {
+                                    if(!string.IsNullOrEmpty(dicData["Birthday"]))
+                                    {
+                                        age = CalcAge.GetAgeInt(Function.Datetime(dicData["Birthday"]));
+                                        df = CalcDf(age, model.paramNo, out bDf);
+                                        result += df;
+                                        ageFlag = true;
+                                    }
+                                }
+                            }
 
                             //最佳状态 得分
                             string parentFieldId = model.parentFieldId;
@@ -437,63 +601,83 @@ namespace Hms.Ui
                         if (tjVo == null)
                             continue;
                         decimal tjValue = Function.Dec(tjVo.itemResult);
-                        List<EntityModelParam> lstModelTmp = lstModelParam.FindAll(r => r.paramNo == model.paramNo);
-                        if(lstModelTmp != null)
-                        {
-                            foreach(var mVo in lstModelTmp)
-                            {
-                                decimal minValue = 0;
-                                decimal maxValue = 0;
-                                decimal score = 0;
-                                
-                                if (mVo.judgeRange.Contains("~<"))
-                                {
-                                    minValue = Function.Dec(mVo.judgeRange.Replace("<", "").Trim().Split('~')[0]);
-                                    maxValue = Function.Dec(mVo.judgeRange.Replace("<", "").Trim().Split('~')[1]);
-                                    if (tjValue >= minValue && tjValue <= maxValue)
-                                    {
-                                        score += (tjValue - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
-                                    }
-                                }
-                                else if (mVo.judgeRange.Contains("≥"))
-                                {
-                                    maxValue = Function.Dec(mVo.judgeRange.Replace("≥", "").Trim());
-                                    if(tjValue >= maxValue)
-                                    {
-                                        score += (tjValue - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
-                                    }
-                                }
-                                else if(mVo.judgeRange.Contains("<") )
-                                {
-                                    minValue = Function.Dec(mVo.judgeRange.Replace("<", "").Trim());
-                                    if (tjValue < minValue)
-                                    {
-                                        score += (tjValue - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
-                                    }
-                                }
-                                else if( mVo.judgeRange.Contains("≤"))
-                                {
-                                    minValue = Function.Dec(mVo.judgeRange.Replace("≤", "").Trim());
-                                    if (tjValue < minValue)
-                                    {
-                                        score += (tjValue - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
-                                    }
-                                }
-                                result += score;
-
-                                //最佳状态 得分
-                                if (mVo.isBest == "1")
-                                {
-                                    bestDf  += (tjValue - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
-                                }
-                                    
-
-                            }
-                        }
+                        decimal df = 0;
+                        decimal bDf = 0;
+                        df = CalcDf(tjValue, model.paramNo, out bDf);
+                        result += df;
+                        bestDf += bDf;
                     }
                 }
             }
             
+            return result;
+        }
+        #endregion
+
+        #region  体检 、年龄 计算分值
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="paramNo"></param>
+        /// <param name="bestDf"></param>
+        /// <returns></returns>
+        internal decimal CalcDf(decimal value ,string paramNo,out decimal bestDf)
+        {
+            decimal result = 0;
+            bestDf = 0;
+            List<EntityModelParam> lstModelTmp = lstModelParam.FindAll(r => r.paramNo == paramNo);
+            if (lstModelTmp != null)
+            {
+                foreach (var mVo in lstModelTmp)
+                {
+                    decimal minValue = 0;
+                    decimal maxValue = 0;
+                    decimal score = 0;
+
+                    if (mVo.judgeRange.Contains("~<"))
+                    {
+                        minValue = Function.Dec(mVo.judgeRange.Replace("<", "").Trim().Split('~')[0]);
+                        maxValue = Function.Dec(mVo.judgeRange.Replace("<", "").Trim().Split('~')[1]);
+                        if (value >= minValue && value <= maxValue)
+                        {
+                            score += (value - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
+                        }
+                    }
+                    else if (mVo.judgeRange.Contains("≥"))
+                    {
+                        maxValue = Function.Dec(mVo.judgeRange.Replace("≥", "").Trim());
+                        if (value >= maxValue)
+                        {
+                            score += (value - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
+                        }
+                    }
+                    else if (mVo.judgeRange.Contains("<"))
+                    {
+                        minValue = Function.Dec(mVo.judgeRange.Replace("<", "").Trim());
+                        if (value < minValue)
+                        {
+                            score += (value - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
+                        }
+                    }
+                    else if (mVo.judgeRange.Contains("≤"))
+                    {
+                        minValue = Function.Dec(mVo.judgeRange.Replace("≤", "").Trim());
+                        if (value < minValue)
+                        {
+                            score += (value - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
+                        }
+                    }
+                    result += score;
+
+                    //最佳状态 得分
+                    if (mVo.isBest == "1")
+                    {
+                        bestDf += (value - mVo.judgeValue) * Function.Dec(mVo.modulus) + mVo.score;
+                    }
+                }
+            }
+
             return result;
         }
         #endregion

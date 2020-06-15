@@ -99,6 +99,49 @@ namespace Hms.Ui
                 this.lblGxyPoint8.Text = string.IsNullOrEmpty(report.gxyPoint8) ? "" : "8、" + report.gxyPoint8;
                 #endregion
 
+                #region 糖尿病
+                this.picHintTnb.DataBindings.Add("Image", report.lstTnbModelParam, "pic");
+                this.cellTnbItem.DataBindings.Add("Text", report.lstTnbModelParam, "itemName");//
+                this.cellTnbResult.DataBindings.Add("Text", report.lstTnbModelParam, "result");//
+                this.cellTnbRange.DataBindings.Add("Text", report.lstTnbModelParam, "range");//
+                this.cellTnbUnit.DataBindings.Add("Text", report.lstTnbModelParam, "unit");//
+                this.dtRptTnbGroup.DataSource = report.lstTnbModelParam;
+                this.lblTnbDf.Text = report.tnbDf.ToString("0.00");
+                this.lblTnbAbasableDf.Text = report.tnbAbasableDf.ToString("0.00");
+                this.lblTnbBestDf.Text = report.tnbBestDf.ToString("0.00");
+
+                this.picTnbFx01.Image = report.imgTnbFx01;
+                this.picTnbFx02.Image = report.imgTnbFx02;
+                this.picTnbFx03.Image = report.imgTnbFx03;
+                this.picTnbFx04.Image = report.imgTnbFx04;
+
+                if (report.tnbDf > 5 && report.tnbDf < 18)
+                    this.lblTnbTip.Text = "【说明】您在未来5~10年糖尿病的患病风险为" + this.lblTnbDf.Text + "%，有一定风险，但仍然低于同年龄、同性别人群的平均水平。";
+                if (report.tnbDf <= 5)
+                    this.lblTnbTip.Text = "【说明】您在未来5~10年糖尿病的患病风险为" + this.lblTnbDf.Text + "%，远低于同年龄、同性别人群的平均水平。";
+                if (report.tnbDf >= 18 && report.tnbDf < 50)
+                    this.lblTnbTip.Text = "【说明】您在未来5~10年糖尿病的患病风险为" + this.lblTnbDf.Text + "%，高于同年龄、同性别人群的平均水平。";
+                if (report.tnbDf >= 50)
+                    this.lblTnbTip.Text = "【说明】您在未来5~10年糖尿病的患病风险为" + this.lblTnbDf.Text + "%，远高于同年龄、同性别人群的平均水平。";
+
+                //this.xrChartTnb.DataSource = report.lstEvaluateTnb;
+                this.xrChartTnb.Series[0].SetDataMembers("evaluationName", "result");
+                this.xrChartTnb.Series[0].DataSource = report.lstEvaluateTnb[0];
+                this.xrChartTnb.Series[1].SetDataMembers("evaluationName", "result");
+                this.xrChartTnb.Series[1].DataSource = report.lstEvaluateTnb[1];
+                this.xrChartTnb.Series[2].SetDataMembers("evaluationName", "result");
+                this.xrChartTnb.Series[2].DataSource = report.lstEvaluateTnb[2];
+
+                this.lblTnbPoint1.Text = string.IsNullOrEmpty(report.tnbPoint1) ? "" : "1、" + report.tnbPoint1;
+                this.lblTnbPoint2.Text = string.IsNullOrEmpty(report.tnbPoint2) ? "" : "2、" + report.tnbPoint2;
+                this.lblTnbPoint3.Text = string.IsNullOrEmpty(report.tnbPoint3) ? "" : "3、" + report.tnbPoint3;
+                this.lblTnbPoint4.Text = string.IsNullOrEmpty(report.tnbPoint4) ? "" : "4、" + report.tnbPoint4;
+                this.lblTnbPoint5.Text = string.IsNullOrEmpty(report.tnbPoint5) ? "" : "5、" + report.tnbPoint5;
+                this.lblTnbPoint6.Text = string.IsNullOrEmpty(report.tnbPoint6) ? "" : "6、" + report.tnbPoint6;
+                this.lblTnbPoint7.Text = string.IsNullOrEmpty(report.tnbPoint7) ? "" : "7、" + report.tnbPoint7;
+                this.lblTnbPoint8.Text = string.IsNullOrEmpty(report.tnbPoint8) ? "" : "8、" + report.tnbPoint8;
+                #endregion
+
 
                 #region 就医检查建议
                 this.cellPeBseItem1.DataBindings.Add("Text", report.lstAdPeItemBse, "item1");//

@@ -142,6 +142,14 @@ namespace Hms.Itf
         /// <param name="parms"></param>
         /// <returns></returns>
         List<EntityModelAnalysisPoint> GetModelAnalysisPoint(List<EntityParm> parms = null);
+
+        /// <summary>
+        /// 疾病模型
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetModelAccess")]
+        List<EntityModelAccess> GetModelAccess(List<EntityParm> parms = null);
         #endregion
 
         #region 204 健康干预

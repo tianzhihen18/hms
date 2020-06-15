@@ -53,35 +53,35 @@ namespace Hms.Entity
         /// </summary>
         [DataMember]
         [EntityAttribute(FieldName = "lowDanger", DbType = DbType.Decimal, IsPK = false, IsSeq = false, SerNo = 7)]
-        public System.Decimal? lowDanger { get; set; }
+        public System.Decimal lowDanger { get; set; }
 
         /// <summary>
         /// minAge
         /// </summary>
         [DataMember]
         [EntityAttribute(FieldName = "minAge", DbType = DbType.Decimal, IsPK = false, IsSeq = false, SerNo = 8)]
-        public System.Decimal? minAge { get; set; }
+        public System.Decimal minAge { get; set; }
 
         /// <summary>
         /// maxAge
         /// </summary>
         [DataMember]
         [EntityAttribute(FieldName = "maxAge", DbType = DbType.Decimal, IsPK = false, IsSeq = false, SerNo = 9)]
-        public System.Decimal? maxAge { get; set; }
+        public System.Decimal maxAge { get; set; }
 
         /// <summary>
         /// modelSex
         /// </summary>
         [DataMember]
         [EntityAttribute(FieldName = "modelSex", DbType = DbType.Decimal, IsPK = false, IsSeq = false, SerNo = 10)]
-        public System.Decimal? modelSex { get; set; }
+        public System.Decimal modelSex { get; set; }
 
         /// <summary>
         /// orderId
         /// </summary>
         [DataMember]
         [EntityAttribute(FieldName = "orderId", DbType = DbType.Decimal, IsPK = false, IsSeq = false, SerNo = 11)]
-        public System.Decimal? orderId { get; set; }
+        public System.Decimal orderId { get; set; }
 
         /// <summary>
         /// isNeedQuestion

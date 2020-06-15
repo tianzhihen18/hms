@@ -35,33 +35,37 @@
             DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel2 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
-            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel3 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
-            DevExpress.XtraCharts.XYDiagram xyDiagram4 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel4 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
-            DevExpress.XtraCharts.XYDiagram xyDiagram5 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel5 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
-            DevExpress.XtraCharts.XYDiagram xyDiagram6 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.XYDiagram xyDiagram4 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel6 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
-            DevExpress.XtraCharts.XYDiagram xyDiagram7 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.XYDiagram xyDiagram5 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series7 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel7 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
-            DevExpress.XtraCharts.XYDiagram xyDiagram8 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.XYDiagram xyDiagram6 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series8 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel8 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
-            DevExpress.XtraCharts.XYDiagram xyDiagram9 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.XYDiagram xyDiagram7 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series9 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel9 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
-            DevExpress.XtraCharts.XYDiagram xyDiagram10 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.XYDiagram xyDiagram8 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series10 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel10 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
-            DevExpress.XtraCharts.XYDiagram xyDiagram11 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.XYDiagram xyDiagram9 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series11 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel11 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
+            DevExpress.XtraCharts.XYDiagram xyDiagram10 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series12 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel12 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
+            DevExpress.XtraCharts.XYDiagram xyDiagram11 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series13 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel13 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.xrTable9 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow24 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -473,11 +477,11 @@
             this.xrTable11 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow28 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell63 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.xrTableCell64 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell65 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell66 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell67 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.picHintTnb = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.cellTnbItem = new DevExpress.XtraReports.UI.XRTableCell();
+            this.cellTnbResult = new DevExpress.XtraReports.UI.XRTableCell();
+            this.cellTnbRange = new DevExpress.XtraReports.UI.XRTableCell();
+            this.cellTnbUnit = new DevExpress.XtraReports.UI.XRTableCell();
             this.GroupHeader2 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.xrTable10 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow49 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -490,16 +494,19 @@
             this.xrTableCell62 = new DevExpress.XtraReports.UI.XRTableCell();
             this.dtRptTnbFxpg = new DevExpress.XtraReports.UI.DetailReportBand();
             this.Detail10 = new DevExpress.XtraReports.UI.DetailBand();
-            this.xrLabel95 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel96 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel97 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel98 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel99 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel100 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel101 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel102 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTnbAbasableDf = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTnbBestDf = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTnbDf = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTnbPoint1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTnbPoint7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTnbPoint6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTnbPoint5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTnbPoint4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTnbPoint3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTnbPoint2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTnbPoint8 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel137 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel66 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblTnbTip = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel67 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel68 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel69 = new DevExpress.XtraReports.UI.XRLabel();
@@ -508,10 +515,10 @@
             this.xrLabel72 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel73 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel74 = new DevExpress.XtraReports.UI.XRLabel();
-            this.picTnb04 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.picTnb03 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.picTnb02 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.picTnb01 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.picTnbFx04 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.picTnbFx03 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.picTnbFx02 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.picTnbFx01 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrLabel75 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel76 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel77 = new DevExpress.XtraReports.UI.XRLabel();
@@ -1163,60 +1170,64 @@
             ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable33)).BeginInit();
@@ -2528,6 +2539,7 @@
             this.dtRptMain.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.Detail2});
             this.dtRptMain.Dpi = 100F;
+            this.dtRptMain.Expanded = false;
             this.dtRptMain.Level = 1;
             this.dtRptMain.Name = "dtRptMain";
             // 
@@ -5334,6 +5346,7 @@
             this.dtRptGxyGroup,
             this.dtRptGxyFxpg});
             this.dtRptGxy.Dpi = 100F;
+            this.dtRptGxy.Expanded = false;
             this.dtRptGxy.Level = 2;
             this.dtRptGxy.Name = "dtRptGxy";
             // 
@@ -5352,6 +5365,7 @@
             this.Detail8,
             this.GroupHeader3});
             this.dtRptGxyGroup.Dpi = 100F;
+            this.dtRptGxyGroup.Expanded = false;
             this.dtRptGxyGroup.Level = 0;
             this.dtRptGxyGroup.Name = "dtRptGxyGroup";
             // 
@@ -6179,10 +6193,10 @@
             this.xrTableRow28.BorderColor = System.Drawing.Color.White;
             this.xrTableRow28.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.xrTableCell63,
-            this.xrTableCell64,
-            this.xrTableCell65,
-            this.xrTableCell66,
-            this.xrTableCell67});
+            this.cellTnbItem,
+            this.cellTnbResult,
+            this.cellTnbRange,
+            this.cellTnbUnit});
             this.xrTableRow28.Dpi = 100F;
             this.xrTableRow28.Name = "xrTableRow28";
             this.xrTableRow28.StylePriority.UseBackColor = false;
@@ -6194,46 +6208,46 @@
             // xrTableCell63
             // 
             this.xrTableCell63.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrPictureBox1});
+            this.picHintTnb});
             this.xrTableCell63.Dpi = 100F;
             this.xrTableCell63.Name = "xrTableCell63";
             this.xrTableCell63.Weight = 0.3133679996429215D;
             // 
-            // xrPictureBox1
+            // picHintTnb
             // 
-            this.xrPictureBox1.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrPictureBox1.Dpi = 100F;
-            this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
-            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(3.284203F, 4F);
-            this.xrPictureBox1.Name = "xrPictureBox1";
-            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(62.41865F, 26F);
-            this.xrPictureBox1.StylePriority.UseBorders = false;
+            this.picHintTnb.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.picHintTnb.Dpi = 100F;
+            this.picHintTnb.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
+            this.picHintTnb.LocationFloat = new DevExpress.Utils.PointFloat(3.284203F, 4F);
+            this.picHintTnb.Name = "picHintTnb";
+            this.picHintTnb.SizeF = new System.Drawing.SizeF(62.41865F, 26F);
+            this.picHintTnb.StylePriority.UseBorders = false;
             // 
-            // xrTableCell64
+            // cellTnbItem
             // 
-            this.xrTableCell64.Dpi = 100F;
-            this.xrTableCell64.Name = "xrTableCell64";
-            this.xrTableCell64.StylePriority.UseTextAlignment = false;
-            this.xrTableCell64.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell64.Weight = 0.95623291194303206D;
+            this.cellTnbItem.Dpi = 100F;
+            this.cellTnbItem.Name = "cellTnbItem";
+            this.cellTnbItem.StylePriority.UseTextAlignment = false;
+            this.cellTnbItem.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.cellTnbItem.Weight = 0.95623291194303206D;
             // 
-            // xrTableCell65
+            // cellTnbResult
             // 
-            this.xrTableCell65.Dpi = 100F;
-            this.xrTableCell65.Name = "xrTableCell65";
-            this.xrTableCell65.Weight = 0.60671541074289337D;
+            this.cellTnbResult.Dpi = 100F;
+            this.cellTnbResult.Name = "cellTnbResult";
+            this.cellTnbResult.Weight = 0.60671541074289337D;
             // 
-            // xrTableCell66
+            // cellTnbRange
             // 
-            this.xrTableCell66.Dpi = 100F;
-            this.xrTableCell66.Name = "xrTableCell66";
-            this.xrTableCell66.Weight = 0.579473523104029D;
+            this.cellTnbRange.Dpi = 100F;
+            this.cellTnbRange.Name = "cellTnbRange";
+            this.cellTnbRange.Weight = 0.579473523104029D;
             // 
-            // xrTableCell67
+            // cellTnbUnit
             // 
-            this.xrTableCell67.Dpi = 100F;
-            this.xrTableCell67.Name = "xrTableCell67";
-            this.xrTableCell67.Weight = 0.54341696034402454D;
+            this.cellTnbUnit.Dpi = 100F;
+            this.cellTnbUnit.Name = "cellTnbUnit";
+            this.cellTnbUnit.Weight = 0.54341696034402454D;
             // 
             // GroupHeader2
             // 
@@ -6345,16 +6359,19 @@
             // Detail10
             // 
             this.Detail10.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel95,
-            this.xrLabel96,
-            this.xrLabel97,
-            this.xrLabel98,
-            this.xrLabel99,
-            this.xrLabel100,
-            this.xrLabel101,
-            this.xrLabel102,
+            this.lblTnbAbasableDf,
+            this.lblTnbBestDf,
+            this.lblTnbDf,
+            this.lblTnbPoint1,
+            this.lblTnbPoint7,
+            this.lblTnbPoint6,
+            this.lblTnbPoint5,
+            this.lblTnbPoint4,
+            this.lblTnbPoint3,
+            this.lblTnbPoint2,
+            this.lblTnbPoint8,
             this.xrLabel137,
-            this.xrLabel66,
+            this.lblTnbTip,
             this.xrLabel67,
             this.xrLabel68,
             this.xrLabel69,
@@ -6363,10 +6380,10 @@
             this.xrLabel72,
             this.xrLabel73,
             this.xrLabel74,
-            this.picTnb04,
-            this.picTnb03,
-            this.picTnb02,
-            this.picTnb01,
+            this.picTnbFx04,
+            this.picTnbFx03,
+            this.picTnbFx02,
+            this.picTnbFx01,
             this.xrLabel75,
             this.xrLabel76,
             this.xrLabel77,
@@ -6378,193 +6395,228 @@
             this.xrChartTnb,
             this.xrLabel65});
             this.Detail10.Dpi = 100F;
-            this.Detail10.Expanded = false;
             this.Detail10.HeightF = 530.9271F;
             this.Detail10.Name = "Detail10";
             // 
-            // xrLabel95
+            // lblTnbAbasableDf
             // 
-            this.xrLabel95.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel95.BorderColor = System.Drawing.Color.White;
-            this.xrLabel95.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblTnbAbasableDf.Dpi = 100F;
+            this.lblTnbAbasableDf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(137)))), ((int)(((byte)(44)))));
+            this.lblTnbAbasableDf.LocationFloat = new DevExpress.Utils.PointFloat(703.259F, 252.625F);
+            this.lblTnbAbasableDf.Name = "lblTnbAbasableDf";
+            this.lblTnbAbasableDf.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTnbAbasableDf.SizeF = new System.Drawing.SizeF(69.75909F, 29.24995F);
+            this.lblTnbAbasableDf.StylePriority.UseForeColor = false;
+            this.lblTnbAbasableDf.StylePriority.UseTextAlignment = false;
+            this.lblTnbAbasableDf.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // lblTnbBestDf
+            // 
+            this.lblTnbBestDf.Dpi = 100F;
+            this.lblTnbBestDf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(137)))), ((int)(((byte)(44)))));
+            this.lblTnbBestDf.LocationFloat = new DevExpress.Utils.PointFloat(522.6432F, 252.625F);
+            this.lblTnbBestDf.Name = "lblTnbBestDf";
+            this.lblTnbBestDf.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTnbBestDf.SizeF = new System.Drawing.SizeF(65.77179F, 29.24995F);
+            this.lblTnbBestDf.StylePriority.UseForeColor = false;
+            this.lblTnbBestDf.StylePriority.UseTextAlignment = false;
+            this.lblTnbBestDf.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // lblTnbDf
+            // 
+            this.lblTnbDf.Dpi = 100F;
+            this.lblTnbDf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(137)))), ((int)(((byte)(44)))));
+            this.lblTnbDf.LocationFloat = new DevExpress.Utils.PointFloat(522.147F, 223.375F);
+            this.lblTnbDf.Name = "lblTnbDf";
+            this.lblTnbDf.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTnbDf.SizeF = new System.Drawing.SizeF(65.77179F, 29.24995F);
+            this.lblTnbDf.StylePriority.UseForeColor = false;
+            this.lblTnbDf.StylePriority.UseTextAlignment = false;
+            this.lblTnbDf.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // lblTnbPoint1
+            // 
+            this.lblTnbPoint1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblTnbPoint1.BorderColor = System.Drawing.Color.White;
+            this.lblTnbPoint1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel95.Dpi = 100F;
-            this.xrLabel95.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel95.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel95.LocationFloat = new DevExpress.Utils.PointFloat(79.74701F, 346.9271F);
-            this.xrLabel95.Name = "xrLabel95";
-            this.xrLabel95.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel95.SizeF = new System.Drawing.SizeF(694.7452F, 23.00003F);
-            this.xrLabel95.StylePriority.UseBackColor = false;
-            this.xrLabel95.StylePriority.UseBorderColor = false;
-            this.xrLabel95.StylePriority.UseBorders = false;
-            this.xrLabel95.StylePriority.UseFont = false;
-            this.xrLabel95.StylePriority.UseForeColor = false;
-            this.xrLabel95.StylePriority.UseTextAlignment = false;
-            this.xrLabel95.Text = "1.高血压患者常伴有糖尿病、冠心病、脑卒中、阿尔茨海默病等疾病，应积极防治。";
-            this.xrLabel95.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblTnbPoint1.Dpi = 100F;
+            this.lblTnbPoint1.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTnbPoint1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblTnbPoint1.LocationFloat = new DevExpress.Utils.PointFloat(79.74701F, 346.9271F);
+            this.lblTnbPoint1.Name = "lblTnbPoint1";
+            this.lblTnbPoint1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTnbPoint1.SizeF = new System.Drawing.SizeF(694.7452F, 23.00003F);
+            this.lblTnbPoint1.StylePriority.UseBackColor = false;
+            this.lblTnbPoint1.StylePriority.UseBorderColor = false;
+            this.lblTnbPoint1.StylePriority.UseBorders = false;
+            this.lblTnbPoint1.StylePriority.UseFont = false;
+            this.lblTnbPoint1.StylePriority.UseForeColor = false;
+            this.lblTnbPoint1.StylePriority.UseTextAlignment = false;
+            this.lblTnbPoint1.Text = "1.高血压患者常伴有糖尿病、冠心病、脑卒中、阿尔茨海默病等疾病，应积极防治。";
+            this.lblTnbPoint1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel96
+            // lblTnbPoint7
             // 
-            this.xrLabel96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel96.BorderColor = System.Drawing.Color.White;
-            this.xrLabel96.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblTnbPoint7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblTnbPoint7.BorderColor = System.Drawing.Color.White;
+            this.lblTnbPoint7.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel96.Dpi = 100F;
-            this.xrLabel96.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel96.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel96.LocationFloat = new DevExpress.Utils.PointFloat(79.74701F, 484.9272F);
-            this.xrLabel96.Name = "xrLabel96";
-            this.xrLabel96.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel96.SizeF = new System.Drawing.SizeF(694.7452F, 22.99994F);
-            this.xrLabel96.StylePriority.UseBackColor = false;
-            this.xrLabel96.StylePriority.UseBorderColor = false;
-            this.xrLabel96.StylePriority.UseBorders = false;
-            this.xrLabel96.StylePriority.UseFont = false;
-            this.xrLabel96.StylePriority.UseForeColor = false;
-            this.xrLabel96.StylePriority.UseTextAlignment = false;
-            this.xrLabel96.Text = "7.选择摄入不含胆固醇的食物如硬壳果类、蔬菜类，增加水果摄入，有助于控制血脂水平。";
-            this.xrLabel96.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblTnbPoint7.Dpi = 100F;
+            this.lblTnbPoint7.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTnbPoint7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblTnbPoint7.LocationFloat = new DevExpress.Utils.PointFloat(79.74701F, 484.9272F);
+            this.lblTnbPoint7.Name = "lblTnbPoint7";
+            this.lblTnbPoint7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTnbPoint7.SizeF = new System.Drawing.SizeF(694.7452F, 22.99994F);
+            this.lblTnbPoint7.StylePriority.UseBackColor = false;
+            this.lblTnbPoint7.StylePriority.UseBorderColor = false;
+            this.lblTnbPoint7.StylePriority.UseBorders = false;
+            this.lblTnbPoint7.StylePriority.UseFont = false;
+            this.lblTnbPoint7.StylePriority.UseForeColor = false;
+            this.lblTnbPoint7.StylePriority.UseTextAlignment = false;
+            this.lblTnbPoint7.Text = "7.选择摄入不含胆固醇的食物如硬壳果类、蔬菜类，增加水果摄入，有助于控制血脂水平。";
+            this.lblTnbPoint7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel97
+            // lblTnbPoint6
             // 
-            this.xrLabel97.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel97.BorderColor = System.Drawing.Color.White;
-            this.xrLabel97.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblTnbPoint6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblTnbPoint6.BorderColor = System.Drawing.Color.White;
+            this.lblTnbPoint6.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel97.Dpi = 100F;
-            this.xrLabel97.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel97.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel97.LocationFloat = new DevExpress.Utils.PointFloat(79.74072F, 461.927F);
-            this.xrLabel97.Name = "xrLabel97";
-            this.xrLabel97.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel97.SizeF = new System.Drawing.SizeF(694.7516F, 23.00012F);
-            this.xrLabel97.StylePriority.UseBackColor = false;
-            this.xrLabel97.StylePriority.UseBorderColor = false;
-            this.xrLabel97.StylePriority.UseBorders = false;
-            this.xrLabel97.StylePriority.UseFont = false;
-            this.xrLabel97.StylePriority.UseForeColor = false;
-            this.xrLabel97.StylePriority.UseTextAlignment = false;
-            this.xrLabel97.Text = "6.静坐生活方式会减少人体运动时间，从而增加心血管疾病、肥胖的发生危险，应尽量避免。";
-            this.xrLabel97.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblTnbPoint6.Dpi = 100F;
+            this.lblTnbPoint6.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTnbPoint6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblTnbPoint6.LocationFloat = new DevExpress.Utils.PointFloat(79.74072F, 461.927F);
+            this.lblTnbPoint6.Name = "lblTnbPoint6";
+            this.lblTnbPoint6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTnbPoint6.SizeF = new System.Drawing.SizeF(694.7516F, 23.00012F);
+            this.lblTnbPoint6.StylePriority.UseBackColor = false;
+            this.lblTnbPoint6.StylePriority.UseBorderColor = false;
+            this.lblTnbPoint6.StylePriority.UseBorders = false;
+            this.lblTnbPoint6.StylePriority.UseFont = false;
+            this.lblTnbPoint6.StylePriority.UseForeColor = false;
+            this.lblTnbPoint6.StylePriority.UseTextAlignment = false;
+            this.lblTnbPoint6.Text = "6.静坐生活方式会减少人体运动时间，从而增加心血管疾病、肥胖的发生危险，应尽量避免。";
+            this.lblTnbPoint6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel98
+            // lblTnbPoint5
             // 
-            this.xrLabel98.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel98.BorderColor = System.Drawing.Color.White;
-            this.xrLabel98.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblTnbPoint5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblTnbPoint5.BorderColor = System.Drawing.Color.White;
+            this.lblTnbPoint5.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel98.Dpi = 100F;
-            this.xrLabel98.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel98.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel98.LocationFloat = new DevExpress.Utils.PointFloat(79.74701F, 438.927F);
-            this.xrLabel98.Name = "xrLabel98";
-            this.xrLabel98.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel98.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
-            this.xrLabel98.StylePriority.UseBackColor = false;
-            this.xrLabel98.StylePriority.UseBorderColor = false;
-            this.xrLabel98.StylePriority.UseBorders = false;
-            this.xrLabel98.StylePriority.UseFont = false;
-            this.xrLabel98.StylePriority.UseForeColor = false;
-            this.xrLabel98.StylePriority.UseTextAlignment = false;
-            this.xrLabel98.Text = "5.定期运动能增强人体心肺功能，控制体重，有利于维持人体健康。";
-            this.xrLabel98.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblTnbPoint5.Dpi = 100F;
+            this.lblTnbPoint5.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTnbPoint5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblTnbPoint5.LocationFloat = new DevExpress.Utils.PointFloat(79.74701F, 438.927F);
+            this.lblTnbPoint5.Name = "lblTnbPoint5";
+            this.lblTnbPoint5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTnbPoint5.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
+            this.lblTnbPoint5.StylePriority.UseBackColor = false;
+            this.lblTnbPoint5.StylePriority.UseBorderColor = false;
+            this.lblTnbPoint5.StylePriority.UseBorders = false;
+            this.lblTnbPoint5.StylePriority.UseFont = false;
+            this.lblTnbPoint5.StylePriority.UseForeColor = false;
+            this.lblTnbPoint5.StylePriority.UseTextAlignment = false;
+            this.lblTnbPoint5.Text = "5.定期运动能增强人体心肺功能，控制体重，有利于维持人体健康。";
+            this.lblTnbPoint5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel99
+            // lblTnbPoint4
             // 
-            this.xrLabel99.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel99.BorderColor = System.Drawing.Color.White;
-            this.xrLabel99.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblTnbPoint4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblTnbPoint4.BorderColor = System.Drawing.Color.White;
+            this.lblTnbPoint4.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel99.Dpi = 100F;
-            this.xrLabel99.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel99.LocationFloat = new DevExpress.Utils.PointFloat(79.74654F, 415.9271F);
-            this.xrLabel99.Name = "xrLabel99";
-            this.xrLabel99.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel99.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
-            this.xrLabel99.StylePriority.UseBackColor = false;
-            this.xrLabel99.StylePriority.UseBorderColor = false;
-            this.xrLabel99.StylePriority.UseBorders = false;
-            this.xrLabel99.StylePriority.UseFont = false;
-            this.xrLabel99.StylePriority.UseForeColor = false;
-            this.xrLabel99.StylePriority.UseTextAlignment = false;
-            this.xrLabel99.Text = "4.加强对血糖的监测，合理搭配膳食，适量运动，养成良好的生活习惯，维持血糖在正常范围内。";
-            this.xrLabel99.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblTnbPoint4.Dpi = 100F;
+            this.lblTnbPoint4.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTnbPoint4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblTnbPoint4.LocationFloat = new DevExpress.Utils.PointFloat(79.74654F, 415.9271F);
+            this.lblTnbPoint4.Name = "lblTnbPoint4";
+            this.lblTnbPoint4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTnbPoint4.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
+            this.lblTnbPoint4.StylePriority.UseBackColor = false;
+            this.lblTnbPoint4.StylePriority.UseBorderColor = false;
+            this.lblTnbPoint4.StylePriority.UseBorders = false;
+            this.lblTnbPoint4.StylePriority.UseFont = false;
+            this.lblTnbPoint4.StylePriority.UseForeColor = false;
+            this.lblTnbPoint4.StylePriority.UseTextAlignment = false;
+            this.lblTnbPoint4.Text = "4.加强对血糖的监测，合理搭配膳食，适量运动，养成良好的生活习惯，维持血糖在正常范围内。";
+            this.lblTnbPoint4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel100
+            // lblTnbPoint3
             // 
-            this.xrLabel100.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel100.BorderColor = System.Drawing.Color.White;
-            this.xrLabel100.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblTnbPoint3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblTnbPoint3.BorderColor = System.Drawing.Color.White;
+            this.lblTnbPoint3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel100.Dpi = 100F;
-            this.xrLabel100.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel100.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel100.LocationFloat = new DevExpress.Utils.PointFloat(79.74701F, 392.927F);
-            this.xrLabel100.Name = "xrLabel100";
-            this.xrLabel100.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel100.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
-            this.xrLabel100.StylePriority.UseBackColor = false;
-            this.xrLabel100.StylePriority.UseBorderColor = false;
-            this.xrLabel100.StylePriority.UseBorders = false;
-            this.xrLabel100.StylePriority.UseFont = false;
-            this.xrLabel100.StylePriority.UseForeColor = false;
-            this.xrLabel100.StylePriority.UseTextAlignment = false;
-            this.xrLabel100.Text = "3.可通过改善饮食结构，加强运动等方法控制血糖，平时应关注血糖的变化。";
-            this.xrLabel100.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblTnbPoint3.Dpi = 100F;
+            this.lblTnbPoint3.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTnbPoint3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblTnbPoint3.LocationFloat = new DevExpress.Utils.PointFloat(79.74701F, 392.927F);
+            this.lblTnbPoint3.Name = "lblTnbPoint3";
+            this.lblTnbPoint3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTnbPoint3.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
+            this.lblTnbPoint3.StylePriority.UseBackColor = false;
+            this.lblTnbPoint3.StylePriority.UseBorderColor = false;
+            this.lblTnbPoint3.StylePriority.UseBorders = false;
+            this.lblTnbPoint3.StylePriority.UseFont = false;
+            this.lblTnbPoint3.StylePriority.UseForeColor = false;
+            this.lblTnbPoint3.StylePriority.UseTextAlignment = false;
+            this.lblTnbPoint3.Text = "3.可通过改善饮食结构，加强运动等方法控制血糖，平时应关注血糖的变化。";
+            this.lblTnbPoint3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel101
+            // lblTnbPoint2
             // 
-            this.xrLabel101.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel101.BorderColor = System.Drawing.Color.White;
-            this.xrLabel101.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblTnbPoint2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblTnbPoint2.BorderColor = System.Drawing.Color.White;
+            this.lblTnbPoint2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel101.Dpi = 100F;
-            this.xrLabel101.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel101.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel101.LocationFloat = new DevExpress.Utils.PointFloat(79.74701F, 369.927F);
-            this.xrLabel101.Name = "xrLabel101";
-            this.xrLabel101.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel101.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
-            this.xrLabel101.StylePriority.UseBackColor = false;
-            this.xrLabel101.StylePriority.UseBorderColor = false;
-            this.xrLabel101.StylePriority.UseBorders = false;
-            this.xrLabel101.StylePriority.UseFont = false;
-            this.xrLabel101.StylePriority.UseForeColor = false;
-            this.xrLabel101.StylePriority.UseTextAlignment = false;
-            this.xrLabel101.Text = "2.体重与诸多慢性病的发生有关，可通过优化饮食、运动结构，调节情志等控制自身的体重。";
-            this.xrLabel101.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblTnbPoint2.Dpi = 100F;
+            this.lblTnbPoint2.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTnbPoint2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblTnbPoint2.LocationFloat = new DevExpress.Utils.PointFloat(79.74701F, 369.927F);
+            this.lblTnbPoint2.Name = "lblTnbPoint2";
+            this.lblTnbPoint2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTnbPoint2.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
+            this.lblTnbPoint2.StylePriority.UseBackColor = false;
+            this.lblTnbPoint2.StylePriority.UseBorderColor = false;
+            this.lblTnbPoint2.StylePriority.UseBorders = false;
+            this.lblTnbPoint2.StylePriority.UseFont = false;
+            this.lblTnbPoint2.StylePriority.UseForeColor = false;
+            this.lblTnbPoint2.StylePriority.UseTextAlignment = false;
+            this.lblTnbPoint2.Text = "2.体重与诸多慢性病的发生有关，可通过优化饮食、运动结构，调节情志等控制自身的体重。";
+            this.lblTnbPoint2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel102
+            // lblTnbPoint8
             // 
-            this.xrLabel102.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
-            this.xrLabel102.BorderColor = System.Drawing.Color.White;
-            this.xrLabel102.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblTnbPoint8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.lblTnbPoint8.BorderColor = System.Drawing.Color.White;
+            this.lblTnbPoint8.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel102.Dpi = 100F;
-            this.xrLabel102.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel102.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel102.LocationFloat = new DevExpress.Utils.PointFloat(79.74701F, 507.9271F);
-            this.xrLabel102.Name = "xrLabel102";
-            this.xrLabel102.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel102.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
-            this.xrLabel102.StylePriority.UseBackColor = false;
-            this.xrLabel102.StylePriority.UseBorderColor = false;
-            this.xrLabel102.StylePriority.UseBorders = false;
-            this.xrLabel102.StylePriority.UseFont = false;
-            this.xrLabel102.StylePriority.UseForeColor = false;
-            this.xrLabel102.StylePriority.UseTextAlignment = false;
-            this.xrLabel102.Text = "8.甘油三酯来自食物中脂肪的分解，应减少脂肪酸和胆固醇的摄入，限制饮酒，控制血脂水平。";
-            this.xrLabel102.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblTnbPoint8.Dpi = 100F;
+            this.lblTnbPoint8.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTnbPoint8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblTnbPoint8.LocationFloat = new DevExpress.Utils.PointFloat(79.74701F, 507.9271F);
+            this.lblTnbPoint8.Name = "lblTnbPoint8";
+            this.lblTnbPoint8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTnbPoint8.SizeF = new System.Drawing.SizeF(694.7452F, 23F);
+            this.lblTnbPoint8.StylePriority.UseBackColor = false;
+            this.lblTnbPoint8.StylePriority.UseBorderColor = false;
+            this.lblTnbPoint8.StylePriority.UseBorders = false;
+            this.lblTnbPoint8.StylePriority.UseFont = false;
+            this.lblTnbPoint8.StylePriority.UseForeColor = false;
+            this.lblTnbPoint8.StylePriority.UseTextAlignment = false;
+            this.lblTnbPoint8.Text = "8.甘油三酯来自食物中脂肪的分解，应减少脂肪酸和胆固醇的摄入，限制饮酒，控制血脂水平。";
+            this.lblTnbPoint8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel137
             // 
@@ -6584,28 +6636,28 @@
             this.xrLabel137.Text = "预防要点";
             this.xrLabel137.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel66
+            // lblTnbTip
             // 
-            this.xrLabel66.BackColor = System.Drawing.Color.Transparent;
-            this.xrLabel66.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(172)))), ((int)(((byte)(225)))));
-            this.xrLabel66.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.lblTnbTip.BackColor = System.Drawing.Color.Transparent;
+            this.lblTnbTip.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(172)))), ((int)(((byte)(225)))));
+            this.lblTnbTip.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel66.Dpi = 100F;
-            this.xrLabel66.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
-            this.xrLabel66.LocationFloat = new DevExpress.Utils.PointFloat(81.38586F, 281.8753F);
-            this.xrLabel66.Name = "xrLabel66";
-            this.xrLabel66.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel66.SizeF = new System.Drawing.SizeF(693.1039F, 22.99997F);
-            this.xrLabel66.StylePriority.UseBackColor = false;
-            this.xrLabel66.StylePriority.UseBorderColor = false;
-            this.xrLabel66.StylePriority.UseBorders = false;
-            this.xrLabel66.StylePriority.UseFont = false;
-            this.xrLabel66.StylePriority.UseForeColor = false;
-            this.xrLabel66.StylePriority.UseTextAlignment = false;
-            this.xrLabel66.Text = "【说明】您在未来5~10年高血压的患病风险为8.65%，患者病风险较低，请养成良好的生活习惯。";
-            this.xrLabel66.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.lblTnbTip.Dpi = 100F;
+            this.lblTnbTip.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTnbTip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(173)))), ((int)(((byte)(226)))));
+            this.lblTnbTip.LocationFloat = new DevExpress.Utils.PointFloat(81.38586F, 281.8753F);
+            this.lblTnbTip.Name = "lblTnbTip";
+            this.lblTnbTip.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblTnbTip.SizeF = new System.Drawing.SizeF(693.1039F, 22.99997F);
+            this.lblTnbTip.StylePriority.UseBackColor = false;
+            this.lblTnbTip.StylePriority.UseBorderColor = false;
+            this.lblTnbTip.StylePriority.UseBorders = false;
+            this.lblTnbTip.StylePriority.UseFont = false;
+            this.lblTnbTip.StylePriority.UseForeColor = false;
+            this.lblTnbTip.StylePriority.UseTextAlignment = false;
+            this.lblTnbTip.Text = "【说明】您在未来5~10年高血压的患病风险为8.65%，患者病风险较低，请养成良好的生活习惯。";
+            this.lblTnbTip.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel67
             // 
@@ -6669,7 +6721,6 @@
             this.xrLabel69.StylePriority.UseFont = false;
             this.xrLabel69.StylePriority.UseForeColor = false;
             this.xrLabel69.StylePriority.UseTextAlignment = false;
-            this.xrLabel69.Text = "2.00";
             this.xrLabel69.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel70
@@ -6690,7 +6741,6 @@
             this.xrLabel70.StylePriority.UseBorders = false;
             this.xrLabel70.StylePriority.UseFont = false;
             this.xrLabel70.StylePriority.UseTextAlignment = false;
-            this.xrLabel70.Text = "6.65";
             this.xrLabel70.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel71
@@ -6713,7 +6763,7 @@
             this.xrLabel71.StylePriority.UseFont = false;
             this.xrLabel71.StylePriority.UseForeColor = false;
             this.xrLabel71.StylePriority.UseTextAlignment = false;
-            this.xrLabel71.Text = "18.00";
+            this.xrLabel71.Text = "5.00";
             this.xrLabel71.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel72
@@ -6736,7 +6786,6 @@
             this.xrLabel72.StylePriority.UseFont = false;
             this.xrLabel72.StylePriority.UseForeColor = false;
             this.xrLabel72.StylePriority.UseTextAlignment = false;
-            this.xrLabel72.Text = "8.65";
             this.xrLabel72.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel73
@@ -6781,33 +6830,33 @@
             this.xrLabel74.Text = "您本次风险";
             this.xrLabel74.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // picTnb04
+            // picTnbFx04
             // 
-            this.picTnb04.Dpi = 100F;
-            this.picTnb04.LocationFloat = new DevExpress.Utils.PointFloat(707.0085F, 78.33334F);
-            this.picTnb04.Name = "picTnb04";
-            this.picTnb04.SizeF = new System.Drawing.SizeF(53.12531F, 39.66669F);
+            this.picTnbFx04.Dpi = 100F;
+            this.picTnbFx04.LocationFloat = new DevExpress.Utils.PointFloat(707.0085F, 78.33334F);
+            this.picTnbFx04.Name = "picTnbFx04";
+            this.picTnbFx04.SizeF = new System.Drawing.SizeF(53.12531F, 39.66669F);
             // 
-            // picTnb03
+            // picTnbFx03
             // 
-            this.picTnb03.Dpi = 100F;
-            this.picTnb03.LocationFloat = new DevExpress.Utils.PointFloat(608.1332F, 97.08334F);
-            this.picTnb03.Name = "picTnb03";
-            this.picTnb03.SizeF = new System.Drawing.SizeF(51.54218F, 39.66669F);
+            this.picTnbFx03.Dpi = 100F;
+            this.picTnbFx03.LocationFloat = new DevExpress.Utils.PointFloat(608.1332F, 97.08334F);
+            this.picTnbFx03.Name = "picTnbFx03";
+            this.picTnbFx03.SizeF = new System.Drawing.SizeF(51.54218F, 39.66669F);
             // 
-            // picTnb02
+            // picTnbFx02
             // 
-            this.picTnb02.Dpi = 100F;
-            this.picTnb02.LocationFloat = new DevExpress.Utils.PointFloat(525.842F, 114.7917F);
-            this.picTnb02.Name = "picTnb02";
-            this.picTnb02.SizeF = new System.Drawing.SizeF(43.24957F, 39.66669F);
+            this.picTnbFx02.Dpi = 100F;
+            this.picTnbFx02.LocationFloat = new DevExpress.Utils.PointFloat(525.842F, 114.7917F);
+            this.picTnbFx02.Name = "picTnbFx02";
+            this.picTnbFx02.SizeF = new System.Drawing.SizeF(43.24957F, 39.66669F);
             // 
-            // picTnb01
+            // picTnbFx01
             // 
-            this.picTnb01.Dpi = 100F;
-            this.picTnb01.LocationFloat = new DevExpress.Utils.PointFloat(431.5918F, 131.4583F);
-            this.picTnb01.Name = "picTnb01";
-            this.picTnb01.SizeF = new System.Drawing.SizeF(43.24957F, 39.66669F);
+            this.picTnbFx01.Dpi = 100F;
+            this.picTnbFx01.LocationFloat = new DevExpress.Utils.PointFloat(431.5918F, 131.4583F);
+            this.picTnbFx01.Name = "picTnbFx01";
+            this.picTnbFx01.SizeF = new System.Drawing.SizeF(43.24957F, 39.66669F);
             // 
             // xrLabel75
             // 
@@ -6947,8 +6996,18 @@
             series2.Label = sideBySideBarSeriesLabel2;
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             series2.Name = "Series 1";
+            sideBySideBarSeriesLabel3.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
+            series3.Label = sideBySideBarSeriesLabel3;
+            series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series3.Name = "Series 2";
+            sideBySideBarSeriesLabel4.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
+            series4.Label = sideBySideBarSeriesLabel4;
+            series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series4.Name = "Series 3";
             this.xrChartTnb.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series2};
+        series2,
+        series3,
+        series4};
             this.xrChartTnb.SizeF = new System.Drawing.SizeF(326.2526F, 242.6253F);
             // 
             // xrLabel65
@@ -7045,7 +7104,6 @@
             this.dtRptGxbGroup,
             this.dtRptGxbFxpg});
             this.dtRptGxb.Dpi = 100F;
-            this.dtRptGxb.Expanded = false;
             this.dtRptGxb.Level = 4;
             this.dtRptGxb.Name = "dtRptGxb";
             // 
@@ -7055,7 +7113,6 @@
             this.xrLabel138,
             this.xrLabel139});
             this.Detail3.Dpi = 100F;
-            this.Detail3.Expanded = false;
             this.Detail3.HeightF = 73.99995F;
             this.Detail3.Name = "Detail3";
             // 
@@ -7366,12 +7423,12 @@
             this.xrChart1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart1.LocationFloat = new DevExpress.Utils.PointFloat(82.71059F, 39.25002F);
             this.xrChart1.Name = "xrChart1";
-            sideBySideBarSeriesLabel3.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
-            series3.Label = sideBySideBarSeriesLabel3;
-            series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series3.Name = "Series 1";
+            sideBySideBarSeriesLabel5.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
+            series5.Label = sideBySideBarSeriesLabel5;
+            series5.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series5.Name = "Series 1";
             this.xrChart1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series3};
+        series5};
             this.xrChart1.SizeF = new System.Drawing.SizeF(326.2526F, 242.6253F);
             // 
             // xrLabel142
@@ -8848,12 +8905,12 @@
             this.xrChart2.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart2.LocationFloat = new DevExpress.Utils.PointFloat(82.71059F, 40.5F);
             this.xrChart2.Name = "xrChart2";
-            sideBySideBarSeriesLabel4.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
-            series4.Label = sideBySideBarSeriesLabel4;
-            series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series4.Name = "Series 1";
+            sideBySideBarSeriesLabel6.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
+            series6.Label = sideBySideBarSeriesLabel6;
+            series6.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series6.Name = "Series 1";
             this.xrChart2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series4};
+        series6};
             this.xrChart2.SizeF = new System.Drawing.SizeF(326.2526F, 242.6253F);
             // 
             // xrLabel203
@@ -9272,12 +9329,12 @@
             this.xrChart3.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart3.LocationFloat = new DevExpress.Utils.PointFloat(82.71034F, 40.5F);
             this.xrChart3.Name = "xrChart3";
-            sideBySideBarSeriesLabel5.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
-            series5.Label = sideBySideBarSeriesLabel5;
-            series5.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series5.Name = "Series 1";
+            sideBySideBarSeriesLabel7.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
+            series7.Label = sideBySideBarSeriesLabel7;
+            series7.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series7.Name = "Series 1";
             this.xrChart3.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series5};
+        series7};
             this.xrChart3.SizeF = new System.Drawing.SizeF(326.2526F, 242.6253F);
             // 
             // xrLabel209
@@ -10760,12 +10817,12 @@
             this.xrChart4.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart4.LocationFloat = new DevExpress.Utils.PointFloat(82.71022F, 40.53131F);
             this.xrChart4.Name = "xrChart4";
-            sideBySideBarSeriesLabel6.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
-            series6.Label = sideBySideBarSeriesLabel6;
-            series6.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series6.Name = "Series 1";
+            sideBySideBarSeriesLabel8.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
+            series8.Label = sideBySideBarSeriesLabel8;
+            series8.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series8.Name = "Series 1";
             this.xrChart4.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series6};
+        series8};
             this.xrChart4.SizeF = new System.Drawing.SizeF(326.2526F, 242.6253F);
             // 
             // xrLabel272
@@ -11186,12 +11243,12 @@
             this.xrChart5.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart5.LocationFloat = new DevExpress.Utils.PointFloat(82.71016F, 40.5F);
             this.xrChart5.Name = "xrChart5";
-            sideBySideBarSeriesLabel7.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
-            series7.Label = sideBySideBarSeriesLabel7;
-            series7.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series7.Name = "Series 1";
+            sideBySideBarSeriesLabel9.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
+            series9.Label = sideBySideBarSeriesLabel9;
+            series9.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series9.Name = "Series 1";
             this.xrChart5.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series7};
+        series9};
             this.xrChart5.SizeF = new System.Drawing.SizeF(326.2526F, 242.6253F);
             // 
             // xrLabel277
@@ -12674,12 +12731,12 @@
             this.xrChart6.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart6.LocationFloat = new DevExpress.Utils.PointFloat(80.27875F, 40.49998F);
             this.xrChart6.Name = "xrChart6";
-            sideBySideBarSeriesLabel8.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
-            series8.Label = sideBySideBarSeriesLabel8;
-            series8.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series8.Name = "Series 1";
+            sideBySideBarSeriesLabel10.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
+            series10.Label = sideBySideBarSeriesLabel10;
+            series10.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series10.Name = "Series 1";
             this.xrChart6.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series8};
+        series10};
             this.xrChart6.SizeF = new System.Drawing.SizeF(326.2526F, 242.6253F);
             // 
             // xrLabel337
@@ -13099,12 +13156,12 @@
             this.xrChart7.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart7.LocationFloat = new DevExpress.Utils.PointFloat(78.78389F, 40.49998F);
             this.xrChart7.Name = "xrChart7";
-            sideBySideBarSeriesLabel9.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
-            series9.Label = sideBySideBarSeriesLabel9;
-            series9.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series9.Name = "Series 1";
+            sideBySideBarSeriesLabel11.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
+            series11.Label = sideBySideBarSeriesLabel11;
+            series11.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series11.Name = "Series 1";
             this.xrChart7.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series9};
+        series11};
             this.xrChart7.SizeF = new System.Drawing.SizeF(326.2526F, 242.6253F);
             // 
             // xrLabel345
@@ -14056,12 +14113,12 @@
             this.xrChart8.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart8.LocationFloat = new DevExpress.Utils.PointFloat(78.93298F, 40.49998F);
             this.xrChart8.Name = "xrChart8";
-            sideBySideBarSeriesLabel10.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
-            series10.Label = sideBySideBarSeriesLabel10;
-            series10.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series10.Name = "Series 1";
+            sideBySideBarSeriesLabel12.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
+            series12.Label = sideBySideBarSeriesLabel12;
+            series12.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series12.Name = "Series 1";
             this.xrChart8.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series10};
+        series12};
             this.xrChart8.SizeF = new System.Drawing.SizeF(326.2526F, 242.6253F);
             // 
             // xrLabel275
@@ -15545,12 +15602,12 @@
             this.xrChart9.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart9.LocationFloat = new DevExpress.Utils.PointFloat(78.75903F, 40.49998F);
             this.xrChart9.Name = "xrChart9";
-            sideBySideBarSeriesLabel11.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
-            series11.Label = sideBySideBarSeriesLabel11;
-            series11.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series11.Name = "Series 1";
+            sideBySideBarSeriesLabel13.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
+            series13.Label = sideBySideBarSeriesLabel13;
+            series13.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series13.Name = "Series 1";
             this.xrChart9.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series11};
+        series13};
             this.xrChart9.SizeF = new System.Drawing.SizeF(326.2526F, 242.6253F);
             // 
             // xrLabel431
@@ -16132,60 +16189,64 @@
             ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChartTnb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable31)).EndInit();
@@ -16466,11 +16527,11 @@
         private DevExpress.XtraReports.UI.XRTable xrTable11;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow28;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell63;
-        private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox1;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell64;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell65;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell66;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell67;
+        private DevExpress.XtraReports.UI.XRPictureBox picHintTnb;
+        private DevExpress.XtraReports.UI.XRTableCell cellTnbItem;
+        private DevExpress.XtraReports.UI.XRTableCell cellTnbResult;
+        private DevExpress.XtraReports.UI.XRTableCell cellTnbRange;
+        private DevExpress.XtraReports.UI.XRTableCell cellTnbUnit;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader2;
         private DevExpress.XtraReports.UI.XRTable xrTable10;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow27;
@@ -16485,16 +16546,16 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel93;
         private DevExpress.XtraReports.UI.XRPictureBox picTnbTip;
         private DevExpress.XtraReports.UI.XRLabel xrLabel94;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel95;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel96;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel97;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel98;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel99;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel100;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel101;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel102;
+        private DevExpress.XtraReports.UI.XRLabel lblTnbPoint1;
+        private DevExpress.XtraReports.UI.XRLabel lblTnbPoint7;
+        private DevExpress.XtraReports.UI.XRLabel lblTnbPoint6;
+        private DevExpress.XtraReports.UI.XRLabel lblTnbPoint5;
+        private DevExpress.XtraReports.UI.XRLabel lblTnbPoint4;
+        private DevExpress.XtraReports.UI.XRLabel lblTnbPoint3;
+        private DevExpress.XtraReports.UI.XRLabel lblTnbPoint2;
+        private DevExpress.XtraReports.UI.XRLabel lblTnbPoint8;
         private DevExpress.XtraReports.UI.XRLabel xrLabel137;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel66;
+        private DevExpress.XtraReports.UI.XRLabel lblTnbTip;
         private DevExpress.XtraReports.UI.XRLabel xrLabel67;
         private DevExpress.XtraReports.UI.XRLabel xrLabel68;
         private DevExpress.XtraReports.UI.XRLabel xrLabel69;
@@ -16503,10 +16564,10 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel72;
         private DevExpress.XtraReports.UI.XRLabel xrLabel73;
         private DevExpress.XtraReports.UI.XRLabel xrLabel74;
-        private DevExpress.XtraReports.UI.XRPictureBox picTnb04;
-        private DevExpress.XtraReports.UI.XRPictureBox picTnb03;
-        private DevExpress.XtraReports.UI.XRPictureBox picTnb02;
-        private DevExpress.XtraReports.UI.XRPictureBox picTnb01;
+        private DevExpress.XtraReports.UI.XRPictureBox picTnbFx04;
+        private DevExpress.XtraReports.UI.XRPictureBox picTnbFx03;
+        private DevExpress.XtraReports.UI.XRPictureBox picTnbFx02;
+        private DevExpress.XtraReports.UI.XRPictureBox picTnbFx01;
         private DevExpress.XtraReports.UI.XRLabel xrLabel75;
         private DevExpress.XtraReports.UI.XRLabel xrLabel76;
         private DevExpress.XtraReports.UI.XRLabel xrLabel77;
@@ -17279,5 +17340,8 @@
         private DevExpress.XtraReports.UI.XRLabel lblGxyDf;
         private DevExpress.XtraReports.UI.XRLabel lblGxyAbasableDf;
         private DevExpress.XtraReports.UI.XRLabel lblGxyBestDf;
+        private DevExpress.XtraReports.UI.XRLabel lblTnbAbasableDf;
+        private DevExpress.XtraReports.UI.XRLabel lblTnbBestDf;
+        private DevExpress.XtraReports.UI.XRLabel lblTnbDf;
     }
 }

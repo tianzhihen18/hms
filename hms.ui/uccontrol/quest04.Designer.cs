@@ -627,7 +627,7 @@
             this.checkEdit357.Properties.AccessibleName = "F073";
             this.checkEdit357.Properties.Appearance.Font = new System.Drawing.Font("宋体", 9.5F);
             this.checkEdit357.Properties.Appearance.Options.UseFont = true;
-            this.checkEdit357.Properties.Caption = "平均每天静坐时间";
+            this.checkEdit357.Properties.Caption = "一般锻炼强度";
             this.checkEdit357.Properties.LookAndFeel.SkinName = "Springtime";
             this.checkEdit357.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.checkEdit357.Size = new System.Drawing.Size(152, 19);

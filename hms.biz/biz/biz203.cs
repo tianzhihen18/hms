@@ -12,7 +12,7 @@ using Hms.Entity;
 
 namespace Hms.Biz
 {
-    public class Biz203 :IDisposable
+    public class Biz203 : IDisposable
     {
         #region 个人报告
 
@@ -25,7 +25,7 @@ namespace Hms.Biz
         public List<EntityDisplayClientRpt> GetClientReports(List<EntityParm> parms = null)
         {
             List<EntityDisplayClientRpt> data = null;
-            List<EntityQnRecord> dataQn = null ;
+            List<EntityQnRecord> dataQn = null;
             SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
             string Sql = string.Empty;
             Sql = @"select clientName,
@@ -70,7 +70,7 @@ namespace Hms.Biz
             Sql += " order by reportDate";
             string strClientNo = string.Empty;
 
-            DataTable dt = svc.GetDataTable(Sql,lstParm.ToArray());
+            DataTable dt = svc.GetDataTable(Sql, lstParm.ToArray());
             if (dt != null && dt.Rows.Count > 0)
             {
                 data = new List<EntityDisplayClientRpt>();
@@ -80,7 +80,7 @@ namespace Hms.Biz
                     vo = new EntityDisplayClientRpt();
                     vo.clientName = dr["clientName"].ToString();
                     vo.clientNo = dr["clientNo"].ToString();
-                    vo.gender = Function.Int( dr["gender"]);
+                    vo.gender = Function.Int(dr["gender"]);
                     vo.reportNo = dr["reportNo"].ToString();
                     vo.reportDate = Function.Datetime(dr["reportDate"]).ToString("yyyy-MM-dd");
                     vo.company = dr["company"].ToString();
@@ -90,13 +90,14 @@ namespace Hms.Biz
                     data.Add(vo);
                 }
             }
-            
+
 
             return data;
         }
         #endregion
 
         #region dic
+
         /// <summary>
         /// 重要指标字典
         /// </summary>
@@ -198,7 +199,6 @@ namespace Hms.Biz
                         bakField1,
                         bakField2
                         from modelAnalysisPoint  ";
-            string strClientNo = string.Empty;
 
             DataTable dt = svc.GetDataTable(Sql);
             if (dt != null && dt.Rows.Count > 0)
@@ -225,6 +225,48 @@ namespace Hms.Biz
             return data;
         }
 
+        /// <summary>
+        /// 疾病模型
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityModelAccess> GetModelAccess(List<EntityParm> parms = null)
+        {
+            List<EntityModelAccess> data = null;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            string sql = @"select modelId,
+                                  modelName ,
+                                  modelIntro ,
+                                  modelExplan ,
+                                  modelAdvice ,
+                                  lowDanger ,
+                                  minAge ,
+                                  maxAge ,
+                                  modelSex ,
+                                  isNeedQuestion from modelAccess ";
+            DataTable dt = svc.GetDataTable(sql);
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                data = new List<EntityModelAccess>();
+                EntityModelAccess vo = null;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    vo = new EntityModelAccess();
+                    vo.modelId = Function.Int(dr["modelId"]);
+                    vo.modelName = dr["modelName"].ToString();
+                    vo.modelIntro = dr["modelIntro"].ToString();
+                    vo.modelExplan = dr["modelExplan"].ToString();
+                    vo.modelAdvice = dr["modelAdvice"].ToString();
+                    vo.lowDanger = Function.Dec(dr["lowDanger"]) ;
+                    vo.minAge = Function.Dec(dr["minAge"]);
+                    vo.maxAge = Function.Dec(dr["maxAge"]);
+                    vo.modelSex = Function.Dec(dr["modelSex"]);
+                    data.Add(vo);
+                }
+            }
+
+            return data;
+        }
 
         #endregion
 

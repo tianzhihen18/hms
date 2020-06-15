@@ -217,6 +217,19 @@ namespace Hms.Svc
                 return biz.GetModelAnalysisPoint(parms);
             }
         }
+
+        /// <summary>
+        /// 疾病模型
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        public List<EntityModelAccess> GetModelAccess(List<EntityParm> parms = null)
+        {
+            using (Biz203 biz = new Biz203())
+            {
+                return biz.GetModelAccess(parms);
+            }
+        }
         #endregion
 
         #region 204 健康干预
