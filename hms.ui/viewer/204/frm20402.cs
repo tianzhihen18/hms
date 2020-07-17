@@ -42,7 +42,7 @@ namespace Hms.Ui
         {
             using (ProxyHms proxy = new ProxyHms())
             {
-                lstPromotionPlan = proxy.Service.GetPromotionPlans();
+                lstPromotionPlan = proxy.Service.GetPromotionPlans(null);
                 gridControl.DataSource = lstPromotionPlan;
                 gridControl.RefreshDataSource();
             }

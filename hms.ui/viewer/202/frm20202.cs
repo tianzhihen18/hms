@@ -144,7 +144,7 @@ namespace Hms.Ui
         {
             using (ProxyHms proxy = new ProxyHms())
             {
-                lstQnRecords = proxy.Service.GetQnRecords();
+                lstQnRecords = proxy.Service.GetQnRecords(null);
 
                 List<EntityParm> dicParm = new List<EntityParm>();
                 string beginDate = DateTime.Now.AddDays(-7).ToString("yyyy.MM.dd");

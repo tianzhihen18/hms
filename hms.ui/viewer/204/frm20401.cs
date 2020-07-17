@@ -218,18 +218,18 @@ namespace Hms.Ui
                 gcClient.DataSource = lstClientInfo;
                 gcClient.RefreshDataSource();
 
-                lstPromotionTemplate = proxy.Service.GetPromotionTemplates();
+                lstPromotionTemplate = proxy.Service.GetPromotionTemplates(null);
                 gcPromotionTemplate.DataSource = lstPromotionTemplate;
                 gcPromotionTemplate.RefreshDataSource();
 
-                lstPromotionTemplateConfig = proxy.Service.GetPromotionTemplateConfigs();
+                lstPromotionTemplateConfig = proxy.Service.GetPromotionTemplateConfigs(null);
                 if (lstPromotionTemplate != null)
                 {
                     EntityPromotionTemplate vo = lstPromotionTemplate[0];
                     gcPromotionTemplateConfig.DataSource = lstPromotionTemplateConfig.FindAll(r => r.templateId == vo.id);
                     gcPromotionTemplateConfig.RefreshDataSource();
                 }
-
+                
                 dicPromotionWayConfig= proxy.Service.GetPromotionWayConfigs();
                 dicPromotionContentConfig = proxy.Service.GetPromotionContentConfigs();
             }

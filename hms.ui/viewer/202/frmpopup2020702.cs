@@ -55,8 +55,8 @@ namespace Hms.Ui
                 dteQuestDate.Text = DateTime.Now.ToString("yyyy-MM-dd");
                 lueClient.Properties.PopupWidth = 380;
                 lueClient.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoFilter;
-                lueClient.Properties.ValueMember = EntityClientInfo.Columns.clientNo;
-                lueClient.Properties.DisplayMember = EntityClientInfo.Columns.clientName;
+                lueClient.Properties.ValueMember = "clientNo";
+                lueClient.Properties.DisplayMember = "clientName";
                 lueClient.Properties.DataSource = lstClientInfo;
 
                 using (ProxyHms svc = new ProxyHms())

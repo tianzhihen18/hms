@@ -294,6 +294,20 @@ namespace Hms.Biz
                         vo.executeTime = Function.Datetime(dr["executeTime"]).ToString("yyyy-MM-dd");
                     vo.createName = dr["createName"].ToString();
                     vo.createDate = Function.Datetime(dr["createDate"]).ToString("yyyy-MM-dd");
+                    if (vo.gender == 1)
+                        vo.sex = "男";
+                    if (vo.gender == 2)
+                        vo.sex = "女";
+                    if (vo.auditState == "1")
+                        vo.strAuditState = "无需审核";
+                    if (vo.auditState == "2")
+                        vo.strAuditState = "审核通过";
+                    if (vo.auditState == "3")
+                        vo.strAuditState = "等待审核";
+                    if (vo.auditState == "4")
+                        vo.strAuditState = "已分配审核";
+                    if (vo.auditState == "5")
+                        vo.strAuditState = "审核不通过";
                     data.Add(vo);
                 }
             }

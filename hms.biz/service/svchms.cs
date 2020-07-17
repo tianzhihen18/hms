@@ -20,7 +20,7 @@ namespace Hms.Svc
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<EntityClientInfo> GetClientInfoAndRpt(List<EntityParm> parms)
+        public List<EntityClientInfo> GetClientInfoAndRpt(List<EntityParm> parms )
         {
             using (Biz201 biz = new Biz201())
             {
@@ -33,11 +33,11 @@ namespace Hms.Svc
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<EntityUserGrade> GetUserGrades(List<EntityParm> parms)
+        public List<EntityUserGrade> GetUserGrades()
         {
             using (Biz201 biz = new Biz201())
             {
-                return biz.GetUserGrades(parms);
+                return biz.GetUserGrades();
             }
         }
 
@@ -129,7 +129,7 @@ namespace Hms.Svc
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<EntityQnRecord> GetQnRecords(List<EntityParm> parms = null)
+        public List<EntityQnRecord> GetQnRecords(List<EntityParm> parms)
         {
             using (Biz202 biz = new Biz202())
             {
@@ -171,7 +171,7 @@ namespace Hms.Svc
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<EntityDisplayClientRpt> GetClientReports(List<EntityParm> parms = null)
+        public List<EntityDisplayClientRpt> GetClientReports(List<EntityParm> parms)
         {
             using (Biz203 biz = new Biz203())
             {
@@ -228,6 +228,19 @@ namespace Hms.Svc
             using (Biz203 biz = new Biz203())
             {
                 return biz.GetModelAccess(parms);
+            }
+        }
+
+        /// <summary>
+        /// 疾病模型参数
+        /// </summary>
+        /// <param name="modelId"></param>
+        /// <returns></returns>
+        public List<EntityModelGroupItem> GetModelGroup(string modelId)
+        {
+            using (Biz203 biz = new Biz203())
+            {
+                return biz.GetModelGroup(modelId);
             }
         }
         #endregion

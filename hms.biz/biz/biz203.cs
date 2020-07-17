@@ -22,10 +22,9 @@ namespace Hms.Biz
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<EntityDisplayClientRpt> GetClientReports(List<EntityParm> parms = null)
+        public List<EntityDisplayClientRpt> GetClientReports(List<EntityParm> parms)
         {
             List<EntityDisplayClientRpt> data = null;
-            List<EntityQnRecord> dataQn = null;
             SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
             string Sql = string.Empty;
             Sql = @"select clientName,
@@ -165,13 +164,10 @@ namespace Hms.Biz
                     vo.score = Function.Dec(dr["score"]);
                     vo.modulus = Function.Dec(dr["modulus"]);
                     vo.remarks = dr["remarks"].ToString();
-                    vo.normalRange = dr["normalRange"].ToString();
-                    vo.isMain = dr["isMain"].ToString();
                     vo.parentFieldId = dr["parentFieldId"].ToString();
                     vo.isBest = dr["isBest"].ToString();
-                    vo.pointId = Function.Int(dr["pointId"]);
+                    vo.isNormal = dr["isNormal"].ToString();
                     data.Add(vo);
-
                 }
             }
 
@@ -257,7 +253,7 @@ namespace Hms.Biz
                     vo.modelIntro = dr["modelIntro"].ToString();
                     vo.modelExplan = dr["modelExplan"].ToString();
                     vo.modelAdvice = dr["modelAdvice"].ToString();
-                    vo.lowDanger = Function.Dec(dr["lowDanger"]) ;
+                    vo.lowDanger = Function.Dec(dr["lowDanger"]);
                     vo.minAge = Function.Dec(dr["minAge"]);
                     vo.maxAge = Function.Dec(dr["maxAge"]);
                     vo.modelSex = Function.Dec(dr["modelSex"]);
@@ -267,6 +263,48 @@ namespace Hms.Biz
 
             return data;
         }
+
+        #region 获取疾病模型参数
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="modelId"></param>
+        /// <returns></returns>
+        public List<EntityModelGroupItem> GetModelGroup(string modelId = null)
+        {
+            List<EntityModelGroupItem> data = null;
+            SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
+            string sql = @"select id,
+                            modelId,
+                            paramType,
+                            paramNo,
+                            paramName,
+                            orderNum,
+                            isMain,
+                            pointId from modelGroupItem ";
+            DataTable dt = svc.GetDataTable(sql);
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                data = new List<EntityModelGroupItem>();
+                EntityModelGroupItem vo = null;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    vo = new EntityModelGroupItem();
+                    vo.id = Function.Int(dr["id"]);
+                    vo.modelId = Function.Dec(dr["modelId"]);
+                    vo.paramType = Function.Dec(dr["paramType"]);
+                    vo.paramNo = dr["paramNo"].ToString();
+                    vo.paramName = dr["paramName"].ToString();
+                    vo.orderNum = Function.Int(dr["orderNum"]);
+                    vo.isMain = Function.Int(dr["isMain"]);
+                    vo.pointId = Function.Int(dr["pointId"]);
+                    data.Add(vo);
+                }
+            }
+
+            return data;
+        }
+        #endregion
 
         #endregion
 

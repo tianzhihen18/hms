@@ -26,6 +26,8 @@ namespace Hms.Ui
 
 
         #region var/property
+        //疾病模型参数
+        List<EntityModelGroupItem> lstModelGroupItem { get; set; }
         //疾病模型预防要求
         List<EntityModelAnalysisPoint> lstModelPoint { get; set; }
         //疾病模型主要评估参数
@@ -42,6 +44,8 @@ namespace Hms.Ui
         #endregion
 
         #region  override
+
+        #region Search
         /// <summary>
         /// 
         /// </summary>
@@ -66,227 +70,35 @@ namespace Hms.Ui
 
             this.gridControl.RefreshDataSource();
         }
+        #endregion
 
         #region 生成个人报告
         public override void Edit()
         {
-            EntityDisplayClientRpt disClientRpt = GetRowObject();
-            EntityClientReport rpt = new EntityClientReport();
-            rpt.clientName = disClientRpt.clientName;
-            rpt.clientNo = disClientRpt.clientNo;
-            rpt.reportDate = disClientRpt.reportDate;
-            rpt.reportNo = disClientRpt.reportNo;
-            rpt.sex = disClientRpt.sex;
-            rpt.image01 = ReadImageFile("pic01.png");
-            rpt.image02 = ReadImageFile("pic02.jpg");
-            rpt.image03 = ReadImageFile("pic03.png");
-            rpt.image04 = ReadImageFile("pic04.png");
-            rpt.image05 = ReadImageFile("pic05.png");
-            rpt.imageTip = ReadImageFile("picTip.png");
-            rpt.image07 = ReadImageFile("pic07.png");
-
-            #region 健康汇总及重要指标
-            rpt.lstMainItem = GetMainIndicate();
-            if (tjjljyVo != null)
-                rpt.tjSumup = tjjljyVo.sumup;
-            #endregion
-
-            List<int> lstPoint = null;
-
-            #region 高血压
-            rpt.lstGxyModelParam = GetModelParam(1);
-            //预防要点
-            lstPoint = new List<int>();
-            if (rpt.lstGxyModelParam !=null)
+            try
             {
-                foreach(var pVo in rpt.lstGxyModelParam)
+                this.BeginLoading();
+                EntityDisplayClientRpt disClientRpt = GetRowObject();
+                List<EntityModelParamCalc> lstMdParamCalc = null;
+                if (disClientRpt.qnRecord == null)
                 {
-                    EntityEvaluateParams vo = rpt.lstGxyModelParam.Find(r=>r.paramNo == pVo.paramNo);
-                    if(vo != null && !lstPoint.Contains(vo.pointId))
-                    {
-                        lstPoint.Add(vo.pointId);
-                    }
+                    DialogBox.Msg("请选择问卷");
+                    return;
                 }
 
-                for(int i =0;i<lstPoint.Count;i++)
-                {
-                    if (i == 0)
-                        rpt.gxyPoint1 = lstModelPoint.Find(r=>r.id == lstPoint[0]).pintAdvice;
-                    if (i == 1)
-                        rpt.gxyPoint2 = lstModelPoint.Find(r => r.id == lstPoint[1]).pintAdvice;
-                    if (i == 2)
-                        rpt.gxyPoint3 = lstModelPoint.Find(r => r.id == lstPoint[2]).pintAdvice;
-                    if (i == 3)
-                        rpt.gxyPoint4 = lstModelPoint.Find(r => r.id == lstPoint[3]).pintAdvice;
-                    if (i == 4)
-                        rpt.gxyPoint5 = lstModelPoint.Find(r => r.id == lstPoint[4]).pintAdvice;
-                    if (i == 5)
-                        rpt.gxyPoint6 = lstModelPoint.Find(r => r.id == lstPoint[5]).pintAdvice;
-                    if (i == 6)
-                        rpt.gxyPoint7 = lstModelPoint.Find(r => r.id == lstPoint[6]).pintAdvice;
-                    if (i == 7)
-                        rpt.gxyPoint8 = lstModelPoint.Find(r => r.id == lstPoint[7]).pintAdvice;
-                }
+                EntityClientReport rpt = GneralPersonalReport(disClientRpt,out lstMdParamCalc);
+                frmPopup2030101 frm = new frmPopup2030101(rpt);
+                frm.ShowDialog();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                this.CloseLoading();
             }
             
-            decimal gxyBestDf = 0;
-            rpt.gxyDf = CalcModelResult(1,out gxyBestDf);
-            rpt.gxyBestDf = gxyBestDf;
-            rpt.gxyAbasableDf = rpt.gxyDf - rpt.gxyBestDf;
-            if (rpt.gxyDf <= 5)
-                rpt.imgGxyFx01 = ReadImageFile("picFx.png");
-            else if(rpt.gxyDf > 5 && rpt.gxyDf < 20)
-                rpt.imgGxyFx02 = ReadImageFile("picFx.png");
-            else if (rpt.gxyDf > 20 && rpt.gxyDf < 50)
-                rpt.imgGxyFx03 = ReadImageFile("picFx.png");
-            else if (rpt.gxyDf >= 50)
-                rpt.imgGxyFx04 = ReadImageFile("picFx.png");
-
-            rpt.lstEvaluateGxy = new List<EntityEvaluateResult>();
-            EntityEvaluateResult voEr = new EntityEvaluateResult();
-            voEr.result = Function.Double(rpt.gxyDf.ToString("0.00")) ;
-            voEr.evaluationName = "本次结果";
-            rpt.lstEvaluateGxy.Add(voEr);
-            EntityEvaluateResult voEb = new EntityEvaluateResult();
-            voEb.result = Function.Double(rpt.gxyBestDf.ToString("0.00"));
-            voEb.evaluationName = "最佳状态";
-            rpt.lstEvaluateGxy.Add(voEb);
-            EntityEvaluateResult voEa = new EntityEvaluateResult();
-            voEa.result = 18;
-            voEa.evaluationName = "平均水平";
-            rpt.lstEvaluateGxy.Add(voEa);
-            #endregion
-
-            #region  糖尿病
-            rpt.lstTnbModelParam = GetModelParam(2);
-            //预防要点
-            lstPoint = new List<int>();
-            if (rpt.lstTnbModelParam != null)
-            {
-                foreach (var pVo in rpt.lstTnbModelParam)
-                {
-                    EntityEvaluateParams vo = rpt.lstTnbModelParam.Find(r => r.paramNo == pVo.paramNo);
-                    if (vo != null && !lstPoint.Contains(vo.pointId))
-                    {
-                        lstPoint.Add(vo.pointId);
-                    }
-                }
-
-                for (int i = 0; i < lstPoint.Count; i++)
-                {
-                    if (i == 0)
-                        rpt.tnbPoint1 = lstModelPoint.Find(r => r.id == lstPoint[0]).pintAdvice;
-                    if (i == 1)
-                        rpt.tnbPoint2 = lstModelPoint.Find(r => r.id == lstPoint[1]).pintAdvice;
-                    if (i == 2)
-                        rpt.tnbPoint3 = lstModelPoint.Find(r => r.id == lstPoint[2]).pintAdvice;
-                    if (i == 3)
-                        rpt.tnbPoint4 = lstModelPoint.Find(r => r.id == lstPoint[3]).pintAdvice;
-                    if (i == 4)
-                        rpt.tnbPoint5 = lstModelPoint.Find(r => r.id == lstPoint[4]).pintAdvice;
-                    if (i == 5)
-                        rpt.tnbPoint6 = lstModelPoint.Find(r => r.id == lstPoint[5]).pintAdvice;
-                    if (i == 6)
-                        rpt.tnbPoint7 = lstModelPoint.Find(r => r.id == lstPoint[6]).pintAdvice;
-                    if (i == 7)
-                        rpt.tnbPoint8 = lstModelPoint.Find(r => r.id == lstPoint[7]).pintAdvice;
-                }
-            }
-
-            decimal tnbBestDf = 0;
-            rpt.tnbDf = CalcModelResult(1, out tnbBestDf);
-            rpt.tnbBestDf = tnbBestDf;
-            rpt.tnbAbasableDf = rpt.tnbDf - rpt.tnbBestDf;
-            if (rpt.tnbDf <= 5)
-                rpt.imgTnbFx01 = ReadImageFile("picFx.png");
-            else if (rpt.tnbDf > 5 && rpt.tnbDf < 20)
-                rpt.imgTnbFx02 = ReadImageFile("picFx.png");
-            else if (rpt.tnbDf > 20 && rpt.tnbDf < 50)
-                rpt.imgTnbFx03 = ReadImageFile("picFx.png");
-            else if (rpt.tnbDf >= 50)
-                rpt.imgTnbFx04 = ReadImageFile("picFx.png");
-
-            rpt.lstEvaluateTnb = new List<EntityEvaluateResult>();
-            EntityEvaluateResult voTnbEr = new EntityEvaluateResult();
-            voTnbEr.result = Function.Double(rpt.tnbDf.ToString("0.00"));
-            voTnbEr.evaluationName = "本次结果";
-            rpt.lstEvaluateTnb.Add(voTnbEr);
-            EntityEvaluateResult voTnbEb = new EntityEvaluateResult();
-            voTnbEb.result = Function.Double(rpt.tnbBestDf.ToString("0.00"));
-            voTnbEb.evaluationName = "最佳状态";
-            rpt.lstEvaluateTnb.Add(voTnbEb);
-            EntityEvaluateResult voTnbEa = new EntityEvaluateResult();
-            voTnbEa.result = 5;
-            voTnbEa.evaluationName = "平均水平";
-            rpt.lstEvaluateTnb.Add(voTnbEa);
-            #endregion
-
-            #region 冠心病
-            rpt.lstGxbModelParam = GetModelParam(3);
-            //预防要点
-            lstPoint = new List<int>();
-            if (rpt.lstGxbModelParam != null)
-            {
-                foreach (var pVo in rpt.lstGxbModelParam)
-                {
-                    EntityEvaluateParams vo = rpt.lstGxbModelParam.Find(r => r.paramNo == pVo.paramNo);
-                    if (vo != null && !lstPoint.Contains(vo.pointId))
-                    {
-                        lstPoint.Add(vo.pointId);
-                    }
-                }
-
-                for (int i = 0; i < lstPoint.Count; i++)
-                {
-                    if (i == 0)
-                        rpt.gxbPoint1 = lstModelPoint.Find(r => r.id == lstPoint[0]).pintAdvice;
-                    if (i == 1)
-                        rpt.gxbPoint2 = lstModelPoint.Find(r => r.id == lstPoint[1]).pintAdvice;
-                    if (i == 2)
-                        rpt.gxbPoint3 = lstModelPoint.Find(r => r.id == lstPoint[2]).pintAdvice;
-                    if (i == 3)
-                        rpt.gxbPoint4 = lstModelPoint.Find(r => r.id == lstPoint[3]).pintAdvice;
-                    if (i == 4)
-                        rpt.gxbPoint5 = lstModelPoint.Find(r => r.id == lstPoint[4]).pintAdvice;
-                    if (i == 5)
-                        rpt.gxbPoint6 = lstModelPoint.Find(r => r.id == lstPoint[5]).pintAdvice;
-                    if (i == 6)
-                        rpt.gxbPoint7 = lstModelPoint.Find(r => r.id == lstPoint[6]).pintAdvice;
-                    if (i == 7)
-                        rpt.gxbPoint8 = lstModelPoint.Find(r => r.id == lstPoint[7]).pintAdvice;
-                }
-            }
-
-            decimal gxbBestDf = 0;
-            rpt.gxbDf = CalcModelResult(1, out gxbBestDf);
-            rpt.gxbBestDf = tnbBestDf;
-            rpt.tnbAbasableDf = rpt.tnbDf - rpt.gxbBestDf;
-            if (rpt.tnbDf <= 5)
-                rpt.imgGxbFx01 = ReadImageFile("picFx.png");
-            else if (rpt.gxbDf > 5 && rpt.gxbDf < 20)
-                rpt.imgGxbFx02 = ReadImageFile("picFx.png");
-            else if (rpt.gxbDf > 20 && rpt.gxbDf < 50)
-                rpt.imgGxbFx03 = ReadImageFile("picFx.png");
-            else if (rpt.gxbDf >= 50)
-                rpt.imgGxbFx04 = ReadImageFile("picFx.png");
-
-            rpt.lstEvaluateGxb = new List<EntityEvaluateResult>();
-            EntityEvaluateResult voGxbEr = new EntityEvaluateResult();
-            voGxbEr.result = Function.Double(rpt.gxbDf.ToString("0.00"));
-            voGxbEr.evaluationName = "本次结果";
-            rpt.lstEvaluateGxb.Add(voGxbEr);
-            EntityEvaluateResult voGxbEb = new EntityEvaluateResult();
-            voGxbEb.result = Function.Double(rpt.gxbBestDf.ToString("0.00"));
-            voGxbEb.evaluationName = "最佳状态";
-            rpt.lstEvaluateGxb.Add(voGxbEb);
-            EntityEvaluateResult voGxbEa = new EntityEvaluateResult();
-            voGxbEa.result = 5;
-            voGxbEa.evaluationName = "平均水平";
-            rpt.lstEvaluateGxb.Add(voGxbEa);
-            #endregion
-
-            frmPopup2030101 frm = new frmPopup2030101(rpt);
-            frm.ShowDialog();
 
         }
         #endregion
@@ -320,7 +132,59 @@ namespace Hms.Ui
                     vo.strQnDate = frm.qnRecord.strQnDate;
                     vo.qnRecord = frm.qnRecord;
                 }
+
+
             }
+        }
+        #endregion
+
+        #region 审核
+        /// <summary>
+        /// 审核
+        /// </summary>
+        public override void Confirm()
+        {
+            try
+            {
+                this.BeginLoading();
+                EntityDisplayClientRpt disClientRpt = GetRowObject();
+                List<EntityModelParamCalc> lstMdParamCalc = null;
+                if (disClientRpt.qnRecord == null)
+                {
+                    DialogBox.Msg("请选择问卷");
+                    return;
+                }
+
+                EntityClientReport rpt = GneralPersonalReport(disClientRpt,out lstMdParamCalc);
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                this.CloseLoading();
+            }
+        }
+        #endregion
+
+        #region 反审核
+        /// <summary>
+        /// 反审核
+        /// </summary>
+        public override void Cancel()
+        {
+            
+        }
+        #endregion
+
+        #region 
+        /// <summary>
+        /// 查看
+        /// </summary>
+        public override void LoadData()
+        {
+            
         }
         #endregion
 
@@ -342,6 +206,7 @@ namespace Hms.Ui
                     lstModelParam = proxy.Service.GetModelParam();
                     lstModelPoint = proxy.Service.GetModelAnalysisPoint();
                     lstModelAccess = proxy.Service.GetModelAccess();
+                    lstModelGroupItem = proxy.Service.GetModelGroup();
                 }
 
                 RefreshData();
@@ -386,6 +251,60 @@ namespace Hms.Ui
                 lstClientInfo = proxy.Service.GetClientReports(dicParm);
             }
         }
+        #endregion
+
+        #region 生成报告
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="disClientRpt"></param>
+        /// <returns></returns>
+        internal EntityClientReport GneralPersonalReport(EntityDisplayClientRpt disClientRpt,out List<EntityModelParamCalc> lstMdParamCalcData)
+        {
+            EntityClientReport rpt = new EntityClientReport();
+            //lstMdResult = new List<EntityClientModelResult>();
+            rpt.clientName = disClientRpt.clientName;
+            rpt.clientNo = disClientRpt.clientNo;
+            rpt.reportDate = disClientRpt.reportDate;
+            rpt.reportNo = disClientRpt.reportNo;
+            rpt.sex = disClientRpt.sex;
+            rpt.image01 = ReadImageFile("pic01.png");
+            rpt.image02 = ReadImageFile("pic02.jpg");
+            rpt.image03 = ReadImageFile("pic03.png");
+            rpt.image04 = ReadImageFile("pic04.png");
+            rpt.image05 = ReadImageFile("pic05.png");
+            rpt.imageTip = ReadImageFile("picTip.png");
+            rpt.image07 = ReadImageFile("pic07.png");
+
+            rpt.lstRptModelAcess = new List<EntityRptModelAcess>();
+            lstMdParamCalcData = new List<EntityModelParamCalc>();
+            List<EntityModelParamCalc> lstMdParamCalc = new List<EntityModelParamCalc>();
+            List<EntityModelAccess> lstMdAcess = GetModelAccess(disClientRpt);
+
+            #region 健康汇总及重要指标
+            rpt.lstMainItem = GetMainIndicate();
+            if (tjjljyVo != null)
+                rpt.tjSumup = tjjljyVo.sumup;
+            #endregion
+
+            #region 疾病评估
+            if (lstMdAcess != null )
+            {
+                foreach (var mdAcess in lstMdAcess)
+                {
+                    rpt.lstRptModelAcess.Add(GetRptModelParam(mdAcess.modelId,out lstMdParamCalc));
+
+                    if(lstMdParamCalc != null && lstMdParamCalc.Count > 0)
+                    {
+                        lstMdParamCalcData.AddRange(lstMdParamCalc);
+                    }
+                }
+            }
+            #endregion
+
+            return rpt;
+        }
+
         #endregion
 
         #region 重要指标
@@ -434,98 +353,173 @@ namespace Hms.Ui
         }
         #endregion
 
-        #region 疾病模型主要评估参数
+        #region 疾病模型评估
         /// <summary>
-        /// 疾病模型主要评估参数
+        /// 疾病模型评估
         /// </summary>
         /// <returns></returns>
-        internal List<EntityEvaluateParams> GetModelParam(int modelId)
+        internal EntityRptModelAcess GetRptModelParam(decimal modelId,out List<EntityModelParamCalc> lstMdParamCalc)
         {
-            List<EntityEvaluateParams> data = new List<EntityEvaluateParams>();
+            EntityRptModelAcess modelAcess = new EntityRptModelAcess();
+            lstMdParamCalc = new List<EntityModelParamCalc>();
+            modelAcess.lstModelParam = new List<EntityRptModelParam>();
             Dictionary<string, string> dicData = new Dictionary<string, string>();
-            EntityEvaluateParams param = null;
-            List<EntityModelParam> lstModelParamGxy = lstModelParam.FindAll(r => r.modelId == modelId && r.isMain == "1");
-            EntityDisplayClientRpt vo = GetRowObject();
-            if (lstModelParamGxy != null )
+            EntityRptModelParam param = null;
+            try
             {
-                foreach (var model in lstModelParamGxy)
+                modelAcess.modelId = modelId;
+                List<EntityModelGroupItem> lstGxyModel = lstModelGroupItem.FindAll(r => r.modelId == modelId && r.isMain == 1);
+                EntityDisplayClientRpt vo = GetRowObject();
+                if (!string.IsNullOrEmpty(vo.qnRecord.xmlData))
                 {
-                    if (model.paramNo.Contains("F"))        //问卷
-                    {
-                        if (!string.IsNullOrEmpty(vo.qnRecord.xmlData))
-                        {
-                            XmlDocument document = new XmlDocument();
-                            document.LoadXml(vo.qnRecord.xmlData);
-                            XmlNodeList list = document["FormData"].ChildNodes;
-                            dicData = Function.ReadXML(vo.qnRecord.xmlData);
-                            if (dicData.ContainsKey(model.paramNo))
-                            {
-                                string parentFieldId = model.parentFieldId;
-                                param = data.Find(r => r.itemCode == parentFieldId);
-                                if (param == null)
-                                {
-                                    param = new EntityEvaluateParams();
-                                    param.paramNo = model.paramNo;
-                                    param.itemCode = model.parentFieldId;
-                                    param.itemName = model.paramName;
-                                    param.range = model.normalRange;
-                                    param.judeValue = model.judgeRange;
-                                    
-                                    param.pointId = model.pointId;
-                                    if (model.judgeType == 2)
-                                    {
-                                        if (Function.Dec(dicData[model.paramNo]) == model.judgeValue)
-                                            param.result = model.judgeRange;
-                                        else
-                                            param.result = "未填";
-                                    }
-                                    else
-                                    {
-                                        param.result = dicData[model.paramNo];
-                                    }
+                    XmlDocument document = new XmlDocument();
+                    document.LoadXml(vo.qnRecord.xmlData);
+                    XmlNodeList list = document["FormData"].ChildNodes;
+                    dicData = Function.ReadXML(vo.qnRecord.xmlData);
+                }
 
-                                    data.Add(param);
-                                }
-                                else
+                #region 主要评估参数
+                if (lstGxyModel != null)
+                {
+                    bool rFlag = false;
+                    foreach (var model in lstGxyModel)
+                    {
+                        rFlag = false;
+                        param = new EntityRptModelParam();
+                        param.itemCode = model.paramNo;
+                        param.itemName = model.paramName;
+                        param.pointId = model.pointId;
+                        //问卷
+                        if (model.paramType == 3 || model.paramType == 4)
+                        {
+                            List<EntityModelParam> lstModelParamGxy = lstModelParam.FindAll(r => r.parentFieldId == model.paramNo && r.modelId == modelId);
+                            if (lstModelParamGxy != null)
+                            {
+                                foreach (var gxyModel in lstModelParamGxy)
                                 {
-                                    if (model.judgeType == 2)
+                                    rFlag = false;
+                                    if (gxyModel.isNormal == "1")
+                                        param.range = gxyModel.judgeRange;
+                                    if (dicData.ContainsKey(gxyModel.paramNo))
                                     {
-                                        if (Function.Dec(dicData[model.paramNo]) == model.judgeValue)
-                                            param.result = model.judgeRange;
-                                    }
-                                    else
-                                    {
-                                        param.result = dicData[model.paramNo];
+                                        if (gxyModel.judgeType == 2)
+                                        {
+                                            if (Function.Dec(dicData[gxyModel.paramNo]) == gxyModel.judgeValue)
+                                                param.result = gxyModel.judgeRange;
+                                            if (string.IsNullOrEmpty(param.result))
+                                                param.result = "无";
+                                        }
+                                        else
+                                        {
+                                            param.result = dicData[model.paramNo];
+                                        }
+
+                                        rFlag = true;
                                     }
                                 }
-                                if (param.result != param.range && param.result != "未填")
-                                    param.pic = ReadImageFile("picHint.png");
-                                else
-                                    param.pic = null;
                             }
                         }
-                    }
-                    else                            //体检报告
-                    {
-                        if (lstTjResult == null)
-                            continue;
-                        param = new EntityEvaluateParams();
-                        param.itemCode = model.paramNo;
-                        if (data.Any(r => r.itemCode.Contains(model.paramNo)))
-                            continue;
-                        if (!lstTjResult.Any(r => r.itemCode == param.itemCode))
-                            continue;
-                        param.pointId = model.pointId;
-                        param.itemName = lstTjResult.Find(r => r.itemCode == param.itemCode).itemName;
-                        param.result = lstTjResult.Find(r => r.itemCode == param.itemCode).itemResult;
-                        param.range = lstTjResult.Find(r => r.itemCode == param.itemCode).range;
-                        data.Add(param);
+                        //体检项目
+                        else if (model.paramType == 2)
+                        {
+                            if (lstTjResult == null)
+                                continue;
+                            if (!lstTjResult.Any(r => r.itemCode == param.itemCode))
+                                continue;
+                            EntityTjResult tjR = lstTjResult.Find(r => r.itemCode == param.itemCode);
+                            param.itemName = tjR.itemName;
+                            param.result = tjR.itemResult;
+                            param.range = tjR.range;
+                            param.unit = tjR.unit;
+                            if (!string.IsNullOrEmpty(tjR.hint))
+                                param.pic = ReadImageFile("picHint.png");
+                            rFlag = true;
+                        }
+                        if (rFlag)
+                            modelAcess.lstModelParam.Add(param);
                     }
                 }
+                #endregion
+
+                #region 预防要点
+                //预防要点
+                List<int> lstPoint = new List<int>();
+                modelAcess.lstPoint = new List<string>();
+                if (modelAcess.lstModelParam != null)
+                {
+                    foreach (var pVo in modelAcess.lstModelParam)
+                    {
+                        if (!lstPoint.Contains(pVo.pointId))
+                        {
+                            lstPoint.Add(pVo.pointId);
+                        }
+                    }
+
+                    for (int i = 0; i < lstPoint.Count; i++)
+                    {
+                        EntityModelAnalysisPoint pointVo= lstModelPoint.Find(r => r.id == lstPoint[i]);
+                        if (pointVo != null)
+                        {
+                            modelAcess.lstPoint.Add(pointVo.pintAdvice);
+                        } 
+                    }
+                }
+                #endregion
+
+                #region 风险评估
+                string resultStr = string.Empty;
+                decimal bestDf = 0;
+                decimal df = 0;
+                lstMdParamCalc = CalcModelResult(modelId, out df, out bestDf);
+                modelAcess.df = df;
+                modelAcess.bestDf = bestDf;
+                modelAcess.reduceDf = modelAcess.df - modelAcess.bestDf;
+                if (modelAcess.df <= 5)
+                {
+                    modelAcess.imgFx01 = ReadImageFile("picFx.png");
+                    resultStr = "低危";
+                }
+                else if (modelAcess.df > 5 && modelAcess.df < 20)
+                {
+                    modelAcess.imgFx02 = ReadImageFile("picFx.png");
+                    resultStr = "中危";
+                }
+                else if (modelAcess.df > 20 && modelAcess.df < 50)
+                {
+                    modelAcess.imgFx03 = ReadImageFile("picFx.png");
+                    resultStr = "高危";
+                }
+                else if (modelAcess.df >= 50)
+                {
+                    modelAcess.imgFx04 = ReadImageFile("picFx.png");
+                    resultStr = "很高危";
+                }
+
+                modelAcess.lstEvaluate = new List<EntityEvaluateResult>();
+                EntityEvaluateResult voEr = new EntityEvaluateResult();
+                voEr.result = Function.Double(modelAcess.df.ToString("0.00"));
+                voEr.evaluationName = "本次结果";
+                modelAcess.lstEvaluate.Add(voEr);
+                EntityEvaluateResult voEb = new EntityEvaluateResult();
+                voEb.result = Function.Double(modelAcess.bestDf.ToString("0.00"));
+                voEb.evaluationName = "最佳状态";
+                modelAcess.lstEvaluate.Add(voEb);
+                EntityEvaluateResult voEa = new EntityEvaluateResult();
+                voEa.result = 18;
+                voEa.evaluationName = "平均水平";
+                modelAcess.lstEvaluate.Add(voEa);
+
+                #endregion
+               
+            }
+            catch(Exception ex)
+            {
+                ExceptionLog.OutPutException(ex);
             }
 
-            return data;
+            return modelAcess;
         }
+
         #endregion
 
         #region 计算疾病风险评估得分
@@ -534,83 +528,114 @@ namespace Hms.Ui
         /// </summary>
         /// <param name="modelId"></param>
         /// <returns></returns>
-        internal decimal  CalcModelResult(int modelId,out decimal bestDf)
+        internal List<EntityModelParamCalc> CalcModelResult(decimal modelId,out decimal result, out decimal bestDf)
         {
-            decimal result = 0;
+            result = 0;
             bestDf = 0;
             bool ageFlag = false;
+            List<EntityModelParamCalc> data = null;
+            EntityModelParamCalc paramCalcVo = null;
             Dictionary<string, string> dicData = new Dictionary<string, string>();
+            List<EntityModelGroupItem> lstGxyModel = lstModelGroupItem.FindAll(r => r.modelId == modelId && r.isMain == 1);
             EntityDisplayClientRpt vo = GetRowObject();
-            List<EntityModelParam> lstModelParamGxy = lstModelParam.FindAll(r => r.modelId == modelId);
-            
-            if (lstModelParamGxy != null)
+            if (!string.IsNullOrEmpty(vo.qnRecord.xmlData))
             {
-                foreach (var model in lstModelParamGxy)
+                XmlDocument document = new XmlDocument();
+                document.LoadXml(vo.qnRecord.xmlData);
+                XmlNodeList list = document["FormData"].ChildNodes;
+                dicData = Function.ReadXML(vo.qnRecord.xmlData);
+            }
+
+            if (lstGxyModel != null)
+            {
+                data = new List<EntityModelParamCalc>();
+                foreach (var model in lstGxyModel)
                 {
-                    if (model.paramNo.Contains("F") || model.paramNo == "Age") //问卷
+                    List<EntityModelParam> lstModelParamGxy = lstModelParam.FindAll(r => r.parentFieldId == model.paramNo && r.modelId == modelId);
+                    if (lstModelParamGxy != null)
                     {
-                        if (!string.IsNullOrEmpty(vo.qnRecord.xmlData))
+                        //问卷
+                        if (model.paramType == 3 || model.paramType == 4)
                         {
-                            XmlDocument document = new XmlDocument();
-                            document.LoadXml(vo.qnRecord.xmlData);
-                            XmlNodeList list = document["FormData"].ChildNodes;
-                            dicData = Function.ReadXML(vo.qnRecord.xmlData);
-
-                            //评估得分
-                            if (dicData.ContainsKey(model.paramNo))
+                            foreach (var modelGxy in lstModelParamGxy)
                             {
-                                decimal score = 0;
-                                if (dicData[model.paramNo] == "1")
+                                if (!string.IsNullOrEmpty(vo.qnRecord.xmlData))
                                 {
-                                    score += Function.Dec(model.score);
-                                }
-
-                                result += score;
-                            }
-                            if(model.paramNo == "Age")
-                            {
-                                decimal df = 0;
-                                decimal bDf = 0;
-                                decimal age = 0;
-                                if(dicData.ContainsKey("Birthday") && !ageFlag)
-                                {
-                                    if(!string.IsNullOrEmpty(dicData["Birthday"]))
+                                    //评估得分
+                                    if (dicData.ContainsKey(modelGxy.paramNo))
                                     {
-                                        age = CalcAge.GetAgeInt(Function.Datetime(dicData["Birthday"]));
-                                        df = CalcDf(age, model.paramNo, out bDf);
-                                        result += df;
-                                        ageFlag = true;
+                                        decimal score = 0;
+                                        if (dicData[modelGxy.paramNo] == "1")
+                                        {
+                                            score += Function.Dec(modelGxy.score);
+                                        }
+
+                                        paramCalcVo = new EntityModelParamCalc();
+                                        paramCalcVo.modelId = modelId;
+                                        paramCalcVo.paramNo = model.paramNo;
+                                        paramCalcVo.paramName = model.paramName;
+                                        paramCalcVo.calcScore = score;
+                                        paramCalcVo.paramValue = dicData[modelGxy.paramNo];
+                                        data.Add(paramCalcVo);
+
+                                        result += score;
+                                    }
+                                    if (modelGxy.paramNo == "Age")
+                                    {
+                                        decimal df = 0;
+                                        decimal bDf = 0;
+                                        decimal age = 0;
+                                        if (dicData.ContainsKey("Birthday") && !ageFlag)
+                                        {
+                                            if (!string.IsNullOrEmpty(dicData["Birthday"]))
+                                            {
+                                                age = CalcAge.GetAgeInt(Function.Datetime(dicData["Birthday"]));
+                                                df = CalcDf(age, modelId, modelGxy.paramNo, out bDf);
+                                                result += df;
+                                                ageFlag = true;
+                                                paramCalcVo = new EntityModelParamCalc();
+                                                paramCalcVo.modelId = modelId;
+                                                paramCalcVo.paramNo = model.paramNo;
+                                                paramCalcVo.paramName = model.paramName;
+                                                paramCalcVo.calcScore = df;
+                                                paramCalcVo.paramValue = dicData["Birthday"];
+                                                data.Add(paramCalcVo);
+                                            }
+                                        }
+                                    }
+                                    //最佳状态 得分
+                                    if (modelGxy.isBest == "1")
+                                    {
+                                        bestDf += Function.Dec(modelGxy.score);
                                     }
                                 }
                             }
-
-                            //最佳状态 得分
-                            string parentFieldId = model.parentFieldId;
-                            EntityModelParam modelBest = lstModelParamGxy.FindAll(r => r.parentFieldId == parentFieldId && r.isBest == "1").FirstOrDefault();
-                            if(modelBest != null)
-                            {
-                                bestDf += Function.Dec(modelBest.score);
-                            }
                         }
-                    }
-                    else                            //体检报告
-                    {
-                        if (lstTjResult == null)
-                            continue;
-                        EntityTjResult tjVo = lstTjResult.Find(r => r.itemCode == model.paramNo);
-                        if (tjVo == null)
-                            continue;
-                        decimal tjValue = Function.Dec(tjVo.itemResult);
-                        decimal df = 0;
-                        decimal bDf = 0;
-                        df = CalcDf(tjValue, model.paramNo, out bDf);
-                        result += df;
-                        bestDf += bDf;
+                        else if (model.paramType == 2)
+                        {
+                            if (lstTjResult == null)
+                                continue;
+                            EntityTjResult tjVo = lstTjResult.Find(r => r.itemCode == model.paramNo);
+                            if (tjVo == null)
+                                continue;
+                            decimal tjValue = Function.Dec(tjVo.itemResult);
+                            decimal df = 0;
+                            decimal bDf = 0;
+                            df = CalcDf(tjValue, modelId, model.paramNo, out bDf);
+                            paramCalcVo = new EntityModelParamCalc();
+                            paramCalcVo.modelId = modelId;
+                            paramCalcVo.paramNo = model.paramNo;
+                            paramCalcVo.paramName = model.paramName;
+                            paramCalcVo.calcScore = df;
+                            paramCalcVo.paramValue = tjVo.itemResult.ToString();
+                            data.Add(paramCalcVo);
+                            result += df;
+                            bestDf += bDf;
+                        }
                     }
                 }
             }
-            
-            return result;
+            return data;
         }
         #endregion
 
@@ -622,11 +647,11 @@ namespace Hms.Ui
         /// <param name="paramNo"></param>
         /// <param name="bestDf"></param>
         /// <returns></returns>
-        internal decimal CalcDf(decimal value ,string paramNo,out decimal bestDf)
+        internal decimal CalcDf(decimal value, decimal modelId, string paramNo, out decimal bestDf)
         {
             decimal result = 0;
             bestDf = 0;
-            List<EntityModelParam> lstModelTmp = lstModelParam.FindAll(r => r.paramNo == paramNo);
+            List<EntityModelParam> lstModelTmp = lstModelParam.FindAll(r => r.paramNo == paramNo && r.modelId == modelId);
             if (lstModelTmp != null)
             {
                 foreach (var mVo in lstModelTmp)
@@ -802,6 +827,50 @@ namespace Hms.Ui
             vo5.unnormal = "心内结构大致正常，CDFI：三尖瓣、主动脉瓣轻度返流";
             vo5.medDate = "未指定";
             data.Add(vo5);
+
+            return data;
+        }
+        #endregion
+
+        #region 根据年龄、性别获取模型
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="disClientRpt"></param>
+        /// <returns></returns>
+        internal List<EntityModelAccess>  GetModelAccess(EntityDisplayClientRpt disClientRpt)
+        {
+            List<EntityModelAccess> data = new List<EntityModelAccess>();
+            Dictionary<string, string> dicData = new Dictionary<string, string>();
+            if (!string.IsNullOrEmpty(disClientRpt.qnRecord.xmlData))
+            {
+                XmlDocument document = new XmlDocument();
+                document.LoadXml(disClientRpt.qnRecord.xmlData);
+                XmlNodeList list = document["FormData"].ChildNodes;
+                dicData = Function.ReadXML(disClientRpt.qnRecord.xmlData);
+            }
+            int age = 0;
+            if(dicData.ContainsKey("Birthday"))
+                age = CalcAge.GetAgeInt(Function.Datetime(dicData["Birthday"]));
+            string sexStr = dicData["Sex"];
+            int sex = 0;
+            if (sexStr == "男")
+                sex = 1;
+            if(sexStr == "女")
+                sex = 2;
+
+            if (lstModelAccess !=null)
+            {
+                List<EntityModelAccess> tmpList = lstModelAccess.FindAll(r => (r.modelSex == sex || r.modelSex == 0));
+                foreach (var maVo in tmpList)
+                {
+                    decimal minAge = maVo.minAge;
+                    decimal maxAge = maVo.maxAge;
+
+                    if (age >= minAge && age <= maxAge)
+                        data.Add(maVo);
+                }
+            }
 
             return data;
         }

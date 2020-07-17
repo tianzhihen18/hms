@@ -12,12 +12,10 @@ namespace Hms.Entity
     /// 主要评估参数
     /// </summary>
     [DataContract,Serializable]
-    public class EntityEvaluateParams : BaseDataContract
+    public class EntityRptModelParam : BaseDataContract
     {
         [DataMember]
         public Image pic { get; set; }
-        [DataMember]
-        public string paramNo { get; set; }
         [DataMember]
         public string itemCode { get; set; }
         /// <summary>

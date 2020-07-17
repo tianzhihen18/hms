@@ -22,7 +22,7 @@ namespace Hms.Itf
         /// <param name="parms"></param>
         /// <returns></returns>
         [OperationContract(Name = "GetClientInfoAndRpt")]
-        List<EntityClientInfo> GetClientInfoAndRpt(List<EntityParm> parms = null);
+        List<EntityClientInfo> GetClientInfoAndRpt(List<EntityParm> parms);
 
         /// <summary>
         /// 类别列表
@@ -30,7 +30,7 @@ namespace Hms.Itf
         /// <param name="parms"></param>
         /// <returns></returns>
         [OperationContract(Name = "GetUserGrades")]
-        List<EntityUserGrade> GetUserGrades(List<EntityParm> parms = null);
+        List<EntityUserGrade> GetUserGrades();
 
         /// <summary>
         /// 客户列表
@@ -48,7 +48,7 @@ namespace Hms.Itf
         /// <param name="parms"></param>
         /// <returns></returns>
         [OperationContract(Name = "GetTjReports")]
-        List<EntityDisplayClientRpt> GetTjReports(List<EntityParm> parms = null);
+        List<EntityDisplayClientRpt> GetTjReports(List<EntityParm> parms);
 
         /// <summary>
         /// 体检报告项目结果
@@ -65,7 +65,7 @@ namespace Hms.Itf
         /// <param name="parms"></param>
         /// <returns></returns>
         [OperationContract(Name = "GetQnControl")]
-        List<EntitySetQnControl> GetQnControl(List<EntityParm> parms = null);
+        List<EntitySetQnControl> GetQnControl(List<EntityParm> parms );
 
         /// <summary>
         /// 
@@ -91,7 +91,7 @@ namespace Hms.Itf
         /// <param name="parms"></param>
         /// <returns></returns>
         [OperationContract(Name = "GetQnRecords")]
-        List<EntityQnRecord> GetQnRecords(List<EntityParm> parms = null);
+        List<EntityQnRecord> GetQnRecords(List<EntityParm> parms);
 
         /// <summary>
         /// 
@@ -107,7 +107,7 @@ namespace Hms.Itf
         /// <param name="parms"></param>
         /// <returns></returns>
         [OperationContract(Name = "GetQnMain")]
-        List<EntityDicQnMain> GetQnMain(List<EntityParm> parms = null);
+        List<EntityDicQnMain> GetQnMain(List<EntityParm> parms );
 
         #endregion
 
@@ -118,7 +118,7 @@ namespace Hms.Itf
         /// <param name="parms"></param>
         /// <returns></returns>
         [OperationContract(Name = "GetClientReports")]
-        List<EntityDisplayClientRpt> GetClientReports(List<EntityParm> parms = null);
+        List<EntityDisplayClientRpt> GetClientReports(List<EntityParm> parms);
 
         /// <summary>
         /// 重要指标字典
@@ -141,6 +141,7 @@ namespace Hms.Itf
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
+        [OperationContract(Name = "GetModelAnalysisPoint")]
         List<EntityModelAnalysisPoint> GetModelAnalysisPoint(List<EntityParm> parms = null);
 
         /// <summary>
@@ -150,6 +151,14 @@ namespace Hms.Itf
         /// <returns></returns>
         [OperationContract(Name = "GetModelAccess")]
         List<EntityModelAccess> GetModelAccess(List<EntityParm> parms = null);
+
+        /// <summary>
+        /// 疾病模型参数
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <returns></returns>
+        [OperationContract(Name = "GetModelGroup")]
+        List<EntityModelGroupItem> GetModelGroup(string modelId = null);
         #endregion
 
         #region 204 健康干预
@@ -159,14 +168,14 @@ namespace Hms.Itf
         /// <param name="parms"></param>
         /// <returns></returns>
         [OperationContract(Name = "GetPromotionTemplates")]
-        List<EntityPromotionTemplate> GetPromotionTemplates(List<EntityParm> parms = null);
+        List<EntityPromotionTemplate> GetPromotionTemplates(List<EntityParm> parms );
         /// <summary>
         /// 获取模板配置
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
         [OperationContract(Name = "GetPromotionTemplateConfigs")]
-        List<EntityPromotionTemplateConfig> GetPromotionTemplateConfigs(List<EntityParm> parms = null);
+        List<EntityPromotionTemplateConfig> GetPromotionTemplateConfigs(List<EntityParm> parms );
 
         /// <summary>
         /// 保存计划
@@ -197,21 +206,21 @@ namespace Hms.Itf
         /// </summary>
         /// <returns></returns>
         [OperationContract(Name = "GetPromotionPlans")]
-        List<EntityDisplayPromotionPlan> GetPromotionPlans(List<EntityParm> dicParm = null);
+        List<EntityDisplayPromotionPlan> GetPromotionPlans(List<EntityParm> dicParm);
 
         /// <summary>
         /// 干预记录
         /// </summary>
         /// <returns></returns>
         [OperationContract(Name = "GetPromotionPlanRecords")]
-        List<EntityDisplayPromotionPlan> GetPromotionPlanRecords(List<EntityParm> dicParm = null);
+        List<EntityDisplayPromotionPlan> GetPromotionPlanRecords(List<EntityParm> dicParm);
 
         /// <summary>
         /// 健康管理报告评估分数
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        [OperationContract(Name = "GetPromotionPlanRecords")]
+        [OperationContract(Name = "GetDisplayClientModelAcess")]
         List<EntityDisplayClientModelAcess> GetDisplayClientModelAcess(List<EntityParm> parms);
 
         /// <summary>
@@ -422,7 +431,7 @@ namespace Hms.Itf
         /// 原料分类
         /// </summary>
         /// <returns></returns>
-        [OperationContract(Name = "GetDicDietIngredient")]
+        [OperationContract(Name = "GetIngredientClassify")]
         List<EntityDicIngredientClassify> GetIngredientClassify();
 
         /// <summary>

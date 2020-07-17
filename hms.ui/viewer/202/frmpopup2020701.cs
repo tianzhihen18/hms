@@ -31,7 +31,7 @@ namespace Hms.Ui
         {
             using (ProxyHms proxy = new ProxyHms())
             {
-                lstQnMain = proxy.Service.GetQnMain();
+                lstQnMain = proxy.Service.GetQnMain(null);
             }
 
             this.gridControl.DataSource = lstQnMain;

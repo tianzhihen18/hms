@@ -89,8 +89,8 @@ namespace Hms.Ui
                 this.dteQuestDate.Text = DateTime.Now.ToString("yyyy-MM-dd");
                 lueClient.Properties.PopupWidth = 380;
                 lueClient.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoFilter;
-                lueClient.Properties.ValueMember = EntityClientInfo.Columns.clientNo;
-                lueClient.Properties.DisplayMember = EntityClientInfo.Columns.clientName;
+                lueClient.Properties.ValueMember = "clientNo";
+                lueClient.Properties.DisplayMember = "clientName";
                 lueClient.Properties.DataSource = lstClientInfo;
 
                 dicQuestCtrl = new Dictionary<int, IQuest>();
@@ -511,6 +511,18 @@ namespace Hms.Ui
         void Save()
         {
             timer.Enabled = false;
+
+            if( string.IsNullOrEmpty(dteBirthday.Text))
+            {
+                DialogBox.Msg("出生日期不能为空！");
+                return;
+            }
+            if (string.IsNullOrEmpty(cboSex.Text))
+            {
+                DialogBox.Msg("性别不能为空！");
+                return;
+            }
+
             using (ProxyHms proxy = new ProxyHms())
             {
                 string xmlData = string.Empty;

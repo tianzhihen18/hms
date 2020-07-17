@@ -58,7 +58,7 @@ namespace Hms.Ui
         {
             using (ProxyHms proxy = new ProxyHms())
             {
-                lstPromotionPlan = proxy.Service.GetPromotionPlanRecords();
+                lstPromotionPlan = proxy.Service.GetPromotionPlanRecords(null);
                 gridControl.DataSource = lstPromotionPlan;
                 gridControl.RefreshDataSource();
             }

@@ -30,46 +30,6 @@ namespace Hms.Entity
         [DataMember]
         [Entity(FieldName = "description", DbType = DbType.String, IsPK = false, IsSeq = false, SerNo = 6)]
         public string description { get; set; }
-        [DataMember]
-        [Entity(FieldName = "isEnable", DbType = DbType.Int16, IsPK = false, IsSeq = false, SerNo = 7)]
-        public int isEnable { get; set; }
-        [DataMember]
-        [Entity(FieldName = "upTag", DbType = DbType.String, IsPK = false, IsSeq = false, SerNo = 8)]
-        public string upTag { get; set; }
-        [DataMember]
-        [Entity(FieldName = "bakfield1", DbType = DbType.String, IsPK = false, IsSeq = false, SerNo = 9)]
-        public string bakfield1 { get; set; }
-        [DataMember]
-        [Entity(FieldName = "bakfield2", DbType = DbType.String, IsPK = false, IsSeq = false, SerNo = 10)]
-        public string bakfield2 { get; set; }
-        [DataMember]
-        [Entity(FieldName = "createDate", DbType = DbType.DateTime, IsPK = false, IsSeq = false, SerNo = 11)]
-        public DateTime? createDate { get; set; }
-        [DataMember]
-        [Entity(FieldName = "creator", DbType = DbType.String, IsPK = false, IsSeq = false, SerNo = 12)]
-        public string creator { get; set; }
-        [DataMember]
-        [Entity(FieldName = "createName", DbType = DbType.String, IsPK = false, IsSeq = false, SerNo = 13)]
-        public string createName { get; set; }
-        [DataMember]
-        [Entity(FieldName = "modifyDate", DbType = DbType.DateTime, IsPK = false, IsSeq = false, SerNo = 14)]
-        public DateTime? modifyDate { get; set; }
-        [DataMember]
-        [Entity(FieldName = "modifyrId", DbType = DbType.String, IsPK = false, IsSeq = false, SerNo = 15)]
-        public string modifyrId { get; set; }
-        [DataMember]
-        [Entity(FieldName = "modifyName", DbType = DbType.String, IsPK = false, IsSeq = false, SerNo = 16)]
-
-        public string isEnableStr
-        {
-            get
-            {
-                if (isEnable == 1)
-                    return "是";
-                return "否"; ;
-            }
-        }
-        public string modifyName { get; set; }
         public static EnumCols Columns = new EnumCols();
 
         public class EnumCols

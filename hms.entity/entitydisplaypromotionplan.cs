@@ -47,37 +47,9 @@ namespace Hms.Entity
         [DataMember]
         public string createDate { get; set; }
         [DataMember]
-        public string sex
-        {
-            get
-            {
-                if (gender == 1)
-                    return "男";
-                else if (gender == 2)
-                    return "女";
-                else
-                    return "不限";
-            }
-        }
+        public string sex { get; set; }
         [DataMember]
-        public string strAuditState
-        {
-            get
-            {
-                if (auditState == "1")
-                    return "无需审核";
-                else if (auditState == "2")
-                    return "审核通过";
-                else if (auditState == "3")
-                    return "等待审核";
-                else if (auditState == "4")
-                    return ".已分配审核";
-                else if (auditState == "5")
-                    return "审核不通过";
-                else
-                    return "";
-            }
-        }
+        public string strAuditState{get;set;}
 
         [DataMember]
         public string age { get; set; }

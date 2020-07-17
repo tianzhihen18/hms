@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="entityadpeitem.cs" />
     <Compile Include="entityclientinfo.cs" />
+    <Compile Include="entityclientmodelresult.cs" />
     <Compile Include="entityclientreport.cs" />
     <Compile Include="entityctrllocation.cs" />
     <Compile Include="entitydiccai.cs" />
@@ -69,7 +70,9 @@
     <Compile Include="entitymedicaladvicecs.cs" />
     <Compile Include="entitymodelaccess.cs" />
     <Compile Include="entitymodelanalysispoint.cs" />
+    <Compile Include="entitymodelgroupitem.cs" />
     <Compile Include="entitymodelparam.cs" />
+    <Compile Include="entitymodelparamcalc .cs" />
     <Compile Include="entitypromotioncontentconfig.cs" />
     <Compile Include="entitypromotionplan.cs" />
     <Compile Include="entitypromotiontemplate.cs" />
@@ -83,6 +86,7 @@
     <Compile Include="entityreportmainitemconfig .cs" />
     <Compile Include="entityreportrecorde.cs" />
     <Compile Include="entityreporttemplate.cs" />
+    <Compile Include="entityrptmodelacess.cs" />
     <Compile Include="entityrpttemplateconfig.cs" />
     <Compile Include="entitysetqncontrol.cs" />
     <Compile Include="entitysms.cs" />

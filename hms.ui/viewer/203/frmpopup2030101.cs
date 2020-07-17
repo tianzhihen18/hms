@@ -52,5 +52,10 @@ namespace Hms.Ui
         {
             xr.PrintDialog();
         }
+
+        private void blbiClose_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

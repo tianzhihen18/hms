@@ -36,7 +36,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\</OutputPath>
+    <OutputPath>..\..\debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -88,7 +88,10 @@
     <Content Include="wcf.console\login.svc" />
     <Content Include="wcf.console\frame.svc" />
     <Content Include="wcf.comm\formdesign.svc" />
-    <Content Include="Web.config" />
+    <Content Include="wcf.hms\hms.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,6 +100,9 @@
   <ItemGroup>
     <Content Include="wcf.comm\web.config" />
     <Content Include="wcf.console\web.config" />
+    <Content Include="wcf.hms\web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -128,6 +134,18 @@
     <ProjectReference Include="..\console.itf\console.itf.csproj">
       <Project>{d1fb03bc-9eea-4fe5-9a42-e9364a7316a6}</Project>
       <Name>console.itf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\hms.biz\hms.biz.csproj">
+      <Project>{62203fdf-8727-41b1-963f-417a39551d6d}</Project>
+      <Name>hms.biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\hms.entity\hms.entity.csproj">
+      <Project>{45da2627-d13f-4005-83ba-738ea3b18f4f}</Project>
+      <Name>hms.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\hms.itf\hms.itf.csproj">
+      <Project>{9362161b-e77f-4483-99f0-9f87a1334e59}</Project>
+      <Name>hms.itf</Name>
     </ProjectReference>
     <ProjectReference Include="..\wecare.core\wecare.core.csproj">
       <Project>{29eb1dd7-a9cd-4549-a6ac-1ae99cae93fc}</Project>

@@ -74,7 +74,7 @@ namespace Hms.Entity
         /// </summary>
         [DataMember]
         [EntityAttribute(FieldName = "judgeValue", DbType = DbType.Decimal, IsPK = false, IsSeq = false, SerNo = 9)]
-        public decimal judgeValue { get; set; }
+        public System.Decimal judgeValue { get; set; }
 
         /// <summary>
         /// judgeRange
@@ -88,14 +88,14 @@ namespace Hms.Entity
         /// </summary>
         [DataMember]
         [EntityAttribute(FieldName = "score", DbType = DbType.Decimal, IsPK = false, IsSeq = false, SerNo = 11)]
-        public decimal score { get; set; }
+        public System.Decimal score { get; set; }
 
         /// <summary>
         /// modulus
         /// </summary>
         [DataMember]
         [EntityAttribute(FieldName = "modulus", DbType = DbType.Decimal, IsPK = false, IsSeq = false, SerNo = 12)]
-        public decimal modulus { get; set; }
+        public System.Decimal modulus { get; set; }
 
         /// <summary>
         /// remarks
@@ -105,30 +105,25 @@ namespace Hms.Entity
         public System.String remarks { get; set; }
 
         /// <summary>
-        /// bakField1
+        /// parentFieldId
         /// </summary>
-        [DataMember]
-        [EntityAttribute(FieldName = "normalRange", DbType = DbType.AnsiString, IsPK = false, IsSeq = false, SerNo = 14)]
-        public System.String normalRange { get; set; }
-
-        /// <summary>
-        /// bakField2
-        /// </summary>
-        [DataMember]
-        [EntityAttribute(FieldName = "isMain", DbType = DbType.AnsiString, IsPK = false, IsSeq = false, SerNo = 15)]
-        public System.String isMain { get; set; }
-
         [DataMember]
         [EntityAttribute(FieldName = "parentFieldId", DbType = DbType.AnsiString, IsPK = false, IsSeq = false, SerNo = 16)]
-        public string parentFieldId { get; set; }
+        public System.String parentFieldId { get; set; }
 
+        /// <summary>
+        /// isBest
+        /// </summary>
         [DataMember]
         [EntityAttribute(FieldName = "isBest", DbType = DbType.AnsiString, IsPK = false, IsSeq = false, SerNo = 17)]
-        public string isBest { get; set; }
-        [DataMember]
-        [EntityAttribute(FieldName = "pointId", DbType = DbType.Int16, IsPK = false, IsSeq = false, SerNo = 18)]
-        public int pointId { get; set; }
+        public System.String isBest { get; set; }
 
+        /// <summary>
+        /// isNormal
+        /// </summary>
+        [DataMember]
+        [EntityAttribute(FieldName = "isNormal", DbType = DbType.AnsiString, IsPK = false, IsSeq = false, SerNo = 20)]
+        public System.String isNormal { get; set; }
 
         /// <summary>
         /// Columns
@@ -153,11 +148,9 @@ namespace Hms.Entity
             public string score = "score";
             public string modulus = "modulus";
             public string remarks = "remarks";
-            public string normalRange = "normalRange";
-            public string bakField2 = "isMain";
             public string parentFieldId = "parentFieldId";
             public string isBest = "isBest";
-            public string pointId = "pointId";
+            public string isNormal = "isNormal";
         }
     }
 }

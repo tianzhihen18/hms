@@ -78,6 +78,10 @@ namespace Hms.Biz
                     vo.clientName = dr["clientName"].ToString();
                     vo.clientNo = dr["clientNo"].ToString();
                     vo.gender = Function.Int(dr["gender"]);
+                    if (vo.gender == 1)
+                        vo.sex = "男";
+                    if (vo.gender == 2)
+                        vo.sex = "女";
                     vo.reportNo = dr["reportNo"].ToString();
                     vo.reportDate = Function.Datetime(dr["reportDate"]).ToString("yyyy-MM-dd");
                     vo.company = dr["company"].ToString();
@@ -306,7 +310,7 @@ namespace Hms.Biz
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<EntityQnRecord> GetQnRecords(List<EntityParm> parms = null)
+        public List<EntityQnRecord> GetQnRecords(List<EntityParm> parms)
         {
             List<EntityQnRecord> data = null;
             SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
@@ -367,13 +371,19 @@ namespace Hms.Biz
                     vo = new EntityQnRecord();
                     vo.recId = Function.Dec(dr["recId"]) ;
                     vo.gender = Function.Int(dr["gender"]);
-                    vo.clientNo = dr["clientNo"].ToString();
+                    if(vo.gender == 1)
+                        vo.sex = "男";
+                    if (vo.gender == 2)
+                        vo.sex = "女";
+                     vo.clientNo = dr["clientNo"].ToString();
                     vo.clientName = dr["clientName"].ToString();
                     vo.gradeName = dr["gradeName"].ToString();
                     vo.age = dr["birthday"] == DBNull.Value ? "" : CalcAge.GetAge(Function.Datetime(dr["birthday"]));
                     vo.qnName = dr["qnName"].ToString();
                     vo.qnId = Function.Dec(dr["qnId"]);
                     vo.qnSource = Function.Dec(dr["qnSource"]);
+                    if (vo.qnSource == 1)
+                        vo.strQnSource = "采集系统";
                     vo.qnDate = Function.Datetime(dr["qnDate"]);
                     vo.strQnDate = Function.Datetime(dr["qnDate"]).ToString("yyyy-MM-dd");
                     vo.recorder = dr["recorder"].ToString();

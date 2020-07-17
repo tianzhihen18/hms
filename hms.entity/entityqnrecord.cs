@@ -47,14 +47,16 @@ namespace Hms.Entity
         /// </summary>
         [DataMember]
         [EntityAttribute(FieldName = "qnDate", DbType = DbType.DateTime, IsPK = false, IsSeq = false, SerNo = 5)]
-        public System.DateTime? qnDate { get; set; }
+        public System.DateTime qnDate { get; set; }
 
         /// <summary>
         /// qnSource
         /// </summary>
         [DataMember]
         [EntityAttribute(FieldName = "qnSource", DbType = DbType.Decimal, IsPK = false, IsSeq = false, SerNo = 6)]
-        public System.Decimal? qnSource { get; set; }
+        public System.Decimal qnSource { get; set; }
+        [DataMember]
+        public string strQnSource { get; set; }
 
         /// <summary>
         /// recorder
@@ -86,35 +88,11 @@ namespace Hms.Entity
         [DataMember]
         public int gender { get; set; }
         [DataMember]
-        public string sex
-        {
-            get
-            {
-                if (gender == 1)
-                    return "男";
-                else if (gender == 2)
-                    return "女";
-                else
-                    return "未知";
-
-            }
-        }
-
+        public string sex { get; set; }
         [DataMember]
         public string age{ get ; set ; }
         [DataMember]
         public string gradeName { get; set; }
-
-        [DataMember]
-        public string strQnSource
-        {
-            get
-            {
-                if (qnSource == 1)
-                    return "采集系统";
-                return string.Empty;
-            }
-        }
         [DataMember]
         public string strQnDate { get; set; } 
 

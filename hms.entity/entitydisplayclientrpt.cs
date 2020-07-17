@@ -65,37 +65,37 @@ namespace Hms.Entity
         [DataMember]
         public string gradeName { get; set; }
 
-        [DataMember]
-        public string confirmState
-        {
-            get
-            {
-                if (suditState == 1)
-                    return "无需审核";
-                if (suditState == 2)
-                    return "审核通过";
-                if (suditState == 3)
-                    return "等等审核";
-                if (suditState == 4)
-                    return "已分配审核";
-                if (suditState == 5)
-                    return "审核不通过";
-                return "";
-            }
-        }
+        //[DataMember]
+        //public string confirmState
+        //{
+        //    get
+        //    {
+        //        if (suditState == 1)
+        //            return "无需审核";
+        //        if (suditState == 2)
+        //            return "审核通过";
+        //        if (suditState == 3)
+        //            return "等等审核";
+        //        if (suditState == 4)
+        //            return "已分配审核";
+        //        if (suditState == 5)
+        //            return "审核不通过";
+        //        return "";
+        //    }
+        //}
 
-        [DataMember]
-        public string printState
-        {
-            get
-            {
-                if (reportStatc == 1)
-                    return "已打印";
-                if (reportStatc == 2)
-                    return "未打印";
-                return "";
-            }
-        }
+        //[DataMember]
+        //public string printState
+        //{
+        //    get
+        //    {
+        //        if (reportStatc == 1)
+        //            return "已打印";
+        //        if (reportStatc == 2)
+        //            return "未打印";
+        //        return "";
+        //    }
+        //}
         /// <summary>
         /// 年龄
         /// </summary>
@@ -104,47 +104,24 @@ namespace Hms.Entity
         /// <summary>
         /// 单位
         /// </summary>
+        [DataMember]
         public string company { get; set; }
-
-        public string sex
-        {
-            get
-            {
-                if (gender == 1)
-                    return "男";
-                if (gender == 2)
-                    return "女";
-                return "";
-            }
-        }
-
+        [DataMember]
+        public string sex { get; set; }
         /// <summary>
         /// 问卷日期
         /// </summary>
-        [DataMember]
         public string strQnDate { get; set; }
         /// <summary>
         /// 问卷
         /// </summary>
-        [DataMember]
         public EntityQnRecord qnRecord { get; set; }
-
 
         [DataMember]
         public string examinationOrgan { get; set; }
         [DataMember]
         public string dataSource { get; set; }
-        [DataMember]
-        public string strDataSource
-        {
-            get
-            {
-                if (dataSource == "1")
-                    return "团体";
-                else
-                    return "个人空间";
-            }
-        }
+
 
         #region  个人报告内容
         [DataMember]
@@ -179,133 +156,101 @@ namespace Hms.Entity
         /// <summary>
         /// 重要指标
         /// </summary>
-        [DataMember]
-        public List<EntityEvaluateParams> lstMainIndicate { get; set; }
+        public List<EntityRptModelParam> lstMainIndicate { get; set; }
         /// <summary>
         /// 高血压
         /// </summary>
-        [DataMember]
-        public List<EntityEvaluateParams> lstGxy { get; set; }
+        public List<EntityRptModelParam> lstGxy { get; set; }
         /// <summary>
         /// 高血压风险评估 
         /// </summary>
-        [DataMember]
         public List<EntityEvaluateResult> lstEvaluateGxy { get; set; }
-
         /// <summary>
         /// 糖尿病
         /// </summary>
-        [DataMember]
-        public List<EntityEvaluateParams> lstTnb { get; set; }
+        public List<EntityRptModelParam> lstTnb { get; set; }
         /// <summary>
         /// 糖尿病风险评估 
         /// </summary>
-        [DataMember]
         public List<EntityEvaluateResult> lstEvaluateGxb { get; set; }
-
         /// <summary>
         /// 冠心病
         /// </summary>
-        [DataMember]
-        public List<EntityEvaluateParams> lstGxb { get; set; }
+        public List<EntityRptModelParam> lstGxb { get; set; }
         /// <summary>
         /// 冠心病风险评估 
         /// </summary>
-        [DataMember]
         public List<EntityEvaluateResult> lstEvaluateTnb { get; set; }
-
         /// <summary>
         /// 血脂异常
         /// </summary>
-        [DataMember]
-        public List<EntityEvaluateParams> lstXzyc { get; set; }
+        public List<EntityRptModelParam> lstXzyc { get; set; }
         /// <summary>
         /// 血脂异常风险评估 
         /// </summary>
-        [DataMember]
         public List<EntityEvaluateResult> lstEvaluateXzyc { get; set; }
-
         /// <summary>
         /// 肥胖症
         /// </summary>
-        [DataMember]
-        public List<EntityEvaluateParams>lstFpz { get; set; }
+        public List<EntityRptModelParam>lstFpz { get; set; }
         /// <summary>
         /// 肥胖症风险评估 
         /// </summary>
-        [DataMember]
         public List<EntityEvaluateResult> lstEvaluateFpz { get; set; }
-
         /// <summary>
         /// 脑卒中
         /// </summary>
-        [DataMember]
-        public List<EntityEvaluateParams>lstNzz { get; set; }
+        public List<EntityRptModelParam>lstNzz { get; set; }
         /// <summary>
         /// 脑卒中风险评估 
         /// </summary>
-        [DataMember]
         public List<EntityEvaluateResult> lstEvaluateNzz { get; set; }
-
-
         /// <summary>
         /// 阿尔茨海默病
         /// </summary>
-        [DataMember]
-        public List<EntityEvaluateParams> lstAzhmz { get; set; }
+        public List<EntityRptModelParam> lstAzhmz { get; set; }
         /// <summary>
         /// 阿尔茨海默病风险评估 
         /// </summary>
-        [DataMember]
         public List<EntityEvaluateResult> lstEvaluateAzhmz { get; set; }
 
         /// <summary>
         /// 肺癌
         /// </summary>
-        [DataMember]
-        public List<EntityEvaluateParams> lstFa { get; set; }
+        public List<EntityRptModelParam> lstFa { get; set; }
         /// <summary>
         /// 肺癌风险评估 
         /// </summary>
-        [DataMember]
         public List<EntityEvaluateResult> lstEvaluateFa { get; set; }
 
         /// <summary>
         /// 肝癌
         /// </summary>
-        [DataMember]
-        public List<EntityEvaluateParams> lstGa { get; set; }
+        public List<EntityRptModelParam> lstGa { get; set; }
         /// <summary>
         /// 肝癌风险评估 
         /// </summary>
-        [DataMember]
         public List<EntityEvaluateResult> lstEvaluateGa { get; set; }
 
         /// <summary>
         /// 胃癌
         /// </summary>
-        [DataMember]
-        public List<EntityEvaluateParams> lstWa { get; set; }
+        public List<EntityRptModelParam> lstWa { get; set; }
         /// <summary>
         /// 胃癌风险评估 
         /// </summary>
-        [DataMember]
         public List<EntityEvaluateResult> lstEvaluateWa { get; set; }
 
         /// <summary>
         /// 前列腺癌
         /// </summary>
-        [DataMember]
-        public List<EntityEvaluateParams> lstQlxa { get; set; }
+        public List<EntityRptModelParam> lstQlxa { get; set; }
         /// <summary>
         ///前列腺癌风险评估 
         /// </summary>
-        [DataMember]
         public List<EntityEvaluateResult> lstEvaluateQlxa { get; set; }
         public List<EntityAdPeItem> lstAdPeItemBse { get; set; }
-        [DataMember]
         public List<EntityAdPeItem> lstAdPeItemSpecial { get; set; }
-        [DataMember]
         public List<EntityMedicalAdvicecs> lstMedAdvices { get; set; }
 
         #endregion  

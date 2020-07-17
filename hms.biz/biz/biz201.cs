@@ -22,7 +22,7 @@ namespace Hms.Biz
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<EntityClientInfo> GetClientInfoAndRpt(List<EntityParm> parms = null)
+        public List<EntityClientInfo> GetClientInfoAndRpt(List<EntityParm> parms)
         {
             List<EntityClientInfo> data = null;
             List<EntityReportRecorde> lstReportRecord = null;
@@ -84,7 +84,11 @@ namespace Hms.Biz
                     vo.clientName = dr["clientName"].ToString();
                     vo.age = Function.CalcAge(Function.Datetime(dr["birthday"]));
                     vo.gender = Function.Int(dr["gender"]);
-                    vo.birthday = Function.Datetime(dr["birthday"]);
+                    if (vo.gender == 1)
+                        vo.sex = "男";
+                    if (vo.gender == 2)
+                        vo.sex = "女";
+                    vo.birthday = dr["birthday"].ToString();
                     //vo.mobile = dr["mobile"].ToString();
                     //vo.telephone = dr["telephone"].ToString();
                     //vo.email = dr["email"].ToString();
@@ -192,7 +196,11 @@ namespace Hms.Biz
                     vo.clientName = dr["clientName"].ToString();
                     vo.age = Function.CalcAge(Function.Datetime(dr["birthday"]));
                     vo.gender = Function.Int(dr["gender"]);
-                    vo.birthday = Function.Datetime(dr["birthday"]);
+                    if (vo.gender == 1)
+                        vo.sex = "男";
+                    if (vo.gender == 2)
+                        vo.sex = "女";
+                    vo.birthday = dr["birthday"].ToString();
                     vo.company = dr["company"].ToString();
                     vo.address = dr["address"].ToString();
                     vo.cardNo = dr["cardno"].ToString();
@@ -211,7 +219,7 @@ namespace Hms.Biz
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<EntityUserGrade> GetUserGrades(List<EntityParm> parms)
+        public List<EntityUserGrade> GetUserGrades()
         {
             List<EntityUserGrade> data = null;
             SqlHelper svc = new SqlHelper(EnumBiz.onlineDB);
@@ -221,17 +229,8 @@ namespace Hms.Biz
                             a.reportName,
                             a.severPrice,
                             a.serverTime,
-                            a.description,
-                            a.isEnable,
-                            a.upTag,
-                            a.bakfield1,
-                            a.bakfield2,
-                            a.createDate,
-                            a.creator,
-                            a.createName,
-                            a.modifyDate,
-                            a.modifyrId,
-                            a.modifyName
+                            a.description
+                            
                       from userGrade a ";
             DataTable dt = svc.GetDataTable(Sql);
 
@@ -248,11 +247,7 @@ namespace Hms.Biz
                     vo.severPrice = dr["severPrice"].ToString();
                     vo.serverTime = dr["serverTime"].ToString();
                     vo.description = dr["description"].ToString();
-                    vo.isEnable = Function.Int(dr["isEnable"]);
-                    vo.upTag = dr["upTag"].ToString();
-                    vo.createDate = Function.Datetime(dr["createDate"]);
-                    vo.creator = dr["creator"].ToString();
-                    vo.createName = dr["createName"].ToString();
+                    
                     data.Add(vo);
                 } 
             }

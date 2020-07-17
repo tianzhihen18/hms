@@ -23,6 +23,9 @@ namespace peDataSys
             InitializeComponent();
         }
 
+
+       
+
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             sysDicPeItem();
@@ -858,7 +861,7 @@ namespace peDataSys
                     vo.clientName = dr["clientName"].ToString();
                     vo.age = Function.CalcAge(Function.Datetime(dr["birthday"]));
                     vo.gender = Function.Int(dr["gender"]);
-                    vo.birthday = Function.Datetime(dr["birthday"]);
+                    vo.birthday = dr["birthday"].ToString();
                     vo.mobile = dr["mobile"].ToString();
                     vo.telephone = dr["telephone"].ToString();
                     vo.email = dr["email"].ToString();
@@ -883,9 +886,7 @@ namespace peDataSys
                     vo.createDate = Function.Datetime(dr["createDate"]);
                     vo.creatorId = dr["creatorId"].ToString();
                     vo.createName = dr["createName"].ToString();
-                    vo.modifyDate = Function.Datetime(dr["modifyDate"]);
-                    vo.modifyId = dr["modifyId"].ToString();
-                    vo.modifyName = dr["modifyName"].ToString();
+
 
                     data.Add(vo);
                 }
@@ -1006,29 +1007,6 @@ namespace peDataSys
             //{
             //    MessageBox.Show("gridLookUpEdit1View.RowCount");
             //}
-        }
-
-        private void gridLookUpEdit_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
-        {
-            
-        }
-
-        private void gridLookUpEdit1View_SelectionChanged(object sender, DevExpress.Data.SelectionChangedEventArgs e)
-        {
-            string caiSlaveStr = string.Empty;
-            if (this.gridLookUpEdit1View.SelectedRowsCount > 0)
-            {
-                int[] selectArr = this.gridLookUpEdit1View.GetSelectedRows();
-                for (int i = 0; i < selectArr.Length; i++)
-                {
-                    EntityDisplayDicCaiRecipe vo = (this.gridLookUpEdit1View.GetRow(selectArr[i]) as EntityDisplayDicCaiRecipe);
-
-                    caiSlaveStr += vo.caiSlaveName + "、";
-                }
-            }
-            if (!string.IsNullOrEmpty(caiSlaveStr))
-                caiSlaveStr = caiSlaveStr.TrimEnd('、');
-            this.textEdit1.Text = caiSlaveStr;
         }
 
         private void simpleButton9_Click(object sender, EventArgs e)
@@ -1184,7 +1162,7 @@ namespace peDataSys
                         vo.clientNo = dr["CLIENT_NO"].ToString();
                         vo.clientName = dr["CLIENT_NAME"].ToString();
                         vo.gender = Function.Int( dr["GENDER"]);
-                        vo.birthday = Function.Datetime(dr["BIRTHDAY"]);
+                        vo.birthday = dr["BIRTHDAY"].ToString();
                         vo.mobile = dr["MOBILE"].ToString();
                         vo.telephone = dr["TELEPHONE"].ToString();
                         vo.email = dr["EMAIL"].ToString();
@@ -1479,6 +1457,9 @@ namespace peDataSys
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            labelControl1.Parent = pictureBox1;
+            labelControl1.BackColor = Color.FromArgb(0, Color.Transparent);
+
             //this.gridLookUpEdit.Properties.DataSource = GetDicCaiRecipe();
             //using (Biz202 biz = new Biz202())
             //{
@@ -1500,23 +1481,27 @@ namespace peDataSys
             //labelControl3.Text = this.checkEdit1.Text.Length.ToString();
             //labelControl4.Text = this.checkEdit1.Width.ToString();
 
-            
+
             GetQnCustom(1, out lstTopic, out lstItems);
-            if(lstTopic != null)
+            if (lstTopic != null)
             {
                 gcPromotionTemplate.DataSource = lstTopic;
                 gcPromotionTemplate.RefreshDataSource();
             }
 
             List<EntityModelAccess> lstModelAccess = GetModelAccesses();
-            if(lstModelAccess != null)
+            if (lstModelAccess != null)
             {
-                foreach(var vo in lstModelAccess)
+                foreach (var vo in lstModelAccess)
                 {
                     cboModel.Properties.Items.Add(vo.modelName);
                     dicModelAccess.Add(vo.modelName, vo.modelId);
                 }
             }
+
+
+
+
 
         }
 
@@ -1629,7 +1614,9 @@ namespace peDataSys
                         {
                             parentFieldId = dr["parentFieldId"].ToString(),
                             paramNo = dr["fieldId"].ToString(),
-                            judgeRange = string.IsNullOrEmpty(dr["fieldName"].ToString()) ? "是" : dr["fieldName"].ToString()
+                            judgeType = 2,
+                            judgeValue = 1,
+                            judgeRange = string.IsNullOrEmpty(dr["fieldName"].ToString()) ? "是" : dr["fieldName"].ToString().Replace("1、","").Replace("2、", "").Replace("3、", "").Replace("4、", "").Replace("5、", "")
                         });
                     }
                 }

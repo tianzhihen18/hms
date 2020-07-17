@@ -69,10 +69,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\debug\Oracle.DataAccess.dll</HintPath>
     </Reference>
-    <Reference Include="Sybase.Data.AseClient, Version=1.1.327.0, Culture=neutral, PublicKeyToken=26e0f1529304f4a7">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\debug\Sybase.Data.AseClient.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration">
       <Private>False</Private>
