@@ -11,6 +11,7 @@ namespace Hms.Entity
     [DataContract,Serializable]
     public class EntityClientInfo : BaseDataContract
     {
+        //fsdfsafdfasdfasdfasdfas
         [DataMember]
         public string  id { get; set; }
         [DataMember]

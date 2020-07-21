@@ -25,7 +25,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\debug\</OutputPath>
+    <OutputPath>..\..\..\debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -272,12 +272,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Add_32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\wecare.core\wecare.core.csproj">
-      <Project>{29eb1dd7-a9cd-4549-a6ac-1ae99cae93fc}</Project>
-      <Name>wecare.core</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
